@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {SafeAreaView, StatusBar, Button, ImageBackground} from 'react-native';
+import {SafeAreaView, Button, ImageBackground} from 'react-native';
 
 import Card from './app/components/Card';
 
