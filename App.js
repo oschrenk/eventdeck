@@ -12,14 +12,33 @@ import Card from './app/components/Card';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+const card = {
+  front: {
+    text: "Flavor",
+    optionA: "Be nice",
+    optionB: "Be naughty"
+  },
+  back: {
+    optionA: "Be lucky",
+    optionB: "Be punished"
+  }
+}
+
+let side = 'front'
+
 const App: () => React$Node = () => {
-  const [text, setText] = useState('Event nr 1');
+  const [side, setSide] = useState('front');
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <Card title={text} />
-        <Button title="Flip card" onPress={() => setText('Back of number 1')} />
+        <Card content={card} side={side} />
+        <Button title="Flip card" onPress={() => {
+          if(side === 'front')
+            setSide('back');
+          else
+            setSide('front');
+        }} />
       </SafeAreaView>
     </>
   );
