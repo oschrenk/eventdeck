@@ -4,14 +4,14 @@ import {SafeAreaView, Button, ImageBackground} from 'react-native';
 import Card from './app/components/Card';
 
 const card = {
-  front: {
-    text: "Flavor",
-    optionA: "Be nice",
-    optionB: "Be naughty"
+  text: "Flavor",
+  optionA: {
+    choice: "Be nice",
+    outcome: [{text: "Be lucky"}]
   },
-  back: {
-    optionA: "Be lucky",
-    optionB: "Be punished"
+  optionB: {
+    choice: "Be naughty",
+    outcome: [{text: "Be punished"}]
   }
 }
 
@@ -21,7 +21,7 @@ const App: () => React$Node = () => {
     <>
       <ImageBackground source={require('./assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
         <SafeAreaView>
-          <Card content={card} side={side} />
+          <Card card={card} side={side} />
           <Button title="Flip" onPress={() => {
             if(side === 'front')
               setSide('back');
