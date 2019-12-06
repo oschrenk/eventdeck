@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "text": "Card 1",
+    "optionA": {
+      "choice": "1 Be nice",
+      "outcome": [{"text": "1 Be lucky"}]
+    },
+    "optionB": {
+      "choice": "1 Be naughty",
+      "outcome": [{"text": "1 Be punished"}]
+    }
+  },
+  {
+    "id": 2,
+    "text": "Card 2",
+    "optionA": {
+      "choice": "2 Be nice",
+      "outcome": [{"text": "2 Be lucky"}]
+    },
+    "optionB": {
+      "choice": "2 Be naughty",
+      "outcome": [{"text": "2 Be punished"}]
+    }
+  }
+]

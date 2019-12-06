@@ -2,34 +2,9 @@ import React, {useState} from 'react';
 import {SafeAreaView, Button, ImageBackground} from 'react-native';
 
 import Card from './app/components/Card';
+import defaultData from './app/data/events.json'
 
-const cards = [
-  {
-    id: 1,
-    text: "Card 1",
-    optionA: {
-      choice: "1 Be nice",
-      outcome: [{text: "1 Be lucky"}]
-    },
-    optionB: {
-      choice: "1 Be naughty",
-      outcome: [{text: "1 Be punished"}]
-    }
-  },
-  {
-    id: 2,
-    text: "Card 2",
-    optionA: {
-      choice: "2 Be nice",
-      outcome: [{text: "2 Be lucky"}]
-    },
-    optionB: {
-      choice: "2 Be naughty",
-      outcome: [{text: "2 Be punished"}]
-    }
-  }
-
-]
+const cards = defaultData
 
 const App: () => React$Node = () => {
   const [side, setSide] = useState('front');
