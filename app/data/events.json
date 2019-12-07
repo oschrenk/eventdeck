@@ -211,7 +211,7 @@
       ]
     },
     "optionB": {
-      "choice": "Shake your head and walk away. Best not to take chances in such situations. /",
+      "choice": "Shake your head and walk away. Best not to take chances in such situations.",
       "outcome": [
         {
           "text": "You loudly refuse the Harrower's offer and continue about your business. That thing should know better than to stray from the Sinking Market.\n\nReputation < -4: Gain 1 reputation."
