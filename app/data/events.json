@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "text": "You decide to unwind at the Sleeping Lion, but just as you are starting to relax, a bear of a man crashes into your table, scattering your drinks across the floor.\n\nTowering over him is a massive Inox. \"What did vou say about my horns?\" the Inox shouts.\n\nThe man stands up and brushes shards of glass from his tunic. \"I said the sight of them makes me want to vomit!\"\n\nThe Inox roars and charges headlong into the man, crashing through more tables in the process. At this, the entire tavern erupts into violence. After all, when a man is deep into his drink, the last thing you want to do is knock that drink over.",
+    "text": "You decide to unwind at the Sleeping Lion, but just as you are starting to relax, a bear of a man crashes into your table, scattering your drinks across the floor.\n\nTowering over him is a massive Inox. \"What did you say about my horns?\" the Inox shouts.\n\nThe man stands up and brushes shards of glass from his tunic. \"I said the sight of them makes me want to vomit!\"\n\nThe Inox roars and charges headlong into the man, crashing through more tables in the process. At this, the entire tavern erupts into violence. After all, when a man is deep into his drink, the last thing you want to do is knock that drink over.",
     "optionA": {
       "choice": "Join the fray! These insults will not go unanswered!",
       "outcome": [
@@ -106,7 +106,7 @@
       "choice": "Go aid in the defense of the city.",
       "outcome": [
         {
-          "text": "You rush toward the West Gate, eager to fight back the invaders. As you approach, you see a mass of Vcrmlings climbing over the wall and attacking the guards with daggers and arrows. You yell and charge into the battle. It is a rough fight, but you emerge victorious, covered in fur and blood. The citizens of Gloomhaven remain safe, and the town is free to grow and prosper.\n\nGain 5 experience each.\n\nGain 1 prosperity."
+          "text": "You rush toward the West Gate, eager to fight back the invaders. As you approach, you see a mass of Vermlings climbing over the wall and attacking the guards with daggers and arrows. You yell and charge into the battle. It is a rough fight, but you emerge victorious, covered in fur and blood. The citizens of Gloomhaven remain safe, and the town is free to grow and prosper.\n\nGain 5 experience each.\n\nGain 1 prosperity."
         }
       ]
     },
@@ -141,7 +141,7 @@
   },
   {
     "id": 8,
-    "text": "On a trip to the New Market, you see a curious sea chart prominently displayed in a Valrath merchants stall.\n\n\"Ah. I see this interests you!\" he savs while holding it up, taking great care not to damage it. \"I've been told this map will lead you to a location of untold riches! Wondrous beyond anything you have seen before!\"\n\nThe Valrath gestures grandly with his free hand and his smile grows wide. \"How can you sav no to this? Just make me an offer!\"",
+    "text": "On a trip to the New Market, you see a curious sea chart prominently displayed in a Valrath merchants stall.\n\n\"Ah. I see this interests you!\" he says while holding it up, taking great care not to damage it. \"I've been told this map will lead you to a location of untold riches! Wondrous beyond anything you have seen before!\"\n\nThe Valrath gestures grandly with his free hand and his smile grows wide. \"How can you sav no to this? Just make me an offer!\"",
     "optionA": {
       "choice": "The map docs look valuable. Decide to bargain for it.",
       "outcome": [
@@ -166,7 +166,7 @@
       "choice": "Sell the goods.",
       "outcome": [
         {
-          "text": "Using a fevv less-than-savory contacts, you're able to unload the goods for a respectable price. Who knew drunken strolls could prove so profitable?\n\nGain 10 gold each.\n\nReputation < -9: Gain 5 additional gold each."
+          "text": "Using a few less-than-savory contacts, you're able to unload the goods for a respectable price. Who knew drunken strolls could prove so profitable?\n\nGain 10 gold each.\n\nReputation < -9: Gain 5 additional gold each."
         }
       ]
     },
@@ -174,7 +174,7 @@
       "choice": "Donate the goods to the city.",
       "outcome": [
         {
-          "text": "You sleep off the previous nights revelries and approach the Captain of the Guard. \"This is wonderful news! With attacks on the citv becoming ever more frequent our blacksmiths are having trouble keeping up with our demands. And the food should help considerably if we ever find ourselves under siege. This is truly a big help to the city.\"\n\nGain 1 prosperity."
+          "text": "You sleep off the previous nights revelries and approach the Captain of the Guard. \"This is wonderful news! With attacks on the city becoming ever more frequent our blacksmiths are having trouble keeping up with our demands. And the food should help considerably if we ever find ourselves under siege. This is truly a big help to the city.\"\n\nGain 1 prosperity."
         }
       ]
     }
@@ -186,7 +186,7 @@
       "choice": "Play a game with the man. It may prove to be a good time.",
       "outcome": [
         {
-          "text": "REPUTATION > -5: You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as \"uncanny\" You leave the table empty handed.\n\nLose 5 gold each.\n\nOTHERWISE; The man clearly intends to cheat you out of vour hard-earned money. He's not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.\n\nGain 5 gold each."
+          "text": "REPUTATION > -5: You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as \"uncanny\" You leave the table empty handed.\n\nLose 5 gold each.\n\nOTHERWISE; The man clearly intends to cheat you out of your hard-earned money. He's not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.\n\nGain 5 gold each."
         }
       ]
     },
@@ -194,7 +194,7 @@
       "choice": "Refuse the game of dice.",
       "outcome": [
         {
-          "text": "You laugh and wave away the man's offer. Youg et all the excitement you need fighting toe- to-toe against vicious monsters. In combat, what matters most is planning and tactics, which are far more interesting than some random roll of the dice.\n\nGain 1 reputation."
+          "text": "You laugh and wave away the man's offer. You get all the excitement you need fighting toe-to-toe against vicious monsters. In combat, what matters most is planning and tactics, which are far more interesting than some random roll of the dice.\n\nGain 1 reputation."
         }
       ]
     }
@@ -206,7 +206,7 @@
       "choice": "Make a deal wilh the Harrower.",
       "outcome": [
         {
-          "text": "PAY 5 COLLECTIVE GOLD: Intrigued by the parchment, you quickly make a decision to buy it off the Narrower. The exchange is fast, and then you move on your way, hoping no one saw you.\n\nGain Random Item Design.\n\nReputation > 9: Lose 1 reputation.\n\nOTHERWISE: You try to pay the Narrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.\n\nLose 1 reputation."
+          "text": "PAY 5 COLLECTIVE GOLD: Intrigued by the parchment, you quickly make a decision to buy it off the Harrower. The exchange is fast, and then you move on your way, hoping no one saw you.\n\nGain Random Item Design.\n\nReputation > 9: Lose 1 reputation.\n\nOTHERWISE: You try to pay the Harrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.\n\nLose 1 reputation."
         }
       ]
     },
@@ -221,12 +221,12 @@
   },
   {
     "id": 12,
-    "text": "A great revelry is underway at the New Market when you arrive to purchase supplies. Investigating further, vou discover the town is in the midst of a pie-eating contest.\n\nA group of large sailors sits triumphantly at a long table on a makeshift stage, crumbs and bits of fruit scattered all around. A man in the center stands and addresses the crowd.\n\n\"Can no one best our pie-eating prowess? Step up and test your mettle!\" With nothing better to do, you head up to the stage.\n\nThe contest goes well for a while as you match the others pie-for-pie, but soon your eating starts to slow, and the sailors are still going strong.",
+    "text": "A great revelry is underway at the New Market when you arrive to purchase supplies. Investigating further, you discover the town is in the midst of a pie-eating contest.\n\nA group of large sailors sits triumphantly at a long table on a makeshift stage, crumbs and bits of fruit scattered all around. A man in the center stands and addresses the crowd.\n\n\"Can no one best our pie-eating prowess? Step up and test your mettle!\" With nothing better to do, you head up to the stage.\n\nThe contest goes well for a while as you match the others pie-for-pie, but soon your eating starts to slow, and the sailors are still going strong.",
     "optionA": {
       "choice": "Yield to the pie and admit defeat.",
       "outcome": [
         {
-          "text": "You put down vour utensils and yield to the sailors. They roar with pride and slap vou on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon all the pies you ate are coming back up, much to the disgust of the gathered crowd.\n\nLose 1 reputation."
+          "text": "You put down your utensils and yield to the sailors. They roar with pride and slap you on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon all the pies you ate are coming back up, much to the disgust of the gathered crowd.\n\nLose 1 reputation."
         }
       ]
     },
@@ -286,7 +286,7 @@
       "choice": "Do your best to explain that the man was like this when you found him.",
       "outcome": [
         {
-          "text": "REPUTATION > 5: You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story A fter a few more questions, he allows you to leave and clean up.\n\nNo effect.\n\nOTHERWISE: Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously. Luckily your weapons don't match the man's wounds and the guards let you go, but they do so with a mistrustful glare.\n\nLose 2 reputation."
+          "text": "REPUTATION > 5: You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story. After a few more questions, he allows you to leave and clean up.\n\nNo effect.\n\nOTHERWISE: Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously. Luckily your weapons don't match the man's wounds and the guards let you go, but they do so with a mistrustful glare.\n\nLose 2 reputation."
         }
       ]
     },
@@ -301,12 +301,12 @@
   },
   {
     "id": 16,
-    "text": "\"Stop struggling! You're coming with me and there's nothing you can do about it!\"\n\nAhead of you in the street, you see a pair of guards scuffling with a young boy dressed in rags. \"You snatch purses, you go to the Ghost Fortress. No way around that.\"\n\n\"But my family is starving.\" the boy cries. You recognize his voice from some of vour dealings in the Sunken Market. He's given you helpful tips for mercenary work on a number of occasions.",
+    "text": "\"Stop struggling! You're coming with me and there's nothing you can do about it!\"\n\nAhead of you in the street, you see a pair of guards scuffling with a young boy dressed in rags. \"You snatch purses, you go to the Ghost Fortress. No way around that.\"\n\n\"But my family is starving.\" the boy cries. You recognize his voice from some of your dealings in the Sunken Market. He's given you helpful tips for mercenary work on a number of occasions.",
     "optionA": {
       "choice": "Intervene on the boy's behalf.",
       "outcome": [
         {
-          "text": "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if vou pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\nNo effect."
+          "text": "PAY 10 COLLECTIVE COLD: You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if you pay his criminal fine. The guards cuff the boy's ear and set him free.\n\nAdd City Event 70 to the deck.\n\nOTHERWISE: You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.\n\nNo effect."
         }
       ]
     },
@@ -321,12 +321,12 @@
   },
   {
     "id": 17,
-    "text": "Returning to Gloomhaven with vour latest haul of' treasure, you approach the market in search of a good trade. Unfortunately, there are only a few visible stands around that are not yet packing up for the day.\n\nA robed Savvas catches your eye. It has a few strange artifacts on display, but you approach with no great expectation, hoping vour goods will fetch a decent price.\n\nThe Savvas silently nods as you approach. It picks through your haul and lifts up a single item, holding out a small bag for you in exchange.\n\nPouring out the bag's contents, a single rectangular black-and-white coin lands in vour palm.",
+    "text": "Returning to Gloomhaven with your latest haul of treasure, you approach the market in search of a good trade. Unfortunately, there are only a few visible stands around that are not yet packing up for the day.\n\nA robed Savvas catches your eye. It has a few strange artifacts on display, but you approach with no great expectation, hoping your goods will fetch a decent price.\n\nThe Savvas silently nods as you approach. It picks through your haul and lifts up a single item, holding out a small bag for you in exchange.\n\nPouring out the bag's contents, a single rectangular black-and-white coin lands in your palm.",
     "optionA": {
       "choice": "Demand a different payment. The single coin is an insult.",
       "outcome": [
         {
-          "text": "You slam the strange coin back down onto the Savvas' display in anger. It reaches out to grab the coin, but you take hold of its arm and demand a proper payment. Wordlessly, it looks at you with disdain and throws a handful of gold in vour face. You shield vour eyes and move to draw your weapon, but when you look around, the Savvas and its goods are no longer to be found. You sullenly gather the coins it threw and move on.\n\nGain 10 collective gold."
+          "text": "You slam the strange coin back down onto the Savvas' display in anger. It reaches out to grab the coin, but you take hold of its arm and demand a proper payment. Wordlessly, it looks at you with disdain and throws a handful of gold in your face. You shield your eyes and move to draw your weapon, but when you look around, the Savvas and its goods are no longer to be found. You sullenly gather the coins it threw and move on.\n\nGain 10 collective gold."
         }
       ]
     },
@@ -341,12 +341,12 @@
   },
   {
     "id": 18,
-    "text": "You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n\"Oh my, don't you lot look strong.\" she says. \"Could you possibly assist me with a small problem I am having in mv cellar?\"\n\nHer eyes grow narrow. \"Rats! So many rats! I don't know where they're coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!\"\n\nShe tugs weakly at vour sleeve. \"Please, can you help me?\"",
+    "text": "You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n\"Oh my, don't you lot look strong.\" she says. \"Could you possibly assist me with a small problem I am having in mv cellar?\"\n\nHer eyes grow narrow. \"Rats! So many rats! I don't know where they're coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!\"\n\nShe tugs weakly at your sleeve. \"Please, can you help me?\"",
     "optionA": {
       "choice": "Decline to help the old woman.",
       "outcome": [
         {
-          "text": "You pull vour arm away from her filthy grasp and step away, making apologies for being too busy. Your excuses lack the proper tact, however, and soon the woman is bawling in the street, lamenting that no one will help her and how the rats will kill her in her sleep, then feast on her corpse. The whole speech is very graphic, and passersby begin to give you odd looks, wondering what you could have done to upset the poor woman so intensely.\n\nLose 1 reputation."
+          "text": "You pull your arm away from her filthy grasp and step away, making apologies for being too busy. Your excuses lack the proper tact, however, and soon the woman is bawling in the street, lamenting that no one will help her and how the rats will kill her in her sleep, then feast on her corpse. The whole speech is very graphic, and passersby begin to give you odd looks, wondering what you could have done to upset the poor woman so intensely.\n\nLose 1 reputation."
         }
       ]
     },
@@ -374,14 +374,14 @@
       "choice": "Attend the wedding and bring a mundane gift. /",
       "outcome": [
         {
-          "text": "REPUTATI0N < -4: You pick up an unremarkable set of silverware on the wav to the event. When you arrive, the father of the bride casts a scornful look vour way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold."
+          "text": "REPUTATI0N < -4: You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold."
         }
       ]
     }
   },
   {
     "id": 20,
-    "text": "You are relaxing at the Sleeping Lion when an immaculately dressed man approach your table, a fake smile plastered to his face.\n\n\"Ah, you must be the mercenaries everyone is talking about, yes? My name is Lord Greymane and I have a delicate matter to discuss. May i sit?\"\n\nYou gesture to a chair and he sits with a faint grimace. \"I am transporting some valuable goods this evening from one of my warehouses, and I have reason to believe that some of the less desirable elements of this city wish to steal from me. I would like to hire you to help guard the undertaking.\"",
+    "text": "You are relaxing at the Sleeping Lion when an immaculately dressed man approach your table, a fake smile plastered to his face.\n\n\"Ah, you must be the mercenaries everyone is talking about, yes? My name is Lord Greymane and I have a delicate matter to discuss. May I sit?\"\n\nYou gesture to a chair and he sits with a faint grimace. \"I am transporting some valuable goods this evening from one of my warehouses, and I have reason to believe that some of the less desirable elements of this city wish to steal from me. I would like to hire you to help guard the undertaking.\"",
     "optionA": {
       "choice": "Agree to guard the goods. It should be easy money.",
       "outcome": [
@@ -394,7 +394,7 @@
       "choice": "Politely decline. Yon have much better things to do tonight.",
       "outcome": [
         {
-          "text": "This is your night off, and you are going to spend it drinking, not guarding some snobby \"lord.\"\n\nIn the morning; you hear news that a shipment of rare minerals bound for the capital was stolen in the night. People are calling it a huge blow to the economy of the town.\n\nLose 1 prosperity."
+          "text": "This is your night off, and you are going to spend it drinking, not guarding some snobby \"lord.\"\n\nIn the morning, you hear news that a shipment of rare minerals bound for the capital was stolen in the night. People are calling it a huge blow to the economy of the town.\n\nLose 1 prosperity."
         }
       ]
     }
@@ -441,7 +441,7 @@
   },
   {
     "id": 23,
-    "text": "You are walking home late at night when you hear some suspicious sounds coming from a nearby garden.\n\nYou move to investigate, and a shadowy figure holts in the opposite direct carrying an armful of vegetables.",
+    "text": "You are walking home late at night when you hear some suspicious sounds coming from a nearby garden.\n\nYou move to investigate, and a shadowy figure bolts in the opposite direct carrying an armful of vegetables.",
     "optionA": {
       "choice": "Give chase. Thieves must be brought to justice.",
       "outcome": [
@@ -454,14 +454,14 @@
       "choice": "The thief had the right idea. Grab some vegetables for yourself.",
       "outcome": [
         {
-          "text": "In an area cut off from civilization with no • viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {Bless}"
+          "text": "In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {Bless}"
         }
       ]
     }
   },
   {
     "id": 24,
-    "text": "Upon returning to the city after your latest adventure, you are approached by a high-ranking guard at the gate.\n\n\"Ah. good, I'm glad to have caught you, the guard begins, The capital has fallen behind on shipments of wood to Gloomhaven, so now it falls to us to pick up the slack so that construction of important city buildings doesn't stagnate.\"\n\nThe guard points to the east. We're forming an expedition to gather logs from the Corpsewood. We could use your help, either to guard against enemies or to chop down trees,r",
+    "text": "Upon returning to the city after your latest adventure, you are approached by a high-ranking guard at the gate.\n\n\"Ah. good, I'm glad to have caught you, the guard begins. The capital has fallen behind on shipments of wood to Gloomhaven, so now it falls to us to pick up the slack so that construction of important city buildings doesn't stagnate.\"\n\nThe guard points to the east. We're forming an expedition to gather logs from the Corpsewood. We could use your help, either to guard against enemies or to chop down trees.\"",
     "optionA": {
       "choice": "Join the expedition as a guard.",
       "outcome": [
@@ -486,7 +486,7 @@
       "choice": "Attempt to catch the vase.",
       "outcome": [
         {
-          "text": "{Brute}, {Cragheart}, {LightningBolts}: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Vairath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold."
+          "text": "{Brute}, {Cragheart}, {LightningBolts}: You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.\n\nGain 5 collective gold.\n\nOTHERWISE: You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.\n\nLose 10 collective gold."
         }
       ]
     },
@@ -501,7 +501,7 @@
   },
   {
     "id": 26,
-    "text": "While enjoying vour customary post-adventure drink at the Sleeping Lion, you notice something weird going on with the lamps in the bar.\n\nYour first thought is that it is your imagination, hut after staring at the lamps intently, you see they are flickering in and out. Tech lamps, as opposed to normal gas-burning ones, have been known to be a bit unreliable.\n\nAs if on cue, the lamps suddenly go out completely, leaving the room pitch-black.",
+    "text": "While enjoying your customary post-adventure drink at the Sleeping Lion, you notice something weird going on with the lamps in the bar.\n\nYour first thought is that it is your imagination, but after staring at the lamps intently, you see they are flickering in and out. Tech lamps, as opposed to normal gas-burning ones, have been known to be a bit unreliable.\n\nAs if on cue, the lamps suddenly go out completely, leaving the room pitch-black.",
     "optionA": {
       "choice": "Offer to fix the lamps. It shouldn't be too hard with a bit of technical know-how.",
       "outcome": [
@@ -514,7 +514,7 @@
       "choice": "Take the opportunity to steal some valuables from drunk patrons in the dark.",
       "outcome": [
         {
-          "text": "{Scoundrel}, {Mindthief}, {Eclipse}: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, hut even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation."
+          "text": "{Scoundrel}, {Mindthief}, {Eclipse}: The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.\n\nGain 10 collective gold.\n\nOTHERWISE: You attempt to lighten some purses, but even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.\n\nLose 1 reputation."
         }
       ]
     }
@@ -541,7 +541,7 @@
   },
   {
     "id": 28,
-    "text": "Ah, the Sleeping Lion. Surely there is no better place to get a drink and relax after clearing out some dank dungeon.\n\nOn this particular occasion, though, you are approached by a heavily scarred Inox. She sits at your table and pushes forward a piece of paper.\n\n\"An interested party would like to hire you to steal a valuable figurine from a residence in the Battlements.\" she says matter-of-factlv. \"The details are on the paper. Meet me in the hack alley in two days' time after the job is done.\"",
+    "text": "Ah, the Sleeping Lion. Surely there is no better place to get a drink and relax after clearing out some dank dungeon.\n\nOn this particular occasion, though, you are approached by a heavily scarred Inox. She sits at your table and pushes forward a piece of paper.\n\n\"An interested party would like to hire you to steal a valuable figurine from a residence in the Battlements.\" she says matter-of-factly. \"The details are on the paper. Meet me in the hack alley in two days' time after the job is done.\"",
     "optionA": {
       "choice": "Accept the mysterious job. You can handle anything.",
       "outcome": [
@@ -581,7 +581,7 @@
   },
   {
     "id": 30,
-    "text": "As you shop for supplies at the Sinking Market, your hand instinctively goes for the purse at vour waist.\n\nIt's gone!\n\nYou quickly scan the crowd and see a small Vermling darting away from you, heading directly toward a sewer grating.",
+    "text": "As you shop for supplies at the Sinking Market, your hand instinctively goes for the purse at your waist.\n\nIt's gone!\n\nYou quickly scan the crowd and see a small Vermling darting away from you, heading directly toward a sewer grating.",
     "optionA": {
       "choice": "Give chase! No one steals from you and gets away with it.",
       "outcome": [
