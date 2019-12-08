@@ -371,7 +371,7 @@
       ]
     },
     "optionB": {
-      "choice": "Attend the wedding and bring a mundane gift. /",
+      "choice": "Attend the wedding and bring a mundane gift.",
       "outcome": [
         {
           "text": "REPUTATI0N < -4: You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.\n\nLose 5 collective gold.\n\nLose 1 reputation.\n\nOTHERWISE: You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.\n\nLose 5 collective gold."
