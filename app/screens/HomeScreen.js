@@ -6,7 +6,7 @@ import defaultData from '../data/events.json'
 
 const cards = defaultData
 
-const HomeScreen: () => React$Node = () => {
+const HomeScreen = ({navigation}) => {
   const [side, setSide] = useState('front');
   const [currentCard, setCard] = useState(null)
   const flipCard = () => {
@@ -29,6 +29,10 @@ const HomeScreen: () => React$Node = () => {
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
+        <Button
+          onPress={() => navigation.navigate('Edit')}
+          title="Edit"
+        />
         <Button title="Draw" onPress={drawCard} />
         { currentCard &&
           <>
