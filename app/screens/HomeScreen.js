@@ -10,10 +10,6 @@ const HomeScreen = ({navigation}) => {
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
-        <Button
-          onPress={() => navigation.navigate('Edit')}
-          title="Edit"
-        />
         <Button title="Draw" onPress={drawCard} />
         { currentCard &&
           <>
