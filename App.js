@@ -5,17 +5,20 @@ import { NavigationNativeContainer } from '@react-navigation/native';
 import HomeScreen from './app/screens/HomeScreen'
 import EditScreen from './app/screens/EditScreen'
 
+import { CardDeckProvider } from './app/contexts/CardDeckContext'
+
 const Drawer = createDrawerNavigator();
 
-const App: () => React$Node = () => {
-
+const App = () => {
   return (
-    <NavigationNativeContainer>
-      <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Edit" component={EditScreen} />
-      </Drawer.Navigator>
-    </NavigationNativeContainer>
+    <CardDeckProvider>
+      <NavigationNativeContainer>
+        <Drawer.Navigator initialRouteName="Home">
+          <Drawer.Screen name="Home" component={HomeScreen} />
+          <Drawer.Screen name="Edit" component={EditScreen} />
+        </Drawer.Navigator>
+      </NavigationNativeContainer>
+    </CardDeckProvider>
   );
 };
 

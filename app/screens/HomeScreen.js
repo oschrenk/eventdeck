@@ -1,30 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {SafeAreaView, Button, ImageBackground} from 'react-native';
 
 import Card from '../components/Card';
-import defaultData from '../data/events.json'
-
-const cards = defaultData
+import { useCardDeck } from "../contexts/CardDeckContext";
 
 const HomeScreen = ({navigation}) => {
-  const [side, setSide] = useState('front');
-  const [currentCard, setCard] = useState(null)
-  const flipCard = () => {
-    if(side === 'front')
-      setSide('back');
-    else
-      setSide('front');
-  }
-  const drawCard = () => {
-    const newCardId = Math.floor((Math.random() * cards.length) + 1);
-    const newCard = cards.find(c => c.id === newCardId)
-    setCard(newCard)
-    setSide('front')
-  }
-  const putBack = () => {
-    setCard(null)
-    setSide('front')
-  }
+  const { currentCard, side, drawCard, flipCard, putBack } = useCardDeck()
 
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
