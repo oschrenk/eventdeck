@@ -1,5 +1,5 @@
 import React from "react";
-import {Button, ImageBackground, FlatList, SafeAreaView} from 'react-native';
+import {ImageBackground, FlatList, SafeAreaView} from 'react-native';
 
 import Checkbox from 'react-native-modest-checkbox'
 
@@ -11,11 +11,6 @@ const EditScreen = ({navigation}) => {
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
-        <Button
-          onPress={() => navigation.navigate('Home')}
-          title="Home"
-        />
-
         <FlatList
           data={allCardNumbers}
           renderItem={({ item }) =>
