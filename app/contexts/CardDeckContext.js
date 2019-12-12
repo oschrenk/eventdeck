@@ -4,11 +4,14 @@ import defaultData from '../data/events.json'
 
 const CardDeckContext = React.createContext([{}, () => {}]);
 
+const allCardNumbers = defaultData.map(e => e.id)
+
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
     side: 'front',
     currentCard: null,
-    cards: defaultData
+    cards: defaultData,
+    available: new Set(allCardNumbers)
   });
 
   return (
@@ -30,15 +33,18 @@ const useCardDeck = () => {
   }
 
   const flipCard = () => {
-    console.log("flip", state.side)
     if(state.side === 'front')
       setSide('back')
     else
       setSide('front')
   }
 
+  const pickAvailable = () => {
+    return Math.floor((Math.random() * state.available.size) + 1);
+  }
+
   const drawCard = () => {
-    const newCardId = Math.floor((Math.random() * state.cards.length) + 1);
+    const newCardId = pickAvailable()
     const newCard = state.cards.find(c => c.id === newCardId)
     setCard(newCard)
     setSide('front')
@@ -48,14 +54,34 @@ const useCardDeck = () => {
     setCard(null)
     setSide('front')
   }
+
+  const destroy = (id) => {
+    toggleAvailable({label: id.toString(), checked: false})
+    setCard(null)
+    setSide('front')
+  }
+
+  const toggleAvailable = (item) => {
+    if (item.checked) {
+      state.available.add(parseInt(item.label))
+      setState(state => ({ ...state, available: state.available }));
+    } else {
+      state.available.delete(parseInt(item.label))
+      setState(state => ({ ...state, available: state.available }));
+    }
+  }
+
   return {
     cards: state.cards,
     currentCard: state.currentCard,
     side: state.side,
+    available: state.available,
     drawCard,
     flipCard,
-    putBack
+    putBack,
+    destroy,
+    toggleAvailable
   }
 };
 
-export { CardDeckContext, CardDeckProvider, useCardDeck };
+export { CardDeckContext, CardDeckProvider, useCardDeck, allCardNumbers };

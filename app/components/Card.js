@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, ImageBackground } from 'react-native';
+import { Button, Text, View, ImageBackground } from 'react-native';
 
 const enhance = (text) => {
   return text;
