@@ -1,11 +1,11 @@
 export const backText = {
-  fontFamily: 'Nyala',
+  fontFamily: 'HighTowerText-Italic',
   fontSize: 15,
   color: 'white',
 };
 
 export const frontText = {
-  fontFamily: 'Nyala',
+  fontFamily: 'HighTowerText-Italic',
   fontSize: 16,
   color: 'white',
 };

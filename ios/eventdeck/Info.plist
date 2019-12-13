@@ -56,6 +56,7 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>Nyala.ttf</string>
+		<string>HighTowerText-Italic.ttf</string>
 	</array>
 </dict>
 </plist>
