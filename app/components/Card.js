@@ -1,10 +1,24 @@
 import React from 'react';
 import { Text, View, ImageBackground } from 'react-native';
+import Mustache from 'mustache'
 
 import { backText, frontText, bold } from '../styles/typography'
 
-const enhance = (text) => {
-  return text;
+const view = {
+  Scoundrel: "SCOUNDREL",
+  Mindthief: "MINDTHIEF",
+  Eclipse: "ECLIPSE",
+  Brute: "BRUTE",
+  Cragheart: "CRAGHEART",
+  LightningBolts: "LIGHTNINGbOLTS",
+  Triangles: "TRIANGLES",
+  Tinkerer: "TINKERER",
+  Spellweaver: "SPELLWEAVER",
+  PointyHead: "POINTYhEAD",
+  Saw: "SAW",
+  MusicNote: "MUSICnOTE",
+  Check: "CHECK",
+  Bless: "BLESS"
 }
 
 const Bold = ({text}) => {
@@ -12,6 +26,11 @@ const Bold = ({text}) => {
     <Text style={bold}>{text}</Text>
   )
 }
+
+const enhance = (text) => {
+  return Mustache.render(text, view);
+}
+
 
 const Front = (props) => {
   return (
