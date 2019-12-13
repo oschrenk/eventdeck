@@ -1,6 +1,6 @@
 export const backText = {
   fontFamily: 'HighTowerText-Italic',
-  fontSize: 15,
+  fontSize: 16,
   color: 'white',
 };
 
