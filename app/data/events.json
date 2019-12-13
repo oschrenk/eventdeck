@@ -74,7 +74,7 @@
       "choice": "Reassure the boy and go find the cat.",
       "outcome": [
         {
-          "text": "You approach the foreboding house full of heroic bravado. There's certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. By the time you find the cat hiding under a burned-out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found.\n\nLose 1 {{{Check}}} each.\n\nGain 1 reputation."
+          "text": "You approach the foreboding house full of heroic bravado. There's certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. By the time you find the cat hiding under a burned-out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found.\n\nLose 1 {{Check}} each.\n\nGain 1 reputation."
         }
       ]
     }
@@ -86,7 +86,7 @@
       "choice": "Go help lay the foundation.",
       "outcome": [
         {
-          "text": "Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\nLose 1 {{{Check}}}\n\nGain 1 reputation.\n\nGain 1 prosperity."
+          "text": "Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.\n\nLose 1 {{Check}}\n\nGain 1 reputation.\n\nGain 1 prosperity."
         }
       ]
     },
@@ -234,14 +234,14 @@
       "choice": "Power through the pain. You will not be bested!",
       "outcome": [
         {
-          "text": "You emit a primal yell and continue eating. Pie after pie, your willpower cannot be broken, and eventually the sailors are forced to concede. However, you cannot even stand to shake your foes' hands. Your legs are boneless and your stomach feels worse than it has ever felt before. You have earned glory and prize money, but all you want to do is lie down and wait for the horror to pass.\n\nLose 1 {{{Check}}}.\n\nGain 10 gold each.\n\nGain 1 reputation."
+          "text": "You emit a primal yell and continue eating. Pie after pie, your willpower cannot be broken, and eventually the sailors are forced to concede. However, you cannot even stand to shake your foes' hands. Your legs are boneless and your stomach feels worse than it has ever felt before. You have earned glory and prize money, but all you want to do is lie down and wait for the horror to pass.\n\nLose 1 {{Check}}.\n\nGain 10 gold each.\n\nGain 1 reputation."
         }
       ]
     }
   },
   {
     "id": 13,
-    "text": "You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you sec a Quatryl standing in front of a small cart laden with plates of food and curious cont raptions.\n\n\"Come try the delicacies of the East!\" the Quatryl barks. \"Food enhanced with science!  Flavors beyond your wildest imagination!\"",
+    "text": "You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you see a Quatryl standing in front of a small cart laden with plates of food and curious cont raptions.\n\n\"Come try the delicacies of the East!\" the Quatryl barks. \"Food enhanced with science!  Flavors beyond your wildest imagination!\"",
     "optionA": {
       "choice": "Stop and try the food.",
       "outcome": [
@@ -294,7 +294,7 @@
       "choice": "Panic and kill the guard, then dispose of both corpses.",
       "outcome": [
         {
-          "text": "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you.\n\nPAY 15 COLLECTIVE GOLD: You go looking someone who can properly dispose of the mess. It's not cheap, but one of your contacts promises to make the bodies disappear.\n\nNo effect.\n\nOTHERWISE: Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.\n\nLose 1 {{{Check}}}"
+          "text": "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you.\n\nPAY 15 COLLECTIVE GOLD: You go looking someone who can properly dispose of the mess. It's not cheap, but one of your contacts promises to make the bodies disappear.\n\nNo effect.\n\nOTHERWISE: Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.\n\nLose 1 {{Check}}"
         }
       ]
     }
@@ -434,7 +434,7 @@
       "choice": "Leave the criminal element alone and continue enjoying the show.",
       "outcome": [
         {
-          "text": "The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\nGain 1 {{{Check}}} each."
+          "text": "The music is too good to be interrupted You ignore the men in the back and simply have a great time.\n\nGain 1 {{Check}} each."
         }
       ]
     }
