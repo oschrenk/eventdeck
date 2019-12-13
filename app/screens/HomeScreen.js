@@ -13,16 +13,22 @@ const HomeScreen = ({navigation}) => {
         <Button title="Draw" onPress={drawCard} />
         { currentCard &&
           <>
-            <Card card={currentCard} side={side} />
-            <Button title="Flip" onPress={flipCard} />
-            { side === 'back' &&
-              <View style={{flex: 1, alignItems: 'center'}}>
-                <View style={{ flexDirection: 'row', height: 30}}>
-                  <Button style={{}} title="Put Back" onPress={putBack} />
-                  <Button style={{}} title="Destroy" onPress={() => destroy(currentCard.id)} />
+            <View style={{flex: 1, alignItems: 'center'}}>
+              <View style={{ flexDirection: 'column', height: '100%'}}>
+                <Card card={currentCard} side={side} />
+                <View style={{ height: 30}}>
+                  <Button title="Flip" onPress={flipCard} />
                 </View>
+               { side === 'back' &&
+                <View style={{alignItems: 'center'}}>
+                   <View style={{ flexDirection: 'row', height: 30}}>
+                     <Button style={{}} title="Put Back" onPress={putBack} />
+                     <Button style={{}} title="Destroy" onPress={() => destroy(currentCard.id)} />
+                   </View>
+                </View>
+               }
               </View>
-            }
+            </View>
           </>
         }
       </SafeAreaView>
