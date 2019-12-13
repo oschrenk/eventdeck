@@ -32,11 +32,11 @@ const Back = (props) => {
   return (
     <View style={{width: 378, height: 530}}>
       <ImageBackground source={require('../../assets/images/city_back.png')} style={{width: '100%', height: '100%'}}>
-        <View style={{left: 60, top: 20, width: 305, height: "50%"}}>
-          <Text style={{color: 'white', fontFamily: 'Nyala', fontSize: 16 }}>{enhance(props.card.optionA.outcome[0].text)}</Text>
+        <View style={{left: 60, top: 20, width: 280, height: "50%"}}>
+          <Text style={{color: 'white', fontFamily: 'Nyala', fontSize: 15 }}>{enhance(props.card.optionA.outcome[0].text)}</Text>
         </View>
-        <View style={{left: 60, top: 30, width: 305, height: "50%"}}>
-          <Text style={{color: 'white', fontFamily: 'Nyala', fontSize: 16 }}>{enhance(props.card.optionB.outcome[0].text)}</Text>
+        <View style={{left: 60, top: 25, width: 280, height: "50%"}}>
+          <Text style={{color: 'white', fontFamily: 'Nyala', fontSize: 15 }}>{enhance(props.card.optionB.outcome[0].text)}</Text>
         </View>
       </ImageBackground>
     </View>
