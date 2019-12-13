@@ -1,9 +1,9 @@
 import React from "react";
 import {ImageBackground, FlatList, SafeAreaView} from 'react-native';
-
 import Checkbox from 'react-native-modest-checkbox'
 
 import { useCardDeck, allCardNumbers } from "../contexts/CardDeckContext";
+import { frontText } from '../styles/typography'
 
 const EditScreen = ({navigation}) => {
   const { available, toggleAvailable } = useCardDeck()
@@ -17,7 +17,7 @@ const EditScreen = ({navigation}) => {
             <Checkbox
               label={item.toString()}
               checked={available.has(item)}
-              labelStyle={{color: 'black', fontFamily: 'Nyala', fontSize: 16}}
+              labelStyle={frontText}
               onChange={(item) => toggleAvailable(item)}
             />
           }
