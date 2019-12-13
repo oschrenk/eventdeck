@@ -1,10 +1,10 @@
 import React from 'react';
-import {Button, ImageBackground, SafeAreaView, Text, View} from 'react-native';
+import {Button, ImageBackground, SafeAreaView, View} from 'react-native';
 
 import Card from '../components/Card';
 import { useCardDeck } from "../contexts/CardDeckContext";
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = () => {
   const { currentCard, side, drawCard, flipCard, putBack, destroy } = useCardDeck()
 
   return (
