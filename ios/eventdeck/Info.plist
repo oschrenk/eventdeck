@@ -57,6 +57,7 @@
 	<array>
 		<string>Nyala.ttf</string>
 		<string>HighTowerText-Italic.ttf</string>
+		<string>HighTowerText-Bold.ttf</string>
 	</array>
 </dict>
 </plist>
