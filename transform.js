@@ -119,7 +119,7 @@ try {
     e.id = e.number
     delete e.number
 
-    var regex = /(\{\w{5,20}\})/;
+    var regex = /(\{\w{3,20}\})/g;
     e.optionA.outcome = e.optionA.outcome.replace(regex, "\{$1\}");
     e.optionB.outcome = e.optionB.outcome.replace(regex, "\{$1\}");
 
