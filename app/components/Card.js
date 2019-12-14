@@ -55,15 +55,30 @@ const Front = (props) => {
   );
 }
 
+const Outcome = ({outcome}) => {
+  const requirement = outcome.requirement ? `${outcome.requirement}: ` : ""
+  const text = outcome.text ? `${outcome.text}` : ""
+  const effects = outcome.effects ? `${outcome.effects.join("\n")}` : ""
+  const all = `${requirement}${text}\n${effects}`
+
+  return (
+    <Text style={backText}>{enhance(all)}</Text>
+  )
+}
+
+const Outcomes = ({outcomes}) => {
+  return outcomes.map(outcome => <Outcome outcome={outcome} />)
+}
+
 const Back = (props) => {
   return (
     <View style={{width: 378, height: 530}}>
       <ImageBackground source={require('../../assets/images/city_back.png')} style={{width: '100%', height: '100%'}}>
         <View style={{left: 60, top: 20, width: 280, height: "50%"}}>
-          <Text style={backText}>{enhance(props.card.optionA.outcome[0].text)}</Text>
+          <Outcomes outcomes={props.card.optionA.outcomes} />
         </View>
         <View style={{left: 60, top: 25, width: 280, height: "50%"}}>
-          <Text style={backText}>{enhance(props.card.optionB.outcome[0].text)}</Text>
+          <Outcomes outcomes={props.card.optionB.outcomes} />
         </View>
       </ImageBackground>
     </View>
