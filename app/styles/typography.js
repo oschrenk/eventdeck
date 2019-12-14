@@ -16,3 +16,8 @@ export const bold = {
   fontSize: 16,
 };
 
+export const icon = {
+  fontFamily: 'icomoon',
+  fontSize: 16,
+};
+
