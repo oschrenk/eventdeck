@@ -744,7 +744,7 @@
       "choice": "Attempt to catch the vase.",
       "outcomes": [
         {
-          "requirement": "{{Brute}}, {Cragheart}, {LightningBolts}",
+          "requirement": "{{Brute}}, {{Cragheart}}, {{LightningBolts}}",
           "text": " You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.",
           "effects": [
             "Gain 5 collective gold."
@@ -797,7 +797,7 @@
       "choice": "Take the opportunity to steal some valuables from drunk patrons in the dark.",
       "outcomes": [
         {
-          "requirement": "{{Scoundrel}}, {Mindthief}, {Eclipse}",
+          "requirement": "{{Scoundrel}}, {{Mindthief}}, {{Eclipse}}",
           "text": " The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.",
           "effects": [
             "Gain 10 collective gold."
@@ -820,7 +820,7 @@
       "choice": "Attempt to stop the crowd from hanging the Vermling,",
       "outcomes": [
         {
-          "requirement": "{{Spellweaver}}, {PointyHead}, {MusicNote}",
+          "requirement": "{{Spellweaver}}, {{PointyHead}}, {{MusicNote}}",
           "text": " You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.",
           "effects": [
             "Gain 1 prosperity."
@@ -854,7 +854,7 @@
       "choice": "Accept the mysterious job. You can handle anything.",
       "outcomes": [
         {
-          "requirement": "{{Scoundrel}}, {Mindthief}, {Eclipse}",
+          "requirement": "{{Scoundrel}}, {{Mindthief}}, {{Eclipse}}",
           "text": " The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.",
           "effects": [
             "Gain 10 gold each."
@@ -888,7 +888,7 @@
       "choice": "Talk to the Savvas, appealing to their sense of duty and community.",
       "outcomes": [
         {
-          "requirement": "{{Cragheart}}, {Triangles}",
+          "requirement": "{{Cragheart}}, {{Triangles}}",
           "text": " The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.",
           "effects": [
             "Gain 1 prosperity."
@@ -907,7 +907,7 @@
       "choice": "Talk to the managers and attempt to get the Savvas better pay.",
       "outcomes": [
         {
-          "requirement": "{{Scoundrel}}, {Saw}, {MusicNote}",
+          "requirement": "{{Scoundrel}}, {{Saw}}, {{MusicNote}}",
           "text": " \"I-I just can't give them more money!\" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.",
           "effects": [
             "Gain 1 prosperity."
