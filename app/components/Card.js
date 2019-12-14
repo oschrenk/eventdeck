@@ -20,7 +20,9 @@ const view = {
   Saw: "<Icon name={'saw'}/>",
   MusicNote: "<Icon name={'music-note'}/>",
   Check: "<Icon name={'check'}/>",
-  Bless: "<Icon name={'bless'}/>"
+  Bless: "<Icon name={'bless'}/>",
+  Less: "{<Text>{'<'}</Text>}",
+  More: "{<Text>{'>'}</Text>}"
 }
 
 const Bold = ({text}) => {
@@ -28,9 +30,8 @@ const Bold = ({text}) => {
     <Text style={bold}>{text}</Text>
   )
 }
-
 const enhance = (text) => {
-  return Mustache.render(text, view);
+  return Mustache.render(text, view)
 }
 
 
@@ -57,6 +58,10 @@ const Front = (props) => {
   );
 }
 
+const hashCode = (s) => {
+  return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);
+}
+
 const Outcome = ({outcome}) => {
   const requirement = outcome.requirement ? `${outcome.requirement}: ` : ""
   const text = outcome.text ? `${outcome.text}` : ""
@@ -64,11 +69,12 @@ const Outcome = ({outcome}) => {
   const all = `${requirement}${text}\n${effects}`
 
   return (
-    <Text style={backText}>
+    <Text style={backText} key={hashCode(all)}>
       <JsxParser
-        components={{ Icon }}
+        components={{ Icon, Text }}
         jsx={enhance(all)}
         renderInWrapper={false}
+        disableFragments={false}
       />
     </Text>
   )
