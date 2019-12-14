@@ -58,10 +58,6 @@ const Front = (props) => {
   );
 }
 
-const hashCode = (s) => {
-  return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);
-}
-
 const Outcome = ({outcome}) => {
   const requirement = outcome.requirement ? `${outcome.requirement}: ` : ""
   const text = outcome.text ? `${outcome.text}` : ""
@@ -69,19 +65,18 @@ const Outcome = ({outcome}) => {
   const all = `${requirement}${text}\n${effects}`
 
   return (
-    <Text style={backText} key={hashCode(all)}>
+    <Text style={backText}>
       <JsxParser
         components={{ Icon, Text }}
         jsx={enhance(all)}
         renderInWrapper={false}
-        disableFragments={false}
       />
     </Text>
   )
 }
 
 const Outcomes = ({outcomes}) => {
-  return outcomes.map(outcome => <Outcome outcome={outcome} />)
+  return outcomes.map((outcome, index) => <Outcome outcome={outcome} key={index} />)
 }
 
 const Back = (props) => {
