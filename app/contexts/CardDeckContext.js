@@ -40,7 +40,8 @@ const useCardDeck = () => {
   }
 
   const pickAvailable = () => {
-    return Math.floor((Math.random() * state.available.size) + 1);
+    const index = Math.floor((Math.random() * state.available.size))
+    return [...state.available][index]
   }
 
   const drawCard = () => {

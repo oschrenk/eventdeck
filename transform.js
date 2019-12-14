@@ -63,7 +63,8 @@ const transformOutcome = (arr) => {
     } else if (o.startsWith("All start ")) {
       t = {effect: o}
     } else if (o.startsWith("Reputation")) {
-      t = {effect: o}
+      const escaped = o.replace('<', '{{{Less}}}').replace('>', '{{{More}}}')
+      t = {effect: escaped}
     } else if (o.startsWith("Add Road")) {
       t = {effect: o}
     } else if (o.startsWith("Add City")) {
@@ -77,16 +78,18 @@ const transformOutcome = (arr) => {
       }
     } else if (o.startsWith("PAY")) {
       const requirement = o.split(':')[0]
+      const escaped = requirement.replace('<', '{{{Less}}}').replace('>', '{{{More}}}')
       const text = o.split(':').slice(1).join(':')
       t = {
-        requirement,
+        requirement: escaped,
         text
       }
     } else if (o.startsWith("REPUTATION")) {
       const requirement = o.split(':')[0]
+      const escaped = requirement.replace('<', '{{{Less}}}').replace('>', '{{{More}}}')
       const text = o.split(':').slice(1).join(':')
       t = {
-        requirement,
+        requirement: escaped,
         text
       }
     } else if (o.startsWith("{{")) {
@@ -120,8 +123,8 @@ try {
     delete e.number
 
     var regex = /(\{\w{3,20}\})/g;
-    e.optionA.outcome = e.optionA.outcome.replace(regex, "\{$1\}");
-    e.optionB.outcome = e.optionB.outcome.replace(regex, "\{$1\}");
+    e.optionA.outcome = e.optionA.outcome.replace(regex, "\{\{$1\}\}");
+    e.optionB.outcome = e.optionB.outcome.replace(regex, "\{\{$1\}\}");
 
     e.optionA.outcome = e.optionA.outcome.split("\n\n")
     e.optionB.outcome = e.optionB.outcome.split("\n\n")
