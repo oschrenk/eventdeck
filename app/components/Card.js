@@ -10,13 +10,13 @@ const view = {
   Eclipse: "ECLIPSE",
   Brute: "BRUTE",
   Cragheart: "CRAGHEART",
-  LightningBolts: "LIGHTNINGbOLTS",
+  LightningBolts: "LIGHTNINGBOLTS",
   Triangles: "TRIANGLES",
   Tinkerer: "TINKERER",
   Spellweaver: "SPELLWEAVER",
-  PointyHead: "POINTYhEAD",
+  PointyHead: "POINTYHEAD",
   Saw: "SAW",
-  MusicNote: "MUSICnOTE",
+  MusicNote: "MUSICNOTE",
   Check: "CHECK",
   Bless: "BLESS"
 }
