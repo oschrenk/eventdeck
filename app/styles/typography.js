@@ -1,16 +1,18 @@
 export const backText = {
   fontFamily: 'HighTowerText-Italic',
-  fontSize: 16,
+  fontSize: 15,
   color: 'white',
 };
 
 export const frontText = {
   fontFamily: 'HighTowerText-Italic',
-  fontSize: 16,
+  fontSize: 15,
   color: 'white',
 };
 
 export const bold = {
-  fontWeight: 'bold'
+  fontFamily: 'HighTowerText-Bold',
+  fontWeight: 'bold',
+  fontSize: 16,
 };
 
