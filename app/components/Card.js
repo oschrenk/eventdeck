@@ -3,22 +3,24 @@ import { Text, View, ImageBackground } from 'react-native';
 import Mustache from 'mustache'
 
 import { backText, frontText, bold } from '../styles/typography'
+import Icon from './Icon'
+import JsxParser from 'react-jsx-parser'
 
 const view = {
-  Scoundrel: "SCOUNDREL",
-  Mindthief: "MINDTHIEF",
-  Eclipse: "ECLIPSE",
-  Brute: "BRUTE",
-  Cragheart: "CRAGHEART",
-  LightningBolts: "LIGHTNINGBOLTS",
-  Triangles: "TRIANGLES",
-  Tinkerer: "TINKERER",
-  Spellweaver: "SPELLWEAVER",
-  PointyHead: "POINTYHEAD",
-  Saw: "SAW",
-  MusicNote: "MUSICNOTE",
-  Check: "CHECK",
-  Bless: "BLESS"
+  Scoundrel: "<Icon name={'scoundrel'}/>",
+  Mindthief: "<Icon name={'mindthief'}/>",
+  Eclipse: "<Icon name={'eclipse'}/>",
+  Brute: "<Icon name={'brute'}/>",
+  Cragheart: "<Icon name={'cragheart'}/>",
+  LightningBolts: "<Icon name={'eclipse'}/>",
+  Triangles: "<Icon name={'triangles'}/>",
+  Tinkerer: "<Icon name={'tinkerer'}/>",
+  Spellweaver: "<Icon name={'spellweaver'}/>",
+  PointyHead: "<Icon name={'pointy-head'}/>",
+  Saw: "<Icon name={'saw'}/>",
+  MusicNote: "<Icon name={'music-note'}/>",
+  Check: "<Icon name={'check'}/>",
+  Bless: "<Icon name={'bless'}/>"
 }
 
 const Bold = ({text}) => {
@@ -62,7 +64,13 @@ const Outcome = ({outcome}) => {
   const all = `${requirement}${text}\n${effects}`
 
   return (
-    <Text style={backText}>{enhance(all)}</Text>
+    <Text style={backText}>
+      <JsxParser
+        components={{ Icon }}
+        jsx={enhance(all)}
+        renderInWrapper={false}
+      />
+    </Text>
   )
 }
 
