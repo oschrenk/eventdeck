@@ -22,7 +22,9 @@ const view = {
   Check: "<Icon name={'check'}/>",
   Bless: "<Icon name={'bless'}/>",
   Less: "{<Text>{'<'}</Text>}",
-  More: "{<Text>{'>'}</Text>}"
+  More: "{<Text>{'>'}</Text>}",
+  Remove: "<Icon name={'remove-from-game'} style={{fontsize: 32}}/>",
+  Return: "<Icon name={'return-to-deck'} style={{fontsize: 32}}/>",
 }
 
 const Bold = ({text}) => {
@@ -65,13 +67,23 @@ const Outcome = ({outcome}) => {
   const all = `${requirement}${text}\n${effects}`
 
   return (
-    <Text style={backText}>
-      <JsxParser
-        components={{ Icon, Text }}
-        jsx={enhance(all)}
-        renderInWrapper={false}
-      />
-    </Text>
+    <View>
+      <Text style={backText}>
+        <JsxParser
+          components={{ Icon, Text }}
+          jsx={enhance(all)}
+          renderInWrapper={false}
+        />
+      </Text>
+      <Text style={backText}>
+        <JsxParser
+          components={{ Icon, Text }}
+          jsx={enhance(outcome.resolve)}
+          renderInWrapper={false}
+          onError={(o) => console.log(o)}
+        />
+      </Text>
+    </View>
   )
 }
 
