@@ -23,8 +23,8 @@ const view = {
   Bless: "<Icon name={'bless'}/>",
   Less: "{<Text>{'<'}</Text>}",
   More: "{<Text>{'>'}</Text>}",
-  Remove: "<Icon name={'remove-from-game'} style={{fontsize: 32}}/>",
-  Return: "<Icon name={'return-to-deck'} style={{fontsize: 32}}/>",
+  Remove: "<Icon name={'remove-from-game'} style={{fontSize: 32}}/>",
+  Return: "<Icon name={'return-to-deck'} style={{fontSize: 32}}/>",
 }
 
 const Bold = ({text}) => {
