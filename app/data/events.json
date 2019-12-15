@@ -10,7 +10,8 @@
           "effects": [
             "Gain 10 experience each.",
             "Either lose 5 gold each or lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -21,7 +22,8 @@
           "text": "After restraining the enraged Inox and offering to replace the drinks of a few of the more belligerent patrons, you calm the place down a bit. Some of the non-human patrons are understandably on edge, but the proprietor thanks you for your efforts and reimburses you for the drinks.",
           "effects": [
             "Gain 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -37,11 +39,13 @@
           "text": " You hand over the gold and take hold of the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn't pay off.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
-          "text": " \"Bah! You don't have enough. Come back when you do!\" No effect."
+          "text": " \"Bah! You don't have enough. Come back when you do!\" No effect.",
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -52,7 +56,8 @@
           "text": "You laugh and gesture the Vermling away. You can recognize a low-life swindler when you see one. And that piece of garbage was just...foul.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -69,11 +74,13 @@
           "effects": [
             "Gain 1 collective \"Curious Gear\" (Item 125).",
             "Global Achievement: \"Ancient Technology.\""
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
-          "text": " \"Bah! You don't have enough. Come back when you do!\""
+          "text": " \"Bah! You don't have enough. Come back when you do!\"",
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -84,7 +91,8 @@
           "text": "You laugh and gesture the Vermling away. You can recognize a low-life swindler when you see one. And that piece of garbage was just..foul.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -99,7 +107,8 @@
           "text": "You shake your head and direct the boy to go find his mother. With any luck she will knock some sense into him so that he stops troubling strangers with such trivial matters.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -111,7 +120,8 @@
           "effects": [
             "Lose 1 {{{Check}}} each.",
             "Gain 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -128,7 +138,8 @@
             "Lose 1 {{{Check}}}",
             "Gain 1 reputation.",
             "Gain 1 prosperity."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -140,7 +151,8 @@
           "effects": [
             "Gain 5 gold each.",
             "Reputation {{{Less}}} -4: Gain 5 additional gold each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -156,7 +168,8 @@
           "effects": [
             "Gain 5 experience each.",
             "Gain 1 prosperity."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -168,7 +181,8 @@
           "effects": [
             "Gain Random Item Design.",
             "Reputation {{{More}}} 4: Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -185,7 +199,8 @@
             "Gain 5 gold each.",
             "Reputation {{{More}}} 9: lose 1 reputation.",
             "Reputation {{{Less}}} -4: Gain 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -197,7 +212,8 @@
           "effects": [
             "Reputation {{{More}}} 4: Gain 1 reputation.",
             "Reputation {{{Less}}} -9: Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -214,14 +230,16 @@
           "effects": [
             "Unlock \"Sunken Vessel\" 93 (N-17)",
             "Party Achievement: \"A Map to Treasure.\""
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -232,7 +250,8 @@
           "text": "Wary of the merchant's overly exuberant nature, you politely decline his offer and go about your intended business.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -248,7 +267,8 @@
           "effects": [
             "Gain 10 gold each.",
             "Reputation {{{Less}}} -9: Gain 5 additional gold each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -259,7 +279,8 @@
           "text": "You sleep off the previous nights revelries and approach the Captain of the Guard. \"This is wonderful news! With attacks on the city becoming ever more frequent our blacksmiths are having trouble keeping up with our demands. And the food should help considerably if we ever find ourselves under siege. This is truly a big help to the city.\"",
           "effects": [
             "Gain 1 prosperity."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -275,14 +296,16 @@
           "text": " You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as \"uncanny\" You leave the table empty handed.",
           "effects": [
             "Lose 5 gold each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " The man clearly intends to cheat you out of your hard-earned money. He's not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.",
           "effects": [
             "Gain 5 gold each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -293,7 +316,8 @@
           "text": "You laugh and wave away the man's offer. You get all the excitement you need fighting toe-to-toe against vicious monsters. In combat, what matters most is planning and tactics, which are far more interesting than some random roll of the dice.",
           "effects": [
             "Gain 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -310,14 +334,16 @@
           "effects": [
             "Gain Random Item Design.",
             "Reputation {{{More}}} 9: Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " You try to pay the Harrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.",
           "effects": [
             "Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -328,7 +354,8 @@
           "text": "You loudly refuse the Harrower's offer and continue about your business. That thing should know better than to stray from the Sinking Market.",
           "effects": [
             "Reputation {{{Less}}} -4: Gain 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -343,7 +370,8 @@
           "text": "You put down uour utensils and yield to the sailors. They roar with pride and slap you on the back. Unfortunately, the sudden jolt doesn't sit well with your stomach, and soon all the pies you ate are coming back up, much to the disgust of the gathered crowd.",
           "effects": [
             "Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -356,7 +384,8 @@
             "Lose 1 {{{Check}}}.",
             "Gain 10 gold each.",
             "Gain 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -372,7 +401,8 @@
           "effects": [
             "All start scenario with {{{Bless}}}.",
             "Lose 3 gold each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -383,7 +413,8 @@
           "text": "After a quick glance at the cart, you are not even sure how you would go about eating most of the food Best to play it safe in these situations and stick to what you know will fill you up cheaply.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -398,7 +429,8 @@
           "text": "The crowd parts as you approach the dock with weapons drawn. You step onto the soft wood and the Lurkers turn toward you and stop clacking. They all hiss and brandish their claws in aggression. You charge forward and meet the threat head-on, hacking away at their carapaces until they scuttle off the dock and back into the water.",
           "effects": [
             "Gain 10 experience each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -409,7 +441,8 @@
           "text": "The crowd parts as you move toward the dock with both confidence and care. The Lurkers notice your approach and continue to clack in your direction. You call out to them and ask why they are here, but all you get in response is a change in the tempo of their clacking. When you express confusion, they clack again in frustration and scuttle back into the ocean. The crowd is very impressed that you managed to ward off the creatures without using force.",
           "effects": [
             "Gain 2 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -425,14 +458,16 @@
           "text": " You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story. After a few more questions, he allows you to leave and clean up.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously. Luckily your weapons don't match the man's wounds and the guards let you go, but they do so with a mistrustful glare.",
           "effects": [
             "Lose 2 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -440,21 +475,24 @@
       "choice": "Panic and kill the guard, then dispose of both corpses.",
       "outcomes": [
         {
-          "text": "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you."
+          "text": "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you.",
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "PAY 15 COLLECTIVE GOLD",
           "text": " You go looking someone who can properly dispose of the mess. It's not cheap, but one of your contacts promises to make the bodies disappear.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.",
           "effects": [
             "Lose 1 {{{Check}}}"
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -470,14 +508,16 @@
           "text": " You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if you pay his criminal fine. The guards cuff the boy's ear and set him free.",
           "effects": [
             "Add City Event 70 to the deck."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -488,7 +528,8 @@
           "text": "There are repercussions to getting caught, and like the guard said, sometimes there's no way out of it. You owe the boy nothing, and so let the guards take him away.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -503,7 +544,8 @@
           "text": "You slam the strange coin back down onto the Savvas' display in anger. It reaches out to grab the coin, but you take hold of its arm and demand a proper payment. Wordlessly, it looks at you with disdain and throws a handful of gold in your face. You shield your eyes and move to draw your weapon, but when you look around, the Savvas and its goods are no longer to be found. You sullenly gather the coins it threw and move on.",
           "effects": [
             "Gain 10 collective gold."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -514,7 +556,8 @@
           "text": "You calmly assess that the coin may possess much more value than it appears to have. You head to the University and spend hours looking through old records to no avail. You end the day in a tavern, easing the frustration with a drink and loud laments about the coin.\n\n\"Those markings are very interesting.\" You look up to see an Aesther standing over you. \"They describe a special meeting place. I can show you where.\"",
           "effects": [
             "Unlock \"Temple of the Eclipse\" 81 (D-2)."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -529,7 +572,8 @@
           "text": "You pull your arm away from her filthy grasp and step away, making apologies for being too busy. Your excuses lack the proper tact, however, and soon the woman is bawling in the street, lamenting that no one will help her and how the rats will kill her in her sleep, then feast on her corpse. The whole speech is very graphic, and passersby begin to give you odd looks, wondering what you could have done to upset the poor woman so intensely.",
           "effects": [
             "Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -540,7 +584,8 @@
           "text": "You smile broadly and ask the woman to lead you to her house. It is a ramshackle dwelling half sunk into the muddy foundation. And inside there are certainly a lot of rats. You kill as many as you can, but in her cellar you find a large hole leading to a section of sewer that recently collapsed, leaving the pests with nowhere else to go. The woman thanks you for at least helping her to he able to sleep tonight and hands you a few coins.",
           "effects": [
             "Gain 2 gold each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -556,18 +601,21 @@
           "text": " You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk ol the town.",
           "effects": [
             "Gain 2 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "REPUTATION {{{Less}}} 10, PAY 20 COLLECTIVE COLD",
           "text": " You bring a very expensive vase as a gift, but you can't seem to catch the father of the bride's eve to present it at the right time.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
-          "text": " Read outcome B."
+          "text": " Read outcome B.",
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -580,14 +628,16 @@
           "effects": [
             "Lose 5 collective gold.",
             "Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.",
           "effects": [
             "Lose 5 collective gold."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -603,7 +653,8 @@
           "text": " You head to the warehouse and watch in silence as a number of heavy crates are loaded onto a cart. You then escort the cart to the West Gate. No thefts are attempted, and you are paid well.",
           "effects": [
             "Gain 10 collective gold."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
@@ -611,7 +662,8 @@
           "effects": [
             "Gain 5 experience each.",
             "Gain 10 collective gold."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -622,7 +674,8 @@
           "text": "This is your night off, and you are going to spend it drinking, not guarding some snobby \"lord.\"\n\nIn the morning, you hear news that a shipment of rare minerals bound for the capital was stolen in the night. People are calling it a huge blow to the economy of the town.",
           "effects": [
             "Lose 1 prosperity."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -639,14 +692,16 @@
           "effects": [
             "Gain 5 collective gold.",
             "Add Road Event 65 to the deck."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " The man puffs up in indignation, letting you know he is insulted by your behavior. He storms out of the tavern in a rage.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -657,7 +712,8 @@
           "text": "The man thanks you profusely and gives a detailed description of his brother \"If you find him, no matter the condition, please let me know right away.\"",
           "effects": [
             "Add Road Event 65 to the deck."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -672,7 +728,8 @@
           "text": "You subtly move in the direction of the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may he a while before you are allowed back in the Brown Door. The concert was ruined.",
           "effects": [
             "Gain 2 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -683,7 +740,8 @@
           "text": "The music is too good to be interrupted You ignore the men in the back and simply have a great time.",
           "effects": [
             "Gain 1 {{{Check}}} each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -698,7 +756,8 @@
           "text": "The figure overburdened with vegetables is no match for your speed. You quickly run him down and deliver him to the city guard. Thankfully very little of the produce was damaged in the pursuit, and you are able to return it to the owner of the garden.",
           "effects": [
             "Gain 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -706,7 +765,8 @@
       "choice": "The thief had the right idea. Grab some vegetables for yourself.",
       "outcomes": [
         {
-          "text": "In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {{{Bless}}}"
+          "text": "In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {{{Bless}}}",
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -721,7 +781,8 @@
           "text": "The logging expedition heads to the outskirts of the Corpsewood and begins felling trees and transporting them back to Gloomhaven. You stay on your guard, patrolling the area and making sure there are no surprise attacks. A couple hours in, a tribe of Vermlings appear through the woods, but you are alert and prepared, dispatching them without a single casualty. The rest of the day goes by uneventfully.",
           "effects": [
             "Gain 10 experience each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -732,7 +793,8 @@
           "text": "You journey out to the Corpsewood, axe in hand and begin chopping away at the trees. You seem to have a natural skill with it, probably due to all the practice you get swinging a blade. Thanks to your help, the city is able to gather a large amount of extra wood for construction. You encounter some dangers throughout the day but nothing you cannot handle.",
           "effects": [
             "Gain 1 prosperity."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -748,14 +810,16 @@
           "text": " You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.",
           "effects": [
             "Gain 5 collective gold."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.",
           "effects": [
             "Lose 10 collective gold."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -766,7 +830,8 @@
           "text": "You watch helplessly as the vase careens out of the Valraths grasp and, once it connects with the hard ground shatters into a hundred pieces. The Valrath looks distraught and a little angry: You exchange a sympathetic glance with him and then continue about your business.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -782,14 +847,16 @@
           "text": " You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.",
           "effects": [
             "Gain 2 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -801,14 +868,16 @@
           "text": " The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.",
           "effects": [
             "Gain 10 collective gold."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " You attempt to lighten some purses, but even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.",
           "effects": [
             "Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -824,14 +893,16 @@
           "text": " You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.",
           "effects": [
             "Gain 1 prosperity."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.",
           "effects": [
             "Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -842,7 +913,8 @@
           "text": "You watch as the men move past you toward the gibbet. One carries a thick rope that he ties around the Vermling's neck. The other end of the rope is thrown over the cross beam and then the men begin pulling, hoisting the helpless thief up off his feet. He struggles in vain, a panicked look in his eyes, but eventually he stops moving. The men tie off the rope, leaving the lifeless thief hanging. People begin to mill about, many stopping to spit on the ground before returning to work.",
           "effects": [
             "Add City Event 60 to the deck."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -858,14 +930,16 @@
           "text": " The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.",
           "effects": [
             "Gain 10 gold each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn't get the figurine, and one of the guards got a pretty good look at you.",
           "effects": [
             "Lose 3 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -876,7 +950,8 @@
           "text": "You grab the Inox's arm as she is getting up to leave and push the paper back toward her. She looks incredibly angry as you explain that your group doesn't do this sort of thing. She wordlessly grabs the plans and storms out of the bar.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -892,14 +967,16 @@
           "text": " The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.",
           "effects": [
             "Gain 1 prosperity."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -911,14 +988,16 @@
           "text": " \"I-I just can't give them more money!\" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.",
           "effects": [
             "Gain 1 prosperity."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " You just can't get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains.",
           "effects": [
             "No effect."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
@@ -935,14 +1014,16 @@
           "effects": [
             "Gain 5 gold each.",
             "Gain 1 collective \"Flea-Bitten Shawl\" (Item 105)"
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         },
         {
           "requirement": "OTHERWISE",
           "text": " The Vermling disappears into the sewers, and you try to give chase. But after a few minutes you are hopelessly lost and are forced to give up.",
           "effects": [
             "Lose 5 gold each."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -953,7 +1034,8 @@
           "text": "You raise your bow and take aim at the thief. A woman screams, but you try not to let it faze you. As the Vermling pauses to open the grate, you fire the arrow and see the furry figure drop. You smile and go to retrieve your gold from the corpse. You get a lot of dirty looks, though. Apparently firing a bow on a crowded street is frowned upon.",
           "effects": [
             "Lose 1 reputation."
-          ]
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
