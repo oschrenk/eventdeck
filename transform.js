@@ -135,6 +135,20 @@ try {
     e.optionA.outcomes = groupOutcomes(e.optionA.outcome)
     e.optionB.outcomes = groupOutcomes(e.optionB.outcome)
 
+    // add default resolves
+    // e.optionA.outcomes = e.optionA.outcomes.map(o => o.resolve = "{{{Remove}}}")
+    // e.optionB.outcomes = e.optionB.outcomes.map(o => o.resolve = "{{{Remove}}}")
+
+    e.optionA.outcomes = e.optionA.outcomes.map(o => {
+      o.resolve = "{{{Remove}}}"
+      return o
+    })
+    e.optionB.outcomes = e.optionB.outcomes.map(o => {
+      o.resolve = "{{{Remove}}}"
+      return o
+    })
+
+
     delete e.optionA.outcome
     delete e.optionB.outcome
 
