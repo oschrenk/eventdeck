@@ -24,7 +24,7 @@ const map= {
   'two-minis': '\ue912'
 }
 
-export default Icon = ({name}) => {
-  return <Text style={icon}>{map[name]}</Text>
+export default Icon = ({name, style}) => {
+  return <Text style={{...icon, ...style}}>{map[name]}</Text>
 }
 
