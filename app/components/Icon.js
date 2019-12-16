@@ -21,7 +21,9 @@ const map= {
   'three-spears': '\ue90f',
   'tinkerer': '\ue910',
   'triangles': '\ue911',
-  'two-minis': '\ue912'
+  'two-minis': '\ue912',
+  'flip': '\ue913',
+  'draw': '\ue914'
 }
 
 export default Icon = ({name, style}) => {
