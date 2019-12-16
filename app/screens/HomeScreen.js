@@ -3,6 +3,7 @@ import {Button, ImageBackground, SafeAreaView, View} from 'react-native';
 
 import Card from '../components/Card';
 import { useCardDeck } from "../contexts/CardDeckContext";
+import IconButton from '../components/IconButton'
 
 const HomeScreen = () => {
   const { currentCard, side, drawCard, flipCard, putBack, destroy } = useCardDeck()
@@ -10,23 +11,25 @@ const HomeScreen = () => {
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
-        <Button title="Draw" onPress={drawCard} />
+        <View style={{ height: 54, alignItems: 'center'}}>
+          <IconButton name="draw" onPress={drawCard} style={{fontSize: 48}}/>
+        </View>
         { currentCard &&
           <>
             <View style={{flex: 1, alignItems: 'center'}}>
               <View style={{ flexDirection: 'column', height: '100%'}}>
                 <Card card={currentCard} side={side} />
-                <View style={{ height: 30}}>
-                  <Button title="Flip" onPress={flipCard} />
+                <View style={{ height: 48, alignItems: 'center'}}>
                 </View>
-               { side === 'back' &&
-                <View style={{alignItems: 'center'}}>
-                   <View style={{ flexDirection: 'row', height: 30}}>
-                     <Button style={{}} title="Put Back" onPress={putBack} />
-                     <Button style={{}} title="Destroy" onPress={() => destroy(currentCard.id)} />
+                <View>
+                   <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', height: 48}}>
+                     { side === 'back' &&
+                       <IconButton name="remove-from-game" onPress={putBack} style={{fontSize: 48}}/>}
+                     <IconButton name="flip" onPress={flipCard} style={{fontSize: 48}}/>
+                     { side === 'back' &&
+                       <IconButton name="return-to-deck" onPress={() => destroy(currentCard.id)} style={{fontSize: 48}}/>}
                    </View>
                 </View>
-               }
               </View>
             </View>
           </>

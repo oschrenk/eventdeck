@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* eventdeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* eventdeckTests.m */; };
 		04C57F1113E14873BDEE18CB /* HighTowerText-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80CC85F4FCB645D2B72AE2D8 /* HighTowerText-Italic.ttf */; };
