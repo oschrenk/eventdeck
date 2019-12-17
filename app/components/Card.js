@@ -27,6 +27,11 @@ const view = {
   Return: "<Icon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }}/>",
 }
 
+const city = {
+  back: require('../../assets/images/city_back.png'),
+  front: require('../../assets/images/city_front.png')
+}
+
 const Bold = ({text}) => {
   return (
     <Text style={bold}>{text}</Text>
@@ -40,7 +45,7 @@ const enhance = (text) => {
 const Front = (props) => {
   return (
     <View style={{width: 378, height: 530}}>
-      <ImageBackground source={require('../../assets/images/city_front.png')} style={{width: '100%', height: '100%'}}>
+      <ImageBackground source={city.front} style={{width: '100%', height: '100%'}}>
         <View style={{left: 40, top: 80, width: 305, height: "80%"}}>
           <Text style={frontText}>{props.card.text}</Text>
         </View>
@@ -94,7 +99,7 @@ const Outcomes = ({outcomes}) => {
 const Back = (props) => {
   return (
     <View style={{width: 378, height: 530}}>
-      <ImageBackground source={require('../../assets/images/city_back.png')} style={{width: '100%', height: '100%'}}>
+      <ImageBackground source={city.back} style={{width: '100%', height: '100%'}}>
         <View style={{left: 60, top: 20, width: 280, height: "50%"}}>
           <Outcomes outcomes={props.card.optionA.outcomes} />
         </View>
