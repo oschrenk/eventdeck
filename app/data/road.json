@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "type": "road",
+    "text": "\"Heading out a little late, aren't you?\" The guard at the wall looks at you passively. You grunt in response and head through the opened gate.\n\n \"Nobody's gonna go looking for your corpse if you don't return!\" the guard shouts at your back.\n\n You ended up embarking out on the road much later than you had hoped -- events in town saw to that -- but as the dusk settles on the horizon you feel confident that you are up to any thread you might face\n\n. And then begins the howling of the wolves -- vicious would beasts --  and, judging from their sounds, they seem to be getting closer.",
+    "optionA": {
+      "choice": "",
+      "outcomes": [
+        {
+          "text": "You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort of thicket filled with sticky spines.\n\nYou pull yourself out, but not before your skin is pierced in numerous places and becomes inflamed. Best to avoid this plant in the future. ",
+          "effects": [
+            "All start scenario with {{{Poison}}}•"
+          ],
+          "resolve": "{{{Return}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Let the wolves come.",
+      "outcomes": [
+        {
+          "text": "Confident that the wolves pose no significant threat, you stand your ground and prepare for battle. The pack comes — ragged and hungry slowly emerging from the dark — and surrounds your party.\n\nThere are more of them than you expected, but not enough to take you down. You suffer a bite or two, but are able to fight them off.",
+          "effects": [
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{{{Return}}}"
+        }
+      ]
+    }
+  }
+]
