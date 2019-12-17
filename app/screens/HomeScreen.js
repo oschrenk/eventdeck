@@ -4,6 +4,7 @@ import {Button, ImageBackground, SafeAreaView, View} from 'react-native';
 import Card from '../components/Card';
 import { useCardDeck } from "../contexts/CardDeckContext";
 import IconButton from '../components/IconButton'
+import ImageButton from '../components/ImageButton'
 
 const HomeScreen = () => {
   const { currentCard, side, drawCard, flipCard, putBack, destroy } = useCardDeck()
@@ -11,8 +12,9 @@ const HomeScreen = () => {
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
-        <View style={{ height: 54, alignItems: 'center'}}>
-          <IconButton name="draw" onPress={drawCard} style={{fontSize: 48}}/>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', height: 48}}>
+          <ImageButton source={require('../../assets/images/city_button.png')} onPress={drawCard} style={{ height: 40, resizeMode: 'center'}}/>
+          <ImageButton source={require('../../assets/images/road_button.png')} onPress={drawCard} style={{ height: 40, resizeMode: 'center'}}/>
         </View>
         { currentCard &&
           <>
