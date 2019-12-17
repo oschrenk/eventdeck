@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 
-import defaultData from '../data/events.json'
+import defaultData from '../data/city.json'
 
 const CardDeckContext = React.createContext([{}, () => {}]);
 
