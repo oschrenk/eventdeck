@@ -2,7 +2,7 @@
 
 SOURCE=$(mktemp)
 STUB=$(mktemp)
-TARGET="app/data/events.json"
+TARGET="app/data/city.json"
 
 curl https://raw.githubusercontent.com/oschrenk/gloomhavendb/city-events-1-to-30/src/data/events.ts -o $SOURCE
 
