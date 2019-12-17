@@ -122,6 +122,9 @@ try {
     e.id = e.number
     delete e.number
 
+    // add type
+    e['type'] = 'city'
+
     var regex = /(\{\w{3,20}\})/g;
     e.optionA.outcome = e.optionA.outcome.replace(regex, "\{\{$1\}\}");
     e.optionB.outcome = e.optionB.outcome.replace(regex, "\{\{$1\}\}");
@@ -156,7 +159,7 @@ try {
   })
 
   try {
-    const string = JSON.stringify(events, ['id', 'requirement', 'text', 'optionA', 'optionB', 'choice', 'outcomes', 'effects', 'resolve'], 2).replace(/\\n/g, "\\n")
+    const string = JSON.stringify(events, ['id', 'type', 'requirement', 'text', 'optionA', 'optionB', 'choice', 'outcomes', 'effects', 'resolve'], 2).replace(/\\n/g, "\\n")
     fs.writeFileSync(targetFile, string);
   } catch(err) {
     console.error(err);

@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "type": "city",
     "text": "You decide to unwind at the Sleeping Lion, but just as you are starting to relax, a bear of a man crashes into your table, scattering your drinks across the floor.\n\nTowering over him is a massive Inox. \"What did you say about my horns?\" the Inox shouts.\n\nThe man stands up and brushes shards of glass from his tunic. \"I said the sight of them makes me want to vomit!\"\n\nThe Inox roars and charges headlong into the man, crashing through more tables in the process. At this, the entire tavern erupts into violence. After all, when a man is deep into his drink, the last thing you want to do is knock that drink over.",
     "optionA": {
       "choice": "Join the fray! These insults will not go unanswered!",
@@ -30,6 +31,7 @@
   },
   {
     "id": 2,
+    "type": "city",
     "text": "As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n\"Hey! Over here!\" You turn in the direction of the voice to see a filthy Vermling gesturing from a dark alley. \"Yeah, you grim-looking chaps. I have something you might he interested in.\"\n\nThe Vermling holds out a piece of metal covered in sludge. \"Found this in the sewer. Writing on it I don't understand, but I know it's valuable. You can have it for ten gold!\"",
     "optionA": {
       "choice": "Pay for the thing. You never know.",
@@ -64,6 +66,7 @@
   },
   {
     "id": 3,
+    "type": "city",
     "text": "As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n\"Hey! Over here!\" You turn in the direction a of the voice to see a filthy Vermling gesturing from a dark alley \"Yeah, you grim-looking chaps. I have something you might be interested in.\"\n\nThe Vermling holds out a piece of metal covered in sludge. Found this in the sewer. Writing on it I don't understand, but I know its valuable. You can have it for ten gold!\"",
     "optionA": {
       "choice": "Pay for the thing. You never know.",
@@ -99,6 +102,7 @@
   },
   {
     "id": 4,
+    "type": "city",
     "text": "Having recently returned from your latest adventure, you are approached by a ratty-looking boy in tears.\n\n\"Please, sirs, could you please help me with my cat? He went over there, and I’m afraid.\" The boy points a dirty finger at a decrepit, abandoned building. \"I don't know what else to do.\"",
     "optionA": {
       "choice": "Find a cat? You have more important things to do.",
@@ -128,6 +132,7 @@
   },
   {
     "id": 5,
+    "type": "city",
     "text": "After resting for the evening, you start out your day noticing a great number of prominent, commanding posters around the city. Reading one, you learn that the Sanctuary of the Great Oak is laying down the foundation for a new building on the east side of Gloomhaven. Everyone is encouraged to come and help. This could be an important community event.",
     "optionA": {
       "choice": "Go help lay the foundation.",
@@ -159,6 +164,7 @@
   },
   {
     "id": 6,
+    "type": "city",
     "text": "You awake in the middle of the night to the sound of alarms ringing in the west. You recognize them as the warning clangs of an attack on the wall.\n\nAny force bold enough to assault the defenses of Gloomhaven can't be good, For a moment you are grateful for the prolific number of guards defending the city. But still, there is always the possibility that the guards may not be enough.",
     "optionA": {
       "choice": "Go aid in the defense of the city.",
@@ -189,6 +195,7 @@
   },
   {
     "id": 7,
+    "type": "city",
     "text": "Occasionally your dealings in town lead you past the bustling docks. All conversation gets drowned out by the constant din of loading and unloading cargo and crew. This makes it all the more surprising when you hear a voice above the noise directed straight at you.\n\n\"Oi! You with the hard looks and big arms! I desperately need some help o'er here! Spare a few minutes to help make sure I get out of port on time? Otherwise I'll be stuck here until tomorrow!\"",
     "optionA": {
       "choice": "Help the captain load his ship.",
@@ -220,6 +227,7 @@
   },
   {
     "id": 8,
+    "type": "city",
     "text": "On a trip to the New Market, you see a curious sea chart prominently displayed in a Valrath merchants stall.\n\n\"Ah. I see this interests you!\" he says while holding it up, taking great care not to damage it. \"I've been told this map will lead you to a location of untold riches! Wondrous beyond anything you have seen before!\"\n\nThe Valrath gestures grandly with his free hand and his smile grows wide. \"How can you say no to this? Just make me an offer!\"",
     "optionA": {
       "choice": "The map docs look valuable. Decide to bargain for it.",
@@ -258,6 +266,7 @@
   },
   {
     "id": 9,
+    "type": "city",
     "text": "After a night of heavy drinking, you get turned around while navigating the back alleys and find yourself standing before a collapsed section of bricked road that leads down into an underground tunnel.\n\nFueled by curiosity and a bit of liquid courage, you descend in search of adventure. Stumbling around in the vast network of tunnels proves rather fruitless, however, until a well-concealed passage leads you to a long-forgotten stash of weaponry and dried food.\n\nThe stuff could fetch a decent price at the Sunken Market, or you could turn it over to the city guard, which is always in need arms and rations.",
     "optionA": {
       "choice": "Sell the goods.",
@@ -287,6 +296,7 @@
   },
   {
     "id": 10,
+    "type": "city",
     "text": "Relaxing for the evening at the Sleeping Lion, a shifty-looking man approaches you, hand outstretched. In it are a pair of pale dice with crude marks scratched on them.\n\n\"Greetings, friends. You look like you could stand to liven things up a bit. Care for a quick game of bone dice with me? I'm sure we could make it interesting.\" His other hand pats a coin purse at his side.",
     "optionA": {
       "choice": "Play a game with the man. It may prove to be a good time.",
@@ -324,6 +334,7 @@
   },
   {
     "id": 11,
+    "type": "city",
     "text": "\"Please, something of interest, sirs.\" The words come through in chitters and hisses. You turn your head toward an alley in the Ward of Scales to see a Harrower dressed in crude robes and a mask, it holds out a piece of parchment.\n\n\"Something for sirs. Very powerful just five gold.\"\n\nYou can see the parchment has the designs for something on it, but still — you recognize this Harrower. It is known for trading in disreputable goods. You can't know where that parchment came from and if anyone saw you dealing with this creature...well, they might get the wrong idea.",
     "optionA": {
       "choice": "Make a deal wilh the Harrower.",
@@ -362,6 +373,7 @@
   },
   {
     "id": 12,
+    "type": "city",
     "text": "A great revelry is underway at the New Market when you arrive to purchase supplies. Investigating further, you discover the town is in the midst of a pie-eating contest.\n\nA group of large sailors sits triumphantly at a long table on a makeshift stage, crumbs and bits of fruit scattered all around. A man in the center stands and addresses the crowd.\n\n\"Can no one best our pie-eating prowess? Step up and test your mettle!\" With nothing better to do, you head up to the stage.\n\nThe contest goes well for a while as you match the others pie-for-pie, but soon your eating starts to slow, and the sailors are still going strong.",
     "optionA": {
       "choice": "Yield to the pie and admit defeat.",
@@ -392,6 +404,7 @@
   },
   {
     "id": 13,
+    "type": "city",
     "text": "You are walking across the Silent Bridge, headed toward the Sleeping Lion to get a quick meal, when you see a Quatryl standing in front of a small cart laden with plates of food and curious contraptions.\n\n\"Come try the delicacies of the East!\" the Quatryl barks. \"Food enhanced with science! Flavors beyond your wildest imagination!\"",
     "optionA": {
       "choice": "Stop and try the food.",
@@ -421,6 +434,7 @@
   },
   {
     "id": 14,
+    "type": "city",
     "text": "You hear screams from the south as you approach the docks and see a group of women running toward you in a panic.\n\n\"An invasion! They yell as they race by you, nearly knocking you over.\n\nYou hurry to the docks and find a crowd of workers on edge, armed with makeshift weapons and circling one particular pier.\n\nStanding at the far end of the wooden planks is a group of Lurkers — terrifying crab-like monsters as big as an Inox and equally ferocious. Except these Lurkers don't appear to be hostile. They are simply standing on the dock, clacking their claws in a strange rhythm.",
     "optionA": {
       "choice": "Raise arms and fight the Lurkers back into the sea.",
@@ -449,6 +463,7 @@
   },
   {
     "id": 15,
+    "type": "city",
     "text": "It was a truly marvelous night, full of alcohol and fuzzy memories. You are heading back to your rooms in high spirits when you take a wrong turn into an alley and trip over a mutilated corpse.\n\n\"What's all this then?\" You look up to see a city guard walk into the alley, annoyed by all the noise you were making in your revelry.\n\nBefore you can react, he draws his sword. \"You... what did you do?\"\n\nYou look and see that, due to the fall, your clothes are now covered in blood. The guard clearly thinks you are responsible for the man's death, This night just took a serious turn for the worse.",
     "optionA": {
       "choice": "Do your best to explain that the man was like this when you found him.",
@@ -499,6 +514,7 @@
   },
   {
     "id": 16,
+    "type": "city",
     "text": "\"Stop struggling! You're coming with me and there's nothing you can do about it!\"\n\nAhead of you in the street, you see a pair of guards scuffling with a young boy dressed in rags. \"You snatch purses, you go to the Ghost Fortress. No way around that.\"\n\n\"But my family is starving.\" the boy cries. You recognize his voice from some of your dealings in the Sunken Market. He's given you helpful tips for mercenary work on a number of occasions.",
     "optionA": {
       "choice": "Intervene on the boy's behalf.",
@@ -536,6 +552,7 @@
   },
   {
     "id": 17,
+    "type": "city",
     "text": "Returning to Gloomhaven with your latest haul of treasure, you approach the market in search of a good trade. Unfortunately, there are only a few visible stands around that are not yet packing up for the day.\n\nA robed Savvas catches your eye. It has a few strange artifacts on display, but you approach with no great expectation, hoping your goods will fetch a decent price.\n\nThe Savvas silently nods as you approach. It picks through your haul and lifts up a single item, holding out a small bag for you in exchange.\n\nPouring out the bag's contents, a single rectangular black-and-white coin lands in your palm.",
     "optionA": {
       "choice": "Demand a different payment. The single coin is an insult.",
@@ -564,6 +581,7 @@
   },
   {
     "id": 18,
+    "type": "city",
     "text": "You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n\"Oh my, don't you lot look strong.\" she says. \"Could you possibly assist me with a small problem I am having in mv cellar?\"\n\nHer eyes grow narrow. \"Rats! So many rats! I don't know where they're coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!\"\n\nShe tugs weakly at your sleeve. \"Please, can you help me?\"",
     "optionA": {
       "choice": "Decline to help the old woman.",
@@ -592,6 +610,7 @@
   },
   {
     "id": 19,
+    "type": "city",
     "text": "A curious invitation is slipped under your door in the early morning. It is for a wedding ceremony between the children of two wealthy Gloomhaven merchants. Your exploits seem to have placed you in their good graces, and so they would like you to join them on this special occasion, provided you don't show up in hlood-soaked armor. And for the love of the Great Oak, bring a gift.",
     "optionA": {
       "choice": "Attend the wedding with an expensive gift.",
@@ -644,6 +663,7 @@
   },
   {
     "id": 20,
+    "type": "city",
     "text": "You are relaxing at the Sleeping Lion when an immaculately dressed man approach your table, a fake smile plastered to his face.\n\n\"Ah, you must be the mercenaries everyone is talking about, yes? My name is Lord Greymane and I have a delicate matter to discuss. May I sit?\"\n\nYou gesture to a chair and he sits with a faint grimace. \"I am transporting some valuable goods this evening from one of my warehouses, and I have reason to believe that some of the less desirable elements of this city wish to steal from me. I would like to hire you to help guard the undertaking.\"",
     "optionA": {
       "choice": "Agree to guard the goods. It should be easy money.",
@@ -682,6 +702,7 @@
   },
   {
     "id": 21,
+    "type": "city",
     "text": "\"I've been told you are the group to talk to if you want to get something done around here.\"\n\nYou look up from your table at the Sleeping Lion to see a rustic man in leather armor standing in front of you.\n\nThis tavern may as well be your office, due to the number of people coming through the doors looking for your help. You nod at the man, and he makes his request.\n\n\"My brother went out hunting in the Corpsewood two days ago and hasn't returned since, I fear the worst. If you are traveling in that direction, I hope you wouldn't mind keeping an eye out for him.\"",
     "optionA": {
       "choice": "Demand payment up front before agreeing to look for the man's brother.",
@@ -720,6 +741,7 @@
   },
   {
     "id": 22,
+    "type": "city",
     "text": "You decide to head to the Brown Door for the evening to enjoy a Quatryl concert.\n\nCorruption and crime run rampant in the bar, but the music is unmatched in all of Cloomhaven.\n\nYou are enjoying yourself immensely when you catch a glimpse of a man in a dark, tattered robe near the back of the room. He appears to be handing vials full of red liquid to a second man.",
     "optionA": {
       "choice": "Further investigate the exchange between the men.",
@@ -748,6 +770,7 @@
   },
   {
     "id": 23,
+    "type": "city",
     "text": "You are walking home late at night when you hear some suspicious sounds coming from a nearby garden.\n\nYou move to investigate, and a shadowy figure bolts in the opposite direct carrying an armful of vegetables.",
     "optionA": {
       "choice": "Give chase. Thieves must be brought to justice.",
@@ -773,6 +796,7 @@
   },
   {
     "id": 24,
+    "type": "city",
     "text": "Upon returning to the city after your latest adventure, you are approached by a high-ranking guard at the gate.\n\n\"Ah. good, I'm glad to have caught you, the guard begins. The capital has fallen behind on shipments of wood to Gloomhaven, so now it falls to us to pick up the slack so that construction of important city buildings doesn't stagnate.\"\n\nThe guard points to the east. We're forming an expedition to gather logs from the Corpsewood. We could use your help, either to guard against enemies or to chop down trees.\"",
     "optionA": {
       "choice": "Join the expedition as a guard.",
@@ -801,6 +825,7 @@
   },
   {
     "id": 25,
+    "type": "city",
     "text": "On a trip to the Coin District, you catch sight of an old wiry Valrath carrying a large, intricate vase out his front door.\n\nAs you get closer, the Valrath begins to struggle with the vase, sweat pouring from his brow. Under the strain, the Valrath loses his balance, and the fragile vase topples downward as he yells a string of curses.",
     "optionA": {
       "choice": "Attempt to catch the vase.",
@@ -838,6 +863,7 @@
   },
   {
     "id": 26,
+    "type": "city",
     "text": "While enjoying your customary post-adventure drink at the Sleeping Lion, you notice something weird going on with the lamps in the bar.\n\nYour first thought is that it is your imagination, but after staring at the lamps intently, you see they are flickering in and out. Tech lamps, as opposed to normal gas-burning ones, have been known to be a bit unreliable.\n\nAs if on cue, the lamps suddenly go out completely, leaving the room pitch-black.",
     "optionA": {
       "choice": "Offer to fix the lamps. It shouldn't be too hard with a bit of technical know-how.",
@@ -884,6 +910,7 @@
   },
   {
     "id": 27,
+    "type": "city",
     "text": "You are out in the Ward of Scales when you see a crowd of people forming to the south, growing louder and more dense by the second.\n\nAs you approach, you see through the angry mob a terrified Vermling being pulled in your direction by a group of gruff men.\n\n\"Dirty thief!\" a woman next to you screams. \"String it up\"\n\nGlancing behind you to where the crowd appears to be headed, you see a disused gibbet in the market square.\n\nThe men — clearly not guards — move closer.",
     "optionA": {
       "choice": "Attempt to stop the crowd from hanging the Vermling,",
@@ -921,6 +948,7 @@
   },
   {
     "id": 28,
+    "type": "city",
     "text": "Ah, the Sleeping Lion. Surely there is no better place to get a drink and relax after clearing out some dank dungeon.\n\nOn this particular occasion, though, you are approached by a heavily scarred Inox. She sits at your table and pushes forward a piece of paper.\n\n\"An interested party would like to hire you to steal a valuable figurine from a residence in the Battlements.\" she says matter-of-factly. \"The details are on the paper. Meet me in the back alley in two days' time after the job is done.\"",
     "optionA": {
       "choice": "Accept the mysterious job. You can handle anything.",
@@ -958,6 +986,7 @@
   },
   {
     "id": 29,
+    "type": "city",
     "text": "You get word from a contact that there is trouble brewing down at the East Walls and decide to investigate.\n\nWhat you find is a large contingency of the city's Savvas workforce — the best builders you'll find anywhere — in open rebellion against the construction managers, demanding better pay for the specialized work they perform. \"This city would he a lifeless pile of rocks without us!\" one of the Savvas yells. \"Its time we see some of its prosperity!\"\n\nThe manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.",
     "optionA": {
       "choice": "Talk to the Savvas, appealing to their sense of duty and community.",
@@ -1004,6 +1033,7 @@
   },
   {
     "id": 30,
+    "type": "city",
     "text": "As you shop for supplies at the Sinking Market, your hand instinctively goes for the purse at your waist.\n\nIt's gone!\n\nYou quickly scan the crowd and see a small Vermling darting away from you, heading directly toward a sewer grating.",
     "optionA": {
       "choice": "Give chase! No one steals from you and gets away with it.",
