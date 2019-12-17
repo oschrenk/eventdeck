@@ -1,17 +1,21 @@
 import React, { useContext, useState } from "react";
 
-import defaultData from '../data/city.json'
+import allCityEvents from '../data/city.json'
+import allRoadEvents from '../data/road.json'
 
 const CardDeckContext = React.createContext([{}, () => {}]);
 
-const allCardNumbers = defaultData.map(e => e.id)
+const allCityCardNumbers = allCityEvents.map(e => e.id)
 
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
     side: 'front',
     currentCard: null,
-    cards: defaultData,
-    available: new Set(allCardNumbers)
+    cards: allCityEvents.concat(allRoadEvents),
+    available: {
+      city: new Set(allCityCardNumbers),
+      road: new Set([1])
+    }
   });
 
   return (
@@ -39,14 +43,14 @@ const useCardDeck = () => {
       setSide('front')
   }
 
-  const pickAvailable = () => {
-    const index = Math.floor((Math.random() * state.available.size))
-    return [...state.available][index]
+  const pickAvailable = (type) => {
+    const index = Math.floor((Math.random() * state.available[type].size))
+    return [...state.available[type]][index]
   }
 
-  const drawCard = () => {
-    const newCardId = pickAvailable()
-    const newCard = state.cards.find(c => c.id === newCardId)
+  const drawCard = (type) => {
+    const newCardId = pickAvailable(type)
+    const newCard = state.cards.find(c => (c.id === newCardId) && c['type'] === type)
     setCard(newCard)
     setSide('front')
   }
@@ -56,18 +60,20 @@ const useCardDeck = () => {
     setSide('front')
   }
 
-  const destroy = (id) => {
-    toggleAvailable({label: id.toString(), checked: false})
+  const destroy = (card) => {
+    toggleAvailable({label: card.id.toString(), checked: false}, card[type])
     setCard(null)
     setSide('front')
   }
 
-  const toggleAvailable = (item) => {
+  const toggleAvailable = (item, type) => {
+    console.log("item", item)
+    console.log("type", type)
     if (item.checked) {
-      state.available.add(parseInt(item.label))
+      state.available[type].add(parseInt(item.label))
       setState(state => ({ ...state, available: state.available }));
     } else {
-      state.available.delete(parseInt(item.label))
+      state.available[type].delete(parseInt(item.label))
       setState(state => ({ ...state, available: state.available }));
     }
   }
@@ -85,4 +91,4 @@ const useCardDeck = () => {
   }
 };
 
-export { CardDeckContext, CardDeckProvider, useCardDeck, allCardNumbers };
+export { CardDeckContext, CardDeckProvider, useCardDeck, allCityCardNumbers };

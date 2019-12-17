@@ -13,8 +13,8 @@ const HomeScreen = () => {
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', height: 48}}>
-          <ImageButton source={require('../../assets/images/city_button.png')} onPress={drawCard} style={{ height: 40, resizeMode: 'center'}}/>
-          <ImageButton source={require('../../assets/images/road_button.png')} onPress={drawCard} style={{ height: 40, resizeMode: 'center'}}/>
+          <ImageButton source={require('../../assets/images/city_button.png')} onPress={() => drawCard('city')} style={{ height: 40, resizeMode: 'center'}}/>
+          <ImageButton source={require('../../assets/images/road_button.png')} onPress={() => drawCard('road')} style={{ height: 40, resizeMode: 'center'}}/>
         </View>
         { currentCard &&
           <>
@@ -29,7 +29,7 @@ const HomeScreen = () => {
                        <IconButton name="remove-from-game" onPress={putBack} style={{fontSize: 48}}/>}
                      <IconButton name="flip" onPress={flipCard} style={{fontSize: 48}}/>
                      { side === 'back' &&
-                       <IconButton name="return-to-deck" onPress={() => destroy(currentCard.id)} style={{fontSize: 48}}/>}
+                       <IconButton name="return-to-deck" onPress={() => destroy(currentCard)} style={{fontSize: 48}}/>}
                    </View>
                 </View>
               </View>
