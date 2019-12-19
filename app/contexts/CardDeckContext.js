@@ -92,4 +92,4 @@ const useCardDeck = () => {
   }
 };
 
-export { CardDeckContext, CardDeckProvider, useCardDeck, allCityCardNumbers };
+export { CardDeckContext, CardDeckProvider, useCardDeck, allCityCardNumbers, allRoadCardNumbers };

@@ -1,3 +1,9 @@
+export const header = {
+  fontFamily: 'HighTowerText-Bold',
+  fontSize: 24,
+  color: 'black'
+};
+
 export const backText = {
   fontFamily: 'HighTowerText-Italic',
   fontSize: 15,
