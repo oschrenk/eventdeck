@@ -508,7 +508,7 @@
           "requirement": "OTHERWISE",
           "text": " Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.",
           "effects": [
-            "Lose 1 {{{Check}}}"
+            "Lose 1 {{{Check}}}."
           ],
           "resolve": "{{{Remove}}}"
         }
@@ -793,7 +793,7 @@
         {
           "text": "In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal.",
           "effects": [
-            "All start scenario with {{{Bless}}}"
+            "All start scenario with {{{Bless}}}."
           ],
           "resolve": "{{{Remove}}}"
         }
