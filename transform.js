@@ -110,14 +110,16 @@ const transformOutcome = (arr) => {
 const [eventType, stubFile, targetFile] = process.argv.slice(2);
 
 try {
-  const tsString = fs.readFileSync(stubFile, 'utf8')
-  const events = eval(tsString)
-
   console.log("Preparing event TYPE", eventType)
   console.log("Reading from STUB", stubFile)
   console.log("Writing to TARGET", targetFile)
 
+  const tsString = fs.readFileSync(stubFile, 'utf8')
+  const events = eval(tsString)
+
   events.map( e => {
+    console.log("Preparing EVENT id", e.number)
+
     delete e.id
     delete e.verified
     delete e.imageUrl
