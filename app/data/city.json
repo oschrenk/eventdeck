@@ -204,7 +204,7 @@
       "choice": "Help the captain load his ship.",
       "outcomes": [
         {
-          "text": "What was advertised as a few minutes turns out to be an hour or two as you lug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he'll be able to set sail on time, though. He gratefully pays you, but you can't help but think that such menial labor might be beneath you.",
+          "text": "What was advertised as a few minutes turns out to be an hour or two as you lug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he'll be able to set sail on time, though. He gratefully pays you, but you can't help, but think that such menial labor might be beneath you.",
           "effects": [
             "Gain 5 gold each.",
             "Reputation {{{More}}} 9: lose 1 reputation.",
@@ -820,7 +820,7 @@
       "choice": "Join the expedition as a logger.",
       "outcomes": [
         {
-          "text": "You journey out to the Corpsewood, axe in hand and begin chopping away at the trees. You seem to have a natural skill with it, probably due to all the practice you get swinging a blade. Thanks to your help, the city is able to gather a large amount of extra wood for construction. You encounter some dangers throughout the day but nothing you cannot handle.",
+          "text": "You journey out to the Corpsewood, axe in hand and begin chopping away at the trees. You seem to have a natural skill with it, probably due to all the practice you get swinging a blade. Thanks to your help, the city is able to gather a large amount of extra wood for construction. You encounter some dangers throughout the day, but nothing you cannot handle.",
           "effects": [
             "Gain 1 prosperity."
           ],
