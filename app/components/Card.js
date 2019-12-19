@@ -19,6 +19,7 @@ const view = {
   PointyHead: "<Icon name={'pointy-head'}/>",
   Saw: "<Icon name={'saw'}/>",
   MusicNote: "<Icon name={'music-note'}/>",
+  Circles: "<Icon name={'circles'}/>",
   Check: "<Icon name={'check'}/>",
   Bless: "<Icon name={'bless'}/>",
   Less: "{<Text>{'<'}</Text>}",
