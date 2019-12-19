@@ -6,6 +6,7 @@ import allRoadEvents from '../data/road.json'
 const CardDeckContext = React.createContext([{}, () => {}]);
 
 const allCityCardNumbers = allCityEvents.map(e => e.id)
+const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
@@ -14,7 +15,7 @@ const CardDeckProvider = (props) => {
     cards: allCityEvents.concat(allRoadEvents),
     available: {
       city: new Set(allCityCardNumbers),
-      road: new Set([1])
+      road: new Set(allRoadCardNumbers)
     }
   });
 
