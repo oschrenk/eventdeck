@@ -107,11 +107,15 @@ const transformOutcome = (arr) => {
   })
 }
 
-const [stubFile, targetFile] = process.argv.slice(2);
+const [eventType, stubFile, targetFile] = process.argv.slice(2);
 
 try {
   const tsString = fs.readFileSync(stubFile, 'utf8')
   const events = eval(tsString)
+
+  console.log("Preparing event TYPE", eventType)
+  console.log("Reading from STUB", stubFile)
+  console.log("Writing to TARGET", targetFile)
 
   events.map( e => {
     delete e.id
@@ -123,7 +127,7 @@ try {
     delete e.number
 
     // add type
-    e['type'] = 'city'
+    e['type'] = eventType
 
     var regex = /(\{\w{3,20}\})/g;
     e.optionA.outcome = e.optionA.outcome.replace(regex, "\{\{$1\}\}");
