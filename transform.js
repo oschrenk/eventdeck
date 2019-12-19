@@ -92,12 +92,18 @@ const transformOutcome = (arr) => {
         requirement: escaped,
         text
       }
+    // maps against class requirements
     } else if (o.startsWith("{{")) {
-      const requirement = o.split(':')[0]
-      const text = o.split(':').slice(1).join(':')
-      t = {
-        requirement,
-        text
+      // deal with road event 28
+      if (o.includes("additional")) {
+        t = {effect: o}
+      } else {
+        const requirement = o.split(':')[0]
+        const text = o.split(':').slice(1).join(':')
+        t = {
+          requirement,
+          text
+        }
       }
     } else {
       t = { text: o }
@@ -109,6 +115,8 @@ const transformOutcome = (arr) => {
 
 const [eventType, stubFile, targetFile] = process.argv.slice(2);
 
+  const resolvedEvents = JSON.parse(fs.readFileSync("resolves.json", 'utf8'))
+
 try {
   console.log("Preparing event TYPE", eventType)
   console.log("Reading from STUB", stubFile)
@@ -118,8 +126,6 @@ try {
   const events = eval(tsString)
 
   events.map( e => {
-    console.log("Preparing EVENT id", e.number)
-
     delete e.id
     delete e.verified
     delete e.imageUrl
@@ -144,16 +150,53 @@ try {
     e.optionA.outcomes = groupOutcomes(e.optionA.outcome)
     e.optionB.outcomes = groupOutcomes(e.optionB.outcome)
 
-    // add default resolves
-    e.optionA.outcomes = e.optionA.outcomes.map(o => {
-      o.resolve = "{{{Remove}}}"
-      return o
-    })
-    e.optionB.outcomes = e.optionB.outcomes.map(o => {
-      o.resolve = "{{{Remove}}}"
+    // add esolves
+
+    // sainity check resolves
+    // warn for road only for now
+    if ((eventType === "road")) {
+      const shouldHave = e.optionA.outcomes.length + e.optionB.outcomes.length
+      const resolves = resolvedEvents[eventType][e.id]
+      if (shouldHave !== resolves.length) {
+        if ((eventType === "road") && (e.id === 28)) {
+          // deal with road event 28 and don't warn
+        } else {
+          console.error("DATA ERROR for %s:%i Should have %i but has %i", eventType, e.id, shouldHave, resolves.length)
+        }
+      }
+    }
+    e.optionA.outcomes = e.optionA.outcomes.map((o, index) => {
+
+      const res = resolvedEvents[eventType]
+
+      if ((eventType === "road") && (e.id === 28) && (o.text.includes("Read outcome"))) {
+        // deal with road event 28 and don't add resolve
+      } else {
+        if (res[e.id]) {
+          o.resolve = res[e.id][index]
+        } else {
+          console.log("Default resolve for %s:%s,%s", eventType, e.id, index)
+          o.resolve = "{{{Remove}}}"
+        }
+      }
       return o
     })
 
+    e.optionB.outcomes = e.optionB.outcomes.map((o, index) => {
+
+      const correctedIndex = e.optionB.outcomes.length + index - 1
+      const res = resolvedEvents[eventType]
+      if (res[e.id]) {
+        o.resolve = res[e.id][correctedIndex]
+        if (!o.resolve) {
+          console.log("Error resolve oob for %s:%s,%s", eventType, e.id, correctedIndex)
+        }
+      } else {
+        console.log("Default resolve for %s:%s,%s", eventType, e.id, index)
+        o.resolve = "{{{Remove}}}"
+      }
+      return o
+    })
 
     delete e.optionA.outcome
     delete e.optionB.outcome

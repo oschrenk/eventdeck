@@ -11,7 +11,7 @@
           "effects": [
             "All start scenario with {{{Poison}}}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -23,7 +23,7 @@
           "effects": [
             "All start scenario with 3 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -40,7 +40,7 @@
           "effects": [
             "All start scenario with {{{Bless}}}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -52,7 +52,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -69,7 +69,7 @@
           "effects": [
             "All start scenario with {{{Poison}}}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -81,7 +81,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -155,7 +155,7 @@
       "outcomes": [
         {
           "text": "You holt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can't catch your breath.",
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -167,7 +167,7 @@
           "effects": [
             "All start scenario with {{{Wound}}}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -214,7 +214,7 @@
           "effects": [
             "Lose 5 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -226,7 +226,7 @@
           "effects": [
             "All start scenario with 3 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -240,7 +240,7 @@
       "outcomes": [
         {
           "text": "You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Gloomhaven as you head in the opposite direction.\n\nConsume 1 collective item.",
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -252,7 +252,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -296,7 +296,7 @@
       "outcomes": [
         {
           "text": "You race forward, scanning the area for an open space where the danger from rock slides will be less severe. After dodging some rocks and getting hit by others, you find a relatively safe area and wait for the chaos to subside.\nAll start scenario with 2 damage.",
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -317,7 +317,7 @@
           "effects": [
             "All start scenario with 4 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -392,7 +392,7 @@
           "effects": [
             "All start scenario with {{{Bless}}}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -404,7 +404,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -422,7 +422,7 @@
             "All start scenario with {{{Muddle}}}.",
             "All start scenario with 2 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -434,7 +434,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -733,7 +733,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         },
         {
           "requirement": "OTHERWISE",
@@ -741,7 +741,7 @@
           "effects": [
             "Lose 5 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     },
@@ -753,7 +753,7 @@
           "effects": [
             "All start scenario with 3 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{{{Return}}}"
         }
       ]
     }
@@ -844,19 +844,14 @@
           "requirement": "PAY 1 COLLECTIVE \"MINOR STAMINA POTION\" (ITEM 013)",
           "text": " After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.",
           "effects": [
-            "Gain 10 collective gold."
+            "Gain 10 collective gold.",
+            "{{{Scoundrel}}}, {{{Saw}}}, {{{MusicNote}}}: Gain 10 additional collective gold."
           ],
           "resolve": "{{{Remove}}}"
         },
         {
-          "requirement": "{{{Scoundrel}}}, {{{Saw}}}, {{{MusicNote}}}",
-          "text": " Gain 10 additional collective gold.",
-          "resolve": "{{{Remove}}}"
-        },
-        {
           "requirement": "OTHERWISE",
-          "text": " Read outcome B.",
-          "resolve": "{{{Remove}}}"
+          "text": " Read outcome B."
         }
       ]
     },
