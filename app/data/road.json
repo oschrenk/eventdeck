@@ -305,7 +305,7 @@
       "outcomes": [
         {
           "requirement": "{{{Cragheart}}}, {{{Spellweaver}}}, {{{Triangles}}}, {{{Circles}}}",
-          "text": " You jump under an outcropping, but something is not right. Those among you attuned to the elements turn toward the face of the mountain and step into it, as though the rocks were gone. Inside, you see an odd crystal jutting out of the earth. You snatch it up and the tremors stop.",
+          "text": "You jump under an outcropping, but something is not right. Those among you attuned to the elements turn toward the face of the mountain and step into it, as though the rocks were gone. Inside, you see an odd crystal jutting out of the earth. You snatch it up and the tremors stop.",
           "effects": [
             "Add City Event 73 to the deck."
           ],
@@ -313,7 +313,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " The outcropping proves to be an unstable place to hide. You are quickly buried in rubble.",
+          "text": "The outcropping proves to be an unstable place to hide. You are quickly buried in rubble.",
           "effects": [
             "All start scenario with 4 damage."
           ],
@@ -507,7 +507,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{Less}}} -4",
-          "text": " You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. \"Go in peace, then,\" the leader says. “And stay off my land.\"",
+          "text": "You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. \"Go in peace, then,\" the leader says. “And stay off my land.\"",
           "effects": [
             "No effect."
           ],
@@ -515,7 +515,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. \"Foul creature. I curse you and your kind! Run — get off my land and never come back!\"",
+          "text": "You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. \"Foul creature. I curse you and your kind! Run — get off my land and never come back!\"",
           "effects": [
             "All start scenario with {{{Curse}}}."
           ],
@@ -545,7 +545,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{Less}}} -4",
-          "text": " You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation.",
+          "text": "You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation.",
           "effects": [
             "No effect."
           ],
@@ -553,7 +553,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " The man's speed after spending months in a jail cell is no match for your own. With the help of the guards on horseback, you quickly have him cornered and returned to the wagon.",
+          "text": "The man's speed after spending months in a jail cell is no match for your own. With the help of the guards on horseback, you quickly have him cornered and returned to the wagon.",
           "effects": [
             "Gain 1 reputation."
           ],
@@ -729,7 +729,7 @@
       "outcomes": [
         {
           "requirement": "{{{Brute}}}, {{{LightningBolts}}}",
-          "text": " The Inox in your party talks with the leader for a while and they are able to come to an agreement. They punch each other's chests, and the group lets you through.",
+          "text": "The Inox in your party talks with the leader for a while and they are able to come to an agreement. They punch each other's chests, and the group lets you through.",
           "effects": [
             "No effect."
           ],
@@ -737,7 +737,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way.",
+          "text": "The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way.",
           "effects": [
             "Lose 5 gold each."
           ],
@@ -767,7 +767,7 @@
       "outcomes": [
         {
           "requirement": "{{{Tinkerer}}}, {{{ThreeSpears}}}",
-          "text": " The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.",
+          "text": "The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.",
           "effects": [
             "All start scenario with {{{Bless}}}.",
             "Gain 1 reputation."
@@ -776,7 +776,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.",
+          "text": "You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.",
           "effects": [
             "No effect."
           ],
@@ -807,7 +807,7 @@
       "outcomes": [
         {
           "requirement": "{{{Spellweaver}}}, {{{Triangles}}}, {{{Circles}}}",
-          "text": " The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.",
+          "text": "The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.",
           "effects": [
             "No effect."
           ],
@@ -815,7 +815,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " The trees aren't part of an ambush, but that doesn't make them any easier to clear. It' s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
+          "text": "The trees aren't part of an ambush, but that doesn't make them any easier to clear. It' s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -842,7 +842,7 @@
       "outcomes": [
         {
           "requirement": "PAY 1 COLLECTIVE \"MINOR STAMINA POTION\" (ITEM 013)",
-          "text": " After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.",
+          "text": "After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.",
           "effects": [
             "Gain 10 collective gold.",
             "{{{Scoundrel}}}, {{{Saw}}}, {{{MusicNote}}}: Gain 10 additional collective gold."
@@ -851,7 +851,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " Read outcome B."
+          "text": "Read outcome B."
         }
       ]
     },
@@ -877,7 +877,7 @@
       "outcomes": [
         {
           "requirement": "{{{Cragheart}}}",
-          "text": " The Cragheart's combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.",
+          "text": "The Cragheart's combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.",
           "effects": [
             "No effect."
           ],
@@ -885,7 +885,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life.\n\nDiscard 2 cards each.",
+          "text": "The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life.\n\nDiscard 2 cards each.",
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -912,7 +912,7 @@
       "outcomes": [
         {
           "requirement": "{{{Mindthief}}}, {{{TwoMinis}}}",
-          "text": " You approach to help those still alive, but the woman in the road screams, gesturing at the Vermling in your group. You try to calm her, but it is of no use. You abandon the cause.",
+          "text": "You approach to help those still alive, but the woman in the road screams, gesturing at the Vermling in your group. You try to calm her, but it is of no use. You abandon the cause.",
           "effects": [
             "No effect."
           ],
@@ -920,7 +920,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You disperse through the scene, tending to people's wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.\n\nConsume 1 {{{SmallItem}}} item each.",
+          "text": "You disperse through the scene, tending to people's wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.\n\nConsume 1 {{{SmallItem}}} item each.",
           "effects": [
             "Gain 1 reputation."
           ],
