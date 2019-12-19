@@ -38,7 +38,7 @@
       "outcomes": [
         {
           "requirement": "PAY 10 COLLECTIVE GOLD",
-          "text": " You hand over the gold and take hold of the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn't pay off.",
+          "text": "You hand over the gold and take hold of the piece of garbage. Amidst troubling brown smears you see a lot of meaningless scratches likely made by rats and bugs. Oh well. Sometimes the long shot doesn't pay off.",
           "effects": [
             "No effect."
           ],
@@ -46,7 +46,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " \"Bah! You don't have enough. Come back when you do!\"",
+          "text": "\"Bah! You don't have enough. Come back when you do!\"",
           "effects": [
             "No effect."
           ],
@@ -76,7 +76,7 @@
       "outcomes": [
         {
           "requirement": "PAY 10 COLLECTIVE COLD",
-          "text": " You hand over the gold and take hold of the metal. You wipe off the grime and slop to discover a foreign contraption made of large gears and many moving parts. If you can figure out what it is, this device might actually be of some worth.",
+          "text": "You hand over the gold and take hold of the metal. You wipe off the grime and slop to discover a foreign contraption made of large gears and many moving parts. If you can figure out what it is, this device might actually be of some worth.",
           "effects": [
             "Gain 1 collective \"Curious Gear\" (Item 125).",
             "Global Achievement: \"Ancient Technology.\""
@@ -85,7 +85,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " \"Bah! You don't have enough. Come back when you do!\"",
+          "text": "\"Bah! You don't have enough. Come back when you do!\"",
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -237,7 +237,7 @@
       "outcomes": [
         {
           "requirement": "PAY 20 (reputation {{{Less}}} 10) or 15 (reputation {{{More}}} 9) COLLECTIVE COLD",
-          "text": " After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of \"untold treasure \"by hiring a ship.",
+          "text": "After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of \"untold treasure \"by hiring a ship.",
           "effects": [
             "Unlock \"Sunken Vessel\" 93 (N-17)",
             "Party Achievement: \"A Map to Treasure.\""
@@ -246,7 +246,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford.",
+          "text": "Despite your valiant efforts, you cannot get the merchant to lower his price to something you can afford.",
           "effects": [
             "No effect."
           ],
@@ -306,7 +306,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{More}}} -5",
-          "text": " You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as \"uncanny\" You leave the table empty handed.",
+          "text": "You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as \"uncanny\" You leave the table empty handed.",
           "effects": [
             "Lose 5 gold each."
           ],
@@ -314,7 +314,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " The man clearly intends to cheat you out of your hard-earned money. He's not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.",
+          "text": "The man clearly intends to cheat you out of your hard-earned money. He's not the only one capable of cheating, however. After a few rounds,you wipe that smile right off his face.",
           "effects": [
             "Gain 5 gold each."
           ],
@@ -344,7 +344,7 @@
       "outcomes": [
         {
           "requirement": "PAY 5 COLLECTIVE GOLD",
-          "text": " Intrigued by the parchment, you quickly make a decision to buy it off the Harrower. The exchange is fast, and then you move on your way, hoping no one saw you.",
+          "text": "Intrigued by the parchment, you quickly make a decision to buy it off the Harrower. The exchange is fast, and then you move on your way, hoping no one saw you.",
           "effects": [
             "Gain Random Item Design.",
             "Reputation {{{More}}} 9: Lose 1 reputation."
@@ -353,7 +353,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You try to pay the Harrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.",
+          "text": "You try to pay the Harrower less than it asks for, which only manages to anger it. It hisses loudly and shuns you.",
           "effects": [
             "Lose 1 reputation."
           ],
@@ -473,7 +473,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{More}}} 5",
-          "text": " You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story. After a few more questions, he allows you to leave and clean up.",
+          "text": "You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story. After a few more questions, he allows you to leave and clean up.",
           "effects": [
             "No effect."
           ],
@@ -481,7 +481,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously. Luckily your weapons don't match the man's wounds and the guards let you go, but they do so with a mistrustful glare.",
+          "text": "Attempts to explain yourself just seem to make the situation worse. More guards show up and everyone eyes you suspiciously. Luckily your weapons don't match the man's wounds and the guards let you go, but they do so with a mistrustful glare.",
           "effects": [
             "Lose 2 reputation."
           ],
@@ -498,7 +498,7 @@
         },
         {
           "requirement": "PAY 15 COLLECTIVE GOLD",
-          "text": " You go looking someone who can properly dispose of the mess. It's not cheap, but one of your contacts promises to make the bodies disappear.",
+          "text": "You go looking someone who can properly dispose of the mess. It's not cheap, but one of your contacts promises to make the bodies disappear.",
           "effects": [
             "No effect."
           ],
@@ -506,7 +506,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.",
+          "text": "Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.",
           "effects": [
             "Lose 1 {{{Check}}}."
           ],
@@ -524,7 +524,7 @@
       "outcomes": [
         {
           "requirement": "PAY 10 COLLECTIVE COLD",
-          "text": " You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if you pay his criminal fine. The guards cuff the boy's ear and set him free.",
+          "text": "You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if you pay his criminal fine. The guards cuff the boy's ear and set him free.",
           "effects": [
             "Add City Event 70 to the deck."
           ],
@@ -532,7 +532,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.",
+          "text": "You entreat the guards to let the boy go, but they are unmoved. It seems like you may be able to grease their palms a bit, but, unfortunately, you do not have enough money to sway their minds. The boy is hauled off to the Ghost Fortress.",
           "effects": [
             "No effect."
           ],
@@ -620,7 +620,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{More}}} 9. PAY 20 COLLECTIVE COLD",
-          "text": " You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk of the town.",
+          "text": "You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk of the town.",
           "effects": [
             "Gain 2 reputation."
           ],
@@ -628,7 +628,7 @@
         },
         {
           "requirement": "REPUTATION {{{Less}}} 10, PAY 20 COLLECTIVE COLD",
-          "text": " You bring a very expensive vase as a gift, but you can't seem to catch the father of the bride's eve to present it at the right time.",
+          "text": "You bring a very expensive vase as a gift, but you can't seem to catch the father of the bride's eve to present it at the right time.",
           "effects": [
             "No effect."
           ],
@@ -636,7 +636,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " Read outcome B.",
+          "text": "Read outcome B.",
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -646,7 +646,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{Less}}} -4",
-          "text": " You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.",
+          "text": "You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.",
           "effects": [
             "Lose 5 collective gold.",
             "Lose 1 reputation."
@@ -655,7 +655,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.",
+          "text": "You are one guest among many, and everyone is having too good of a time to notice your poor choice in gifts.",
           "effects": [
             "Lose 5 collective gold."
           ],
@@ -673,7 +673,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{More}}} 9",
-          "text": " You head to the warehouse and watch in silence as a number of heavy crates are loaded onto a cart. You then escort the cart to the West Gate. No thefts are attempted, and you are paid well.",
+          "text": "You head to the warehouse and watch in silence as a number of heavy crates are loaded onto a cart. You then escort the cart to the West Gate. No thefts are attempted, and you are paid well.",
           "effects": [
             "Gain 10 collective gold."
           ],
@@ -681,7 +681,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You head to the warehouse and are immediately set upon by a group of thieves. However, they prove no match for your expertise and are quickly dispatched. Greymane thanks you.",
+          "text": "You head to the warehouse and are immediately set upon by a group of thieves. However, they prove no match for your expertise and are quickly dispatched. Greymane thanks you.",
           "effects": [
             "Gain 5 experience each.",
             "Gain 10 collective gold."
@@ -712,7 +712,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{More}}} 7",
-          "text": " \"What? I... Oh, very well.\" the man stutters. \"Since I trust you to keep your word, I'll give you a little money for your trouble.\" The man describes his brother and hands you a small coin pouch.",
+          "text": "\"What? I... Oh, very well.\" the man stutters. \"Since I trust you to keep your word, I'll give you a little money for your trouble.\" The man describes his brother and hands you a small coin pouch.",
           "effects": [
             "Gain 5 collective gold.",
             "Add Road Event 65 to the deck."
@@ -721,7 +721,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " The man puffs up in indignation, letting you know he is insulted by your behavior. He storms out of the tavern in a rage.",
+          "text": "The man puffs up in indignation, letting you know he is insulted by your behavior. He storms out of the tavern in a rage.",
           "effects": [
             "No effect."
           ],
@@ -838,7 +838,7 @@
       "outcomes": [
         {
           "requirement": "{{{Brute}}}, {{{Cragheart}}}, {{{LightningBolts}}}",
-          "text": " You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.",
+          "text": "You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.",
           "effects": [
             "Gain 5 collective gold."
           ],
@@ -846,7 +846,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.",
+          "text": "You race forward and attempt to catch the vase, but it is too much for you. Your grip loosens and the vase shatters into a hundred pieces. The Valrath is irate, demanding compensation from you for breaking it. You pay him what you can.",
           "effects": [
             "Lose 10 collective gold."
           ],
@@ -876,7 +876,7 @@
       "outcomes": [
         {
           "requirement": "{{{Tinkerer}}}",
-          "text": " You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.",
+          "text": "You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.",
           "effects": [
             "Gain 2 reputation."
           ],
@@ -884,7 +884,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer.",
+          "text": "You fumble about magnanimously for a while before concluding that you have no idea what you're doing. The proprietor looks disappointed and sends out for a real tinkerer.",
           "effects": [
             "No effect."
           ],
@@ -897,7 +897,7 @@
       "outcomes": [
         {
           "requirement": "{{{Scoundrel}}}, {{{Mindthief}}}, {{{Eclipse}}}",
-          "text": " The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.",
+          "text": "The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.",
           "effects": [
             "Gain 10 collective gold."
           ],
@@ -905,7 +905,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You attempt to lighten some purses, but even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.",
+          "text": "You attempt to lighten some purses, but even in the dark, you find the task a little outside your skill set. One patron catches your hand as it searches his belt. He starts yelling, and you flee as quickly as possible.",
           "effects": [
             "Lose 1 reputation."
           ],
@@ -923,7 +923,7 @@
       "outcomes": [
         {
           "requirement": "{{{Spellweaver}}}, {{{PointyHead}}}, {{{MusicNote}}}",
-          "text": " You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.",
+          "text": "You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.",
           "effects": [
             "Gain 1 prosperity."
           ],
@@ -931,7 +931,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.",
+          "text": "You kindly entreat the crowd to back down, and when that doesn't work, you resort to force. No one seems happy that you stopped the hanging, but it was the right thing to do.",
           "effects": [
             "Lose 1 reputation."
           ],
@@ -961,7 +961,7 @@
       "outcomes": [
         {
           "requirement": "{{{Scoundrel}}}, {{{Mindthief}}}, {{{Eclipse}}}",
-          "text": " The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.",
+          "text": "The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.",
           "effects": [
             "Gain 10 gold each."
           ],
@@ -969,7 +969,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn't get the figurine, and one of the guards got a pretty good look at you.",
+          "text": "It turns out confidence isn't enough when it comes to sneaking in and out of a well-guarded estate without being seen. You didn't get the figurine, and one of the guards got a pretty good look at you.",
           "effects": [
             "Lose 3 reputation."
           ],
@@ -999,7 +999,7 @@
       "outcomes": [
         {
           "requirement": "{{{Cragheart}}}, {{{Triangles}}}",
-          "text": " The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.",
+          "text": "The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.",
           "effects": [
             "Gain 1 prosperity."
           ],
@@ -1007,7 +1007,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy.",
+          "text": "Even after much effort, the workers won't speak to you at all, calling you part of the problem. The strike is eventually resolved, but no one seems happy.",
           "effects": [
             "No effect."
           ],
@@ -1020,7 +1020,7 @@
       "outcomes": [
         {
           "requirement": "{{{Scoundrel}}}, {{{Saw}}}, {{{MusicNote}}}",
-          "text": " \"I-I just can't give them more money!\" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.",
+          "text": "\"I-I just can't give them more money!\" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.",
           "effects": [
             "Gain 1 prosperity."
           ],
@@ -1028,7 +1028,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " You just can't get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains.",
+          "text": "You just can't get the manager to budge on his position, and he only gets angrier with continued pushing. The Savvas eventually agree tentatively to continue work, but the underlying problem remains.",
           "effects": [
             "No effect."
           ],
@@ -1046,7 +1046,7 @@
       "outcomes": [
         {
           "requirement": "{{{Mindthief}}}",
-          "text": " The Vermling escapes into the sewers, but the Mindthief is able to give chase, catching up as the cutpurse enters his nest. There you find more wealth than what was lost.",
+          "text": "The Vermling escapes into the sewers, but the Mindthief is able to give chase, catching up as the cutpurse enters his nest. There you find more wealth than what was lost.",
           "effects": [
             "Gain 5 gold each.",
             "Gain 1 collective \"Flea-Bitten Shawl\" (Item 105)"
@@ -1055,7 +1055,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " The Vermling disappears into the sewers, and you try to give chase. But after a few minutes you are hopelessly lost and are forced to give up.",
+          "text": "The Vermling disappears into the sewers, and you try to give chase. But after a few minutes you are hopelessly lost and are forced to give up.",
           "effects": [
             "Lose 5 gold each."
           ],

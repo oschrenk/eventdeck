@@ -71,7 +71,7 @@ const transformOutcome = (arr) => {
       t = {effect: o}
 // OUTCOMES
     } else if (o.startsWith("OTHERWISE:")) {
-      const text = o.split(':').slice(1).join(':')
+      const text = o.split(':').slice(1).join(':').trim()
       t = {
         requirement: "OTHERWISE",
         text
@@ -79,7 +79,7 @@ const transformOutcome = (arr) => {
     } else if (o.startsWith("PAY")) {
       const requirement = o.split(':')[0]
       const escaped = requirement.replace('<', '{{{Less}}}').replace('>', '{{{More}}}')
-      const text = o.split(':').slice(1).join(':')
+      const text = o.split(':').slice(1).join(':').trim()
       t = {
         requirement: escaped,
         text
@@ -87,7 +87,7 @@ const transformOutcome = (arr) => {
     } else if (o.startsWith("REPUTATION")) {
       const requirement = o.split(':')[0]
       const escaped = requirement.replace('<', '{{{Less}}}').replace('>', '{{{More}}}')
-      const text = o.split(':').slice(1).join(':')
+      const text = o.split(':').slice(1).join(':').trim()
       t = {
         requirement: escaped,
         text
@@ -99,7 +99,7 @@ const transformOutcome = (arr) => {
         t = {effect: o}
       } else {
         const requirement = o.split(':')[0]
-        const text = o.split(':').slice(1).join(':')
+        const text = o.split(':').slice(1).join(':').trim()
         t = {
           requirement,
           text
