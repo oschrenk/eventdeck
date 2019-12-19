@@ -7,25 +7,33 @@ import Icon from './Icon'
 import JsxParser from 'react-jsx-parser'
 
 const view = {
-  Scoundrel: "<Icon name={'scoundrel'}/>",
-  Mindthief: "<Icon name={'mindthief'}/>",
-  Eclipse: "<Icon name={'eclipse'}/>",
+  //classes
   Brute: "<Icon name={'brute'}/>",
+  Check: "<Icon name={'check'}/>",
+  Circles: "<Icon name={'circles'}/>",
   Cragheart: "<Icon name={'cragheart'}/>",
+  Eclipse: "<Icon name={'eclipse'}/>",
   LightningBolts: "<Icon name={'eclipse'}/>",
-  Triangles: "<Icon name={'triangles'}/>",
-  Tinkerer: "<Icon name={'tinkerer'}/>",
-  Spellweaver: "<Icon name={'spellweaver'}/>",
+  Mindthief: "<Icon name={'mindthief'}/>",
+  MusicNote: "<Icon name={'music-note'}/>",
   PointyHead: "<Icon name={'pointy-head'}/>",
   Saw: "<Icon name={'saw'}/>",
-  MusicNote: "<Icon name={'music-note'}/>",
-  Circles: "<Icon name={'circles'}/>",
-  Check: "<Icon name={'check'}/>",
+  Scoundrel: "<Icon name={'scoundrel'}/>",
+  Spellweaver: "<Icon name={'spellweaver'}/>",
+  ThreeSpears: "<Icon name={'three-spears'}/>",
+  Tinkerer: "<Icon name={'tinkerer'}/>",
+  Triangles: "<Icon name={'triangles'}/>",
+
+  // Status
   Bless: "<Icon name={'bless'}/>",
-  Less: "{<Text>{'<'}</Text>}",
-  More: "{<Text>{'>'}</Text>}",
+
+  // Cards
   Remove: "<Icon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }}/>",
   Return: "<Icon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }}/>",
+
+  // Hacks
+  Less: "{<Text>{'<'}</Text>}",
+  More: "{<Text>{'>'}</Text>}",
 }
 
 const backgrounds = {
