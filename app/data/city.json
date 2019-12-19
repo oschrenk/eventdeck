@@ -46,7 +46,10 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": " \"Bah! You don't have enough. Come back when you do!\" No effect.",
+          "text": " \"Bah! You don't have enough. Come back when you do!\"",
+          "effects": [
+            "No effect."
+          ],
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -582,7 +585,7 @@
   {
     "id": 18,
     "type": "city",
-    "text": "You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n\"Oh my, don't you lot look strong.\" she says. \"Could you possibly assist me with a small problem I am having in mv cellar?\"\n\nHer eyes grow narrow. \"Rats! So many rats! I don't know where they're coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!\"\n\nShe tugs weakly at your sleeve. \"Please, can you help me?\"",
+    "text": "You are attending to business in the Sinking Market when a frail white-haired woman approaches you and grabs you by the arm.\n\n\"Oh my, don't you lot look strong.\" she says. \"Could you possibly assist me with a small problem I am having in my cellar?\"\n\nHer eyes grow narrow. \"Rats! So many rats! I don't know where they're coming from, but they are a right nuisance. Ruined three jars of preserves just yesterday!\"\n\nShe tugs weakly at your sleeve. \"Please, can you help me?\"",
     "optionA": {
       "choice": "Decline to help the old woman.",
       "outcomes": [
@@ -617,7 +620,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION {{{More}}} 9. PAY 20 COLLECTIVE COLD",
-          "text": " You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk ol the town.",
+          "text": " You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk of the town.",
           "effects": [
             "Gain 2 reputation."
           ],
@@ -742,7 +745,7 @@
   {
     "id": 22,
     "type": "city",
-    "text": "You decide to head to the Brown Door for the evening to enjoy a Quatryl concert.\n\nCorruption and crime run rampant in the bar, but the music is unmatched in all of Cloomhaven.\n\nYou are enjoying yourself immensely when you catch a glimpse of a man in a dark, tattered robe near the back of the room. He appears to be handing vials full of red liquid to a second man.",
+    "text": "You decide to head to the Brown Door for the evening to enjoy a Quatryl concert.\n\nCorruption and crime run rampant in the bar, but the music is unmatched in all of Gloomhaven.\n\nYou are enjoying yourself immensely when you catch a glimpse of a man in a dark, tattered robe near the back of the room. He appears to be handing vials full of red liquid to a second man.",
     "optionA": {
       "choice": "Further investigate the exchange between the men.",
       "outcomes": [
@@ -788,7 +791,10 @@
       "choice": "The thief had the right idea. Grab some vegetables for yourself.",
       "outcomes": [
         {
-          "text": "In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal. All start scenario with {{{Bless}}}",
+          "text": "In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal.",
+          "effects": [
+            "All start scenario with {{{Bless}}}"
+          ],
           "resolve": "{{{Remove}}}"
         }
       ]
