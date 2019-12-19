@@ -2,16 +2,16 @@
   {
     "id": 1,
     "type": "road",
-    "text": "\"Heading out a little late, aren't you?\" The guard at the wall looks at you passively. You grunt in response and head through the opened gate.\n\n \"Nobody's gonna go looking for your corpse if you don't return!\" the guard shouts at your back.\n\n You ended up embarking out on the road much later than you had hoped -- events in town saw to that -- but as the dusk settles on the horizon you feel confident that you are up to any thread you might face\n\n. And then begins the howling of the wolves -- vicious would beasts --  and, judging from their sounds, they seem to be getting closer.",
+    "text": "\"Heading out a little late, aren't you?\" The guard at the wall looks at you passively. You grunt in response and head through the opened gate.\n\n\"Nobody's gonna go looking for your corpse if you don't return!\" the guard shouts at your back.\n\nYou ended up embarking out on the road much later than you had hoped — events in town saw to that — but as dusk settles on the horizon you feel confident that you are up to any threat you might face.\n\nAnd then begins the howling of wolves — vicious, foul beasts — and, judging from their sounds, they seem to be getting closer.",
     "optionA": {
       "choice": "Run from the howling to safety.",
       "outcomes": [
         {
-          "text": "You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort of thicket filled with sticky spines.\n\nYou pull yourself out, but not before your skin is pierced in numerous places and becomes inflamed. Best to avoid this plant in the future. ",
+          "text": "You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort of thicket filled with sticky spines.\n\nYou pull yourself out, but not before your skin is pierced in numerous places and becomes inflamed. Best to avoid this plant in the future.",
           "effects": [
-            "All start scenario with {{{Poison}}}•"
+            "All start scenario with {{{Poison}}}."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{{{Remove}}}"
         }
       ]
     },
@@ -19,11 +19,929 @@
       "choice": "Let the wolves come.",
       "outcomes": [
         {
-          "text": "Confident that the wolves pose no significant threat, you stand your ground and prepare for battle. The pack comes — ragged and hungry slowly emerging from the dark — and surrounds your party.\n\nThere are more of them than you expected, but not enough to take you down. You suffer a bite or two, but are able to fight them off.",
+          "text": "Confident that the wolves pose no significant threat, you stand your ground and prepare for battle, The pack comes — ragged and hungry, slowly emerging from the dark — and surrounds your party.\n\nThere are more of them than you expected, but not enough to take you down. You suffer a bite or two, but are able to fight them off.",
           "effects": [
             "All start scenario with 3 damage."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "type": "road",
+    "text": "You are feeling a tad hungry as you walk down the road. You are considering stopping for a meal when you come across a thicket of bushes covered in green berries.\n\nThe berries look delicious, but you hesitate. They could be poisonous.",
+    "optionA": {
+      "choice": "Eat the berries.",
+      "outcomes": [
+        {
+          "text": "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision.",
+          "effects": [
+            "All start scenario with {{{Bless}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Pass by the berries and just eat your normal rations.",
+      "outcomes": [
+        {
+          "text": "Not wanting to regret making a stupid decision, you refrain from eating the berries and continue on down the road.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "type": "road",
+    "text": "You are feeling a tad hungry as you walk down the road. You are considering stopping for a meal when you come across a thicket of bushes covered in green berries.\n\nThe berries look delicious, but you hesitate. They could be poisonous.",
+    "optionA": {
+      "choice": "Eat the berries.",
+      "outcomes": [
+        {
+          "text": "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision. That is, until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn't improve much by the time you arrive at your destination.",
+          "effects": [
+            "All start scenario with {{{Poison}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Pass by the berries and just cat your normal rations.",
+      "outcomes": [
+        {
+          "text": "Not wanting to regret making a stupid decision, you refrain from eating the berries and continue on down the road.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "type": "road",
+    "text": "You see fresh wagon tracks in the dirt as you walk along the road. You continue forward and begin to pick out a number of distinct tracks. They must be from a large caravan.\n\nSure enough, as you crest a hill, you see a group of four wagons headed down the road in the same direction as you. You count perhaps three or four guards among them.",
+    "optionA": {
+      "choice": "Approach the caravan and offer to travel with them until your paths diverge.",
+      "outcomes": [
+        {
+          "text": "The merchants in the caravan seem grateful, though the guards eye you skeptically. After traveling for half a day without event, you head off down a side road and wave good bye. The merchants express their appreciation with a bit of coin.",
+          "effects": [
+            "Gain 2 gold each.",
+            "Reputation {{{More}}} 9: Gain 1 additional gold each."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Attack the caravan.",
+      "outcomes": [
+        {
+          "text": "With so few guards protecting it, the caravan makes an ideal mark. You charge down the hill, weapons at the ready. The merchants scatter, and the guards are easily dispatched, leaving you with a nice stash of valuables.",
+          "effects": [
+            "Gain 10 gold each.",
+            "Lose 2 reputation."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "type": "road",
+    "text": "You are traveling through a small wooded area when you round a bend and find a group of Inox warriors fighting a band of armored humans.\n\nWith all the commotion, it's hard to discern more details, but the humans look like guards from Gloomhaven. You are not sure why they would be out here fighting the Inox, though.",
+    "optionA": {
+      "choice": "Help the Inox fight off the humans.",
+      "outcomes": [
+        {
+          "text": "Fearing the battle could go either way, you charge into the fray laying low the human attackers. When the dust settles, the Inox offer you a skeptical thanks.\n\n\"Humans think they own all this land.\" one of the Inox says as he spits on the ground. \"We thank you for helping us with the nuisance. Allow us to bless you with a gift.\"",
+          "effects": [
+            "Gain 1 collective \"Necklace of Teeth\" (Item 106)."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Help the humans fight off the Inox.",
+      "outcomes": [
+        {
+          "text": "With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n\"Blast it all.\" one of the guards says. \"Patrol duty is the absolute worst. No matter what we tell those savages, they're convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for\"\n\n.Gain 1 reputation.",
+          "effects": [
+            "All start scenario with {{{Curse}}}"
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "type": "road",
+    "text": "Stumbling through the woods, you are alarmed to hear the sudden sounds of a large animal rummaging through the underbrush. You crouch down, gauging the grunts and growls.\n\nThrough the trees, you see a large bear approaching your location. It has not noticed you yet, but you imagine it will soon.",
+    "optionA": {
+      "choice": "Take the opportunity to run from the bear before it gets any closer.",
+      "outcomes": [
+        {
+          "text": "You holt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can't catch your breath.",
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Attack the bear, hopefully catching it by surprise.",
+      "outcomes": [
+        {
+          "text": "The bear roars as you approach, making powerful swipes with its claws. Still, with the surprise and the commotion, the bear is not all that committed to the fight. After a bit of back and forth, the animal grunts and runs off into the trees.",
+          "effects": [
+            "All start scenario with {{{Wound}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "type": "road",
+    "text": "Walking along the edge of a forest, you begin to hear strange, unfamiliar sounds coming from beyond the trees. You stop and listen closer.\n\nThere's a rhythm to the sounds, and with that established, you begin to pick out different human voices in the mix. You'd venture to say that the noise vaguely sounds like chanting.",
+    "optionA": {
+      "choice": "Head into the forest to investigate the chanting.",
+      "outcomes": [
+        {
+          "text": "You quietly move through the forest toward the noise. Eventually you come upon a clearing where you see a circle of cultists performing some strange ritual. One of them notices you and shouts to the others. The situation devolves into a bloody battle. You are, of course, victorious, but it saps some of your strength.",
+          "effects": [
+            "Gain 5 experience each.",
+            "Lose 1 {{{Check}}} each."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Keep moving on down the road. No need to get mixed up in whatever is going on.",
+      "outcomes": [
+        {
+          "text": "Without a second thought, you get back onto the main road and continue moving toward your destination.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "type": "road",
+    "text": "You see a lone man walking toward you on the road. As you meet on the path, he turns to you and begins to speak.\n\n\"Oi there. I wouldn't suppose you lot might spare me some coin?\" he asks. \"A lot of coin, actually.\"\n\nYou look at him quizzically as he continues. \"You see, I lead a lotta thieves and bandits in this area and we gotta make sure all the mouths are fed.\"\n\nAt this, a large number of bandits come out of hiding around you, emerging from the bushes.\n\n\"So about that coin,\" the man says with a smile. \"Five gold per head oughta do it.\"",
+    "optionA": {
+      "choice": "Pay the thieves.",
+      "outcomes": [
+        {
+          "text": "You sigh and hand over what coins you have.\n\nThe man maintains his grin. \"Well, thank you, kind sirs. It was a pleasure meeting you, and have pleasant day!\"\n\nThe bandits move off in one direction as you continue in the other.",
+          "effects": [
+            "Lose 5 gold each."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Resist the robbery, killing as many thieves as you can.",
+      "outcomes": [
+        {
+          "text": "Unfazed by the ambush, you draw your weapons and attack the bandits in the bushes. The leader tries to withdraw, but you cut him down as well. There are a lot of bandits, but they don't put up too much of a fight. They seem weak and malnourished. You guess the leader wasn't kidding about needing to buy food.",
+          "effects": [
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 9,
+    "type": "road",
+    "text": "Walking through a stretch of lowlands, you see a man in armor sitting against a large boulder. As you get closer, you see that he is bleeding from his side.\n\n\"Ah, what luck,\" he says \"I got separated from my detail and then had an unfortunate run-in with a bear. I'm afraid I no longer have the strength to stand.\"\n\nHe looks at you imploringly. \"You wouldn't happen to have a potion or something you wouId be willing to give me? I Just need a little extra energy to make it back to Gloomhaven.\"",
+    "optionA": {
+      "choice": "Help out the guard.",
+      "outcomes": [
+        {
+          "text": "You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Gloomhaven as you head in the opposite direction.\n\nConsume 1 collective item.",
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Claim you have no aid to give and move on.",
+      "outcomes": [
+        {
+          "text": "You adopt an expression of regret and apologize for a lack of supplies. You then quickly move on your way as he shouts at your back.\n\n\"But...please! You're not just going to leave me here, are you?\"",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "type": "road",
+    "text": "You have only wandered off the main road in search of your destination when the ground begins to shift, beneath your feet.\n\nWhat was once solid now gives way, and you find yourself falling down into a dark pit. You land twenty feet down, cushioned by the soil that fell with you.\n\nYou stand up with alertness and look around, trying to get your bearings. You have fallen into a man made cavern with smooth stone walls and floors.\n\nThis could be a trap or just some long-forgotten structure.",
+    "optionA": {
+      "choice": "Use weights and ropes to climb out of tbe hole as quickly as possible.",
+      "outcomes": [
+        {
+          "text": "You tie one of your weapons to a long rope and manage to hook it onto a sturdy tree root hanging over the pit. With enough effort, you are able to extricate yourself from the pit and get as far away as possible before the situation gets worse. You suffered some minor scrapes and bruises in the fall, but you count yourself lucky.",
+          "effects": [
+            "All start scenario with 1 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Explore the area.",
+      "outcomes": [
+        {
+          "text": "Lighting a torch, you see a number of passages leading out of the stone room. Unfazed, you head down one of them and begin exploring the network of chambers. In one, you find a pedestal and, sitting atop that, a small, metal sphere.\n\nYou take the strange sphere and continue your search, but the only other remarkable thing you find is an exit.",
+          "effects": [
+            "Add City Event 71 to the deck.",
+            "All start scenario with 1 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "type": "road",
+    "text": "You are headed through a mountainous region when the ground begins to shift and shake beneath you. Taken off guard you fall to your knees.\n\nThe tremors continue unabated and grow stronger. You hear rumbling as rocks begin to tumble down the mountainside.",
+    "optionA": {
+      "choice": "Try to find a clearing where you can avoid the falling rocks.",
+      "outcomes": [
+        {
+          "text": "You race forward, scanning the area for an open space where the danger from rock slides will be less severe. After dodging some rocks and getting hit by others, you find a relatively safe area and wait for the chaos to subside.\nAll start scenario with 2 damage.",
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Take cover under a nearby outcropping and wait out the earthquake.",
+      "outcomes": [
+        {
+          "requirement": "{{{Cragheart}}}, {{{Spellweaver}}}, {{{Triangles}}}, {{{Circles}}}",
+          "text": " You jump under an outcropping, but something is not right. Those among you attuned to the elements turn toward the face of the mountain and step into it, as though the rocks were gone. Inside, you see an odd crystal jutting out of the earth. You snatch it up and the tremors stop.",
+          "effects": [
+            "Add City Event 73 to the deck."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " The outcropping proves to be an unstable place to hide. You are quickly buried in rubble.",
+          "effects": [
+            "All start scenario with 4 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "type": "road",
+    "text": "A rustling in a nearby thicket stops you in your tracks. You crouch down and assume a defensive stance.\n\nSuddenly, a tiny ball of fur with short stubby legs leaps out at you. It barks at you twice in a ineffectual, high-pitched tone and then begins to wag its tail.\\nYou relax your weapons. What is such a small defenseless puppy doing out in the wilderness?",
+    "optionA": {
+      "choice": "Leave the puppy to fend for itself.",
+      "outcomes": [
+        {
+          "text": "Adorable as the puppy is, you are not the ones to care for it. You are headed into danger, and you can't let anything distract you from the task at hand. It follows you for a while, barking in indignation, but it eventually wanders off.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Take the puppy and bring it back to Gloomhaven.",
+      "outcomes": [
+        {
+          "text": "You sigh and lift the puppy into your arms. It barks happily and licks your face. This will surely prove a distraction in your upcoming battle, but once you get back to Gloomhaven, you should be able to find it a nice home. One starts scenario with {MinusOneAttackModifier}x3.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 13,
+    "type": "road",
+    "text": "Traveling off the beaten path, you are surprised to see a large group of figures on the horizon. You take out your weapons and move cautiously forward.\n\nAs you get closer, it becomes clear that the figures are not alive, but sculptures of some kind, made haphazardly out of branches, garbage, and scrap metal. There are fifty or so in the middle of a field, with no other signs of life as far as you can see.\n\nYou see a necklace that may be valuable on one of them and go to grab it.\n\n\"Don't touch her!\" You wheel around to see an old man in rags emerge from a hole in the ground and charge at you with a broken broom handle. \"These women are all mine!\"",
+    "optionA": {
+      "choice": "Defend yourself with lethal force.",
+      "outcomes": [
+        {
+          "text": "With a single swing of your sword, the old man's head separates from his body and tumbles to the ground. The stench coming from his rags is terrible, so you grab what valuables you can find and quickly move on.",
+          "effects": [
+            "Gain 2 gold each."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Attempt to calm down the hermit and resolve the situation peacefully.",
+      "outcomes": [
+        {
+          "text": "You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives. The man is surprisingly agile and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the \"stars\" gift. You run away with all haste, but his odor is much harder to escape.",
+          "effects": [
+            "All start scenario with {{{Curse}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "type": "road",
+    "text": "You are walking down the road when the sound of many wings pulls your gaze to the sky. Above you, you see a flock of white birds flying southward.\n\nAt that height, you figure a well-aimed arrow could bring one of them down to make a nice meal",
+    "optionA": {
+      "choice": "Shoot at the birds.",
+      "outcomes": [
+        {
+          "text": "You pull back your bow and take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook it, and eat it. Definitely beats the field rations you carry with you.",
+          "effects": [
+            "All start scenario with {{{Bless}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Let the birds pass undisturbed.",
+      "outcomes": [
+        {
+          "text": "The shot would be difficult, and you'd prefer not to waste the arrow. You simply move on toward your destination.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 15,
+    "type": "road",
+    "text": "You are walking down the road when the sound of many wings pulls your gaze to the sky. Above you, you see a large flock of red birds flying southward.\n\nAt that height, you figure a well-aimed arrow could bring one of them down to make a nice meal.",
+    "optionA": {
+      "choice": "Shoot at the birds.",
+      "outcomes": [
+        {
+          "text": "You pull back your bow and take aim. The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention. As the flock turns and descends toward your you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process.",
+          "effects": [
+            "All start scenario with {{{Muddle}}}.",
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Let the birds pass undisturbed.",
+      "outcomes": [
+        {
+          "text": "The shot would be difficult, and you'd prefer not to waste the arrow. You simply move on toward your destination.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "type": "road",
+    "text": "The route to your destination is less direct than you had hoped, and you end up taking a shortcut through a small forest.\n\nThere you happen upon a family of deer. They are still a ways off in the distance and haven't noticed you.\n\nYou approach cautiously",
+    "optionA": {
+      "choice": "Shoot at one of the deer.",
+      "outcomes": [
+        {
+          "text": "You notch your bow and take a few steps forward to find a better shooting position. Unfortunately, the deer notice your presence and bound off. You shoot a few arrows as they go, but nothing connects.\n\nThen an arrow flies out of the brush and into your shoulder. \"Foul city-dwellers!\" a voice cries out from the trees. \"I had been stalking that herd for hours and you spooked them!\" More arrows rain down as you run away.",
+          "effects": [
+            "All start scenario with {{{Curse}}}.",
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Just watch the deer for a litte bit.",
+      "outcomes": [
+        {
+          "text": "You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest. It bolts away, but doesn't make it very far before collapsing. Then you see a large Inox emerge from the brush and turn toward you. \"I thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you.\"",
+          "effects": [
+            "All start scenario with {{{Bless}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 17,
+    "type": "road",
+    "text": "Not far outside of Gloomhaven, you look up to see a large bird flying overhead. Something is odd, though. It's movements are jerky, and there is smoke billowing out of it. Then you see it plunge into a sudden nosedive and crash to the ground off in the east.\n\nYou rush to the scene and find a limping, soot-covered Quatryl kicking a giant winged contraption made of leather and metal.\n\n\"Curse this wretched thing!\" He yells in frustration. \"I thought I'd worked it out, and then I suddenly lost pressure in the piston chamber!\"\n\nHe looks over at you. \"You there! Wonderful timing! Help me get this thing back into the air. There is no time to waste!\"",
+    "optionA": {
+      "choice": "Do whatever the Quatryl says.",
+      "outcomes": [
+        {
+          "text": "You set the wings and bang out a few dents while the Quatryl repairs his pressure problem. In under an hour, the Quatryl declares the contraption airworthy and jumps in the cockpit. You stand clear and watch in awe as the thing begins flapping wildly, then sputters forward and lifts off the ground.\n\nUnfortunately, the flight is short-lived, and the second crash is not nearly as forgiving. You find the Quatryl dead on impact, and there's nothing more to do except harvest the machine for valuable parts.",
+          "effects": [
+            "Gain 5 collective gold."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Demand an explanation before you help in any way.",
+      "outcomes": [
+        {
+          "text": "You force the Quatryl to slow down and talk to you, but his eyes keep darting around in a panic. \"Don't you understand? The world needs my technology now! I must perfect it! It will revolutionize everything!\" You agree that the power of flight is pretty great, but you convince the Quatryl that the world can wait a day for him to get some rest and organize his thoughts. You help him transport the broken machine back to town.",
+          "effects": [
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "type": "road",
+    "text": "The road contains many dangers, and chief among them are the barbaric tribes of Inox that inhabit the wilderness around the city. This is why your heart sinks when you see a mounted group of them ride up to you and surround your party.\n\n\"Ah, agents of that wretched monstrosity you call a town,\" the largest of the Inox says as he looks down at you. \"Tell me, scum. What business do you have out here on my land? Have those fools sent you out to murder more of my people?\"",
+    "optionA": {
+      "choice": "Attempt to come to a peaceful resolution.",
+      "outcomes": [
+        {
+          "requirement": "REPUTATION {{{Less}}} -4",
+          "text": " You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. \"Go in peace, then,\" the leader says. “And stay off my land.\"",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. \"Foul creature. I curse you and your kind! Run — get off my land and never come back!\"",
+          "effects": [
+            "All start scenario with {{{Curse}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Attack the insulting, contemptuous Inox.",
+      "outcomes": [
+        {
+          "text": "Enraged by the Inox's insulting tongue,you take up your weapons and attack. Even the Inox were not expecting a move so bold. The fight is brutal, especially with your enemy mounted, but after felling a number of their warriors, the rest retreat.",
+          "effects": [
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "type": "road",
+    "text": "Heading down the main road, you see an odd-looking wagon in front of you. It is covered in metal bars and a number ragged men in chains walk behind it. On either side of the wagon, you see city guards on horseback keeping a watchful eye on everything.\n\nYou get closer and one of the guards calls out to you. \"Keep your distance! We are transporting dangerous criminals.\"\n\nA moment later, one of the prisoners in back slips out of his manacles and begins to sprint full speed into the tall grass.",
+    "optionA": {
+      "choice": "Help the guards catch the escaping man.",
+      "outcomes": [
+        {
+          "requirement": "REPUTATION {{{Less}}} -4",
+          "text": " You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " The man's speed after spending months in a jail cell is no match for your own. With the help of the guards on horseback, you quickly have him cornered and returned to the wagon.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Interfere with the guards to help the an escape.",
+      "outcomes": [
+        {
+          "text": "Criminals deserve freedom as much as the next man. While the guards are distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Gloomhaven.",
+          "effects": [
+            "Lose 2 reputation.",
+            "Reputation {{{Less}}} -9: Gain 1 collective \"Major Power Potion\" (Item 041)."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 20,
+    "type": "road",
+    "text": "You are trudging through some foothills when you hear the strangest sound in the distance. It sounds vaguely like wolves howling, but higher pitched, and there is a rhythm and a melody to it.\n\nYou crest a nearby hill and survey the area, spying a pack of Vermlings standing in a circle and singing. \"Singing\" is the best way you can think to describe it, anyway. Occasionally during the song they also clap and dance around.",
+    "optionA": {
+      "choice": "The song must serve some nefarious purpose. Attack the Vermlings.",
+      "outcomes": [
+        {
+          "text": "You take the pack by surprise. Fully distracted by their ritual they don't even see you coming. The Vermlings still get in a few good attacks before they are slain, though.",
+          "effects": [
+            "All start scenario with {{{Poison}}}.",
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Move closer and enjoy the music.",
+      "outcomes": [
+        {
+          "text": "Not wanting to disturb the ritual, you inch a little closer, staying out of sight, and then sit and listen. They go through a number of different tunes, and you feel enriched by the experience.",
+          "effects": [
+            "Gain 3 experience each."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 21,
+    "type": "road",
+    "text": "You find yourself cutting through the dense underbrush of a forest when you notice a number of small woodland animals running along the forest floor in opposite direction.\n\nMice, squirrels, ferrets — they all appear to be running from something up ahead of you. You are filled with a troubling sense of foreboding as you catch a whiff of smoke in the air.",
+    "optionA": {
+      "choice": "Keep moving forward.",
+      "outcomes": [
+        {
+          "text": "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation.",
+          "effects": [
+            "All start scenario with {{{Wound}}}",
+            "All start scenario with 3 damage.",
+            "Lose 1 {{{Check}}} each."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Follow the animals' cue and run in the opposite direction.",
+      "outcomes": [
+        {
+          "text": "Fearing the worst, you turn around and head out of the forest the way you came in. You reach a clearing just before a great fire consumes everything with its blaze. It takes a while to orient yourself and find the road again, but considering the alternative, you feel lucky.\n\nDiscard 2 cards each.",
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 22,
+    "type": "road",
+    "text": "There was a heavy rain last night, and the roads are now dark streaks of mud. And as bad as it is for you walking, you see that others up ahead on the road are having worse trouble. You come upon a collection of wagons stuck in the mud on the side of the road.\n\nYou look around and see an odd assortment of people dressed in garish clothing. They are working to push their brightly painted wagons, all emblazoned with a \"Marvelous and Magical Techno-Circus\" logo, out of the muck.\n\n\"We just stopped for a quick meal, and now the wheels have sunk into this mess,\" a Quatryl with a fancy top hat says as you approach. \"I'm sure our strongmen will get us out eventually but we certainly wouldn't begrudge a little extra help.\"",
+    "optionA": {
+      "choice": "Help push out the Quatryl ringmaster's wagon.",
+      "outcomes": [
+        {
+          "text": "You put down some boards and then heave and push until the great wagon is out of the ditch and moving back on the road. The diminutive Quatryl tips his hat.\n\n\"Well, I certainly could not have done that on my own. Your assistance is greatly appreciated. I tell you what — the next time were back in Gloomhaven, why don't you stop by our circus, and we 'll let you in for free.\"",
+          "effects": [
+            "Add City Event 74 to the deck."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Help push out the fortune-tellers wagon.",
+      "outcomes": [
+        {
+          "text": "You take pity on an old Orchid woman trying to extricate her fortune-teller's wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes.\n\n\"Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you.\"",
+          "effects": [
+            "Gain 2 experience each.",
+            "All start scenario with {{{Curse}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 23,
+    "type": "road",
+    "text": "A knapsack and a walking stick on the side of the road catch your attention as you pass. You look around and see a man squatting in the hushes a small distance away.\n\n\"Oh, hello!\" he says. \"Good timing, actually. You wouldn't mind grabbing me some leaves, would you? It's seems I've made quite a mess over here.\"",
+    "optionA": {
+      "choice": "Bring the man some leaves.",
+      "outcomes": [
+        {
+          "text": "You gather up a handful of leaves and walk over to him. If you weren't quite sure what was going on before, the smell definitely confirms it.\n\n\"Thanks a lot!\" he says cheerily. \"Sometimes nature calls, am I right?\"\n\nYou cough in affirmation and quickly move on.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Grab his stuff and run off while he's indisposed.",
+      "outcomes": [
+        {
+          "text": "You look from the squatting man down to his bag. Surely he has something of value in there. You quickly grab it and run off down the road.\n\n\"Hey!\" the man yells at you. \"What are you doing? My stuff!\"You don't look back.",
+          "effects": [
+            "Gain 2 gold each.",
+            "Lose 1 reputation."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 24,
+    "type": "road",
+    "text": "You come across a group of brow-beaten Inox trudging down the path in the opposite direction as you. Some are pulling carts laden with various miscellany, mostly furs and crudely crafted goods. The rest have armloads of much of the same.\n\nIt is obvious that this is everything the Inox have — their life's worth in their arms and wagons. They are all covered in what appears to be soot.\n\nThe shaman at the head of the group calls to you. \"The beast awakens! The mountain is aflame! Beware you do not anger it!\"\n\nLooking to the horizon, you can see black smoke rising from a far-off peak.",
+    "optionA": {
+      "choice": "Aid the Inox with what they are carrying.",
+      "outcomes": [
+        {
+          "text": "You take pity on the disheveled group of Inox, forced from their home by a natural disaster. You travel with them fora time, treating their wounds and helping to lighten their loads.\n\nThe Shaman thanks you and hands you an amulet. \"We can't return to our homes until the beast rests. I fear what this may mean for us all. I hope this keeps you safe.\"\n\nDiscard 2 cards each.",
+          "effects": [
+            "Gain 10 collective gold.",
+            "Unlock \"Burning Mountain\" (M-6)."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Ignore the Shamans ramblings.",
+      "outcomes": [
+        {
+          "text": "You brush off the plight of the Inox tribe, but as you continue to your destination, you begin to feel a certain amount of uncase. There is a slight tremble in the soles of your feet, and, in the distance, the black cloud of smoke grows. Unlock “Burning Mountain\" (M-6).",
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 25,
+    "type": "road",
+    "text": "You are far off the main road when you see a small band of Inox approaching from the west. You try to divert your path to go around them, but they are moving directly into your path.\n\nIn a few minutes' time they overtake you.\n\n\"You've wandered into our territory travelers,\" the biggest one says. \"We don't much like visitors.\"\n\nYou stare at her blankly.\n\n\"Such acts can be forgiven, but it will cost you.\"",
+    "optionA": {
+      "choice": "Try to reason with the Inox",
+      "outcomes": [
+        {
+          "requirement": "{{{Brute}}}, {{{LightningBolts}}}",
+          "text": " The Inox in your party talks with the leader for a while and they are able to come to an agreement. They punch each other's chests, and the group lets you through.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " The Inox don't seem to be budging on this payment issue, so you are forced to pass along a handful of coins. The big one smiles and lets you continue on your way.",
+          "effects": [
+            "Lose 5 gold each."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Fight off the Inox. They'll get no payments from you.",
+      "outcomes": [
+        {
+          "text": "You raise your weapons and state that no payments will be made this day. The group of Inox snarls and attacks. After you land a few solid blows, though, they break off and run away back to the west, leaving you to tend to your wounds.",
+          "effects": [
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 26,
+    "type": "road",
+    "text": "You see a lone wagon off to the side of the road up ahead. You approach cautiously.\n\nAs you near, a jovial man with a wide hat waves at you. \"Ho there! I don 't suppose you have any expertise in fixing a broken axle? The road wasn't even that bumpy, and then BAM!\" The man claps his hands together.\n\n\"Just splits in half. I need to have all these goods up north in two days, and I am just at a loss about how to get myself out of this pickle!\"",
+    "optionA": {
+      "choice": "Attempt to help the man with his axle problem.",
+      "outcomes": [
+        {
+          "requirement": "{{{Tinkerer}}}, {{{ThreeSpears}}}",
+          "text": " The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.",
+          "effects": [
+            "All start scenario with {{{Bless}}}.",
+            "Gain 1 reputation."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " You happily agree to help the man, but quickly realize you don't know what you are doing. The man thanks you anyway, and you move on.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Tie up the man and take all of the goods he is so concerned about.",
+      "outcomes": [
+        {
+          "text": "You smile widely and approach the man. He doesn't even put up a fight. The first thing you do is gag him, because he is a talker. You select the lightest of the valuables to take with you and leave the man tied up on the side of the road. You could say his day just went from bad to worse, but that s not your problem.",
+          "effects": [
+            "Gain 10 collective gold.",
+            "Lose 1 reputation."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 27,
+    "type": "road",
+    "text": "Walking a path between a small grove and a steep cliff, you suddenly find yourself facing a massive group of felled trees blocking the road.\n\nThe placement of the trees seems odd, and you have a wary, suspicious feeling about the whole situation.",
+    "optionA": {
+      "choice": "Clear the trees from the road. It is the best way through and will help other travelers.",
+      "outcomes": [
+        {
+          "requirement": "{{{Spellweaver}}}, {{{Triangles}}}, {{{Circles}}}",
+          "text": " The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " The trees aren't part of an ambush, but that doesn't make them any easier to clear. It' s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Take the time to find a way around the trees.",
+      "outcomes": [
+        {
+          "text": "You head into the underbrush of the grove to get around the felled trees, but it is rough going. The growth is very dense and there are quite a few prickly thorns to contend with.",
+          "effects": [
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 28,
+    "type": "road",
+    "text": "As you walk down a dirt path, you see a hard-looking mercenary sitting in a patch of grass. He nods as you pass.\n\n\"Hey, friends,\" he says. There is something off about his tone, though.\n\n\"I don't suppose one of you might he willing to part with a stamina potion, would you? I'm headed toward Gloomhaven, but I've just come such a long way and I'm not feeling too good about the stretch I have left.\"\n\nWith the clank of his sword sheath against his armor and a loud groan, the man stands up. \"I'll pay you well for it.\"",
+    "optionA": {
+      "choice": "Sell the man a stamina potion.",
+      "outcomes": [
+        {
+          "requirement": "PAY 1 COLLECTIVE \"MINOR STAMINA POTION\" (ITEM 013)",
+          "text": " After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.",
+          "effects": [
+            "Gain 10 collective gold."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "{{{Scoundrel}}}, {{{Saw}}}, {{{MusicNote}}}",
+          "text": " Gain 10 additional collective gold.",
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " Read outcome B.",
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Politely decline and move quickly on your way.",
+      "outcomes": [
+        {
+          "text": "There was something off-putting about that man. You are more than happy to move along and put some distance between you.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 29,
+    "type": "road",
+    "text": "Walking among some foothills, you enter a narrow valley and find a large pile of stones blocking your way. Clearly a rock slide occurred here recently.\n\nYou move closer to the pile and despair at just how large the stones are. Only someone of great strength and skill could clear a path efficiently.",
+    "optionA": {
+      "choice": "Attempt to clear the stones from the path.",
+      "outcomes": [
+        {
+          "requirement": "{{{Cragheart}}}",
+          "text": " The Cragheart's combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life.\n\nDiscard 2 cards each.",
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Backtrack and find a way around the stone-filled valley.",
+      "outcomes": [
+        {
+          "text": "You sigh and turn around. After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don't seem too happy about your sudden arrival. You fend them off, but they leave you wounded.",
+          "effects": [
+            "All start scenario with {{{Wound}}}."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 30,
+    "type": "road",
+    "text": "You see smoke on the horizon and catch the vague stench of burning flesh. You hasten your step see what catastrophe lies ahead of you on the road.\n\nAfter a few minutes, you come upon a trade caravan ravaged by a pack of Vermlings, if the tracks in the mud are any indication.\n\nDead bodies and broken, upturned carts lie across the path, but you can also see a few survivors, wounded and bloody on the ground. A woman limps across the road, carrying pieces of wreckage.",
+    "optionA": {
+      "choice": "Help the survivors deal with the carnage.",
+      "outcomes": [
+        {
+          "requirement": "{{{Mindthief}}}, {{{TwoMinis}}}",
+          "text": " You approach to help those still alive, but the woman in the road screams, gesturing at the Vermling in your group. You try to calm her, but it is of no use. You abandon the cause.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{{{Remove}}}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": " You disperse through the scene, tending to people's wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.\n\nConsume 1 {{{SmallItem}}} item each.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{{{Remove}}}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Finish the job the Vernilirtgs started and loot whatever is left.",
+      "outcomes": [
+        {
+          "text": "It takes very little effort to finish off those who survived and put them out of their misery. Unfortunately, the Vermlings were quite thorough in their raid. You only manage to find a handful of goods, with the rest presumably either taken or burned.",
+          "effects": [
+            "Gain 2 gold each."
+          ],
+          "resolve": "{{{Remove}}}"
         }
       ]
     }
