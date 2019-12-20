@@ -63,7 +63,7 @@ const transformOutcome = (arr) => {
     } else if (o.startsWith("All start ")) {
       t = {effect: o}
     } else if (o.startsWith("Reputation")) {
-      const escaped = o.replace('<', '{{{Less}}}').replace('>', '{{{More}}}')
+      const escaped = o.replace('<', '{Less}').replace('>', '{More}')
       t = {effect: escaped}
     } else if (o.startsWith("Add Road")) {
       t = {effect: o}
@@ -84,7 +84,7 @@ const transformOutcome = (arr) => {
       }
     } else if (o.startsWith("PAY")) {
       const requirement = o.split(':')[0]
-      const escaped = requirement.replace('<', '{{{Less}}}').replace('>', '{{{More}}}')
+      const escaped = requirement.replace('<', '{Less}').replace('>', '{More}')
       const text = o.split(':').slice(1).join(':').trim()
       t = {
         requirement: escaped,
@@ -92,14 +92,14 @@ const transformOutcome = (arr) => {
       }
     } else if (o.startsWith("REPUTATION")) {
       const requirement = o.split(':')[0]
-      const escaped = requirement.replace('<', '{{{Less}}}').replace('>', '{{{More}}}')
+      const escaped = requirement.replace('<', '{Less}').replace('>', '{More}')
       const text = o.split(':').slice(1).join(':').trim()
       t = {
         requirement: escaped,
         text
       }
     // maps against class requirements
-    } else if (o.startsWith("{{")) {
+    } else if (o.startsWith("{")) {
       // deal with road event 28
       if (o.includes("additional")) {
         t = {effect: o}
@@ -143,10 +143,6 @@ try {
     // add type
     e['type'] = eventType
 
-    var regex = /(\{\w{3,20}\})/g;
-    e.optionA.outcome = e.optionA.outcome.replace(regex, "\{\{$1\}\}");
-    e.optionB.outcome = e.optionB.outcome.replace(regex, "\{\{$1\}\}");
-
     e.optionA.outcome = e.optionA.outcome.split("\n\n")
     e.optionB.outcome = e.optionB.outcome.split("\n\n")
 
@@ -182,7 +178,7 @@ try {
           o.resolve = res[e.id][index]
         } else {
           console.log("Default resolve for %s:%s,%s", eventType, e.id, index)
-          o.resolve = "{{{Remove}}}"
+          o.resolve = "{Remove}"
         }
       }
       return o
@@ -199,7 +195,7 @@ try {
         }
       } else {
         console.log("Default resolve for %s:%s,%s", eventType, e.id, index)
-        o.resolve = "{{{Remove}}}"
+        o.resolve = "{Remove}"
       }
       return o
     })

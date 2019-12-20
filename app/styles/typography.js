@@ -9,6 +9,11 @@ export const backText = {
   fontSize: 15,
 };
 
+export const backTextEffect = {
+  fontFamily: 'HighTowerText-Bold',
+  fontSize: 16,
+};
+
 export const frontText = {
   fontFamily: 'HighTowerText-Italic',
   fontSize: 15,
