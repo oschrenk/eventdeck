@@ -1,3 +1,7 @@
+/**
+ * @format
+ * @flow strict-local
+ */
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationNativeContainer } from '@react-navigation/native';
