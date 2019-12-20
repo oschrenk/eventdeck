@@ -137,9 +137,10 @@
       "choice": "Help the humans fight off the Inox.",
       "outcomes": [
         {
-          "text": "With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n\"Blast it all.\" one of the guards says. \"Patrol duty is the absolute worst. No matter what we tell those savages, they're convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for\"\n\n.Gain 1 reputation.",
+          "text": "With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n\"Blast it all.\" one of the guards says. \"Patrol duty is the absolute worst. No matter what we tell those savages, they're convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for\"",
           "effects": [
-            "All start scenario with {{{Curse}}}"
+            "All start scenario with {{{Curse}}}.",
+            "Gain 1 reputation."
           ],
           "resolve": "{{{Remove}}}"
         }
@@ -239,7 +240,10 @@
       "choice": "Help out the guard.",
       "outcomes": [
         {
-          "text": "You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Gloomhaven as you head in the opposite direction.\n\nConsume 1 collective item.",
+          "text": "You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Gloomhaven as you head in the opposite direction.",
+          "effects": [
+            "Consume 1 collective item."
+          ],
           "resolve": "{{{Return}}}"
         }
       ]
@@ -342,8 +346,9 @@
       "choice": "Take the puppy and bring it back to Gloomhaven.",
       "outcomes": [
         {
-          "text": "You sigh and lift the puppy into your arms. It barks happily and licks your face. This will surely prove a distraction in your upcoming battle, but once you get back to Gloomhaven, you should be able to find it a nice home. One starts scenario with {MinusOneAttackModifier}x3.",
+          "text": "You sigh and lift the puppy into your arms. It barks happily and licks your face. This will surely prove a distraction in your upcoming battle, but once you get back to Gloomhaven, you should be able to find it a nice home.",
           "effects": [
+            "One starts scenario with {MinusOneAttackModifier}x3.",
             "Gain 1 reputation."
           ],
           "resolve": "{{{Remove}}}"
@@ -627,7 +632,10 @@
       "choice": "Follow the animals' cue and run in the opposite direction.",
       "outcomes": [
         {
-          "text": "Fearing the worst, you turn around and head out of the forest the way you came in. You reach a clearing just before a great fire consumes everything with its blaze. It takes a while to orient yourself and find the road again, but considering the alternative, you feel lucky.\n\nDiscard 2 cards each.",
+          "text": "Fearing the worst, you turn around and head out of the forest the way you came in. You reach a clearing just before a great fire consumes everything with its blaze. It takes a while to orient yourself and find the road again, but considering the alternative, you feel lucky.",
+          "effects": [
+            "Discard 2 cards each."
+          ],
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -701,9 +709,10 @@
       "choice": "Aid the Inox with what they are carrying.",
       "outcomes": [
         {
-          "text": "You take pity on the disheveled group of Inox, forced from their home by a natural disaster. You travel with them fora time, treating their wounds and helping to lighten their loads.\n\nThe Shaman thanks you and hands you an amulet. \"We can't return to our homes until the beast rests. I fear what this may mean for us all. I hope this keeps you safe.\"\n\nDiscard 2 cards each.",
+          "text": "You take pity on the disheveled group of Inox, forced from their home by a natural disaster. You travel with them fora time, treating their wounds and helping to lighten their loads.\n\nThe Shaman thanks you and hands you an amulet. \"We can't return to our homes until the beast rests. I fear what this may mean for us all. I hope this keeps you safe.\"",
           "effects": [
             "Gain 10 collective gold.",
+            "Discard 2 cards each.",
             "Unlock \"Burning Mountain\" (M-6)."
           ],
           "resolve": "{{{Remove}}}"
@@ -714,7 +723,10 @@
       "choice": "Ignore the Shamans ramblings.",
       "outcomes": [
         {
-          "text": "You brush off the plight of the Inox tribe, but as you continue to your destination, you begin to feel a certain amount of uncase. There is a slight tremble in the soles of your feet, and, in the distance, the black cloud of smoke grows. Unlock “Burning Mountain\" (M-6).",
+          "text": "You brush off the plight of the Inox tribe, but as you continue to your destination, you begin to feel a certain amount of uncase. There is a slight tremble in the soles of your feet, and, in the distance, the black cloud of smoke grows.",
+          "effects": [
+            "Unlock \"Burning Mountain\" (M-6)."
+          ],
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -815,7 +827,10 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "The trees aren't part of an ambush, but that doesn't make them any easier to clear. It' s grueling work and by the time you arrive at your destination, you are exhausted.\n\nDiscard 3 cards each.",
+          "text": "The trees aren't part of an ambush, but that doesn't make them any easier to clear. It' s grueling work and by the time you arrive at your destination, you are exhausted.",
+          "effects": [
+            "Discard 3 cards each."
+          ],
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -885,7 +900,10 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life.\n\nDiscard 2 cards each.",
+          "text": "The situation is not ideal, but you work through the pain. By the time a path has been cleared away, you never want to see another rock in your life.",
+          "effects": [
+            "Discard 2 cards each."
+          ],
           "resolve": "{{{Remove}}}"
         }
       ]
@@ -920,8 +938,9 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "You disperse through the scene, tending to people's wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.\n\nConsume 1 {{{SmallItem}}} item each.",
+          "text": "You disperse through the scene, tending to people's wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.",
           "effects": [
+            "Consume 1 {{{SmallItem}}} item each.",
             "Gain 1 reputation."
           ],
           "resolve": "{{{Remove}}}"
