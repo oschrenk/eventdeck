@@ -762,7 +762,7 @@
       "choice": "Leave the criminal element alone and continue enjoying the show.",
       "outcomes": [
         {
-          "text": "The music is too good to be interrupted You ignore the men in the back and simply have a great time.",
+          "text": "The music is too good to be interrupted. You ignore the men in the back and simply have a great time.",
           "effects": [
             "Gain 1 {{{Check}}} each."
           ],
