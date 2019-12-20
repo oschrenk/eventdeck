@@ -26,6 +26,7 @@ const view = {
 
   // Status
   Bless: "<Icon name={'bless'}/>",
+  Curse: "<Icon name={'curse'}/>",
 
   // Cards
   Remove: "<Icon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }}/>",

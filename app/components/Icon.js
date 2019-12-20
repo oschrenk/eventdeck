@@ -23,7 +23,9 @@ const map= {
   'triangles': '\ue911',
   'two-minis': '\ue912',
   'flip': '\ue913',
-  'draw': '\ue914'
+  'draw': '\ue914',
+  'bless': '\ue921\ue922\ue923\ue924\ue925',
+  'curse': '\ue926',
 }
 
 export default Icon = ({name, style}) => {
