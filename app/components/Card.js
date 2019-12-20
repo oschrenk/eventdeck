@@ -134,7 +134,14 @@ const Blocks = ({requirement, texts, color }) => {
 
 const Effect = ({text, color}) => {
   return (
-      <Text style={{...backText, color: color}}>{text}</Text>
+    <Text style={{...backText, color: color}}>
+      <JsxParser
+        components={{ Icon, Text }}
+        jsx={enhance(text)}
+        renderInWrapper={false}
+        onError={(o) => console.log(o)}
+      />
+    </Text>
   )
 }
 
