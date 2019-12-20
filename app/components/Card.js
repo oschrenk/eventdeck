@@ -87,30 +87,69 @@ const colors = {
   road: 'black'
 }
 
-const Outcome = ({outcome, type}) => {
-  const requirement = outcome.requirement ? `${outcome.requirement}: ` : ""
-  const text = outcome.text ? `${outcome.text}` : ""
-  const effects = outcome.effects ? `${outcome.effects.join("\n")}` : ""
-  const all = `${requirement}${text}\n${effects}`
+const Requirement = ({text, color}) => {
+  return (
+    <Text style={{...backText, color: color}}>
+      <JsxParser
+        components={{ Icon, Text }}
+        jsx={enhance(text)}
+        renderInWrapper={false}
+        onError={(o) => console.log(o)}
+      />
+    </Text>
+  )
+}
 
-  const color = colors[type]
+const RequirementBlock = ({requirement, text, color}) => {
+  return (
+    <View style={{flexDirection:'row', flexWrap:'wrap'}}>
+      <Requirement text={requirement + ": " + text} color={color} />
+    </View>
+  )
+}
+
+const Block = ({text, color}) => {
   return (
     <View>
-      <Text style={{...backText, color: color}}>
-        <JsxParser
-          components={{ Icon, Text }}
-          jsx={enhance(all)}
-          renderInWrapper={false}
-        />
-      </Text>
-      <Text style={{...backText, color: color}}>
-        <JsxParser
-          components={{ Icon, Text }}
-          jsx={enhance(outcome.resolve)}
-          renderInWrapper={false}
-          onError={(o) => console.log(o)}
-        />
-      </Text>
+      <Text style={{...backText, color: color}}>{text}</Text>
+    </View>
+  )
+}
+
+const Blocks = ({requirement, texts, color }) => {
+  const start = requirement ? 1 : 0
+  const end = texts.length
+
+  return (
+    <View>
+      { requirement &&
+        <RequirementBlock requirement={requirement} text={texts[0]} color={color}/>
+      }
+      {
+        texts.slice(start,end).map((t,i) => <Block text={t} color={color} key={i} />)
+      }
+    </View>
+  )
+}
+
+const Effect = ({text, color}) => {
+  return (
+      <Text style={{...backText, color: color}}>{text}</Text>
+  )
+}
+
+const Outcome = ({outcome, type}) => {
+  const requirement = outcome.requirement
+  const effects = outcome.effects
+  const texts = outcome.text.split("\n\n")
+  const color = colors[type]
+
+  return (
+    <View>
+      <Blocks requirement={requirement} texts={texts} color={color} />
+      {
+        effects.map((e,i) => <Effect text={e} color={color} key={i} />)
+      }
     </View>
   )
 }
