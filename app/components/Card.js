@@ -23,6 +23,7 @@ const view = {
   ThreeSpears: "<Icon name={'three-spears'}/>",
   Tinkerer: "<Icon name={'tinkerer'}/>",
   Triangles: "<Icon name={'triangles'}/>",
+  TwoMinis: "<Icon name={'two-minis'}/>",
 
   // Status
   Bless: "<Icon name={'bless'}/>",
