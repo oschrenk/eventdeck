@@ -9,9 +9,9 @@
         {
           "text": "You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort of thicket filled with sticky spines.\n\nYou pull yourself out, but not before your skin is pierced in numerous places and becomes inflamed. Best to avoid this plant in the future.",
           "effects": [
-            "All start scenario with {{{Poison}}}."
+            "All start scenario with {Poison}."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -23,7 +23,7 @@
           "effects": [
             "All start scenario with 3 damage."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -38,9 +38,9 @@
         {
           "text": "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision.",
           "effects": [
-            "All start scenario with {{{Bless}}}."
+            "All start scenario with {Bless}."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -52,7 +52,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -67,9 +67,9 @@
         {
           "text": "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision. That is, until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn't improve much by the time you arrive at your destination.",
           "effects": [
-            "All start scenario with {{{Poison}}}."
+            "All start scenario with {Poison}."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -81,7 +81,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -97,9 +97,9 @@
           "text": "The merchants in the caravan seem grateful, though the guards eye you skeptically. After traveling for half a day without event, you head off down a side road and wave good bye. The merchants express their appreciation with a bit of coin.",
           "effects": [
             "Gain 2 gold each.",
-            "Reputation {{{More}}} 9: Gain 1 additional gold each."
+            "Reputation {More} 9: Gain 1 additional gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -112,7 +112,7 @@
             "Gain 10 gold each.",
             "Lose 2 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -129,7 +129,7 @@
           "effects": [
             "Gain 1 collective \"Necklace of Teeth\" (Item 106)."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -139,10 +139,10 @@
         {
           "text": "With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n\"Blast it all.\" one of the guards says. \"Patrol duty is the absolute worst. No matter what we tell those savages, they're convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for\"",
           "effects": [
-            "All start scenario with {{{Curse}}}.",
+            "All start scenario with {Curse}.",
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -156,7 +156,7 @@
       "outcomes": [
         {
           "text": "You holt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can't catch your breath.",
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -166,9 +166,9 @@
         {
           "text": "The bear roars as you approach, making powerful swipes with its claws. Still, with the surprise and the commotion, the bear is not all that committed to the fight. After a bit of back and forth, the animal grunts and runs off into the trees.",
           "effects": [
-            "All start scenario with {{{Wound}}}."
+            "All start scenario with {Wound}."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -184,9 +184,9 @@
           "text": "You quietly move through the forest toward the noise. Eventually you come upon a clearing where you see a circle of cultists performing some strange ritual. One of them notices you and shouts to the others. The situation devolves into a bloody battle. You are, of course, victorious, but it saps some of your strength.",
           "effects": [
             "Gain 5 experience each.",
-            "Lose 1 {{{Check}}} each."
+            "Lose 1 {Check} each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -198,7 +198,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -215,7 +215,7 @@
           "effects": [
             "Lose 5 gold each."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -227,7 +227,7 @@
           "effects": [
             "All start scenario with 3 damage."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -244,7 +244,7 @@
           "effects": [
             "Consume 1 collective item."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -256,7 +256,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -273,7 +273,7 @@
           "effects": [
             "All start scenario with 1 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -286,7 +286,7 @@
             "Add City Event 71 to the deck.",
             "All start scenario with 1 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -300,7 +300,7 @@
       "outcomes": [
         {
           "text": "You race forward, scanning the area for an open space where the danger from rock slides will be less severe. After dodging some rocks and getting hit by others, you find a relatively safe area and wait for the chaos to subside.\nAll start scenario with 2 damage.",
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -308,12 +308,12 @@
       "choice": "Take cover under a nearby outcropping and wait out the earthquake.",
       "outcomes": [
         {
-          "requirement": "{{{Cragheart}}}, {{{Spellweaver}}}, {{{Triangles}}}, {{{Circles}}}",
+          "requirement": "{Cragheart}, {Spellweaver}, {Triangles}, {Circles}",
           "text": "You jump under an outcropping, but something is not right. Those among you attuned to the elements turn toward the face of the mountain and step into it, as though the rocks were gone. Inside, you see an odd crystal jutting out of the earth. You snatch it up and the tremors stop.",
           "effects": [
             "Add City Event 73 to the deck."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -321,7 +321,7 @@
           "effects": [
             "All start scenario with 4 damage."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -338,7 +338,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -351,7 +351,7 @@
             "One starts scenario with {MinusOneAttackModifier}x3.",
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -368,7 +368,7 @@
           "effects": [
             "Gain 2 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -378,9 +378,9 @@
         {
           "text": "You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives. The man is surprisingly agile and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the \"stars\" gift. You run away with all haste, but his odor is much harder to escape.",
           "effects": [
-            "All start scenario with {{{Curse}}}."
+            "All start scenario with {Curse}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -395,9 +395,9 @@
         {
           "text": "You pull back your bow and take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook it, and eat it. Definitely beats the field rations you carry with you.",
           "effects": [
-            "All start scenario with {{{Bless}}}."
+            "All start scenario with {Bless}."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -409,7 +409,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -424,10 +424,10 @@
         {
           "text": "You pull back your bow and take aim. The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention. As the flock turns and descends toward your you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process.",
           "effects": [
-            "All start scenario with {{{Muddle}}}.",
+            "All start scenario with {Muddle}.",
             "All start scenario with 2 damage."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -439,7 +439,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -454,10 +454,10 @@
         {
           "text": "You notch your bow and take a few steps forward to find a better shooting position. Unfortunately, the deer notice your presence and bound off. You shoot a few arrows as they go, but nothing connects.\n\nThen an arrow flies out of the brush and into your shoulder. \"Foul city-dwellers!\" a voice cries out from the trees. \"I had been stalking that herd for hours and you spooked them!\" More arrows rain down as you run away.",
           "effects": [
-            "All start scenario with {{{Curse}}}.",
+            "All start scenario with {Curse}.",
             "All start scenario with 2 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -467,9 +467,9 @@
         {
           "text": "You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest. It bolts away, but doesn't make it very far before collapsing. Then you see a large Inox emerge from the brush and turn toward you. \"I thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you.\"",
           "effects": [
-            "All start scenario with {{{Bless}}}."
+            "All start scenario with {Bless}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -486,7 +486,7 @@
           "effects": [
             "Gain 5 collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -498,7 +498,7 @@
           "effects": [
             "Gain 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -511,20 +511,20 @@
       "choice": "Attempt to come to a peaceful resolution.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {{{Less}}} -4",
+          "requirement": "REPUTATION {Less} -4",
           "text": "You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. \"Go in peace, then,\" the leader says. “And stay off my land.\"",
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
           "text": "You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. \"Foul creature. I curse you and your kind! Run — get off my land and never come back!\"",
           "effects": [
-            "All start scenario with {{{Curse}}}."
+            "All start scenario with {Curse}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -536,7 +536,7 @@
           "effects": [
             "All start scenario with 3 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -549,12 +549,12 @@
       "choice": "Help the guards catch the escaping man.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {{{Less}}} -4",
+          "requirement": "REPUTATION {Less} -4",
           "text": "You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation.",
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -562,7 +562,7 @@
           "effects": [
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -573,9 +573,9 @@
           "text": "Criminals deserve freedom as much as the next man. While the guards are distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Gloomhaven.",
           "effects": [
             "Lose 2 reputation.",
-            "Reputation {{{Less}}} -9: Gain 1 collective \"Major Power Potion\" (Item 041)."
+            "Reputation {Less} -9: Gain 1 collective \"Major Power Potion\" (Item 041)."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -590,10 +590,10 @@
         {
           "text": "You take the pack by surprise. Fully distracted by their ritual they don't even see you coming. The Vermlings still get in a few good attacks before they are slain, though.",
           "effects": [
-            "All start scenario with {{{Poison}}}.",
+            "All start scenario with {Poison}.",
             "All start scenario with 2 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -605,7 +605,7 @@
           "effects": [
             "Gain 3 experience each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -620,11 +620,11 @@
         {
           "text": "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation.",
           "effects": [
-            "All start scenario with {{{Wound}}}",
+            "All start scenario with {Wound}.",
             "All start scenario with 3 damage.",
-            "Lose 1 {{{Check}}} each."
+            "Lose 1 {Check} each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -636,7 +636,7 @@
           "effects": [
             "Discard 2 cards each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -653,7 +653,7 @@
           "effects": [
             "Add City Event 74 to the deck."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -664,9 +664,9 @@
           "text": "You take pity on an old Orchid woman trying to extricate her fortune-teller's wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes.\n\n\"Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you.\"",
           "effects": [
             "Gain 2 experience each.",
-            "All start scenario with {{{Curse}}}."
+            "All start scenario with {Curse}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -683,7 +683,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -696,7 +696,7 @@
             "Gain 2 gold each.",
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -715,7 +715,7 @@
             "Discard 2 cards each.",
             "Unlock \"Burning Mountain\" (M-6)."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -727,7 +727,7 @@
           "effects": [
             "Unlock \"Burning Mountain\" (M-6)."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -740,12 +740,12 @@
       "choice": "Try to reason with the Inox",
       "outcomes": [
         {
-          "requirement": "{{{Brute}}}, {{{LightningBolts}}}",
+          "requirement": "{Brute}, {LightningBolts}",
           "text": "The Inox in your party talks with the leader for a while and they are able to come to an agreement. They punch each other's chests, and the group lets you through.",
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         },
         {
           "requirement": "OTHERWISE",
@@ -753,7 +753,7 @@
           "effects": [
             "Lose 5 gold each."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -765,7 +765,7 @@
           "effects": [
             "All start scenario with 3 damage."
           ],
-          "resolve": "{{{Return}}}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -778,13 +778,13 @@
       "choice": "Attempt to help the man with his axle problem.",
       "outcomes": [
         {
-          "requirement": "{{{Tinkerer}}}, {{{ThreeSpears}}}",
+          "requirement": "{Tinkerer}, {ThreeSpears}",
           "text": "The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.",
           "effects": [
-            "All start scenario with {{{Bless}}}.",
+            "All start scenario with {Bless}.",
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -792,7 +792,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -805,7 +805,7 @@
             "Gain 10 collective gold.",
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -818,12 +818,12 @@
       "choice": "Clear the trees from the road. It is the best way through and will help other travelers.",
       "outcomes": [
         {
-          "requirement": "{{{Spellweaver}}}, {{{Triangles}}}, {{{Circles}}}",
+          "requirement": "{Spellweaver}, {Triangles}, {Circles}",
           "text": "The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.",
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -831,7 +831,7 @@
           "effects": [
             "Discard 3 cards each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -843,7 +843,7 @@
           "effects": [
             "All start scenario with 2 damage."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -860,9 +860,9 @@
           "text": "After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.",
           "effects": [
             "Gain 10 collective gold.",
-            "{{{Scoundrel}}}, {{{Saw}}}, {{{MusicNote}}}: Gain 10 additional collective gold."
+            "{Scoundrel}, {Saw}, {MusicNote}: Gain 10 additional collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -878,7 +878,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -891,12 +891,12 @@
       "choice": "Attempt to clear the stones from the path.",
       "outcomes": [
         {
-          "requirement": "{{{Cragheart}}}",
+          "requirement": "{Cragheart}",
           "text": "The Cragheart's combination of raw strength and an affinity for stonework is perfect for this task. In a matter of minutes, enough stones have been destroyed or thrown aside to open a path.",
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -904,7 +904,7 @@
           "effects": [
             "Discard 2 cards each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -914,9 +914,9 @@
         {
           "text": "You sigh and turn around. After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don't seem too happy about your sudden arrival. You fend them off, but they leave you wounded.",
           "effects": [
-            "All start scenario with {{{Wound}}}."
+            "All start scenario with {Wound}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -929,21 +929,21 @@
       "choice": "Help the survivors deal with the carnage.",
       "outcomes": [
         {
-          "requirement": "{{{Mindthief}}}, {{{TwoMinis}}}",
+          "requirement": "{Mindthief}, {TwoMinis}",
           "text": "You approach to help those still alive, but the woman in the road screams, gesturing at the Vermling in your group. You try to calm her, but it is of no use. You abandon the cause.",
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
           "text": "You disperse through the scene, tending to people's wounds and getting them back on their feet. It takes a few supplies, but they seem grateful in the end.",
           "effects": [
-            "Consume 1 {{{SmallItem}}} item each.",
+            "Consume 1 {SmallItem} item each.",
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -955,7 +955,7 @@
           "effects": [
             "Gain 2 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }

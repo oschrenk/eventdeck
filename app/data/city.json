@@ -12,7 +12,7 @@
             "Gain 10 experience each.",
             "Either lose 5 gold each or lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -24,7 +24,7 @@
           "effects": [
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -42,7 +42,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -50,7 +50,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -62,7 +62,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -81,12 +81,12 @@
             "Gain 1 collective \"Curious Gear\" (Item 125).",
             "Global Achievement: \"Ancient Technology.\""
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
           "text": "\"Bah! You don't have enough. Come back when you do!\"",
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -98,7 +98,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -115,7 +115,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -125,10 +125,10 @@
         {
           "text": "You approach the foreboding house full of heroic bravado. There's certainly nothing otherworldly about the structure, but its fallen beams and piles of rubble do make it difficult to look around. By the time you find the cat hiding under a burned-out bed frame, you are utterly exhausted. At least the boy is ecstatic his cat has been found.",
           "effects": [
-            "Lose 1 {{{Check}}} each.",
+            "Lose 1 {Check} each.",
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -143,11 +143,11 @@
         {
           "text": "Amidst a great deal of revelry, you put all you have into laying the foundation of the sanctuary. Surely much good will be done here healing the sick and wounded. After all your exhaustive efforts, though, you might end up being their first patients.",
           "effects": [
-            "Lose 1 {{{Check}}}",
+            "Lose 1 {Check}",
             "Gain 1 reputation.",
             "Gain 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -158,9 +158,9 @@
           "text": "You head to the prosperous east side of town, not to help lay down the foundation, but to steal some goods from shopkeepers too silly to lock up their wares during the festivities. You make off with a good deal of money and the distracted guards are none the wiser.",
           "effects": [
             "Gain 5 gold each.",
-            "Reputation {{{Less}}} -4: Gain 5 additional gold each."
+            "Reputation {Less} -4: Gain 5 additional gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -178,7 +178,7 @@
             "Gain 5 experience each.",
             "Gain 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -189,9 +189,9 @@
           "text": "The town erupts into chaos with panicked cries of \"Vermlings!\" — a perfect opportunity to collect some valuables. Slinking around to an abandoned shop, you find a way in and pilfer the safe. In the morning, the devastation from the assault is noticeable. Downtrodden looks greet you as you passr and you wonder if your presence was missed along the walls.",
           "effects": [
             "Gain Random Item Design.",
-            "Reputation {{{More}}} 4: Lose 1 reputation."
+            "Reputation {More} 4: Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -207,10 +207,10 @@
           "text": "What was advertised as a few minutes turns out to be an hour or two as you lug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he'll be able to set sail on time, though. He gratefully pays you, but you can't help, but think that such menial labor might be beneath you.",
           "effects": [
             "Gain 5 gold each.",
-            "Reputation {{{More}}} 9: lose 1 reputation.",
-            "Reputation {{{Less}}} -4: Gain 1 reputation."
+            "Reputation {More} 9: lose 1 reputation.",
+            "Reputation {Less} -4: Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -220,10 +220,10 @@
         {
           "text": "Unwilling to be bothered by such trivial matters, you continue on your way amidst curses from the ship's captain. \"Blast it all! You'll get nowhere in life with that sort of attitude!\"",
           "effects": [
-            "Reputation {{{More}}} 4: Gain 1 reputation.",
-            "Reputation {{{Less}}} -9: Lose 1 reputation."
+            "Reputation {More} 4: Gain 1 reputation.",
+            "Reputation {Less} -9: Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -236,13 +236,13 @@
       "choice": "The map docs look valuable. Decide to bargain for it.",
       "outcomes": [
         {
-          "requirement": "PAY 20 (reputation {{{Less}}} 10) or 15 (reputation {{{More}}} 9) COLLECTIVE COLD",
+          "requirement": "PAY 20 (reputation {Less} 10) or 15 (reputation {More} 9) COLLECTIVE COLD",
           "text": "After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of \"untold treasure \"by hiring a ship.",
           "effects": [
             "Unlock \"Sunken Vessel\" 93 (N-17)",
             "Party Achievement: \"A Map to Treasure.\""
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -250,7 +250,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -262,7 +262,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -278,9 +278,9 @@
           "text": "Using a few less-than-savory contacts, you're able to unload the goods for a respectable price. Who knew drunken strolls could prove so profitable?",
           "effects": [
             "Gain 10 gold each.",
-            "Reputation {{{Less}}} -9: Gain 5 additional gold each."
+            "Reputation {Less} -9: Gain 5 additional gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -292,7 +292,7 @@
           "effects": [
             "Gain 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -305,12 +305,12 @@
       "choice": "Play a game with the man. It may prove to be a good time.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {{{More}}} -5",
+          "requirement": "REPUTATION {More} -5",
           "text": "You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as \"uncanny\" You leave the table empty handed.",
           "effects": [
             "Lose 5 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -318,7 +318,7 @@
           "effects": [
             "Gain 5 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -330,7 +330,7 @@
           "effects": [
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -347,9 +347,9 @@
           "text": "Intrigued by the parchment, you quickly make a decision to buy it off the Harrower. The exchange is fast, and then you move on your way, hoping no one saw you.",
           "effects": [
             "Gain Random Item Design.",
-            "Reputation {{{More}}} 9: Lose 1 reputation."
+            "Reputation {More} 9: Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -357,7 +357,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -367,9 +367,9 @@
         {
           "text": "You loudly refuse the Harrower's offer and continue about your business. That thing should know better than to stray from the Sinking Market.",
           "effects": [
-            "Reputation {{{Less}}} -4: Gain 1 reputation."
+            "Reputation {Less} -4: Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -386,7 +386,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -396,11 +396,11 @@
         {
           "text": "You emit a primal yell and continue eating. Pie after pie, your willpower cannot be broken, and eventually the sailors are forced to concede. However, you cannot even stand to shake your foes' hands. Your legs are boneless and your stomach feels worse than it has ever felt before. You have earned glory and prize money, but all you want to do is lie down and wait for the horror to pass.",
           "effects": [
-            "Lose 1 {{{Check}}}.",
+            "Lose 1 {Check}.",
             "Gain 10 gold each.",
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -415,10 +415,10 @@
         {
           "text": "You decide to indulge in the unknown and see what the Quatryl is offering. He looks very pleased at your approach and instructs you to inhale a tube of vapors, then take a bite from a bowl full of tiny golden spheres. As the spheres melt in your mouth, the taste mixes with the aroma of the vapors to create a wonderful experience. You pay what you can, but the Quatryl seems solely focused on how much you enjoyed the meal.",
           "effects": [
-            "All start scenario with {{{Bless}}}.",
+            "All start scenario with {Bless}.",
             "Lose 3 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -430,7 +430,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -447,7 +447,7 @@
           "effects": [
             "Gain 10 experience each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -459,7 +459,7 @@
           "effects": [
             "Gain 2 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -472,12 +472,12 @@
       "choice": "Do your best to explain that the man was like this when you found him.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {{{More}}} 5",
+          "requirement": "REPUTATION {More} 5",
           "text": "You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story. After a few more questions, he allows you to leave and clean up.",
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -485,7 +485,7 @@
           "effects": [
             "Lose 2 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -494,7 +494,7 @@
       "outcomes": [
         {
           "text": "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you.",
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "PAY 15 COLLECTIVE GOLD",
@@ -502,15 +502,15 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
           "text": "Knowing you don't have enough to professional help, you spend all night cleaning up the mess before anyone discovers it.",
           "effects": [
-            "Lose 1 {{{Check}}}."
+            "Lose 1 {Check}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -528,7 +528,7 @@
           "effects": [
             "Add City Event 70 to the deck."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -536,7 +536,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -548,7 +548,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -565,7 +565,7 @@
           "effects": [
             "Gain 10 collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -577,7 +577,7 @@
           "effects": [
             "Unlock \"Temple of the Eclipse\" 81 (D-2)."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -594,7 +594,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -606,7 +606,7 @@
           "effects": [
             "Gain 2 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -619,25 +619,25 @@
       "choice": "Attend the wedding with an expensive gift.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {{{More}}} 9. PAY 20 COLLECTIVE COLD",
+          "requirement": "REPUTATION {More} 9. PAY 20 COLLECTIVE COLD",
           "text": "You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk of the town.",
           "effects": [
             "Gain 2 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
-          "requirement": "REPUTATION {{{Less}}} 10, PAY 20 COLLECTIVE COLD",
+          "requirement": "REPUTATION {Less} 10, PAY 20 COLLECTIVE COLD",
           "text": "You bring a very expensive vase as a gift, but you can't seem to catch the father of the bride's eve to present it at the right time.",
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
           "text": "Read outcome B.",
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -645,13 +645,13 @@
       "choice": "Attend the wedding and bring a mundane gift.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {{{Less}}} -4",
+          "requirement": "REPUTATION {Less} -4",
           "text": "You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.",
           "effects": [
             "Lose 5 collective gold.",
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -659,7 +659,7 @@
           "effects": [
             "Lose 5 collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -672,12 +672,12 @@
       "choice": "Agree to guard the goods. It should be easy money.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {{{More}}} 9",
+          "requirement": "REPUTATION {More} 9",
           "text": "You head to the warehouse and watch in silence as a number of heavy crates are loaded onto a cart. You then escort the cart to the West Gate. No thefts are attempted, and you are paid well.",
           "effects": [
             "Gain 10 collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -686,7 +686,7 @@
             "Gain 5 experience each.",
             "Gain 10 collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -698,7 +698,7 @@
           "effects": [
             "Lose 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -711,13 +711,13 @@
       "choice": "Demand payment up front before agreeing to look for the man's brother.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {{{More}}} 7",
+          "requirement": "REPUTATION {More} 7",
           "text": "\"What? I... Oh, very well.\" the man stutters. \"Since I trust you to keep your word, I'll give you a little money for your trouble.\" The man describes his brother and hands you a small coin pouch.",
           "effects": [
             "Gain 5 collective gold.",
             "Add Road Event 65 to the deck."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -725,7 +725,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -737,7 +737,7 @@
           "effects": [
             "Add Road Event 65 to the deck."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -754,7 +754,7 @@
           "effects": [
             "Gain 2 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -764,9 +764,9 @@
         {
           "text": "The music is too good to be interrupted. You ignore the men in the back and simply have a great time.",
           "effects": [
-            "Gain 1 {{{Check}}} each."
+            "Gain 1 {Check} each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -783,7 +783,7 @@
           "effects": [
             "Gain 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -793,9 +793,9 @@
         {
           "text": "In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal.",
           "effects": [
-            "All start scenario with {{{Bless}}}."
+            "All start scenario with {Bless}."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -812,7 +812,7 @@
           "effects": [
             "Gain 10 experience each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -824,7 +824,7 @@
           "effects": [
             "Gain 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -837,12 +837,12 @@
       "choice": "Attempt to catch the vase.",
       "outcomes": [
         {
-          "requirement": "{{{Brute}}}, {{{Cragheart}}}, {{{LightningBolts}}}",
+          "requirement": "{Brute}, {Cragheart}, {LightningBolts}",
           "text": "You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.",
           "effects": [
             "Gain 5 collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -850,7 +850,7 @@
           "effects": [
             "Lose 10 collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -862,7 +862,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -875,12 +875,12 @@
       "choice": "Offer to fix the lamps. It shouldn't be too hard with a bit of technical know-how.",
       "outcomes": [
         {
-          "requirement": "{{{Tinkerer}}}",
+          "requirement": "{Tinkerer}",
           "text": "You quickly identify the source of the problem — some frayed wiring in the kitchen — and have it replaced in no time. The proprietor seems very impressed by your work and gives free drinks all around in your name.",
           "effects": [
             "Gain 2 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -888,7 +888,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -896,12 +896,12 @@
       "choice": "Take the opportunity to steal some valuables from drunk patrons in the dark.",
       "outcomes": [
         {
-          "requirement": "{{{Scoundrel}}}, {{{Mindthief}}}, {{{Eclipse}}}",
+          "requirement": "{Scoundrel}, {Mindthief}, {Eclipse}",
           "text": "The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.",
           "effects": [
             "Gain 10 collective gold."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -909,7 +909,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -922,12 +922,12 @@
       "choice": "Attempt to stop the crowd from hanging the Vermling,",
       "outcomes": [
         {
-          "requirement": "{{{Spellweaver}}}, {{{PointyHead}}}, {{{MusicNote}}}",
+          "requirement": "{Spellweaver}, {PointyHead}, {MusicNote}",
           "text": "You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.",
           "effects": [
             "Gain 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -935,7 +935,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -947,7 +947,7 @@
           "effects": [
             "Add City Event 60 to the deck."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -960,12 +960,12 @@
       "choice": "Accept the mysterious job. You can handle anything.",
       "outcomes": [
         {
-          "requirement": "{{{Scoundrel}}}, {{{Mindthief}}}, {{{Eclipse}}}",
+          "requirement": "{Scoundrel}, {Mindthief}, {Eclipse}",
           "text": "The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.",
           "effects": [
             "Gain 10 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -973,7 +973,7 @@
           "effects": [
             "Lose 3 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -985,7 +985,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -998,12 +998,12 @@
       "choice": "Talk to the Savvas, appealing to their sense of duty and community.",
       "outcomes": [
         {
-          "requirement": "{{{Cragheart}}}, {{{Triangles}}}",
+          "requirement": "{Cragheart}, {Triangles}",
           "text": "The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.",
           "effects": [
             "Gain 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -1011,7 +1011,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -1019,12 +1019,12 @@
       "choice": "Talk to the managers and attempt to get the Savvas better pay.",
       "outcomes": [
         {
-          "requirement": "{{{Scoundrel}}}, {{{Saw}}}, {{{MusicNote}}}",
+          "requirement": "{Scoundrel}, {Saw}, {MusicNote}",
           "text": "\"I-I just can't give them more money!\" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.",
           "effects": [
             "Gain 1 prosperity."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -1032,7 +1032,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }
@@ -1045,13 +1045,13 @@
       "choice": "Give chase! No one steals from you and gets away with it.",
       "outcomes": [
         {
-          "requirement": "{{{Mindthief}}}",
+          "requirement": "{Mindthief}",
           "text": "The Vermling escapes into the sewers, but the Mindthief is able to give chase, catching up as the cutpurse enters his nest. There you find more wealth than what was lost.",
           "effects": [
             "Gain 5 gold each.",
             "Gain 1 collective \"Flea-Bitten Shawl\" (Item 105)"
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         },
         {
           "requirement": "OTHERWISE",
@@ -1059,7 +1059,7 @@
           "effects": [
             "Lose 5 gold each."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -1071,7 +1071,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{{{Remove}}}"
+          "resolve": "{Remove}"
         }
       ]
     }

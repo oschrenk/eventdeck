@@ -2,40 +2,42 @@ import React from 'react';
 import { Text, View, ImageBackground } from 'react-native';
 import Mustache from 'mustache'
 
-import { backText, frontText, bold } from '../styles/typography'
+import { backText, backTextEffect, frontText, bold } from '../styles/typography'
 import Icon from './Icon'
-import JsxParser from 'react-jsx-parser'
 
-const view = {
+const Lookup = {
   //classes
-  Brute: "<Icon name={'brute'}/>",
-  Check: "<Icon name={'check'}/>",
-  Circles: "<Icon name={'circles'}/>",
-  Cragheart: "<Icon name={'cragheart'}/>",
-  Eclipse: "<Icon name={'eclipse'}/>",
-  LightningBolts: "<Icon name={'eclipse'}/>",
-  Mindthief: "<Icon name={'mindthief'}/>",
-  MusicNote: "<Icon name={'music-note'}/>",
-  PointyHead: "<Icon name={'pointy-head'}/>",
-  Saw: "<Icon name={'saw'}/>",
-  Scoundrel: "<Icon name={'scoundrel'}/>",
-  Spellweaver: "<Icon name={'spellweaver'}/>",
-  ThreeSpears: "<Icon name={'three-spears'}/>",
-  Tinkerer: "<Icon name={'tinkerer'}/>",
-  Triangles: "<Icon name={'triangles'}/>",
-  TwoMinis: "<Icon name={'two-minis'}/>",
+  "Brute": <Icon name={'brute'}/>,
+  "Circles": <Icon name={'circles'}/>,
+  "Cragheart": <Icon name={'cragheart'}/>,
+  "Eclipse": <Icon name={'eclipse'}/>,
+  "LightningBolts": <Icon name={'eclipse'}/>,
+  "Mindthief": <Icon name={'mindthief'}/>,
+  "MusicNote": <Icon name={'music-note'}/>,
+  "PointyHead": <Icon name={'pointy-head'}/>,
+  "Saw": <Icon name={'saw'}/>,
+  "Scoundrel": <Icon name={'scoundrel'}/>,
+  "Spellweaver": <Icon name={'spellweaver'}/>,
+  "ThreeSpears": <Icon name={'three-spears'}/>,
+  "Tinkerer": <Icon name={'tinkerer'}/>,
+  "Triangles": <Icon name={'triangles'}/>,
+  "TwoMinis": <Icon name={'two-minis'}/>,
 
   // Status
-  Bless: "<Icon name={'bless'}/>",
-  Curse: "<Icon name={'curse'}/>",
+  'Bless': <Icon name={'bless'}/>,
+  "Check": <Icon name={'check'}/>,
+  'Curse': <Icon name={'curse'}/>,
+  'Muddle': <Icon name={'muddle'}/>,
+  'Poison': <Icon name={'poison'}/>,
+  'Wound': <Icon name={'wound'}/>,
 
-  // Cards
-  Remove: "<Icon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }}/>",
-  Return: "<Icon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }}/>",
+  // Other
+  'MinusOneAttackModifier': <Icon name={'1-attack-modifier'}/>,
+  'SmallItem': <Icon name={'wound'}/>,
 
-  // Hacks
-  Less: "{<Text>{'<'}</Text>}",
-  More: "{<Text>{'>'}</Text>}",
+  // Resolves
+  'Remove': <Icon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }}/>,
+  'Return': <Icon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }}/>,
 }
 
 const backgrounds = {
@@ -53,9 +55,6 @@ const Bold = ({text}) => {
   return (
     <Text style={bold}>{text}</Text>
   )
-}
-const enhance = (text) => {
-  return Mustache.render(text, view)
 }
 
 const Front = (props) => {
@@ -87,23 +86,10 @@ const colors = {
   road: 'black'
 }
 
-const Requirement = ({text, color}) => {
-  return (
-    <Text style={{...backText, color: color}}>
-      <JsxParser
-        components={{ Icon, Text }}
-        jsx={enhance(text)}
-        renderInWrapper={false}
-        onError={(o) => console.log(o)}
-      />
-    </Text>
-  )
-}
-
 const RequirementBlock = ({requirement, text, color}) => {
   return (
-    <View style={{flexDirection:'row', flexWrap:'wrap'}}>
-      <Requirement text={requirement + ": " + text} color={color} />
+    <View style={{flexDirection:'row', flexWrap:'wrap' }}>
+      { <TextParser text={requirement + ": " + text} style={{color:color}} /> }
     </View>
   )
 }
@@ -132,16 +118,31 @@ const Blocks = ({requirement, texts, color }) => {
   )
 }
 
+const TextParser = ({text, style}) => {
+  const re = /\s*(\{\w+\})\s*/g;
+  const split = text.split(re)
+
+  return (
+    split.map((s,i) => {
+      if (s.startsWith("{")) {
+        const name = s.substr(1, s.length - 2)
+        const lookup = Lookup[name]
+        if (!lookup) {
+          console.log("MISSING", name)
+        }
+        return lookup
+      } else {
+        return <Text style={{...backText, ...style}} key={i}>{s}</Text>
+      }
+    })
+  )
+}
+
 const Effect = ({text, color}) => {
   return (
-    <Text style={{...backText, color: color}}>
-      <JsxParser
-        components={{ Icon, Text }}
-        jsx={enhance(text)}
-        renderInWrapper={false}
-        onError={(o) => console.log(o)}
-      />
-    </Text>
+    <View style={{flexDirection:'row', flexWrap:'wrap'}}>
+      { <TextParser text={text} style={{...backTextEffect, color:color}}/> }
+    </View>
   )
 }
 
@@ -154,7 +155,7 @@ const Outcome = ({outcome, type}) => {
   return (
     <View>
       <Blocks requirement={requirement} texts={texts} color={color} />
-      {
+      { effects &&
         effects.map((e,i) => <Effect text={e} color={color} key={i} />)
       }
     </View>
