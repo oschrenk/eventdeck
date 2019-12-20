@@ -69,6 +69,12 @@ const transformOutcome = (arr) => {
       t = {effect: o}
     } else if (o.startsWith("Add City")) {
       t = {effect: o}
+    } else if (o.startsWith("Discard")) {
+      t = {effect: o}
+    } else if (o.startsWith("Consume")) {
+      t = {effect: o}
+    } else if (o.startsWith("One starts")) {
+      t = {effect: o}
 // OUTCOMES
     } else if (o.startsWith("OTHERWISE:")) {
       const text = o.split(':').slice(1).join(':').trim()
