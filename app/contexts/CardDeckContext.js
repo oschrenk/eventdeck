@@ -8,9 +8,11 @@ const CardDeckContext = React.createContext([{}, () => {}]);
 const allCityCardNumbers = allCityEvents.map(e => e.id)
 const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 
+const defaultSide = 'back'
+
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
-    side: 'front',
+    side: defaultSide,
     currentCard: null,
     cards: allCityEvents.concat(allRoadEvents),
     available: {
@@ -53,18 +55,18 @@ const useCardDeck = () => {
     const newCardId = pickAvailable(type)
     const newCard = state.cards.find(c => (c.id === newCardId) && c['type'] === type)
     setCard(newCard)
-    setSide('front')
+    setSide(defaultSide)
   }
 
   const putBack = () => {
     setCard(null)
-    setSide('front')
+    setSide(defaultSide)
   }
 
   const destroy = (card) => {
     toggleAvailable({label: card.id.toString(), checked: false}, card[type])
     setCard(null)
-    setSide('front')
+    setSide(defaultSide)
   }
 
   const toggleAvailable = (item, type) => {
