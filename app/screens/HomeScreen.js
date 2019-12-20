@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, ImageBackground, SafeAreaView, View} from 'react-native';
+import {ImageBackground, SafeAreaView, View} from 'react-native';
 
 import Card from '../components/Card';
 import { useCardDeck } from "../contexts/CardDeckContext";
