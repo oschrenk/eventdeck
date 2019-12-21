@@ -158,7 +158,7 @@
           "text": "You head to the prosperous east side of town, not to help lay down the foundation, but to steal some goods from shopkeepers too silly to lock up their wares during the festivities. You make off with a good deal of money and the distracted guards are none the wiser.",
           "effects": [
             "Gain 5 gold each.",
-            "Reputation {Less} -4: Gain 5 additional gold each."
+            "Reputation < -4: Gain 5 additional gold each."
           ],
           "resolve": "{Remove}"
         }
@@ -189,7 +189,7 @@
           "text": "The town erupts into chaos with panicked cries of \"Vermlings!\" — a perfect opportunity to collect some valuables. Slinking around to an abandoned shop, you find a way in and pilfer the safe. In the morning, the devastation from the assault is noticeable. Downtrodden looks greet you as you passr and you wonder if your presence was missed along the walls.",
           "effects": [
             "Gain Random Item Design.",
-            "Reputation {More} 4: Lose 1 reputation."
+            "Reputation > 4: Lose 1 reputation."
           ],
           "resolve": "{Remove}"
         }
@@ -207,8 +207,8 @@
           "text": "What was advertised as a few minutes turns out to be an hour or two as you lug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he'll be able to set sail on time, though. He gratefully pays you, but you can't help, but think that such menial labor might be beneath you.",
           "effects": [
             "Gain 5 gold each.",
-            "Reputation {More} 9: lose 1 reputation.",
-            "Reputation {Less} -4: Gain 1 reputation."
+            "Reputation > 9: lose 1 reputation.",
+            "Reputation < -4: Gain 1 reputation."
           ],
           "resolve": "{Remove}"
         }
@@ -220,8 +220,8 @@
         {
           "text": "Unwilling to be bothered by such trivial matters, you continue on your way amidst curses from the ship's captain. \"Blast it all! You'll get nowhere in life with that sort of attitude!\"",
           "effects": [
-            "Reputation {More} 4: Gain 1 reputation.",
-            "Reputation {Less} -9: Lose 1 reputation."
+            "Reputation > 4: Gain 1 reputation.",
+            "Reputation < -9: Lose 1 reputation."
           ],
           "resolve": "{Remove}"
         }
@@ -236,7 +236,7 @@
       "choice": "The map docs look valuable. Decide to bargain for it.",
       "outcomes": [
         {
-          "requirement": "PAY 20 (reputation {Less} 10) or 15 (reputation {More} 9) COLLECTIVE COLD",
+          "requirement": "PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE COLD",
           "text": "After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of \"untold treasure \"by hiring a ship.",
           "effects": [
             "Unlock \"Sunken Vessel\" 93 (N-17)",
@@ -278,7 +278,7 @@
           "text": "Using a few less-than-savory contacts, you're able to unload the goods for a respectable price. Who knew drunken strolls could prove so profitable?",
           "effects": [
             "Gain 10 gold each.",
-            "Reputation {Less} -9: Gain 5 additional gold each."
+            "Reputation < -9: Gain 5 additional gold each."
           ],
           "resolve": "{Remove}"
         }
@@ -305,7 +305,7 @@
       "choice": "Play a game with the man. It may prove to be a good time.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {More} -5",
+          "requirement": "REPUTATION > -5",
           "text": "You get into the game, but after a few rounds, your enthusiasm wanes as the man displays a streak of luck that can only be described as \"uncanny\" You leave the table empty handed.",
           "effects": [
             "Lose 5 gold each."
@@ -347,7 +347,7 @@
           "text": "Intrigued by the parchment, you quickly make a decision to buy it off the Harrower. The exchange is fast, and then you move on your way, hoping no one saw you.",
           "effects": [
             "Gain Random Item Design.",
-            "Reputation {More} 9: Lose 1 reputation."
+            "Reputation > 9: Lose 1 reputation."
           ],
           "resolve": "{Remove}"
         },
@@ -367,7 +367,7 @@
         {
           "text": "You loudly refuse the Harrower's offer and continue about your business. That thing should know better than to stray from the Sinking Market.",
           "effects": [
-            "Reputation {Less} -4: Gain 1 reputation."
+            "Reputation < -4: Gain 1 reputation."
           ],
           "resolve": "{Remove}"
         }
@@ -472,7 +472,7 @@
       "choice": "Do your best to explain that the man was like this when you found him.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {More} 5",
+          "requirement": "REPUTATION > 5",
           "text": "You sober up pretty quickly and explain the situation. Luckily the guard is familiar with your reputation and believes your story. After a few more questions, he allows you to leave and clean up.",
           "effects": [
             "No effect."
@@ -618,7 +618,7 @@
       "choice": "Attend the wedding with an expensive gift.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {More} 9. PAY 20 COLLECTIVE COLD",
+          "requirement": "REPUTATION > 9. PAY 20 COLLECTIVE COLD",
           "text": "You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk of the town.",
           "effects": [
             "Gain 2 reputation."
@@ -626,7 +626,7 @@
           "resolve": "{Remove}"
         },
         {
-          "requirement": "REPUTATION {Less} 10, PAY 20 COLLECTIVE COLD",
+          "requirement": "REPUTATION < 10, PAY 20 COLLECTIVE COLD",
           "text": "You bring a very expensive vase as a gift, but you can't seem to catch the father of the bride's eve to present it at the right time.",
           "effects": [
             "No effect."
@@ -644,7 +644,7 @@
       "choice": "Attend the wedding and bring a mundane gift.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {Less} -4",
+          "requirement": "REPUTATION < -4",
           "text": "You pick up an unremarkable set of silverware on the way to the event. When you arrive, the father of the bride casts a scornful look your way and begins whispering to those around him. Maybe you received the invitation by mistake.",
           "effects": [
             "Lose 5 collective gold.",
@@ -671,7 +671,7 @@
       "choice": "Agree to guard the goods. It should be easy money.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {More} 9",
+          "requirement": "REPUTATION > 9",
           "text": "You head to the warehouse and watch in silence as a number of heavy crates are loaded onto a cart. You then escort the cart to the West Gate. No thefts are attempted, and you are paid well.",
           "effects": [
             "Gain 10 collective gold."
@@ -710,7 +710,7 @@
       "choice": "Demand payment up front before agreeing to look for the man's brother.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {More} 7",
+          "requirement": "REPUTATION > 7",
           "text": "\"What? I... Oh, very well.\" the man stutters. \"Since I trust you to keep your word, I'll give you a little money for your trouble.\" The man describes his brother and hands you a small coin pouch.",
           "effects": [
             "Gain 5 collective gold.",
