@@ -13,6 +13,7 @@ const defaultSide = 'front'
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
     side: defaultSide,
+    history: [],
     currentCard: null,
     cards: allCityEvents.concat(allRoadEvents),
     available: {
@@ -35,7 +36,7 @@ const useCardDeck = () => {
     setState(state => ({ ...state, side }));
   }
 
-  const setCard = (card) => {
+  const setCurrentCard = (card) => {
     setState(state => ({ ...state, currentCard: card}));
   }
 
@@ -46,26 +47,63 @@ const useCardDeck = () => {
       setSide('front')
   }
 
+  const randomId = (type) => {
+    return Math.floor((Math.random() * state.available[type].size))
+  }
+
+  const incrementId = (type) => {
+    console.log("incrementId")
+    console.log("incrementId", type)
+    const last = getLast(type)
+    console.log("incrementId", last)
+    if (last) {
+      console.log("incrementId", "found valid last card")
+      const newIndex = last.id
+      console.log("incrementId", newIndex)
+      return newIndex
+    } else {
+      console.log("incrementId", "default to 0")
+      return 0
+    }
+  }
+
   const pickAvailable = (type) => {
-    const index = Math.floor((Math.random() * state.available[type].size))
+    console.log("pickAvailable")
+    const index = incrementId(type)
+    console.log("pickAvailable", index)
     return [...state.available[type]][index]
+  }
+
+  const addHistory = (card) => {
+    const history = state.history
+    history.push(card)
+    setState(state => ({ ...state, history }));
+  }
+
+  const getLast = (type) => {
+    if (type) {
+      return state.history.reverse().find(c => c['type'] === type)
+    } else {
+      return state.history[state.history.length -1]
+    }
   }
 
   const drawCard = (type) => {
     const newCardId = pickAvailable(type)
     const newCard = state.cards.find(c => (c.id === newCardId) && c['type'] === type)
-    setCard(newCard)
+    setCurrentCard(newCard)
+    addHistory(newCard)
     setSide(defaultSide)
   }
 
   const putBack = () => {
-    setCard(null)
+    setCurrentCard(null)
     setSide(defaultSide)
   }
 
   const destroy = (card) => {
     toggleAvailable({label: card.id.toString(), checked: false}, card[type])
-    setCard(null)
+    setCurrentCard(null)
     setSide(defaultSide)
   }
 
