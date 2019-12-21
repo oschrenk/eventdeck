@@ -8,7 +8,7 @@ const CardDeckContext = React.createContext([{}, () => {}]);
 const allCityCardNumbers = allCityEvents.map(e => e.id)
 const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 
-const defaultSide = 'back'
+const defaultSide = 'front'
 
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
