@@ -155,7 +155,7 @@
       "choice": "Take the opportunity to run from the bear before it gets any closer.",
       "outcomes": [
         {
-          "text": "You holt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can't catch your breath.",
+          "text": "You bolt from hiding as fast as you can. Luckily the hear was still a ways off, and it gets bored with the chase before it can catch you. Still, you keep running and running until you can't catch your breath.",
           "resolve": "{Return}"
         }
       ]
@@ -447,7 +447,7 @@
   {
     "id": 16,
     "type": "road",
-    "text": "The route to your destination is less direct than you had hoped, and you end up taking a shortcut through a small forest.\n\nThere you happen upon a family of deer. They are still a ways off in the distance and haven't noticed you.\n\nYou approach cautiously",
+    "text": "The route to your destination is less direct than you had hoped, and you end up taking a shortcut through a small forest.\n\nThere you happen upon a family of deer. They are still a ways off in the distance and haven't noticed you.\n\nYou approach cautiously.",
     "optionA": {
       "choice": "Shoot at one of the deer.",
       "outcomes": [
