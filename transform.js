@@ -63,8 +63,7 @@ const transformOutcome = (arr) => {
     } else if (o.startsWith("All start ")) {
       t = {effect: o}
     } else if (o.startsWith("Reputation")) {
-      const escaped = o.replace('<', '{Less}').replace('>', '{More}')
-      t = {effect: escaped}
+      t = {effect: o}
     } else if (o.startsWith("Add Road")) {
       t = {effect: o}
     } else if (o.startsWith("Add City")) {
@@ -84,18 +83,16 @@ const transformOutcome = (arr) => {
       }
     } else if (o.startsWith("PAY")) {
       const requirement = o.split(':')[0]
-      const escaped = requirement.replace('<', '{Less}').replace('>', '{More}')
       const text = o.split(':').slice(1).join(':').trim()
       t = {
-        requirement: escaped,
+        requirement: requirement.trim(),
         text
       }
     } else if (o.startsWith("REPUTATION")) {
       const requirement = o.split(':')[0]
-      const escaped = requirement.replace('<', '{Less}').replace('>', '{More}')
       const text = o.split(':').slice(1).join(':').trim()
       t = {
-        requirement: escaped,
+        requirement: requirement.trim(),
         text
       }
     // maps against class requirements

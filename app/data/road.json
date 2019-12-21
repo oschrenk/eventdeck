@@ -97,7 +97,7 @@
           "text": "The merchants in the caravan seem grateful, though the guards eye you skeptically. After traveling for half a day without event, you head off down a side road and wave good bye. The merchants express their appreciation with a bit of coin.",
           "effects": [
             "Gain 2 gold each.",
-            "Reputation {More} 9: Gain 1 additional gold each."
+            "Reputation > 9: Gain 1 additional gold each."
           ],
           "resolve": "{Remove}"
         }
@@ -511,7 +511,7 @@
       "choice": "Attempt to come to a peaceful resolution.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {Less} -4",
+          "requirement": "REPUTATION < -4",
           "text": "You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. \"Go in peace, then,\" the leader says. “And stay off my land.\"",
           "effects": [
             "No effect."
@@ -549,7 +549,7 @@
       "choice": "Help the guards catch the escaping man.",
       "outcomes": [
         {
-          "requirement": "REPUTATION {Less} -4",
+          "requirement": "REPUTATION < -4",
           "text": "You chase after the sprinting man, but the guards conclude you must be an accomplice trying to help him. They shoot arrows in your direction, forcing you to retreat from the situation.",
           "effects": [
             "No effect."
@@ -573,7 +573,7 @@
           "text": "Criminals deserve freedom as much as the next man. While the guards are distracted by the one escapee, you rush to the wagon and release the others. Chaos erupts as the prisoners scatter in every direction. Many manage to escape, and you find a mysterious gift of thanks waiting on your doorstep when you return to Gloomhaven.",
           "effects": [
             "Lose 2 reputation.",
-            "Reputation {Less} -9: Gain 1 collective \"Major Power Potion\" (Item 041)."
+            "Reputation < -9: Gain 1 collective \"Major Power Potion\" (Item 041)."
           ],
           "resolve": "{Remove}"
         }
