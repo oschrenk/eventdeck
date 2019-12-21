@@ -185,8 +185,17 @@ try {
     })
 
     e.optionB.outcomes = e.optionB.outcomes.map((o, index) => {
+      var correctedIndex = e.optionB.outcomes.length + index - 1
 
-      const correctedIndex = e.optionB.outcomes.length + index - 1
+      // city 15 has a preamble text, we need to skip
+      if ((eventType === "city") && (e.id === 15)) {
+        if (index === 0) {
+          return o
+        } else {
+          correctedIndex = correctedIndex -1
+        }
+      }
+
       const res = resolvedEvents[eventType]
       if (res[e.id]) {
         o.resolve = res[e.id][correctedIndex]
