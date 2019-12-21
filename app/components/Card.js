@@ -87,10 +87,17 @@ const colors = {
 }
 
 const RequirementBlock = ({requirement, text, color}) => {
+  // 1. we can rely on requirements only to use mono-colored glyphs
+  // 2. we can assume that the text after a a requirement is long
+  // Because of 2., we can't use the View approach with flex:row and wrap
+  // since the text element will be to big and will not wrap just only the
+  // first line
+  // but because of 1. we are sure that we only get text elements as icons
+  // back and not view, so we can nest them in another Text element
   return (
-    <View style={{flexDirection:'row', flexWrap:'wrap' }}>
+    <Text>
       { <TextParser text={requirement + ": " + text} style={{color:color}} /> }
-    </View>
+    </Text>
   )
 }
 
