@@ -12,7 +12,7 @@
             "Gain 10 experience each.",
             "Either lose 5 gold each or lose 1 reputation."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -24,7 +24,7 @@
           "effects": [
             "Gain 1 reputation."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -42,7 +42,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         },
         {
           "requirement": "OTHERWISE",
@@ -50,7 +50,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -62,7 +62,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -86,7 +86,7 @@
         {
           "requirement": "OTHERWISE",
           "text": "\"Bah! You don't have enough. Come back when you do!\"",
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -250,7 +250,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -310,7 +310,7 @@
           "effects": [
             "Lose 5 gold each."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         },
         {
           "requirement": "OTHERWISE",
@@ -330,7 +330,7 @@
           "effects": [
             "Gain 1 reputation."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -418,7 +418,7 @@
             "All start scenario with {Bless}.",
             "Lose 3 gold each."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -430,7 +430,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -493,8 +493,7 @@
       "choice": "Panic and kill the guard, then dispose of both corpses.",
       "outcomes": [
         {
-          "text": "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you.",
-          "resolve": "{Remove}"
+          "text": "The unlucky guard falls to your blade before he is able to call for help. If the bodies are found, it could cause a lot of trouble for you."
         },
         {
           "requirement": "PAY 15 COLLECTIVE GOLD",
@@ -594,7 +593,7 @@
           "effects": [
             "Lose 1 reputation."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -606,7 +605,7 @@
           "effects": [
             "Gain 2 gold each."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -677,7 +676,7 @@
           "effects": [
             "Gain 10 collective gold."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         },
         {
           "requirement": "OTHERWISE",
@@ -698,7 +697,7 @@
           "effects": [
             "Lose 1 prosperity."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -812,7 +811,7 @@
           "effects": [
             "Gain 10 experience each."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -824,7 +823,7 @@
           "effects": [
             "Gain 1 prosperity."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     }
@@ -1011,7 +1010,7 @@
           "effects": [
             "No effect."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
@@ -1024,7 +1023,7 @@
           "effects": [
             "Gain 1 prosperity."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         },
         {
           "requirement": "OTHERWISE",
@@ -1059,7 +1058,7 @@
           "effects": [
             "Lose 5 gold each."
           ],
-          "resolve": "{Remove}"
+          "resolve": "{Return}"
         }
       ]
     },
