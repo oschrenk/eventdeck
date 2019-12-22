@@ -12,16 +12,18 @@ const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 const KEY = '@dev.oschrenk.eventdeck/v1a'
 const defaultSide = 'back'
 
+const defaultValue = {
+  city: allCityCardNumbers,
+  road: allRoadCardNumbers
+}
+
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
     side: defaultSide,
     history: [],
     currentCard: null,
     cards: allCityEvents.concat(allRoadEvents),
-    available: {
-      city: allCityCardNumbers,
-      road: allRoadCardNumbers
-    }
+    available:  defaultValue
   });
 
   async function pullFromStorage() {
@@ -36,6 +38,7 @@ const CardDeckProvider = (props) => {
   async function updateStorage(newValue) {
     const stringifiedValue = JSON.stringify(newValue);
     await AsyncStorage.setItem(KEY, stringifiedValue);
+    console.log("Stored %s to %s", stringifiedValue, KEY)
   }
 
   useEffect(() => {
@@ -149,6 +152,10 @@ const useCardDeck = () => {
     }
   }
 
+  const reset = () => {
+      setState(state => ({ ...state, available: defaultValue }));
+  }
+
   return {
     cards: state.cards,
     currentCard: state.currentCard,
@@ -158,7 +165,8 @@ const useCardDeck = () => {
     flipCard,
     putBack,
     destroy,
-    toggleAvailable
+    toggleAvailable,
+    reset
   }
 };
 
