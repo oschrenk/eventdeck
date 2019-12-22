@@ -33,7 +33,7 @@ const Lookup = {
 
   // Other
   'MinusOneAttackModifier': <Icon name={'1-attack-modifier'}/>,
-  'SmallItem': <Icon name={'wound'}/>,
+  'SmallItem': <Icon name={'small-item'}/>,
 
   // Resolves
   'Remove': <Icon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }}/>,
