@@ -9,7 +9,7 @@
         {
           "text": "You pick up and run as fast as you can through the underbrush and away from the ominous sounds. They seem to be receding as you stumble headlong into some sort of thicket filled with sticky spines.\n\nYou pull yourself out, but not before your skin is pierced in numerous places and becomes inflamed. Best to avoid this plant in the future.",
           "effects": [
-            "All start scenario with {Poison}."
+            "All start scenario with POISON {Poison}."
           ],
           "resolve": "{Return}"
         }
@@ -38,7 +38,7 @@
         {
           "text": "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision.",
           "effects": [
-            "All start scenario with {Bless}."
+            "All start scenario with BLESS {Bless}."
           ],
           "resolve": "{Return}"
         }
@@ -67,7 +67,7 @@
         {
           "text": "You shrug and grab a handful of berries to stuff in your mouth, they are incredibly sweet and just the right amount of tart. You couldn't feel better about your decision. That is, until you start vomiting. Your stomach is incredibly unhappy with you, and the situation doesn't improve much by the time you arrive at your destination.",
           "effects": [
-            "All start scenario with {Poison}."
+            "All start scenario with POISON {Poison}."
           ],
           "resolve": "{Return}"
         }
@@ -139,7 +139,7 @@
         {
           "text": "With your arrival, the Inox retreat back into the woods, one of them casting hexes as he flees.\n\n\"Blast it all.\" one of the guards says. \"Patrol duty is the absolute worst. No matter what we tell those savages, they're convinced were going to take over their forest. Anyway, thanks for your help. I thought we were done for\"",
           "effects": [
-            "All start scenario with {Curse}.",
+            "All start scenario with CURSE {Curse}.",
             "Gain 1 reputation."
           ],
           "resolve": "{Remove}"
@@ -166,7 +166,7 @@
         {
           "text": "The bear roars as you approach, making powerful swipes with its claws. Still, with the surprise and the commotion, the bear is not all that committed to the fight. After a bit of back and forth, the animal grunts and runs off into the trees.",
           "effects": [
-            "All start scenario with {Wound}."
+            "All start scenario with WOUND {Wound}."
           ],
           "resolve": "{Return}"
         }
@@ -378,7 +378,7 @@
         {
           "text": "You grab the broom handle and wrestle the old man to the ground, attempting to restrain bis flailing limbs. You try to explain that this is all a misunderstanding, but he just keeps warning you not to defecate on bis wives. The man is surprisingly agile and the stench of his rags also makes keeping him pinned difficult. He slips free and scrambles around for his broom handle, muttering about the \"stars\" gift. You run away with all haste, but his odor is much harder to escape.",
           "effects": [
-            "All start scenario with {Curse}."
+            "All start scenario with CURSE {Curse}."
           ],
           "resolve": "{Remove}"
         }
@@ -395,7 +395,7 @@
         {
           "text": "You pull back your bow and take aim. The arrow flies true and connects with one of the birds. You retrieve it, pluck it, cook it, and eat it. Definitely beats the field rations you carry with you.",
           "effects": [
-            "All start scenario with {Bless}."
+            "All start scenario with BLESS {Bless}."
           ],
           "resolve": "{Return}"
         }
@@ -424,7 +424,7 @@
         {
           "text": "You pull back your bow and take aim. The instant you loose the arrow, however you notice something odd about the birds. They are much farther away than you realized and much bigger. The arrow misses, but it gets their attention. As the flock turns and descends toward your you realize you just shot at a group of drakes. You run for cover among the trees, but are hit by their acidic spit a number of times in the process.",
           "effects": [
-            "All start scenario with {Muddle}.",
+            "All start scenario with MUDDLE {Muddle}.",
             "All start scenario with 2 damage."
           ],
           "resolve": "{Return}"
@@ -454,7 +454,7 @@
         {
           "text": "You notch your bow and take a few steps forward to find a better shooting position. Unfortunately, the deer notice your presence and bound off. You shoot a few arrows as they go, but nothing connects.\n\nThen an arrow flies out of the brush and into your shoulder. \"Foul city-dwellers!\" a voice cries out from the trees. \"I had been stalking that herd for hours and you spooked them!\" More arrows rain down as you run away.",
           "effects": [
-            "All start scenario with {Curse}.",
+            "All start scenario with CURSE {Curse}.",
             "All start scenario with 2 damage."
           ],
           "resolve": "{Remove}"
@@ -467,7 +467,7 @@
         {
           "text": "You are enjoying watching the animals graze when an arrow flies out and hits the larger of the deer in its center chest. It bolts away, but doesn't make it very far before collapsing. Then you see a large Inox emerge from the brush and turn toward you. \"I thought you were going to do something stupid there for a second. Thanks for not scaring away my quarry. Allow me to share some of the spoils with you.\"",
           "effects": [
-            "All start scenario with {Bless}."
+            "All start scenario with BLESS {Bless}."
           ],
           "resolve": "{Remove}"
         }
@@ -522,7 +522,7 @@
           "requirement": "OTHERWISE",
           "text": "You try to explain that you mean the Inox no ill will, but the leader eyes you skeptically. \"Foul creature. I curse you and your kind! Run — get off my land and never come back!\"",
           "effects": [
-            "All start scenario with {Curse}."
+            "All start scenario with CURSE {Curse}."
           ],
           "resolve": "{Remove}"
         }
@@ -590,7 +590,7 @@
         {
           "text": "You take the pack by surprise. Fully distracted by their ritual they don't even see you coming. The Vermlings still get in a few good attacks before they are slain, though.",
           "effects": [
-            "All start scenario with {Poison}.",
+            "All start scenario with POISON {Poison}.",
             "All start scenario with 2 damage."
           ],
           "resolve": "{Remove}"
@@ -620,7 +620,7 @@
         {
           "text": "By the time you see the flames, it is too late. A great forest fire is raging around you. You try to run, but you don't make it out of the blaze without serious injuries and smoke inhalation.",
           "effects": [
-            "All start scenario with {Wound}.",
+            "All start scenario with WOUND {Wound}.",
             "All start scenario with 3 damage.",
             "Lose 1 {Check} each."
           ],
@@ -664,7 +664,7 @@
           "text": "You take pity on an old Orchid woman trying to extricate her fortune-teller's wagon by herself. You help her get it back on the road, and then she grabs you and looks deep into your eyes.\n\n\"Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you.\"",
           "effects": [
             "Gain 2 experience each.",
-            "All start scenario with {Curse}."
+            "All start scenario with CURSE {Curse}."
           ],
           "resolve": "{Remove}"
         }
@@ -781,7 +781,7 @@
           "requirement": "{Tinkerer}, {ThreeSpears}",
           "text": "The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.",
           "effects": [
-            "All start scenario with {Bless}.",
+            "All start scenario with BLESS {Bless}.",
             "Gain 1 reputation."
           ],
           "resolve": "{Remove}"
@@ -914,7 +914,7 @@
         {
           "text": "You sigh and turn around. After some backward progress, you find another path through the foothills and work your way through it. Unfortunately it leads you directly into a den of wolves, and they don't seem too happy about your sudden arrival. You fend them off, but they leave you wounded.",
           "effects": [
-            "All start scenario with {Wound}."
+            "All start scenario with WOUND {Wound}."
           ],
           "resolve": "{Remove}"
         }
