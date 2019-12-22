@@ -17,8 +17,8 @@ const CardDeckProvider = (props) => {
     currentCard: null,
     cards: allCityEvents.concat(allRoadEvents),
     available: {
-      city: new Set(allCityCardNumbers),
-      road: new Set(allRoadCardNumbers)
+      city: allCityCardNumbers,
+      road: allRoadCardNumbers
     }
   });
 
@@ -48,30 +48,27 @@ const useCardDeck = () => {
   }
 
   const randomId = (type) => {
-    return Math.floor((Math.random() * state.available[type].size))
-  }
-
-  const incrementId = (type) => {
-    console.log("incrementId")
-    console.log("incrementId", type)
-    const last = getLast(type)
-    console.log("incrementId", last)
-    if (last) {
-      console.log("incrementId", "found valid last card")
-      const newIndex = last.id
-      console.log("incrementId", newIndex)
-      return newIndex
-    } else {
-      console.log("incrementId", "default to 0")
-      return 0
-    }
-  }
-
-  const pickAvailable = (type) => {
-    console.log("pickAvailable")
-    const index = incrementId(type)
-    console.log("pickAvailable", index)
+    const index = Math.floor((Math.random() * state.available[type].size))
     return [...state.available[type]][index]
+  }
+
+  const nextId = (type) => {
+    const last = getLast(type)
+    const available = state.available[type]
+    if (last) {
+      const lastId = last.id
+      const lastAvailableId = available[available.length -1]
+      if (lastAvailableId === lastId) {
+        // wraparound
+        return available[0]
+      } else {
+        return available.find(e => e > last.id)
+      }
+    } else {
+      // very first card default to first available card
+      const nextId = available[0]
+      return nextId
+    }
   }
 
   const addHistory = (card) => {
@@ -89,7 +86,7 @@ const useCardDeck = () => {
   }
 
   const drawCard = (type) => {
-    const newCardId = pickAvailable(type)
+    const newCardId = nextId(type)
     const newCard = state.cards.find(c => (c.id === newCardId) && c['type'] === type)
     setCurrentCard(newCard)
     addHistory(newCard)
@@ -108,13 +105,15 @@ const useCardDeck = () => {
   }
 
   const toggleAvailable = (item, type) => {
-    console.log("item", item)
-    console.log("type", type)
     if (item.checked) {
-      state.available[type].add(parseInt(item.label))
+      const idToAdd = parseInt(item.label)
+      const newTypeState = state.available[type].concat(idToAdd).sort((a, b) => a - b)
+      state.available[type] = newTypeState
       setState(state => ({ ...state, available: state.available }));
     } else {
-      state.available[type].delete(parseInt(item.label))
+      const idToRemove = parseInt(item.label)
+      const newTypeState = state.available[type].filter(i => i !== idToRemove).sort((a, b) => a - b)
+      state.available[type] = newTypeState
       setState(state => ({ ...state, available: state.available }));
     }
   }
