@@ -61,6 +61,10 @@ const map= {
     {'glyph': '\ue917', 'color': '#e26969'},
   ],
   'small-item': '\ue919',
+  'scenario': [
+    {'glyph': '\ue918', 'color': '#000'},
+    {'glyph': '\ue91a', 'color': '#fff'},
+  ],
 
   // resolve
   'return-to-deck': '\ue900',
@@ -77,10 +81,21 @@ const SingleGlyph = ({glyph, style}) => {
 
 const MultiGlyph = ({glyphs, style}) => {
   return (
-   <View style={{flexDirection:'row', flexWrap:'wrap', width: 24}}>
+   <View style={{flexDirection:'row', flexWrap:'wrap', width: 26}}>
     { glyphs.map((g,i) =>
-       <Text style={{fontFamily: 'icomoon', fontSize:18, color: g.color, position: 'absolute', left: 3, top: 0}} key={i}>{g.glyph}</Text>)
+       <Text style={{fontFamily: 'icomoon', fontSize:20, color: g.color, position: 'absolute', left: 3, top: 0}} key={i}>{g.glyph}</Text>)
     }
+   </View>
+  )
+}
+
+const ScenarioGlyph = ({number, glyphs, style}) => {
+  return (
+   <View style={{flexDirection:'row', flexWrap:'wrap', width: 26}}>
+    { glyphs.map((g,i) =>
+       <Text style={{fontFamily: 'icomoon', fontSize:20, color: g.color, position: 'absolute', left: 3, top: 0}} key={i}>{g.glyph}</Text>)
+    }
+    <Text style={{fontFamily: 'HighTowerText-Bold', fontSize:14, color: 'black', position: 'absolute', left: 7, top: 1}}>{number}</Text>
    </View>
   )
 }
@@ -88,6 +103,9 @@ const MultiGlyph = ({glyphs, style}) => {
 export default Icon = ({name, style}) => {
   if (typeof map[name] === 'string') {
     return <SingleGlyph style={style} glyph={map[name]} />
+  } else if (name.startsWith("scenario-")) {
+    const [iconName, number] = name.split("-")
+    return <ScenarioGlyph number={number} style={style} glyphs={map['scenario']} />
   } else if (Array.isArray(map[name])) {
     return <MultiGlyph style={style} glyphs={map[name]} />
   } else {

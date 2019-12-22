@@ -134,10 +134,17 @@ const TextParser = ({text, style}) => {
       if (s.startsWith("{")) {
         const name = s.substr(1, s.length - 2)
         const lookup = Lookup[name]
-        if (!lookup) {
-          console.log("MISSING", name)
+        if (name.startsWith("Scenario")) {
+          const numberPattern = /\d+/g
+          const match = name.match(numberPattern).map(Number)
+          const number = parseInt(match.join([]))
+          const iconName = 'scenario-' + number
+          return <Icon name={iconName}/>
+        } else if (!lookup) {
+          console.warning("MISSING", name)
+        } else {
+          return lookup
         }
-        return lookup
       } else {
         return <Text style={{...backText, ...style}} key={i}>{s}</Text>
       }

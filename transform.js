@@ -67,6 +67,11 @@ const transformOutcome = (arr) => {
     } else if (o.startsWith("Global Achievement")) {
       t = {effect: o}
     } else if (o.startsWith("Unlock ")) {
+      o = o
+        .replace("\"Burning Mountain\" 82", "\"Burning Mountain\" {Scenario82}")
+        .replace("\"Sunken Vessel\" 93", "\"Sunken Vessel\" {Scenario93}")
+        .replace("\"Temple of the Eclipse\" 81", "\"Temple of the Eclipse\" {Scenario81}")
+
       t = {effect: o}
     } else if (o.startsWith("All start ")) {
       t = {effect: o}
