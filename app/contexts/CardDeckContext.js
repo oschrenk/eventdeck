@@ -9,7 +9,7 @@ const CardDeckContext = React.createContext([{}, () => {}]);
 const allCityCardNumbers = allCityEvents.map(e => e.id)
 const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 
-const KEY = '@dev.oschrenk.eventdeck/v0a'
+const KEY = '@dev.oschrenk.eventdeck/v1a'
 const defaultSide = 'back'
 
 const CardDeckProvider = (props) => {
@@ -30,14 +30,12 @@ const CardDeckProvider = (props) => {
     if (fromStorage) {
       value = JSON.parse(fromStorage)
     }
-    console.log("READ", value)
+    setState(state => ({ ...state, available: value }));
   }
 
   async function updateStorage(newValue) {
-    // setState({ hydrated: true, storageValue: newValue })
     const stringifiedValue = JSON.stringify(newValue);
     await AsyncStorage.setItem(KEY, stringifiedValue);
-    console.log("STORED", stringifiedValue)
   }
 
   useEffect(() => {
