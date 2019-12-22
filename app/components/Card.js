@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, ImageBackground } from 'react-native';
 
 import { backText, backTextEffect, frontText, bold } from '../styles/typography'
-import Icon, { StyledIcon } from './Icon'
+import Icon, { CardIcon } from './Icon'
 
 const Lookup = {
   //classes
@@ -35,8 +35,8 @@ const Lookup = {
   'SmallItem': <Icon name={'small-item'} key={'small-item'}/>,
 
   // Resolves
-  'Remove': <StyledIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>,
-  'Return': <StyledIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>,
+  'Remove': <CardIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>,
+  'Return': <CardIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>,
 }
 
 const backgrounds = {
@@ -95,7 +95,7 @@ const RequirementBlock = ({requirement, text, color}) => {
   // back and not view, so we can nest them in another Text element
   return (
     <Text>
-      { <TextParser text={requirement + ": " + text} style={{color:color}} /> }
+      <TextParser text={requirement + ": " + text} style={{color:color}} />
     </Text>
   )
 }
@@ -155,7 +155,7 @@ const TextParser = ({text, style}) => {
 const Effect = ({text, color}) => {
   return (
     <View style={{flexDirection:'row', flexWrap:'wrap'}}>
-      { <TextParser text={text} style={{...backTextEffect, color:color}}/> }
+      <TextParser text={text} style={{...backTextEffect, color:color}}/>
     </View>
   )
 }
@@ -164,6 +164,7 @@ const Outcome = ({outcome, type}) => {
   const requirement = outcome.requirement
   const effects = outcome.effects
   const texts = outcome.text.split("\n\n")
+  const resolve = outcome.resolve
   const color = colors[type]
 
   return (
@@ -172,6 +173,7 @@ const Outcome = ({outcome, type}) => {
       { effects &&
         effects.map((e,i) => <Effect text={e} color={color} key={i} />)
       }
+      <TextParser text={outcome.resolve} />
     </View>
   )
 }
