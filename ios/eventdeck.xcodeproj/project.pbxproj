@@ -5,8 +5,10 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* eventdeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* eventdeckTests.m */; };
+		05AC743FC7BE45DDB9EEA5FC /* HighTowerText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -19,9 +21,8 @@
 		37E9F8DD2399A8DD00F82F3E /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9F8DC2399A8DD00F82F3E /* Swift.swift */; };
 		3CD50D1A5AF5C65983F3646F /* libPods-eventdeck.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A1C16E86BA0AC72F9AA9A7 /* libPods-eventdeck.a */; };
 		7C782071F7E1E7805B9064CC /* libPods-eventdeck-eventdeckTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BE07BEEBCBDD684FE3F4BF /* libPods-eventdeck-eventdeckTests.a */; };
-		C347ADFC3A39061443BB3EFA /* libPods-eventdeck-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CDE128E6CA3152E53DA55 /* libPods-eventdeck-tvOSTests.a */; };
-		05AC743FC7BE45DDB9EEA5FC /* HighTowerText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */; };
 		87E983D9865D4F4AAB1C6AEC /* HighTowerText-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B4BEDF4DE4449428D47B0E5 /* HighTowerText-Italic.ttf */; };
+		C347ADFC3A39061443BB3EFA /* libPods-eventdeck-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CDE128E6CA3152E53DA55 /* libPods-eventdeck-tvOSTests.a */; };
 		FCA71F9CEC82453A96772B05 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		00E356EE1AD99517003FC87E /* eventdeckTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eventdeckTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* eventdeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eventdeckTests.m; sourceTree = "<group>"; };
+		02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HighTowerText-Bold.ttf"; path = "../assets/fonts/HighTowerText-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* eventdeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventdeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = eventdeck/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = eventdeck/AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		37E9F8DC2399A8DD00F82F3E /* Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift.swift; sourceTree = "<group>"; };
 		3E1374B4D1A1C3615E690447 /* libPods-eventdeck-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eventdeck-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD8BA449A55349DB8A6E9C8 /* Pods-eventdeck-eventdeckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-eventdeckTests.release.xcconfig"; path = "Target Support Files/Pods-eventdeck-eventdeckTests/Pods-eventdeck-eventdeckTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
 		705D945DC0ADEF1101081D01 /* Pods-eventdeck-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck-tvOS/Pods-eventdeck-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		77BB6B72276C028F4E559BC6 /* Pods-eventdeck-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck-tvOSTests/Pods-eventdeck-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A75BEDA31DFE345D43D7EFF /* Pods-eventdeck-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-tvOS.release.xcconfig"; path = "Target Support Files/Pods-eventdeck-tvOS/Pods-eventdeck-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,13 +70,11 @@
 		87A1C16E86BA0AC72F9AA9A7 /* libPods-eventdeck.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eventdeck.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B492149D7C62E6D150047CF /* Pods-eventdeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck/Pods-eventdeck.debug.xcconfig"; sourceTree = "<group>"; };
 		963CDE128E6CA3152E53DA55 /* libPods-eventdeck-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eventdeck-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4BEDF4DE4449428D47B0E5 /* HighTowerText-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HighTowerText-Italic.ttf"; path = "../assets/fonts/HighTowerText-Italic.ttf"; sourceTree = "<group>"; };
 		A0C11412D8442931F31AC456 /* Pods-eventdeck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck.release.xcconfig"; path = "Target Support Files/Pods-eventdeck/Pods-eventdeck.release.xcconfig"; sourceTree = "<group>"; };
 		E5DB067F78F53D18AEDE31AC /* Pods-eventdeck-eventdeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-eventdeckTests.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck-eventdeckTests/Pods-eventdeck-eventdeckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */ = {isa = PBXFileReference; name = "HighTowerText-Bold.ttf"; path = "../assets/fonts/HighTowerText-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9B4BEDF4DE4449428D47B0E5 /* HighTowerText-Italic.ttf */ = {isa = PBXFileReference; name = "HighTowerText-Italic.ttf"; path = "../assets/fonts/HighTowerText-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */ = {isa = PBXFileReference; name = "icomoon.ttf"; path = "../assets/fonts/icomoon.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +192,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D3CDCFE257274921A9C4C1D4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */,
+				9B4BEDF4DE4449428D47B0E5 /* HighTowerText-Italic.ttf */,
+				5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		EAB859B796A673D72C5B2612 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,17 +218,6 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		D3CDCFE257274921A9C4C1D4 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */,
-				9B4BEDF4DE4449428D47B0E5 /* HighTowerText-Italic.ttf */,
-				5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 

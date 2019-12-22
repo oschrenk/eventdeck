@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect, useRef } from "react";
+import AsyncStorage from '@react-native-community/async-storage'
 
 import allCityEvents from '../data/city.json'
 import allRoadEvents from '../data/road.json'
@@ -8,7 +9,8 @@ const CardDeckContext = React.createContext([{}, () => {}]);
 const allCityCardNumbers = allCityEvents.map(e => e.id)
 const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 
-const defaultSide = 'front'
+const KEY = '@dev.oschrenk.eventdeck/v0a'
+const defaultSide = 'back'
 
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
@@ -22,13 +24,33 @@ const CardDeckProvider = (props) => {
     }
   });
 
+  async function pullFromStorage() {
+    const fromStorage = await AsyncStorage.getItem(KEY)
+    let value = {}
+    if (fromStorage) {
+      value = JSON.parse(fromStorage)
+    }
+    console.log("READ", value)
+  }
+
+  async function updateStorage(newValue) {
+    // setState({ hydrated: true, storageValue: newValue })
+    const stringifiedValue = JSON.stringify(newValue);
+    await AsyncStorage.setItem(KEY, stringifiedValue);
+    console.log("STORED", stringifiedValue)
+  }
+
+  useEffect(() => {
+    pullFromStorage();
+  }, []);
+
   const didMount = useRef(false);
 
   useEffect(() => {
     if (!didMount.current) {
       didMount.current = true;
     } else {
-      console.log("STATECHANGE", initialState.available)
+      updateStorage(initialState.available)
     }
   }, [JSON.stringify(initialState.available)])
 
@@ -116,10 +138,11 @@ const useCardDeck = () => {
 
   const toggleAvailable = (item, type) => {
     if (item.checked) {
+      const newState = state.available
       const idToAdd = parseInt(item.label)
       const newTypeState = state.available[type].concat(idToAdd).sort((a, b) => a - b)
-      state.available[type] = newTypeState
-      setState(state => ({ ...state, available: state.available }));
+      newState[type] = newTypeState
+      setState(state => ({ ...state, available: newState }));
     } else {
       const idToRemove = parseInt(item.label)
       const newTypeState = state.available[type].filter(i => i !== idToRemove).sort((a, b) => a - b)
