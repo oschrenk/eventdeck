@@ -6,37 +6,37 @@ import Icon, { StyledIcon } from './Icon'
 
 const Lookup = {
   //classes
-  "Brute": <Icon name={'brute'}/>,
-  "Circles": <Icon name={'circles'}/>,
-  "Cragheart": <Icon name={'cragheart'}/>,
-  "Eclipse": <Icon name={'eclipse'}/>,
-  "LightningBolts": <Icon name={'eclipse'}/>,
-  "Mindthief": <Icon name={'mindthief'}/>,
-  "MusicNote": <Icon name={'music-note'}/>,
-  "PointyHead": <Icon name={'pointy-head'}/>,
-  "Saw": <Icon name={'saw'}/>,
-  "Scoundrel": <Icon name={'scoundrel'}/>,
-  "Spellweaver": <Icon name={'spellweaver'}/>,
-  "ThreeSpears": <Icon name={'three-spears'}/>,
-  "Tinkerer": <Icon name={'tinkerer'}/>,
-  "Triangles": <Icon name={'triangles'}/>,
-  "TwoMinis": <Icon name={'two-minis'}/>,
+  "Brute": <Icon name={'brute'} key={'brute'}/>,
+  "Circles": <Icon name={'circles'} key={'circles'}/>,
+  "Cragheart": <Icon name={'cragheart'} key={'cragheart'}/>,
+  "Eclipse": <Icon name={'eclipse'} key={'eclipse'}/>,
+  "LightningBolts": <Icon name={'eclipse'} key={'eclipse'}/>,
+  "Mindthief": <Icon name={'mindthief'} key={'mindthief'}/>,
+  "MusicNote": <Icon name={'music-note'} key={'music-note'}/>,
+  "PointyHead": <Icon name={'pointy-head'} key={'pointy-head'}/>,
+  "Saw": <Icon name={'saw'} key={'saw'}/>,
+  "Scoundrel": <Icon name={'scoundrel'} key={'scoundrel'}/>,
+  "Spellweaver": <Icon name={'spellweaver'} key={'spellweaver'}/>,
+  "ThreeSpears": <Icon name={'three-spears'} key={'three-spears'}/>,
+  "Tinkerer": <Icon name={'tinkerer'} key={'tinkerer'}/>,
+  "Triangles": <Icon name={'triangles'} key={'triangles'}/>,
+  "TwoMinis": <Icon name={'two-minis'} key={'key-minis'}/>,
 
   // Status
-  'Bless': <Icon name={'bless'}/>,
-  "Check": <Icon name={'check'}/>,
-  'Curse': <Icon name={'curse'}/>,
-  'Muddle': <Icon name={'muddle'}/>,
-  'Poison': <Icon name={'poison'}/>,
-  'Wound': <Icon name={'wound'}/>,
+  'Bless': <Icon name={'bless'} key={'bless'}/>,
+  "Check": <Icon name={'check'} key={'check'}/>,
+  'Curse': <Icon name={'curse'} key={'curse'}/>,
+  'Muddle': <Icon name={'muddle'} key={'muddle'}/>,
+  'Poison': <Icon name={'poison'} key={'poison'}/>,
+  'Wound': <Icon name={'wound'} key={'wound'}/>,
 
   // Other
-  'MinusOneAttackModifier': <Icon name={'1-attack-modifier'}/>,
-  'SmallItem': <Icon name={'small-item'}/>,
+  'MinusOneAttackModifier': <Icon name={'1-attack-modifier'} key={'1-attack-modifier'}/>,
+  'SmallItem': <Icon name={'small-item'} key={'small-item'}/>,
 
   // Resolves
-  'Remove': <StyledIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }}/>,
-  'Return': <StyledIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }}/>,
+  'Remove': <StyledIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>,
+  'Return': <StyledIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>,
 }
 
 const backgrounds = {
@@ -138,9 +138,10 @@ const TextParser = ({text, style}) => {
           const match = name.match(numberPattern).map(Number)
           const number = parseInt(match.join([]))
           const iconName = 'scenario-' + number
-          return <Icon name={iconName}/>
+          return <Icon name={iconName} key={i}/>
         } else if (!lookup) {
-          console.warning("MISSING", name)
+          console.warn("MISSING", name)
+          return null
         } else {
           return lookup
         }
