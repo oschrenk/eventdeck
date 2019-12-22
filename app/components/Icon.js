@@ -2,6 +2,8 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { icon } from '../styles/typography'
 
+import { useCardDeck } from "../contexts/CardDeckContext";
+
 const map= {
   // classes
   'brute': '\ue902',
@@ -100,14 +102,21 @@ const ScenarioGlyph = ({number, glyphs, style}) => {
   )
 }
 
-export default Icon = ({name, style}) => {
+export const StyledIcon = ({name, style}) => {
+  return <SingleGlyph glyph={map[name]} style={style} />
+}
+
+export default Icon = ({name}) => {
+  const { currentCard } = useCardDeck()
+  const extraStyle = (currentCard && currentCard.type == 'city') ? { color: 'white'} : {}
+
   if (typeof map[name] === 'string') {
-    return <SingleGlyph style={style} glyph={map[name]} />
+    return <SingleGlyph glyph={map[name]} style={extraStyle}/>
   } else if (name.startsWith("scenario-")) {
     const [iconName, number] = name.split("-")
-    return <ScenarioGlyph number={number} style={style} glyphs={map['scenario']} />
+    return <ScenarioGlyph number={number} glyphs={map[iconName]} style={extraStyle} />
   } else if (Array.isArray(map[name])) {
-    return <MultiGlyph style={style} glyphs={map[name]} />
+    return <MultiGlyph glyphs={map[name]} />
   } else {
     return <Text>{"ERROR"}</Text>
   }
