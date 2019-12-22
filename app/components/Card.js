@@ -125,6 +125,9 @@ const Blocks = ({requirement, texts, color }) => {
 }
 
 const TextParser = ({text, style}) => {
+  if (!text) {
+    return null
+  }
   const re = /\s*(\{\w+\})\s*/g;
   const split = text.split(re)
 
