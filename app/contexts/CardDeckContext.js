@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect, useRef } from "react";
 
 import allCityEvents from '../data/city.json'
 import allRoadEvents from '../data/road.json'
@@ -21,6 +21,16 @@ const CardDeckProvider = (props) => {
       road: allRoadCardNumbers
     }
   });
+
+  const didMount = useRef(false);
+
+  useEffect(() => {
+    if (!didMount.current) {
+      didMount.current = true;
+    } else {
+      console.log("STATECHANGE", initialState.available)
+    }
+  }, [JSON.stringify(initialState.available)])
 
   return (
     <CardDeckContext.Provider value={[initialState, setState]}>
