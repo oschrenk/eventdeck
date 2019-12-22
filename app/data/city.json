@@ -239,7 +239,7 @@
           "requirement": "PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE COLD",
           "text": "After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of \"untold treasure \"by hiring a ship.",
           "effects": [
-            "Unlock \"Sunken Vessel\" 93 (N-17)",
+            "Unlock \"Sunken Vessel\" {Scenario93} (N-17)",
             "Party Achievement: \"A Map to Treasure.\""
           ],
           "resolve": "{Remove}"
@@ -574,7 +574,7 @@
         {
           "text": "You calmly assess that the coin may possess much more value than it appears to have. You head to the University and spend hours looking through old records to no avail. You end the day in a tavern, easing the frustration with a drink and loud laments about the coin.\n\n\"Those markings are very interesting.\" You look up to see an Aesther standing over you. \"They describe a special meeting place. I can show you where.\"",
           "effects": [
-            "Unlock \"Temple of the Eclipse\" 81 (D-2)."
+            "Unlock \"Temple of the Eclipse\" {Scenario81} (D-2)."
           ],
           "resolve": "{Remove}"
         }

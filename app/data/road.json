@@ -713,7 +713,7 @@
           "effects": [
             "Gain 10 collective gold.",
             "Discard 2 cards each.",
-            "Unlock \"Burning Mountain\" (M-6)."
+            "Unlock \"Burning Mountain\" {Scenario82} (M-6)."
           ],
           "resolve": "{Remove}"
         }
@@ -725,7 +725,7 @@
         {
           "text": "You brush off the plight of the Inox tribe, but as you continue to your destination, you begin to feel a certain amount of uncase. There is a slight tremble in the soles of your feet, and, in the distance, the black cloud of smoke grows.",
           "effects": [
-            "Unlock \"Burning Mountain\" (M-6)."
+            "Unlock \"Burning Mountain\" {Scenario82} (M-6)."
           ],
           "resolve": "{Remove}"
         }
