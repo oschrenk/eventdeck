@@ -242,7 +242,7 @@
         {
           "text": "You happily oblige the request; letting the man partake of some of your supplies. He slowly stands up, thanks you, and then heads toward Gloomhaven as you head in the opposite direction.",
           "effects": [
-            "Consume 1 collective item."
+            "Consume 1 collective {SmallItem} item."
           ],
           "resolve": "{Return}"
         }
