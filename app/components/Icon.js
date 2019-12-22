@@ -77,9 +77,9 @@ const SingleGlyph = ({glyph, style}) => {
 
 const MultiGlyph = ({glyphs, style}) => {
   return (
-   <View style={{flexDirection:'row', flexWrap:'wrap', width: 18}}>
+   <View style={{flexDirection:'row', flexWrap:'wrap', width: 24}}>
     { glyphs.map((g,i) =>
-       <Text style={{fontFamily: 'icomoon', fontSize:16, color: g.color, position: 'absolute', left: 0, top: 0}} key={i}>{g.glyph}</Text>)
+       <Text style={{fontFamily: 'icomoon', fontSize:18, color: g.color, position: 'absolute', left: 3, top: 0}} key={i}>{g.glyph}</Text>)
     }
    </View>
   )
