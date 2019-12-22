@@ -1,9 +1,8 @@
 import React from 'react';
 import { Text, View, ImageBackground } from 'react-native';
-import Mustache from 'mustache'
 
 import { backText, backTextEffect, frontText, bold } from '../styles/typography'
-import Icon from './Icon'
+import Icon, { StyledIcon } from './Icon'
 
 const Lookup = {
   //classes
@@ -36,8 +35,8 @@ const Lookup = {
   'SmallItem': <Icon name={'small-item'}/>,
 
   // Resolves
-  'Remove': <Icon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }}/>,
-  'Return': <Icon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }}/>,
+  'Remove': <StyledIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }}/>,
+  'Return': <StyledIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }}/>,
 }
 
 const backgrounds = {
