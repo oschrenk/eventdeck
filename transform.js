@@ -44,6 +44,14 @@ const groupOutcomes = (arr) => {
 
 const transformOutcome = (arr) => {
   return arr.map( o => {
+
+  // fix some texts
+    o = o.replace("{Muddle}", "MUDDLE {Muddle}")
+    o = o.replace("{Bless}", "BLESS {Bless}")
+    o = o.replace("{Curse}", "CURSE {Curse}")
+    o = o.replace("{Wound}", "WOUND {Wound}")
+    o = o.replace("{Poison}", "POISON {Poison}")
+
 // EFFECTS
     var t = o
     if (o.startsWith("No effect")) {

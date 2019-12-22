@@ -415,7 +415,7 @@
         {
           "text": "You decide to indulge in the unknown and see what the Quatryl is offering. He looks very pleased at your approach and instructs you to inhale a tube of vapors, then take a bite from a bowl full of tiny golden spheres. As the spheres melt in your mouth, the taste mixes with the aroma of the vapors to create a wonderful experience. You pay what you can, but the Quatryl seems solely focused on how much you enjoyed the meal.",
           "effects": [
-            "All start scenario with {Bless}.",
+            "All start scenario with BLESS {Bless}.",
             "Lose 3 gold each."
           ],
           "resolve": "{Return}"
@@ -792,7 +792,7 @@
         {
           "text": "In an area cut off from civilization with no viable farmland, fresh vegetables are a rare commodity. The thief already made off with an armful so what's the harm in taking some more? When you get back to your room, you cook up a nice hearty soup and have a great meal.",
           "effects": [
-            "All start scenario with {Bless}."
+            "All start scenario with BLESS {Bless}."
           ],
           "resolve": "{Remove}"
         }
