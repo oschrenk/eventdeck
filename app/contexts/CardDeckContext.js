@@ -23,7 +23,8 @@ const CardDeckProvider = (props) => {
     history: [],
     currentCard: null,
     cards: allCityEvents.concat(allRoadEvents),
-    available:  AllCardsAvailable
+    available:  AllCardsAvailable,
+    parties: []
   });
 
   async function pullFromStorage() {
@@ -156,6 +157,39 @@ const useCardDeck = () => {
       setState(state => ({ ...state, available: AllCardsAvailable }));
   }
 
+  const uuidv4 = () => {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+  }
+
+  const newParty = (name) => {
+    const newParty = {
+      id: uuidv4(),
+      name: name,
+    }
+    addParty(newParty)
+  }
+
+  const addParty = (party) => {
+    console.log("ADD PARTY1", state.parties)
+    state.parties.push(party)
+    console.log("ADD PARTY", state.parties)
+    setState(state => ({ ...state, parties: state.parties}))
+  }
+
+  const removeParty = (id) => {
+    setState(state => ({ ...state, parties: state.parties.filter(p => p.id !== id)}))
+  }
+
+  const renameParty = (id, newName) => {
+    const party = state.parties.filter(p => p.id !== id)
+    party.name == newName
+    removeParty(party.id)
+    addParty(party)
+  }
+
   return {
     cards: state.cards,
     currentCard: state.currentCard,
@@ -166,7 +200,11 @@ const useCardDeck = () => {
     putBack,
     destroy,
     toggleAvailable,
-    reset
+    reset,
+    newParty,
+    renameParty,
+    removeParty,
+    parties: state.parties
   }
 };
 
