@@ -12,7 +12,7 @@ const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 const KEY = '@dev.oschrenk.eventdeck/v1a'
 const defaultSide = 'back'
 
-const defaultValue = {
+const AllCardsAvailable = {
   city: allCityCardNumbers,
   road: allRoadCardNumbers
 }
@@ -23,7 +23,7 @@ const CardDeckProvider = (props) => {
     history: [],
     currentCard: null,
     cards: allCityEvents.concat(allRoadEvents),
-    available:  defaultValue
+    available:  AllCardsAvailable
   });
 
   async function pullFromStorage() {
@@ -153,7 +153,7 @@ const useCardDeck = () => {
   }
 
   const reset = () => {
-      setState(state => ({ ...state, available: defaultValue }));
+      setState(state => ({ ...state, available: AllCardsAvailable }));
   }
 
   return {
