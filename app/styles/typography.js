@@ -1,8 +1,20 @@
 export const header = {
-  fontFamily: 'HighTowerText-Bold',
-  fontSize: 24,
+  fontFamily: 'Pirata One',
+  fontSize: 32,
   color: 'black'
 };
+
+export const partyName = {
+  fontFamily: 'Pirata One',
+  fontSize: 22,
+  color: 'black'
+}
+
+export const input = {
+  fontFamily: 'Pirata One',
+  fontSize: 24,
+  color: 'black'
+}
 
 export const backText = {
   fontFamily: 'HighTowerText-Italic',
