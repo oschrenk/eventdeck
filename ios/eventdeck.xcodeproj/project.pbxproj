@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* eventdeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* eventdeckTests.m */; };
 		05AC743FC7BE45DDB9EEA5FC /* HighTowerText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */; };
@@ -24,6 +23,7 @@
 		87E983D9865D4F4AAB1C6AEC /* HighTowerText-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B4BEDF4DE4449428D47B0E5 /* HighTowerText-Italic.ttf */; };
 		C347ADFC3A39061443BB3EFA /* libPods-eventdeck-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CDE128E6CA3152E53DA55 /* libPods-eventdeck-tvOSTests.a */; };
 		FCA71F9CEC82453A96772B05 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */; };
+		F1778CE64EDC45809AE23717 /* Pirata One.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71C5D232AA144C0C98BC7A39 /* Pirata One.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +75,7 @@
 		E5DB067F78F53D18AEDE31AC /* Pods-eventdeck-eventdeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-eventdeckTests.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck-eventdeckTests/Pods-eventdeck-eventdeckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		71C5D232AA144C0C98BC7A39 /* Pirata One.ttf */ = {isa = PBXFileReference; name = "Pirata One.ttf"; path = "../assets/fonts/Pirata One.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +199,7 @@
 				02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */,
 				9B4BEDF4DE4449428D47B0E5 /* HighTowerText-Italic.ttf */,
 				5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */,
+				71C5D232AA144C0C98BC7A39 /* Pirata One.ttf */,
 			);
 			name = Resources;
 			path = "";
@@ -366,6 +368,7 @@
 				05AC743FC7BE45DDB9EEA5FC /* HighTowerText-Bold.ttf in Resources */,
 				87E983D9865D4F4AAB1C6AEC /* HighTowerText-Italic.ttf in Resources */,
 				FCA71F9CEC82453A96772B05 /* icomoon.ttf in Resources */,
+				F1778CE64EDC45809AE23717 /* Pirata One.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
