@@ -6,7 +6,13 @@ import { header, input, partyName } from '../styles/typography'
 import { useCardDeck } from "../contexts/CardDeckContext";
 
 const Party = ({party}) => {
-  const { makeCurrent, isCurrent, renameParty, removeParty} = useCardDeck()
+  const {
+    makeCurrent,
+    isCurrent,
+    renameParty,
+    removeParty,
+    isDefault
+  } = useCardDeck()
   const [partyName, newPartyNameChange] = useState(party.name)
   const [isRenaming, toggleRenaming] = useState(false)
 
@@ -16,6 +22,7 @@ const Party = ({party}) => {
     <View style={{marginTop: 20, padding: 10}}>
 
       <View style={{flexDirection:'row', flexWrap:'wrap'}}>
+        <Text style={{ ...input, ...renamingStyle }}>{`${currentMarker} `}</Text>
         <TextInput
           style={{ height: 40, ...input, ...renamingStyle }}
           placeholder={'Name'}
@@ -25,17 +32,17 @@ const Party = ({party}) => {
           value={partyName}
           selectionColor={'red'}
         />
-        <Text style={{ ...input, ...renamingStyle }}>{currentMarker}</Text>
       </View>
       <View style={{flexDirection:'row', flexWrap:'wrap'}}>
         <Button
           title="Select"
           onPress={() => { makeCurrent(party.id)}}
         />
-        <Button
-          title="Delete"
-          onPress={() => { removeParty(party.id) }}
-        />
+        { !isDefault &&
+          <Button
+            title="Delete"
+            onPress={() => { removeParty(party.id) }}
+          /> }
         <Button style={{renamingStyle}}
           title={isRenaming ? "Save" : "Rename" }
           onPress={() => {

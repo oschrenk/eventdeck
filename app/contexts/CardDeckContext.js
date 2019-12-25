@@ -12,7 +12,7 @@ const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 const KEY = '@dev.oschrenk.eventdeck/v1a'
 const defaultSide = 'back'
 
-const AllCardsAvailable = {
+const AllEventsAvailable = {
   city: allCityCardNumbers,
   road: allRoadCardNumbers
 }
@@ -26,8 +26,14 @@ const CardDeckProvider = (props) => {
     history: [],
     currentCard: null,
     cards: allCityEvents.concat(allRoadEvents),
-    available:  AllCardsAvailable,
-    parties: []
+    available:  AllEventsAvailable,
+    parties: [
+      {
+        id: "default",
+        name: "The Boyz",
+        events: AllEventsAvailable,
+      }
+    ]
   });
 
   async function pullFromStorage() {
@@ -157,7 +163,7 @@ const useCardDeck = () => {
   }
 
   const reset = () => {
-      setState(state => ({ ...state, available: AllCardsAvailable }));
+      setState(state => ({ ...state, available: AllEventsAvailable }));
   }
 
   const uuidv4 = () => {
@@ -171,14 +177,13 @@ const useCardDeck = () => {
     const newParty = {
       id: uuidv4(),
       name: name,
+      events: AllEventsAvailable
     }
     addParty(newParty)
   }
 
   const addParty = (party) => {
-    console.log("ADD PARTY1", state.parties)
     state.parties.push(party)
-    console.log("ADD PARTY", state.parties)
     setState(state => ({ ...state, parties: state.parties}))
   }
 
@@ -203,6 +208,10 @@ const useCardDeck = () => {
     return state.ui.currentParty === id
   }
 
+  const isDefault = (id) => {
+    return id === 'default'
+  }
+
   return {
     cards: state.cards,
     currentCard: state.currentCard,
@@ -219,6 +228,7 @@ const useCardDeck = () => {
     removeParty,
     makeCurrent,
     isCurrent,
+    isDefault,
     parties: state.parties
   }
 };
