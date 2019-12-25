@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {Button, FlatList, ImageBackground, SafeAreaView, Text, TextInput, View} from 'react-native';
 
 import { header, input, partyName } from '../styles/typography'
@@ -7,10 +7,26 @@ import { useCardDeck } from "../contexts/CardDeckContext";
 
 const Party = ({party}) => {
   const { makeCurrent, isCurrent, renameParty, removeParty} = useCardDeck()
+  const [partyName, newPartyNameChange] = useState(party.name)
+  const [isRenaming, toggleRenaming] = useState(false)
+
   const currentMarker = isCurrent(party.id) ? "*" : ""
+  const renamingStyle = isRenaming ? { color: 'red'} : {}
   return (
     <View style={{marginTop: 20, padding: 10}}>
-      <Text style={partyName}>{`${party.name} ${currentMarker}`}</Text>
+
+      <View style={{flexDirection:'row', flexWrap:'wrap'}}>
+        <TextInput
+          style={{ height: 40, ...input, ...renamingStyle }}
+          placeholder={'Name'}
+          placeholderTextColor={'gray'}
+          onChangeText={text => newPartyNameChange(text)}
+          editable={isRenaming}
+          value={partyName}
+          selectionColor={'red'}
+        />
+        <Text style={{ ...input, ...renamingStyle }}>{currentMarker}</Text>
+      </View>
       <View style={{flexDirection:'row', flexWrap:'wrap'}}>
         <Button
           title="Select"
@@ -19,6 +35,15 @@ const Party = ({party}) => {
         <Button
           title="Delete"
           onPress={() => { removeParty(party.id) }}
+        />
+        <Button style={{renamingStyle}}
+          title={isRenaming ? "Save" : "Rename" }
+          onPress={() => {
+            if (isRenaming) {
+              renameParty(party.id, partyName)
+            }
+            toggleRenaming(!isRenaming)
+          }}
         />
       </View>
     </View>
