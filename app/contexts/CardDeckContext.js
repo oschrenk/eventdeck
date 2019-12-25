@@ -19,6 +19,9 @@ const AllCardsAvailable = {
 
 const CardDeckProvider = (props) => {
   const [initialState, setState] = useState({
+    ui: {
+      currentParty: "default"
+    },
     side: defaultSide,
     history: [],
     currentCard: null,
@@ -190,6 +193,16 @@ const useCardDeck = () => {
     addParty(party)
   }
 
+  const makeCurrent = (id) => {
+    const ui = state.ui
+    ui.currentParty = id
+    setState(state => ({ ...state, ui}))
+  }
+
+  const isCurrent = (id) => {
+    return state.ui.currentParty === id
+  }
+
   return {
     cards: state.cards,
     currentCard: state.currentCard,
@@ -204,6 +217,8 @@ const useCardDeck = () => {
     newParty,
     renameParty,
     removeParty,
+    makeCurrent,
+    isCurrent,
     parties: state.parties
   }
 };
