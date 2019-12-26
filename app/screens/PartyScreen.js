@@ -38,7 +38,7 @@ const Party = ({party}) => {
           title="Select"
           onPress={() => { makeCurrent(party.id)}}
         />
-        { !isDefault &&
+        { !isDefault(party.id) &&
           <Button
             title="Delete"
             onPress={() => { removeParty(party.id) }}
