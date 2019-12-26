@@ -34,10 +34,11 @@ const Party = ({party}) => {
         />
       </View>
       <View style={{flexDirection:'row', flexWrap:'wrap'}}>
-        <Button
-          title="Select"
-          onPress={() => { makeCurrent(party.id)}}
-        />
+        { !isCurrent(party.id) &&
+          <Button
+            title="Select"
+            onPress={() => { makeCurrent(party.id)}}
+          /> }
         { !isDefault(party.id) &&
           <Button
             title="Delete"
