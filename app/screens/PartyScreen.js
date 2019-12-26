@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {Button, FlatList, ImageBackground, SafeAreaView, Text, TextInput, View} from 'react-native';
 
-import { header, input, partyName } from '../styles/typography'
+import { header, input } from '../styles/typography'
 
 import { useCardDeck } from "../contexts/CardDeckContext";
 
