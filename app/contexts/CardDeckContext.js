@@ -8,6 +8,7 @@ const CardDeckContext = React.createContext([{}, () => {}]);
 
 const allCityCardNumbers = allCityEvents.map(e => e.id)
 const allRoadCardNumbers = allRoadEvents.map(e => e.id)
+const cards = allCityEvents.concat(allRoadEvents)
 
 const KEY = '@dev.oschrenk.eventdeck/v1a'
 const defaultSide = 'back'
@@ -25,7 +26,6 @@ const CardDeckProvider = (props) => {
     side: defaultSide,
     history: [],
     currentCard: null,
-    cards: allCityEvents.concat(allRoadEvents),
     available:  AllEventsAvailable,
     parties: [
       {
@@ -130,7 +130,7 @@ const useCardDeck = () => {
 
   const drawCard = (type) => {
     const newCardId = nextId(type)
-    const newCard = state.cards.find(c => (c.id === newCardId) && c['type'] === type)
+    const newCard = cards.find(c => (c.id === newCardId) && c['type'] === type)
     setCurrentCard(newCard)
     addHistory(newCard)
     setSide(defaultSide)
@@ -213,7 +213,6 @@ const useCardDeck = () => {
   }
 
   return {
-    cards: state.cards,
     currentCard: state.currentCard,
     side: state.side,
     available: state.available,
