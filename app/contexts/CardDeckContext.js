@@ -224,15 +224,18 @@ const useCardDeck = () => {
     flipCard,
     putBack,
     destroy,
-    toggleAvailable,
     reset,
+
+    available: state.available,
+    toggleAvailable,
+
+    parties: state.parties,
     newParty,
     renameParty,
     removeParty,
     makeCurrent,
     isCurrent,
     isDefault,
-    parties: state.parties
   }
 };
 
