@@ -23,8 +23,8 @@ const CardDeckProvider = (props) => {
     ui: {
       currentParty: "default",
       currentCard: null,
+      side: defaultSide,
     },
-    side: defaultSide,
     history: [],
     available:  AllEventsAvailable,
     parties: [
@@ -76,7 +76,9 @@ const useCardDeck = () => {
   const [state, setState] = useContext(CardDeckContext);
 
   const setSide = (side) => {
-    setState(state => ({ ...state, side }));
+    const ui = state.ui
+    ui.side = 'side'
+    setState(state => ({ ...state, ui}));
   }
 
   const setCurrentCard = (card) => {
@@ -216,8 +218,8 @@ const useCardDeck = () => {
 
   return {
     currentCard: state.ui.currentCard,
-    side: state.side,
-    available: state.available,
+    side: state.ui.side,
+
     drawCard,
     flipCard,
     putBack,
