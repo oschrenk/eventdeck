@@ -77,7 +77,7 @@ const useCardDeck = () => {
 
   const setSide = (side) => {
     const ui = state.ui
-    ui.side = 'side'
+    ui.side = side
     setState(state => ({ ...state, ui}));
   }
 
@@ -88,7 +88,7 @@ const useCardDeck = () => {
   }
 
   const flipCard = () => {
-    if(state.side === 'front')
+    if(state.ui.side === 'front')
       setSide('back')
     else
       setSide('front')
