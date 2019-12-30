@@ -172,16 +172,18 @@ const Outcome = ({outcome, type}) => {
   return (
     <View>
       <Blocks requirement={requirement} texts={texts} color={color} />
-      <View style={{width: 315, flexDirection:'row', flexWrap:'wrap'}}>
-        <View style={{width: 270, flexDirection:'column', justifyContent: 'flex-end'}}>
-        { effects &&
-          effects.map((e,i) => <Effect text={e} color={color} key={i} />)
-        }
+      { (effects || outcome.resolve) &&
+        <View style={{width: 315, flexDirection:'row', flexWrap:'wrap'}}>
+          <View style={{width: 270, flexDirection:'column', justifyContent: 'flex-end'}}>
+          { effects &&
+            effects.map((e,i) => <Effect text={e} color={color} key={i} />)
+          }
+          </View>
+          <View style={{height: 35,width: 40}}>
+            <TextParser text={outcome.resolve} />
+          </View>
         </View>
-        <View style={{height: 35,width: 40}}>
-          <TextParser text={outcome.resolve} />
-        </View>
-      </View>
+      }
     </View>
   )
 }
