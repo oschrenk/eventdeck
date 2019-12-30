@@ -62,10 +62,8 @@ const CardDeckProvider = (props) => {
 
   useEffect(() => {
     if (!didMount.current) {
-      console.log("Mounted")
       didMount.current = true;
     } else {
-      console.log("Storing")
       updateStorage(state)
     }
   }, [JSON.stringify(state)])
@@ -113,10 +111,8 @@ const useCardDeck = () => {
 
     const partyId = state.ui.currentParty
     const party = state.parties.filter(p => p.id === partyId)[0]
-
-    console.log("NEXT", party, party.events)
-
     const available = party.events[type]
+
     if (last) {
       const lastId = last.id
       const lastAvailableId = available[available.length -1]
