@@ -26,10 +26,10 @@ const HomeScreen = () => {
                 <View>
                    <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', height: 48}}>
                      { side === 'back' &&
-                       <IconButton name="remove-from-game" onPress={putBack} style={{fontSize: 48}}/>}
+                       <IconButton name="remove-from-game" onPress={() => destroy(currentCard)} style={{fontSize: 48}}/>}
                      <IconButton name="flip" onPress={flipCard} style={{fontSize: 48}}/>
                      { side === 'back' &&
-                       <IconButton name="return-to-deck" onPress={() => destroy(currentCard)} style={{fontSize: 48}}/>}
+                       <IconButton name="return-to-deck" onPress={putBack} style={{fontSize: 48}}/>}
                    </View>
                 </View>
               </View>
