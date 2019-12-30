@@ -10,7 +10,7 @@ const allCityCardNumbers = allCityEvents.map(e => e.id)
 const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 const cards = allCityEvents.concat(allRoadEvents)
 
-const KEY = '@dev.oschrenk.eventdeck/v1a'
+const KEY = '@dev.oschrenk.eventdeck/v1b'
 const defaultSide = 'back'
 
 const AllEventsAvailable = {
@@ -18,31 +18,35 @@ const AllEventsAvailable = {
   road: allRoadCardNumbers
 }
 
+const InitialState = {
+  ui: {
+    currentParty: "default",
+    currentCard: null,
+    side: defaultSide,
+  },
+  history: [],
+  available:  AllEventsAvailable,
+  parties: [
+    {
+      id: "default",
+      name: "The Boyz",
+      events: AllEventsAvailable,
+    }
+  ]
+}
+
 const CardDeckProvider = (props) => {
-  const [initialState, setState] = useState({
-    ui: {
-      currentParty: "default",
-      currentCard: null,
-      side: defaultSide,
-    },
-    history: [],
-    available:  AllEventsAvailable,
-    parties: [
-      {
-        id: "default",
-        name: "The Boyz",
-        events: AllEventsAvailable,
-      }
-    ]
-  });
+  const [state, setState] = useState(InitialState);
 
   async function pullFromStorage() {
     const fromStorage = await AsyncStorage.getItem(KEY)
     let value = {}
     if (fromStorage) {
       value = JSON.parse(fromStorage)
+      console.log("Loaded %s from %s", fromStorage, KEY)
     }
-    setState(state => ({ ...state, available: value }));
+
+    setState(state => ({ ...state, ...value }));
   }
 
   async function updateStorage(newValue) {
@@ -59,14 +63,16 @@ const CardDeckProvider = (props) => {
 
   useEffect(() => {
     if (!didMount.current) {
+      console.log("Mounted")
       didMount.current = true;
     } else {
-      updateStorage(initialState.available)
+      console.log("Storing")
+      updateStorage(state)
     }
-  }, [JSON.stringify(initialState.available)])
+  }, [JSON.stringify(state)])
 
   return (
-    <CardDeckContext.Provider value={[initialState, setState]}>
+    <CardDeckContext.Provider value={[state, setState]}>
       {props.children}
     </CardDeckContext.Provider>
   );
