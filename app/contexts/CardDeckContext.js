@@ -242,6 +242,13 @@ const useCardDeck = () => {
     return state.ui.currentParty === id
   }
 
+  const currentParty = () => {
+    const id = state.ui.currentParty
+    const party = state.parties.find(p => p.id === id)
+    return party
+  }
+
+
   const isDefault = (id) => {
     return id === 'default'
   }
@@ -264,6 +271,7 @@ const useCardDeck = () => {
     renameParty,
     removeParty,
     makeCurrent,
+    currentParty,
     isCurrent,
     isDefault,
   }
