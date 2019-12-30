@@ -10,7 +10,7 @@ const allCityCardNumbers = allCityEvents.map(e => e.id)
 const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 const cards = allCityEvents.concat(allRoadEvents)
 
-const KEY = '@dev.oschrenk.eventdeck/v1b'
+const KEY = '@dev.oschrenk.eventdeck/v1d'
 const defaultSide = 'back'
 
 const AllEventsAvailable = {
@@ -25,7 +25,6 @@ const InitialState = {
     side: defaultSide,
   },
   history: [],
-  available:  AllEventsAvailable,
   parties: [
     {
       id: "default",
@@ -101,13 +100,23 @@ const useCardDeck = () => {
   }
 
   const randomId = (type) => {
-    const index = Math.floor((Math.random() * state.available[type].size))
-    return [...state.available[type]][index]
+    const partyId = state.ui.currentParty
+    const party = state.parties.filter(p => p.id === partyId)[0]
+    const available = party.events[type]
+
+    const index = Math.floor((Math.random() * available.size))
+    return available[index]
   }
 
   const nextId = (type) => {
     const last = getLast(type)
-    const available = state.available[type]
+
+    const partyId = state.ui.currentParty
+    const party = state.parties.filter(p => p.id === partyId)[0]
+
+    console.log("NEXT", party, party.events)
+
+    const available = party.events[type]
     if (last) {
       const lastId = last.id
       const lastAvailableId = available[available.length -1]
@@ -157,23 +166,42 @@ const useCardDeck = () => {
     setSide(defaultSide)
   }
 
+  const isAvailable = (id, type) => {
+    const partyId = state.ui.currentParty
+    const party = state.parties.filter(p => p.id === partyId)[0]
+    const events = party.events[type]
+    return events.includes(id)
+  }
+
   const toggleAvailable = (item, type) => {
+    const partyId = state.ui.currentParty
+    const party = state.parties.filter(p => p.id === partyId)[0]
+    const newEvents = party.events
+
+    var newTypeEvents = []
     if (item.checked) {
-      const newState = state.available
       const idToAdd = parseInt(item.label)
-      const newTypeState = state.available[type].concat(idToAdd).sort((a, b) => a - b)
-      newState[type] = newTypeState
-      setState(state => ({ ...state, available: newState }));
+      newTypeEvents = newEvents[type].concat(idToAdd).sort((a, b) => a - b)
     } else {
       const idToRemove = parseInt(item.label)
-      const newTypeState = state.available[type].filter(i => i !== idToRemove).sort((a, b) => a - b)
-      state.available[type] = newTypeState
-      setState(state => ({ ...state, available: state.available }));
+      newTypeEvents = newEvents[type].filter(i => i !== idToRemove).sort((a, b) => a - b)
     }
+
+    newEvents[type] = newTypeEvents
+    party.events = newEvents
+
+    const newParties = state.parties.filter(p => p.id !== partyId).concat(party)
+
+    setState(state => ({ ...state, parties: newParties }));
   }
 
   const reset = () => {
-      setState(state => ({ ...state, available: AllEventsAvailable }));
+
+    const partyId = state.ui.currentParty
+    const party = state.parties.filter(p => p.id === partyId)[0]
+    party.events = AllEventsAvailable
+    const newParties = state.parties.filter(p => p.id !== id).concat(party)
+    setState(state => ({ ...state, parties: newParties }));
   }
 
   const uuidv4 = () => {
@@ -232,7 +260,7 @@ const useCardDeck = () => {
     destroy,
     reset,
 
-    available: state.available,
+    isAvailable,
     toggleAvailable,
 
     parties: state.parties,

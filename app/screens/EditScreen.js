@@ -28,23 +28,23 @@ const Column = ({ids, checked, toggle}) => {
 }
 
 const EditScreen = ({navigation}) => {
-  const { available, toggleAvailable } = useCardDeck()
+  const { isAvailable, toggleAvailable } = useCardDeck()
 
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
         <Text style={header}>City, Base</Text>
         <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
-            <Column ids={allCityCardNumbers.slice(0,10)} checked={(item) => available.city.includes(item)} toggle={(item) =>toggleAvailable(item, 'city')}/>
-            <Column ids={allCityCardNumbers.slice(10,20)} checked={(item) => available.city.includes(item)} toggle={(item) =>toggleAvailable(item, 'city')}/>
-            <Column ids={allCityCardNumbers.slice(20,30)} checked={(item) => available.city.includes(item)} toggle={(item) =>toggleAvailable(item, 'city')}/>
+            <Column ids={allCityCardNumbers.slice(0,10)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
+            <Column ids={allCityCardNumbers.slice(10,20)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
+            <Column ids={allCityCardNumbers.slice(20,30)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
         </View>
 
         <Text style={header}>Road, Base</Text>
         <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
-            <Column ids={allRoadCardNumbers.slice(0,10)} checked={(item) => available.road.includes(item)} toggle={(item) => toggleAvailable(item, 'road')}/>
-            <Column ids={allRoadCardNumbers.slice(10,20)} checked={(item) => available.road.includes(item)} toggle={(item) => toggleAvailable(item, 'road')}/>
-            <Column ids={allRoadCardNumbers.slice(20,30)} checked={(item) => available.road.includes(item)} toggle={(item) =>toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(0,10)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(10,20)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(20,30)} checked={(item) => isAvailable(item, 'road')} toggle={(item) =>toggleAvailable(item, 'road')}/>
         </View>
       </SafeAreaView>
     </ImageBackground>
