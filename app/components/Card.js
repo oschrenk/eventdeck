@@ -113,7 +113,7 @@ const Blocks = ({requirement, texts, color }) => {
   const end = texts.length
 
   return (
-    <View>
+    <View style={{width: 290}}>
       { requirement &&
         <RequirementBlock requirement={requirement} text={texts[0]} color={color}/>
       }
@@ -129,7 +129,7 @@ const TextParser = ({text, style}) => {
     return null
   }
   const re = /\s*(\{\w+\})\s*/g;
-  const split = text.split(re)
+  const split = text.split(re).filter(s => s !== "")
 
   return (
     split.map((s,i) => {
@@ -167,16 +167,21 @@ const Outcome = ({outcome, type}) => {
   const requirement = outcome.requirement
   const effects = outcome.effects
   const texts = outcome.text.split("\n\n")
-  const resolve = outcome.resolve
   const color = colors[type]
 
   return (
     <View>
       <Blocks requirement={requirement} texts={texts} color={color} />
-      { effects &&
-        effects.map((e,i) => <Effect text={e} color={color} key={i} />)
-      }
-      <TextParser text={outcome.resolve} />
+      <View style={{width: 315, flexDirection:'row', flexWrap:'wrap'}}>
+        <View style={{width: 270, flexDirection:'column', justifyContent: 'flex-end'}}>
+        { effects &&
+          effects.map((e,i) => <Effect text={e} color={color} key={i} />)
+        }
+        </View>
+        <View style={{height: 35,width: 40}}>
+          <TextParser text={outcome.resolve} />
+        </View>
+      </View>
     </View>
   )
 }
@@ -189,10 +194,10 @@ const Back = (props) => {
   return (
     <View style={{width: 378, height: 530}}>
       <ImageBackground source={backgrounds[props.card['type']]['back']} style={{width: '100%', height: '100%'}}>
-        <View style={{left: 60, top: 20, width: 280, height: "50%"}}>
+        <View style={{left: 55, top: 20, width: 315, height: "50%"}}>
           <Outcomes outcomes={props.card.optionA.outcomes} type={props.card['type']} />
         </View>
-        <View style={{left: 60, top: 25, width: 280, height: "50%"}}>
+        <View style={{left: 55, top: 30, width: 315, height: "50%"}}>
           <Outcomes outcomes={props.card.optionB.outcomes} type={props.card['type']} />
         </View>
       </ImageBackground>
