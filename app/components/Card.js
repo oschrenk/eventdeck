@@ -179,7 +179,7 @@ const Outcome = ({outcome, type}) => {
             effects.map((e,i) => <Effect text={e} color={color} key={i} />)
           }
           </View>
-          <View style={{height: 35,width: 40}}>
+          <View style={{height: 35,width: 40, position: 'absolute', left: 270, bottom: 0}}>
             <TextParser text={outcome.resolve} />
           </View>
         </View>
