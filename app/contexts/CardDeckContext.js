@@ -10,7 +10,7 @@ const allCityCardNumbers = allCityEvents.map(e => e.id)
 const allRoadCardNumbers = allRoadEvents.map(e => e.id)
 const cards = allCityEvents.concat(allRoadEvents)
 
-const KEY = '@dev.oschrenk.eventdeck/v1d'
+const KEY = '@dev.oschrenk.eventdeck/v1e'
 const defaultSide = 'back'
 
 const AllEventsAvailable = {
@@ -24,12 +24,12 @@ const InitialState = {
     currentCard: null,
     side: defaultSide,
   },
-  history: [],
   parties: [
     {
       id: "default",
       name: "The Boyz",
       events: AllEventsAvailable,
+      history:[]
     }
   ]
 }
@@ -130,16 +130,24 @@ const useCardDeck = () => {
   }
 
   const addHistory = (card) => {
-    const history = state.history
-    history.push(card)
-    setState(state => ({ ...state, history }));
+    const party = currentParty()
+    const history = party.history
+    const minCard = {id: card.id, type: card['type']}
+    history.push(minCard)
+    party.history = history
+
+    const newParties = state.parties.filter(p => p.id !== party.id).concat(party)
+
+    setState(state => ({ ...state, parties: newParties }));
   }
 
   const getLast = (type) => {
+    const party = currentParty()
+    const history = party.history
     if (type) {
-      return state.history.reverse().find(c => c['type'] === type)
+      return history.reverse().find(c => c['type'] === type)
     } else {
-      return state.history[state.history.length -1]
+      return history[state.history.length -1]
     }
   }
 
