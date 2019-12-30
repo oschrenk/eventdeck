@@ -181,7 +181,9 @@ try {
 
       const res = resolvedEvents[eventType]
 
-      if ((eventType === "road") && (e.id === 28) && (o.text.includes("Read outcome"))) {
+      if ((eventType === "city") && (e.id === 19) && (o.text.includes("Read outcome"))) {
+        // deal with city event 19 and don't add resolve
+      } else if ((eventType === "road") && (e.id === 28) && (o.text.includes("Read outcome"))) {
         // deal with road event 28 and don't add resolve
       } else {
         if (res[e.id]) {
