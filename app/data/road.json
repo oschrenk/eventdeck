@@ -962,5 +962,250 @@
         }
       ]
     }
+  },
+  {
+    "id": 31,
+    "type": "road",
+    "text": "You approach the crest of a hill to the sound of yelling and swords clashing. Advancing, you see a trade caravan fighting off a swarm of Vermlings.\n\nYou can easily see that the caravan guards are not doing well. They are vastly outnumbered and forced to remain in a defensive position to protect their employers. You expect they will be overwhelmed and killed in a manner of minutes.",
+    "optionA": {
+      "choice": "Charge into the fray to protect the caravan from the savage attack.",
+      "outcomes": [
+        {
+          "requirement": "{Brute} {Sun} {ThreeSpears}",
+          "text": "Fortunately, some of your group excels when in a defensive position, and the tide of the battle clearly turns once they take command of the situation. The Vermlings are driven off and the caravan is saved.",
+          "effects": [
+            "Gain 2 reputation."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You try to save the guards, but end up in their same predicament. You manage to fight off the Vermlings, but not before all the guards and merchants are killed.",
+          "effects": [
+            "All start scenario with 3 damage.",
+            "Gain 5 gold each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Watch lor a while and wait for an opportune moment to strike.",
+      "outcomes": [
+        {
+          "text": "You wait for a good long while, until after the guards have all been slaughtered and the Vermlings are softened up a bit. They're going through the goods in the wagons when you hit them with a surprise attack. Caught off guard, they go down without much of a fight.",
+          "effects": [
+            "All start scenario with 1 damage.",
+            "Gain 5 gold each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 32,
+    "type": "road",
+    "text": "You encounter two Valraths with a small horse and cart on the side of the road. They seem a little uncomfortable at your approach, their hands instinctively going for their weapons.\n\nYou make a sign of peace and they relax a little.\n\n\"Perhaps it is good that you happen by, travelers, \" the one on the left says. \"Our horse is completely spent and we fare little better. We are in desperate need of some supplies to finish our journey.\"\n\n The Valrath offers a crude smile. \"Do you think you could help us in this matter?\"",
+    "optionA": {
+      "choice": "Give the Valraths a portion of your supplies.",
+      "outcomes": [
+        {
+          "requirement": "{ThreeSpears}",
+          "text": "The Quartermaster steps forward with smile and hands over a sack of food and gear. He is always well-stocked and the Valraths are grateful for the aid.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You'll need to replace the supplies the next time you're in town, but you decide you can spare them. The Valraths thank you with relief.",
+          "effects": [
+            "Lose 5 gold each.",
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "You spent good money on these supplies. Refuse to help.",
+      "outcomes": [
+        {
+          "text": "You apologize curtly and continue on your way. The Valraths seem disappointed, but vaguely understanding. It doesn't stop them from whispering things about you to each other as you walk away.",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "type": "road",
+    "text": "Something is..off.\n\nYou step in the middle of the road and feel a rippling in your skin. You're not sure what it is, but some strange forces are at work.\n\nThere is a faint whisper on the wind and you feel as though at any moment, one step could send you plummeting off the face of the earth.",
+    "optionA": {
+      "choice": "Investigate further. Whatever forces are at work must be put in check.",
+      "outcomes": [
+        {
+          "requirement": "{Eclipse} {Circles}",
+          "text": "The Aesther in your group leads you to an area off the road that feels...fuzzy. It is hard to focus your vision, as if the space in front of you is only half there. With a few words from the Aesther, the blur is gone.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You wander around for a while before a massive demon suddenly appears before you, ripped from another plane. Your presence surprises it, though, and you dispatch it before too much trouble is caused.",
+          "effects": [
+            "All start scenario with 1 damage.",
+            "Discard 1 card each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Get out of this place as quickly as you can.",
+      "outcomes": [
+        {
+          "text": "You head forward with all haste, eager to get back your bearings. You seem to be out of the worst of it when you are suddenly ambushed by a giant demon from behind. You fight it off, but not before it tears into you and burns your flesh.",
+          "effects": [
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 34,
+    "type": "road",
+    "text": "Your travels leave you out in the wilderness overnight, so you make camp and start a fire.\n\nIt's hard to sleep outside of the comfort of the city, always on guard, looking for the next fatal threat. Luckily the night proves fairly dull. That is, until you hear the sound of voices approaching your camp.\n\nThey are faint and low — almost like growling, but you can hear indications of language.",
+    "optionA": {
+      "choice": "Quickly put out the fire and sneak out into the brush to get a look.",
+      "outcomes": [
+        {
+          "requirement": "{Scoundrel} {Mindthief} {Eclipse}",
+          "text": "Your stealth skills prove sufficient enough to remain unnoticed by a large group of Inox. You decide to let them pass by without incident.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You attempt to hide and stay quiet, but a snapped twig at an unfortunate moment startles the passing band of inox, and they pull out weapons and attack. The scene turns bloody, and you are barely able fight them off.",
+          "effects": [
+            "All start scenario with 4 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Wait by the fire for whatever comes.",
+      "outcomes": [
+        {
+          "requirement": "{Brute} {LightningBolts}",
+          "text": "A group of Inox appears at the edge of your campsite. Seeing their kind among you, they greet you in a friendly manner and stay for some time to talk. After they leave, you find the remainder of the night restful.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "A group of irate Inox appears at the edge of your campsite. They claim you are trespassing and force you to pack up and leave. You walk through the rest of the night and arrive at your destination tired.",
+          "effects": [
+            "Discard 2 cards each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 35,
+    "type": "road",
+    "text": "You are enjoying a pleasant, peaceful stroll down the road when you find yourself suddenly surrounded by a beleaguered group of men. One of them steps forward, a pox covering half his face.\n\n\"Good day to you.\" He smiles weakly. \"We hate to be a burden, but you see, my camp has been taken ill with a strange malady, and we must kindly beg you for some money for medicine.\"\n\nYou look around to see that some disfiguring disease has indeed come over the lot of them.\n\nThe man scratches the side of his face with one hand while he slowly pulls out a sword with the other. \"I'm afraid we can't take no for an answer.\"",
+    "optionA": {
+      "choice": "Fight oft the men. This is highway robbery, whatever the motive.",
+      "outcomes": [
+        {
+          "requirement": "{Cthulu}",
+          "text": "The Plagueherald stretches out his arms and the men around him immediately double over in pain. You can almost sense it smiling, even though it doesn't have a face. The fight doesn't last long, especially once the men's wounds start bursting with maggots.",
+          "effects": [
+            "All start scenario with 1 damage."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "The men are weakened, but they are still hardened fighters. You fight them off, but it gets ugly.",
+          "effects": [
+            "All start scenario with POISON {Poison}.",
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Pay the men and be on your way.",
+      "outcomes": [
+        {
+          "requirement": "PAY 5 GOLD EACH",
+          "text": "You smile as non-threateningly as you can and reach for your coin purse. You try to give them just a couple coins, but he encourages you to donate more. Eventually the men seem satisfied and move on their way.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "When you try to pay with what few coins you have, the man thinks you are holding out on him and grows angry.\n\nRead outcome A."
+        }
+      ]
+    }
+  },
+  {
+    "id": 36,
+    "type": "road",
+    "text": "Up abead, you see the path you are on leads into a dark and unfamiliar wood. It gives you an eerie feeling.\n\nAs you step closer, you can feel your skin crawl and it forces you to pause, you can't help, but think that this wood might best be avoided.",
+    "optionA": {
+      "choice": "Continue down the path into the wood. You are not afraid.",
+      "outcomes": [
+        {
+          "requirement": "{LightningBolts} {TwoMinis} {PointyHead}",
+          "text": "The wood is overgrown and rampant with all manner of insects, but with difficulty, you follow the path. Somewhere deep inside, you come across a stone pedestal with the following scratched into its base: {RuneR}{RuneE}{RuneC}{RuneO}{RuneR}{RuneD} {RuneT}{RuneH}{RuneE} {RuneP}{RuneA}{RuneG}{RuneE}, {RuneT}{RuneH}{RuneE} {RuneW}{RuneO}{RuneD}{RuneD}, {RuneA}{RuneN}{RuneD} {RuneT}{RuneH}{RuneE} {RuneL}{RuneR}{RuneT}{RuneT}{RuneE}{RuneR} - {Rune8}{Rune3}{Rune4}.",
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You follow the path into the wood and become hopelessly lost. The going is hard and painful.",
+          "effects": [
+            "All start scenario with POISON {Poison}.",
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Find another way to your destination.",
+      "outcomes": [
+        {
+          "text": "The wood is large and you spend a little more time than you 'd like trying to get around it. With enough effort, you arrive at your destination just a little bit more tired than you d like.",
+          "effects": [
+            "Discard 1 card each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
   }
 ]
