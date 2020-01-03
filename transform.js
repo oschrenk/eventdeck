@@ -166,13 +166,12 @@ try {
 
     // add esolves
 
-    // sainity check resolves
-    // warn for road only for now
+    // sanity check resolves
     if ((eventType === "road")) {
       const shouldHave = e.optionA.outcomes.length + e.optionB.outcomes.length
       const resolves = resolvedEvents[eventType][e.id]
       if (shouldHave !== resolves.length) {
-        if ((eventType === "road") && (e.id === 28)) {
+        if ((eventType === "road") && ((e.id === 28) || (e.id === 35))) {
           // deal with road event 28 and don't warn
         } else {
           console.error("DATA ERROR for %s:%i Should have %i but has %i", eventType, e.id, shouldHave, resolves.length)
@@ -213,9 +212,13 @@ try {
 
       const res = resolvedEvents[eventType]
       if (res[e.id]) {
-        o.resolve = res[e.id][correctedIndex]
-        if (!o.resolve) {
-          console.log("Error resolve oob for %s:%s,%s", eventType, e.id, correctedIndex)
+        if ((eventType === "road") && (e.id === 35) && (o.text.includes("Read outcome")) && correctedIndex === 2) {
+          // deal with road 35 read outcome
+        } else {
+          o.resolve = res[e.id][correctedIndex]
+          if (!o.resolve) {
+            console.log("Error resolve oob for %s:%s,%s", eventType, e.id, correctedIndex)
+          }
         }
       } else {
         console.log("Default resolve for %s:%s,%s", eventType, e.id, index)
