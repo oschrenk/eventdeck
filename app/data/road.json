@@ -311,7 +311,7 @@
       "choice": "Take cover under a nearby outcropping and wait out the earthquake.",
       "outcomes": [
         {
-          "requirement": "{Cragheart}, {Spellweaver}, {Triangles}, {Circles}",
+          "requirement": "{Cragheart} {Spellweaver} {Triangles} {Circles}",
           "text": "You jump under an outcropping, but something is not right. Those among you attuned to the elements turn toward the face of the mountain and step into it, as though the rocks were gone. Inside, you see an odd crystal jutting out of the earth. You snatch it up and the tremors stop.",
           "effects": [
             "Add City Event 73 to the deck."
@@ -743,7 +743,7 @@
       "choice": "Try to reason with the Inox",
       "outcomes": [
         {
-          "requirement": "{Brute}, {LightningBolts}",
+          "requirement": "{Brute} {LightningBolts}",
           "text": "The Inox in your party talks with the leader for a while and they are able to come to an agreement. They punch each other's chests, and the group lets you through.",
           "effects": [
             "No effect."
@@ -781,7 +781,7 @@
       "choice": "Attempt to help the man with his axle problem.",
       "outcomes": [
         {
-          "requirement": "{Tinkerer}, {ThreeSpears}",
+          "requirement": "{Tinkerer} {ThreeSpears}",
           "text": "The man talks the whole way through the process, but after an hour or so, the axle is repaired and the man leaves in a radiant mood, bestowing blessings upon you.",
           "effects": [
             "All start scenario with BLESS {Bless}.",
@@ -821,7 +821,7 @@
       "choice": "Clear the trees from the road. It is the best way through and will help other travelers.",
       "outcomes": [
         {
-          "requirement": "{Spellweaver}, {Triangles}, {Circles}",
+          "requirement": "{Spellweaver} {Triangles} {Circles}",
           "text": "The trees are too massive and dense to remove through conventional means, but with elemental power, they are destroyed and swept aside in no time.",
           "effects": [
             "No effect."
@@ -863,7 +863,7 @@
           "text": "After some oddly tense negotiations, you are able to agree upon a price. With one hand firmly on his sword hilt, the man grabs a coin pouch with the other hand and extends it toward you. You exchange goods and continue on your journey without further incident.",
           "effects": [
             "Gain 10 collective gold.",
-            "{Scoundrel}, {Saw}, {MusicNote}: Gain 10 additional collective gold."
+            "{Scoundrel} {Saw} {MusicNote}: Gain 10 additional collective gold."
           ],
           "resolve": "{Remove}"
         },
@@ -932,7 +932,7 @@
       "choice": "Help the survivors deal with the carnage.",
       "outcomes": [
         {
-          "requirement": "{Mindthief}, {TwoMinis}",
+          "requirement": "{Mindthief} {TwoMinis}",
           "text": "You approach to help those still alive, but the woman in the road screams, gesturing at the Vermling in your group. You try to calm her, but it is of no use. You abandon the cause.",
           "effects": [
             "No effect."
