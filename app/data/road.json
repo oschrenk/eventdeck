@@ -1243,7 +1243,7 @@
         {
           "text": "It is far from ideal, but the outcropping keeps you mostly dry and protects you from the howling wind. You wait hours and hours, huddled up under the rock until the storm passes. By the time you arrive at your destination, you are a bit slow on your feet due to lack of sleep.",
           "effects": [
-            "All start scenario with {Disarm}."
+            "All start scenario with DISARM {Disarm}."
           ],
           "resolve": "{Remove}"
         }
@@ -1349,7 +1349,7 @@
           "text": "The water is surprisingly cold, but it will take more than that to end your day. You are still water-logged and shivering when you reach your destination, however.",
           "effects": [
             "All start scenario with MUDDLE {Muddle}.",
-            "All start scenario with {Immobilize}."
+            "All start scenario with IMMOBILIZE {Immobilize}."
           ],
           "resolve": "{Remove}"
         }
