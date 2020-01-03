@@ -73,6 +73,7 @@ const transformOutcome = (arr) => {
         .replace("\"Temple of the Eclipse\" 81", "\"Temple of the Eclipse\" {Scenario81}")
         .replace("\"Shadows Within\" 83", "\"Shadows Within\" {Scenario83}")
         .replace("\"Sacrifice Pit\" 78", "\"Sacrifice Pit\" {Scenario78}")
+        .replace("\"Demonic Rift\" 90", "\"Demonic Rift\" {Scenario90}")
 
       t = {effect: o}
     } else if (o.startsWith("All start ")) {
