@@ -59,6 +59,15 @@ const EditScreen = ({navigation}) => {
             <Column ids={allRoadCardNumbers.slice(18,24)} checked={(item) => isAvailable(item, 'road')} toggle={(item) =>toggleAvailable(item, 'road')}/>
             <Column ids={allRoadCardNumbers.slice(24,30)} checked={(item) => isAvailable(item, 'road')} toggle={(item) =>toggleAvailable(item, 'road')}/>
         </View>
+
+        <Text style={header}>Road, Expanded</Text>
+        <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
+            <Column ids={allRoadCardNumbers.slice(30,36)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(30,30)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(30,30)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(30,30)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(30,30)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+        </View>
       </SafeAreaView>
     </ImageBackground>
   );
