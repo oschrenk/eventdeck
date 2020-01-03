@@ -29,7 +29,22 @@
    "27": ["{Remove}", "{Remove}", "{Remove}"],
    "28": ["{Remove}", "{Remove}", "{Remove}"],
    "29": ["{Remove}", "{Return}", "{Remove}", "{Return}"],
-   "30": ["{Remove}", "{Return}", "{Remove}"]
+   "30": ["{Remove}", "{Return}", "{Remove}"],
+   "31": ["{Remove}", "{Remove}"],
+   "32": ["{Remove}", "{Remove}", "{Remove}"],
+   "33": ["{Remove}", "{Remove}", "{Remove}"],
+   "34": ["{Remove}", "{Return}", "{Remove}"],
+   "35": ["{Remove}", "{Remove}", "{Remove}"],
+   "36": ["{Remove}", "{Remove}", "{Remove}", "{Remove}"],
+   "37": ["{Remove}", "{Remove}", "{Remove}", "{Remove}"],
+   "38": ["{Remove}", "{Remove}", "{Remove}", "{Remove}"],
+   "39": ["{Remove}", "{Remove}"],
+   "40": ["{Remove}", "{Remove}", "{Remove}"],
+   "41": ["{Remove}", "{Remove}", "{Return}", "{Remove}"],
+   "42": ["{Remove}", "{Remove}"],
+   "43": ["{Remove}", "{Remove}"],
+   "44": ["{Remove}", "{Remove}", "{Remove}"],
+   "45": ["{Remove}", "{Remove}"]
   },
   "road": {
    "1": ["{Return}", "{Return}"],

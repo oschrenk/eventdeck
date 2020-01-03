@@ -200,7 +200,8 @@ try {
       var correctedIndex = e.optionB.outcomes.length + index - 1
 
       // city 15 has a preamble text, we need to skip
-      if ((eventType === "city") && (e.id === 15)) {
+      // city 31, option b has read outcome we need to skip
+      if ((eventType === "city") && ((e.id === 15) || (e.id === 31))) {
         if (index === 0) {
           return o
         } else {
