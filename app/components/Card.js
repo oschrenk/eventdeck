@@ -28,6 +28,8 @@ const Lookup = {
   'Bless': <Icon name={'bless'} key={'bless'}/>,
   "Check": <Icon name={'check'} key={'check'}/>,
   'Curse': <Icon name={'curse'} key={'curse'}/>,
+  'Disarm': <Icon name={'disarm'} key={'disarm'}/>,
+  'Immobilize': <Icon name={'immobilize'} key={'immobilize'}/>,
   'Muddle': <Icon name={'muddle'} key={'muddle'}/>,
   'Poison': <Icon name={'poison'} key={'poison'}/>,
   'Wound': <Icon name={'wound'} key={'wound'}/>,

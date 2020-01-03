@@ -43,6 +43,19 @@ const map= {
     {'glyph': '\ue93e', 'color': 'white'},
     {'glyph': '\ue93f', 'color': 'white'},
   ],
+  'disarm': [
+    {'glyph': '\ue94f', 'color': '#69797d'},
+    {'glyph': '\ue951', 'color': 'white'},
+    {'glyph': '\ue952', 'color': 'white'},
+    {'glyph': '\ue953', 'color': 'white'},
+  ],
+  'immobilize': [
+    {'glyph': '\ue950', 'color': '#9b342f'},
+    {'glyph': '\ue954', 'color': 'white'},
+    {'glyph': '\ue955', 'color': 'white'},
+    {'glyph': '\ue956', 'color': 'white'},
+    {'glyph': '\ue957', 'color': 'white'},
+  ],
   'poison': [
     {'glyph': '\ue943', 'color': '#7c7f67'},
     {'glyph': '\ue944', 'color': 'white'},
