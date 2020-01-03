@@ -869,7 +869,8 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "Read outcome B."
+          "text": "Read outcome B.",
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -1167,7 +1168,10 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "When you try to pay with what few coins you have, the man thinks you are holding out on him and grows angry.\n\nRead outcome A."
+          "text": "When you try to pay with what few coins you have, the man thinks you are holding out on him and grows angry.",
+          "effects": [
+            "Read outcome A."
+          ]
         }
       ]
     }

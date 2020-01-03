@@ -87,6 +87,8 @@ const transformOutcome = (arr) => {
       t = {effect: o}
     } else if (o.startsWith("Consume")) {
       t = {effect: o}
+    } else if (o.startsWith("Read outcome")) {
+      t = {effect: o}
     } else if (o.startsWith("One starts")) {
       t = {effect: o}
 // OUTCOMES
@@ -182,9 +184,7 @@ try {
 
       const res = resolvedEvents[eventType]
 
-      if ((eventType === "city") && (e.id === 19) && (o.text.includes("Read outcome"))) {
-        // deal with city event 19 and don't add resolve
-      } else if ((eventType === "road") && (e.id === 28) && (o.text.includes("Read outcome"))) {
+      if ((eventType === "road") && (e.id === 28) && (index === 2)) {
         // deal with road event 28 and don't add resolve
       } else {
         if (res[e.id]) {
@@ -212,7 +212,7 @@ try {
 
       const res = resolvedEvents[eventType]
       if (res[e.id]) {
-        if ((eventType === "road") && (e.id === 35) && (o.text.includes("Read outcome")) && correctedIndex === 2) {
+        if ((eventType === "road") && (e.id === 35) && correctedIndex === 2) {
           // deal with road 35 read outcome
         } else {
           o.resolve = res[e.id][correctedIndex]
