@@ -835,7 +835,7 @@
       "choice": "Attempt to catch the vase.",
       "outcomes": [
         {
-          "requirement": "{Brute}, {Cragheart}, {LightningBolts}",
+          "requirement": "{Brute} {Cragheart} {LightningBolts}",
           "text": "You race forward and wrap your arms around the vase. You manage to keep grip of it, preventing tragedy. The Valrath is relieved and offers to pay you for your trouble if you carry it the rest of the way.",
           "effects": [
             "Gain 5 collective gold."
@@ -894,7 +894,7 @@
       "choice": "Take the opportunity to steal some valuables from drunk patrons in the dark.",
       "outcomes": [
         {
-          "requirement": "{Scoundrel}, {Mindthief}, {Eclipse}",
+          "requirement": "{Scoundrel} {Mindthief} {Eclipse}",
           "text": "The darkness gives the less scrupulous among you a good chance to perform their craft. Within a matter of minutes, your coin purses are much heavier.",
           "effects": [
             "Gain 10 collective gold."
@@ -920,7 +920,7 @@
       "choice": "Attempt to stop the crowd from hanging the Vermling,",
       "outcomes": [
         {
-          "requirement": "{Spellweaver}, {PointyHead}, {MusicNote}",
+          "requirement": "{Spellweaver} {PointyHead} {MusicNote}",
           "text": "You keep a calm demeanor as you try to talk down the mob. It takes some effort, but the men finally agree to turn the thief over to the authorities, which stops the situation from devolving into chaos.",
           "effects": [
             "Gain 1 prosperity."
@@ -958,7 +958,7 @@
       "choice": "Accept the mysterious job. You can handle anything.",
       "outcomes": [
         {
-          "requirement": "{Scoundrel}, {Mindthief}, {Eclipse}",
+          "requirement": "{Scoundrel} {Mindthief} {Eclipse}",
           "text": "The job proves easy enough with the proper expertise. The plans are simple, and you are in and out of the estate easily, free to meet up with the Inox and claim your payment.",
           "effects": [
             "Gain 10 gold each."
@@ -996,7 +996,7 @@
       "choice": "Talk to the Savvas, appealing to their sense of duty and community.",
       "outcomes": [
         {
-          "requirement": "{Cragheart}, {Triangles}",
+          "requirement": "{Cragheart} {Triangles}",
           "text": "The workers' hard expressions soften a bit when they see a Savvas among you. You talk for a while and explain that they need the city just as much as the city needs them. In the end, you sell them on a smaller wage increase, and everyone returns to work.",
           "effects": [
             "Gain 1 prosperity."
@@ -1017,7 +1017,7 @@
       "choice": "Talk to the managers and attempt to get the Savvas better pay.",
       "outcomes": [
         {
-          "requirement": "{Scoundrel}, {Saw}, {MusicNote}",
+          "requirement": "{Scoundrel} {Saw} {MusicNote}",
           "text": "\"I-I just can't give them more money!\" the manager pleads. After some persuasion, though, he seems to open up to negotiation, The workers and management meet halfway and everyone seems content.",
           "effects": [
             "Gain 1 prosperity."
@@ -1157,7 +1157,7 @@
       "choice": "Run to the girl and attempt to pull her out of the Void.",
       "outcomes": [
         {
-          "requirement": "{Circles}, {Eclipse}",
+          "requirement": "{Circles} {Eclipse}",
           "text": "You grab the child and lift her clear of the haunting area. She is still screaming madly when the Aesther in your group lays a hand upon the child in deep concentration. Slowly, the crying subsides, and the child gets up and runs off.",
           "effects": [
             "Gain 2 reputation."
@@ -1337,7 +1337,7 @@
       "choice": "Help repair the gate. You wouldn’t want another attack to further cripple the town.",
       "outcomes": [
         {
-          "requirement": "{ThreeSpears}, {Spellweaver}, {Tinkerer}, {Triangles}, {Circles}",
+          "requirement": "{ThreeSpears} {Spellweaver} {Tinkerer} {Triangles} {Circles}",
           "text": "You set to work repairing the gate, and by the time night falls, it is at least functional. The downtrodden citizens are inspired by your work, and you have little doubt that the community will bounce bock with little permanent damage.",
           "effects": [
             "Gain 1 prosperity."
@@ -1363,7 +1363,7 @@
       "choice": "Intervene on the Orchid's behalf.",
       "outcomes": [
         {
-          "requirement": "{Spellweaver}, {PointyHead}",
+          "requirement": "{Spellweaver} {PointyHead}",
           "text": "The Orchid on the ground puts up no defense, but your group is a different matter. The man quickly backs down at the sight of a powerful Orchid ready to attack, and the crowd disperses, muttering disappointment.",
           "effects": [
             "Gain 1 prosperity.",
@@ -1385,7 +1385,7 @@
       "choice": "Watch the fight with the crowd.",
       "outcomes": [
         {
-          "requirement": "{Spellweaver}, {PointyHead}",
+          "requirement": "{Spellweaver} {PointyHead}",
           "text": "After a good beating, the crowd is riled up. Many people start looking in your direction, muttering about how you have the nerve to associate with Orchids as well. You make a quick exit.",
           "effects": [
             "Lose 1 reputation."
@@ -1415,7 +1415,7 @@
           "resolve": "{Remove}"
         },
         {
-          "requirement": "{Scoundrel}, {Mindthief}, {Eclipse}, {Saw}, {MusicNote}",
+          "requirement": "{Scoundrel} {Mindthief} {Eclipse} {Saw} {MusicNote}",
           "text": "Add City Event 65 to the deck.\n\nOtherwise:",
           "effects": [
             "No effect."
