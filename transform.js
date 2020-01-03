@@ -46,11 +46,13 @@ const transformOutcome = (arr) => {
   return arr.map( o => {
 
   // fix some texts
-    o = o.replace("{Muddle}", "MUDDLE {Muddle}")
-    o = o.replace("{Bless}", "BLESS {Bless}")
-    o = o.replace("{Curse}", "CURSE {Curse}")
-    o = o.replace("{Wound}", "WOUND {Wound}")
-    o = o.replace("{Poison}", "POISON {Poison}")
+  o = o.replace("{Muddle}", "MUDDLE {Muddle}")
+  o = o.replace("{Bless}", "BLESS {Bless}")
+  o = o.replace("{Curse}", "CURSE {Curse}")
+  o = o.replace("{Wound}", "WOUND {Wound}")
+  o = o.replace("{Poison}", "POISON {Poison}")
+  o = o.replace("{Disarm}", "DISARM {Disarm}")
+  o = o.replace("{Immobilize}", "IMMOBILIZE {Immobilize}")
 
 // EFFECTS
     var t = o
