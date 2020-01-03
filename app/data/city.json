@@ -1085,7 +1085,7 @@
           "text": "Once outside, the woman hands you a large pouch of gold. \"My father saw the whole thing, but then he went mad and ran toward the Silent Bridge. Please find him and he'll help you find my daughter!\"",
           "effects": [
             "Gain 20 collective gold.",
-            "Unlock \"Shadows Within (83) (C-15)",
+            "Unlock \"Shadows Within\" {Scenario83} (C-15)",
             "Party Achievement: \"Bad Business.\""
           ],
           "resolve": "{Remove}"
@@ -1195,7 +1195,7 @@
           "requirement": "{Eclipse}",
           "text": "Using the night like a cloak, you follow the man unseen and unheard. Eventually he stops at a small dwelling nestled under the west wall of the city.",
           "effects": [
-            "Unlock Sacrifice Pit (78) (B-14)."
+            "Unlock \"Sacrifice Pit\" {Scenario78} (B-14)."
           ],
           "resolve": "{Remove}"
         },
