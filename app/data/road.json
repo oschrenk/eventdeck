@@ -1211,5 +1211,318 @@
         }
       ]
     }
+  },
+  {
+    "id": 37,
+    "type": "road",
+    "text": "What starts as a light rain quickly turns into something much worse, with torrents of water battering your skin and lightning piercing the sky.\n\nYou're able to find a small rock outcropping and rush under it as thunder shakes the ground. This should protect you from the worst of it, but you don't know how long the storm will last.",
+    "optionA": {
+      "choice": "Brave the storm and continue on your way. It's not that bad.",
+      "outcomes": [
+        {
+          "requirement": "{MusicNote}",
+          "text": "You feel positively dismal trudging through the mud and the rain, until you hear the Soothsinger's voice rise above the thunder. She's singing a song in the middle of the storm, and everyone starts to feel better.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "Walking down the road in a storm is just awful. You are wet and cold and miserable and you cannot wait for the whole experience to end. By the time you reach your destination, you are not feeling well at all.",
+          "effects": [
+            "Discard 2 cards each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Wait out the storm under the outcropping",
+      "outcomes": [
+        {
+          "text": "It is far from ideal, but the outcropping keeps you mostly dry and protects you from the howling wind. You wait hours and hours, huddled up under the rock until the storm passes. By the time you arrive at your destination, you are a bit slow on your feet due to lack of sleep.",
+          "effects": [
+            "All start scenario with {Disarm}."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 38,
+    "type": "road",
+    "text": "It is something small that catches your eye: a button on the ground glinting in the sun. A button in the shape of an Oak Leaf.\n\nYou stop to investigate, and then you begin to see the bigger things. Splatters of blood in the dirt. Signs of multiple bodies being dragged into the forest.\n\nYou stand and peer into the underbrush. You see a few broken branches and crushed plants. Maybe you could track the bodies through the forest.",
+    "optionA": {
+      "choice": "Head off into the forest to find out what happened.",
+      "outcomes": [
+        {
+          "requirement": "{LightningBolts} {TwoMinis} {PointyHead}",
+          "text": "You are able to track the trail with ease. It leads to a couple of priests, bloody and unconscious, but still alive. You revive them and bring them back to the main road. They are very grateful.",
+          "effects": [
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You try to follow the trail, but end up getting turned around and lost. Then you have an incredibly difficult and painful way back out.",
+          "effects": [
+            "Lose 1 {Check} each.",
+            "Discard 1 card each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Move on. That forest does not look friendly.",
+      "outcomes": [
+        {
+          "text": "Whatever happened here could not have been good, but also it doesn't concern you and you're not about to head into that dark, dense forest ill-prepared. You find it best to move along and attend to your own matters.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 39,
+    "type": "road",
+    "text": "You see movement in the tall grass to your left, and a weak voice calls out.\n\n\"Help... me...please...\"\n\nYou approach the stirring to see a Valrath man writhing on the ground, his skin covered in boils and pus-filled sores.\n\n\"The sickness burns...\" he moans at you. \"Please... help...\"",
+    "optionA": {
+      "choice": "Help the poor Valrath.",
+      "outcomes": [
+        {
+          "requirement": "{Saw}",
+          "text": "The Sawbones knows exactly what to do, covering his hands and face as he cleans the wounds. After an hour of tending to him, the Valrath seems good enough to travel.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You help the Valrath as best you can, but it takes many supplies and potions. When he finally looks better, you realize you are starting to feel sick as a result.",
+          "effects": [
+            "All start scenario with POISON {Poison}.",
+            "Lose 10 collective gold.",
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "This is clearly some sort of plague. Avoid it at all costs.",
+      "outcomes": [
+        {
+          "text": "You recoil in terror and quickly move along. You can hear the Valrath sobbing as you do so, but you know well enough to avoid a plague when you see it.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 40,
+    "type": "road",
+    "text": "There were heavy rains last night for sure, but you didn't realize the full extent of it until you come face-to-face with a river raging right through the middle of the road.\n\nThis river is no small matter, either — it is several feet deep and fast-flowing. It's rather troubling, too, since you have no idea how long it might take to find a decent crossing point.",
+    "optionA": {
+      "choice": "Ford the river where you are. It is not ideal, but it should be possible.",
+      "outcomes": [
+        {
+          "requirement": "{Spellweaver} {Triangles} {Circles}",
+          "text": "With the power of the elements on your side, crossing the river turns out to be incredibly easy. One frozen bridge later, you are on the other side and on your way.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "The water is surprisingly cold, but it will take more than that to end your day. You are still water-logged and shivering when you reach your destination, however.",
+          "effects": [
+            "All start scenario with MUDDLE {Muddle}.",
+            "All start scenario with {Immobilize}."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Head downriver and find a better place to cross.",
+      "outcomes": [
+        {
+          "text": "It takes an hour, but you finally find a rocky area where the river has been diverted into many smaller streams. It is no problem to cross, but just finding the spot and then getting back on track takes some of the fire out or you.",
+          "effects": [
+            "Discard 2 cards each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 41,
+    "type": "road",
+    "text": "Your path is taking you through a small wooded area when you suddenly see a large bear charging directly at you through the trees.\n\nYou may have gotten too close to its den, but you can't know for sure. All you know is that it is clearly enraged, and you have very little time to react.",
+    "optionA": {
+      "choice": "Attemp to calm the bear and back away slowly.",
+      "outcomes": [
+        {
+          "requirement": "{TwoMinis}",
+          "text": "The Beast Tyrant steps forward with his hand outstretched and makes a low humming sound. The bear stops mid-charge with a perplexed look. You leave the animal there and continue on your way unharmed.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "Two seconds later, you can't help, but feel this was a terrible idea. The bear wounds you severely before you are able to arm yourself and fight it off.",
+          "effects": [
+            "All start scenario with WOUND {Wound}.",
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Arm yourself and fight off the bear.",
+      "outcomes": [
+        {
+          "text": "You quickly grab your weapons as the bear comes down on you. The fight is brutal and ugly, but it could have been much worse.",
+          "effects": [
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 42,
+    "type": "road",
+    "text": "A trade caravan passes by you on the road. This event isn't too uncommon, but what catches your eye is a familiar-looking Inox traveliing with the caravan as a guard.\n\nAt the sight of you, the Brute lights up and gives you a big wave, then rushes over to greet you. He is positively joyful to see you and immediately starts to reminisce about all the exciting battles you fought together.\n\nSlapping you on the back, he implores you to travel with the caravan for a while to give you all a chance to catch up.",
+    "optionA": {
+      "choice": "Agree to travel with the Brute for a little while. So what if it's in the wrong direction?",
+      "outcomes": [
+        {
+          "text": "As you walk with the Brute and talk with him about your early adventuring days, you find a hint of sadness behind his enthusiasm. He explains how he fell on hard times after leaving the group and had to resort to jobs like this to make ends meet. The Brute seems uplifted by your conversation, but the day grows late. By the time you head back and arrive at your destination, you are incredibly tired.",
+          "effects": [
+            "Discard 3 cards each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Regretfully leave the Brute to his duties and continue on your way.",
+      "outcomes": [
+        {
+          "text": "You explain to the Brute that you have a long day's travel ahead of you and cannot take the time to travel in the other direction. As you make your good-byes, a shadow falls over him. He walks away forlorn.",
+          "effects": [
+            "Add Road Event 60 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "type": "road",
+    "text": "You probably wouldn't normally noticed it, but sometimes nature calls and you need to head off the beaten path to get some privacy.\n\nHidden in the bushes, you come across the smoking wreckage of some crude machine. It looks to have broken down at some point and was left here to rust and decay.\n\nMost of it is scrap, but thanks to your time with the Tinkerer, you know a good power core when you see one. Its a bit heavier than you'd hoped, but it should fetch a good price back in Gloomhaven.",
+    "optionA": {
+      "choice": "Take the core with you.",
+      "outcomes": [
+        {
+          "text": "The core sure is heavy. You manage it rather well, but it will be a bit of hindrance in battle. You hope the payoff is worth the trouble.",
+          "effects": [
+            "One starts scenario with {MinusOneAttackModifier}x3.",
+            "Gain 10 collective gold."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Leave the core alone. You don't want anything weighing you down in battle.",
+      "outcomes": [
+        {
+          "text": "You decide the risk is not worth the reward and walk away from the contraption before you scratch yourself on the rusted metal and give yourself some foul disease. And just the thought of haggling with the Quatryls in the Mixed District about a fair price makes you tired and irritable.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "type": "road",
+    "text": "Due to a late start, night falls before you can get to where you are going. You are on your guard throughout the night, but nothing can quite prepare you for Night Demon attack.\n\nThey come upon you silent and invisible, so you are unaware of their presence until their claws sink into your flesh.\n\nThe darkness erupts into chaos with flashing swords and horrific shrieks. And then a bolt of fire streaks through the darkness and incinerates one of the demons.\n\nSomeone else is out there.",
+    "optionA": {
+      "choice": "Renew your efforts to slay the demons.",
+      "outcomes": [
+        {
+          "text": "With the help of the mysterious firecaster, the battle turns and the demons are slain without much pain. Out of the darkness steps the familiar face of a female Orchid.\n\n\"Sorry about that. I think they were looking for this.\" The Spell weaver holds up a black censer. \"It's a good thing I ran into you, though. I could use your help.\"\n\nShe draws out a crude map. \"Meet me here as soon as you can, and I’ll explain more.\"",
+          "effects": [
+            "Unlock \"Demonic Rift\" {Scenario90} (J-7)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Use the distraction to disengage from the demons and run away.",
+      "outcomes": [
+        {
+          "text": "This mysterious third party seems to have things under control, and the demons appear more interested in them anyway. You take the opportunity to retreat from the fight and run off into the night. You don't feel great about it, but at least you're alive.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 45,
+    "type": "road",
+    "text": "Riding up on horses, a band of dirty, rough men quickly overtake and surround your group. They look hard and dangerous, and you immediately pull out your weapons as they approach.\n\nThen you hear a familiar laugh.\n\n\"Well, if it isn't my old crew.\" A woman in dark leather armor leaps off her horse to comes greet you. \"You know whatt boys? This lot gets a pass.\"\n\nShe winks at you and turns around. \"Plus, they’d probably kill you all if things turned ugly.\"\n\nJumping back onto her horse, the Scoundrel looks back at you. \"Well, it was nice seeing you. Just remember — you never saw me.\"",
+    "optionA": {
+      "choice": "Attack. Friend or not, those who prey on the weak should be brought to justice.",
+      "outcomes": [
+        {
+          "text": "You see the bandits relax a little and begin to form up. That is when you strike. Some are scared off by the sudden attack, but others engage you hungrily. The Scoundrel throws a few good daggers, too, before she rides off, criticizing your poor decision-making.",
+          "effects": [
+            "All start scenario with POISON {Poison}.",
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Let the bandits go.",
+      "outcomes": [
+        {
+          "text": "The bandits seem a little disappointed as they form up and ride off in the opposite direction.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
   }
 ]
