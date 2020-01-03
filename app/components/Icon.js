@@ -75,6 +75,44 @@ const map= {
   // app
   'flip': '\ue913',
   'draw': '\ue914',
+
+  // rune
+  'rune-A': '\ue91b',
+  'rune-B': '\ue91c',
+  'rune-C': '\ue91d',
+  'rune-D': '\ue91e',
+  'rune-E': '\ue931',
+  'rune-F': '\ue932',
+  'rune-G': '\ue933',
+  'rune-H': '\ue934',
+  'rune-I': '\ue935',
+  'rune-J': '\ue936',
+  'rune-K': '\ue937',
+  'rune-L': '\ue938',
+  'rune-M': '\ue939',
+  'rune-N': '\ue93a',
+  'rune-O': '\ue93b',
+  'rune-P': '\ue93c',
+  'rune-Q': '\ue940',
+  'rune-R': '\ue941',
+  'rune-S': '\ue942',
+  'rune-T': '\ue948',
+  'rune-U': '\ue949',
+  'rune-V': '\ue94a',
+  'rune-W': '\ue94b',
+  'rune-X': '\ue94c',
+  'rune-Y': '\ue94d',
+  'rune-Z': '\ue94e',
+  'rune-1': '\ue920',
+  'rune-2': '\ue929',
+  'rune-3': '\ue92a',
+  'rune-4': '\ue92b',
+  'rune-5': '\ue92c',
+  'rune-6': '\ue92d',
+  'rune-7': '\ue92e',
+  'rune-8': '\ue92f',
+  'rune-9': '\ue930',
+  'rune-0': '\ue91f'
 }
 
 const SingleGlyph = ({glyph, style}) => {
@@ -121,6 +159,8 @@ export default Icon = ({name}) => {
   } else if (name.startsWith("scenario-")) {
     const [iconName, number] = name.split("-")
     return <ScenarioGlyph number={number} glyphs={map[iconName]} style={extraStyle} />
+  } else if (name.startsWith("run-")) {
+    return <SingleGlyph glyph={map[name]} style={extraStyle} />
   } else if (Array.isArray(map[name])) {
     return <MultiGlyph glyphs={map[name]} />
   } else {

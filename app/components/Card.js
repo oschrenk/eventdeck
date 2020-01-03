@@ -144,6 +144,10 @@ const TextParser = ({text, style}) => {
           const number = parseInt(match.join([]))
           const iconName = 'scenario-' + number
           return <Icon name={iconName} key={i}/>
+        } else if (name.startsWith("Rune")) {
+          const rune = name.slice(-1)
+          const iconName = 'rune-' + rune
+          return <Icon name={iconName} key={i}/>
         } else if (!lookup) {
           console.warn("MISSING", name)
           return null
