@@ -635,7 +635,8 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "Read outcome B."
+          "text": "Read outcome B.",
+          "resolve": "{Remove}"
         }
       ]
     },
@@ -1097,7 +1098,10 @@
       "outcomes": [
         {
           "requirement": "{Sun}",
-          "text": "You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it. She forces you to follow the woman outside.\n\nRead outcome A."
+          "text": "You try to turn away the woman and get back to gambling, but the Sunkeeper won t hear of it. She forces you to follow the woman outside.",
+          "effects": [
+            "Read outcome A."
+          ]
         },
         {
           "requirement": "OTHERWISE",
@@ -1574,7 +1578,10 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "You don't have the money to send him the contraption, so you decide just to keep it for yourself.\n\nRead outcome B.",
+          "text": "You don't have the money to send him the contraption, so you decide just to keep it for yourself.",
+          "effects": [
+            "Read outcome B."
+          ],
           "resolve": "{Remove}"
         }
       ]
