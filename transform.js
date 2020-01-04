@@ -82,6 +82,12 @@ const transformOutcome = (arr) => {
         .replace("\"Wild Melee\" 91", "\"Wild Melee\" {Scenario91}")
         .replace("\"Harried Village\" 86", "\"Harried Village\" {Scenario86}")
         .replace("\"Syndicate Hideout\" 89", "\"Syndicate Hideout\" {Scenario89}")
+        .replace("\"Lost Temple\" 79", "\"Lost Temple\" {Scenario79}")
+        .replace("\"Crystalline Cave\" 84", "\"Crystalline Cave\" {Scenario84}")
+        .replace("\"Merchant Ship\" 74", "\"Merchant Ship\" {Scenario74}")
+        .replace("\"Overgrown Graveyard\" 75", "\"Overgrown Graveyard\" {Scenario75}")
+        .replace("\"Vermling Nest\" 94", "\"Vermling Nest\" {Scenario94}")
+
       t = {effect: o}
     } else if (o.startsWith("All start ")) {
       t = {effect: o}
@@ -233,7 +239,9 @@ try {
 
       const res = resolvedEvents[eventType]
       if (res[e.id]) {
-        if ((eventType === "road") && (e.id === 28) && correctedIndex === 1) {
+        if ((eventType === "city") && (e.id === 78) && correctedIndex === 0) {
+          // deal with city 78, read outcome
+        } else if ((eventType === "road") && (e.id === 28) && correctedIndex === 1) {
           // deal with road 28 read outcome
         } else if ((eventType === "road") && (e.id === 35) && correctedIndex === 2) {
           // deal with road 35 read outcome

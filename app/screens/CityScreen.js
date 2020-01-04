@@ -47,8 +47,8 @@ const CityScreen = ({navigation}) => {
             <Column ids={allCityCardNumbers.slice(30,40)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
             <Column ids={allCityCardNumbers.slice(40,50)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
             <Column ids={allCityCardNumbers.slice(50,60)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
-            <Column ids={allCityCardNumbers.slice(60,65)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
-            <Column ids={allCityCardNumbers.slice(0,0)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
+            <Column ids={allCityCardNumbers.slice(60,70)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
+            <Column ids={allCityCardNumbers.slice(70,81)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
         </View>
       </SafeAreaView>
     </ImageBackground>

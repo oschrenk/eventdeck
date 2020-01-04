@@ -2311,5 +2311,539 @@
         }
       ]
     }
+  },
+  {
+    "id": 66,
+    "type": "city",
+    "text": "You head back to your rooms for the night when you see the Sawbones sitting in front of your doorstep, looking rather dejected.\n\n\"I, uh, well, you see...\" he stammers. \"I followed your advice. Chased my dreams and all that, but I ended up in debt to some rather unscrupulous people. They've threatened to kill me if I don't pay them off, but, uh, but I simply don't have the money.\"\n\nHe hesitates. \"Seeing as how, uh, you bear some responsibility for setting me down this path, I was wondering if you'd be willing to offer some assistance in getting me out of this mess?\"",
+    "optionA": {
+      "choice": "Offer to pay off the Sawbones' debt.",
+      "outcomes": [
+        {
+          "requirement": "PAY 40 COLLECTIVE GOLD",
+          "text": "It's a hefty chunk of money, but the Sawbones is incredibly grateful.\n\n\"This is wonderful! I knew I could count on you. This should be enough to put this mess behind me and finally allow me to live free.\"\n\nHe hands you a potion and thanks you once again for all your help.",
+          "effects": [
+            "Gain 1 collective Super Healing Potion (Item 055)."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "Read outcome B.",
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Get the Sawbones on a boat across the Misty Sea. New adventures surely await there.",
+      "outcomes": [
+        {
+          "text": "You flatly refuse to pay off the Sawbones' debt and convince him the only way to escape his pursuers is to board a ship bound for the eastern continent, far out of their reach. He is reluctant but eventually agrees when you remind him what unknown adventures await in the land across the ocean. You see him off in the night and desperately hope that is the last you hear of this situation.",
+          "effects": [
+            "Add City Event 67 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "type": "city",
+    "text": "You are trying to enjoy a relaxing drink at the Sleeping Lion when a number of large men and Inox burst into the tavern and approach your table.\n\n\"So, you must be that little creep's collateral,\" one of the Inox says.\"We're here to collect.\"\n\nWhen you stare at her in silence, she tries again. \"Little grey-bearded man. Wore symbols of the Great Oak. He said you lot would pay off his debt if he couldn't.\"\n\nShe pats an axe at her side. \"Now, seeing as how he apparently skipped town, you can pay us, or things are gonna get ugly.\"",
+    "optionA": {
+      "choice": "Pay off the thugs.",
+      "outcomes": [
+        {
+          "requirement": "PAY 60 COLLECTIVE GOLD",
+          "text": "You sigh and hand over the Sawbones' debt, plus interest. Though it feels terrible, the thugs are satisfied and walk out the same way they came in. At least it is over now.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "Seeing as how you don't have enough money, you decide to pursue other options.",
+          "effects": [
+            "Read outcome B."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Refuse to pay. You won't be strongarmed by anyone.",
+      "outcomes": [
+        {
+          "text": "You laugh and wave your hand dismissively. There's no way you will be paying such a large amount of money to these thugs. Unfortunately, the Inox is not amused.\n\n\"Then your payment will be blood!\" she says. \"Meet us in the back alley, and we'll see if we can't come to terms.",
+          "effects": [
+            "Unlock \"Back Alley Brawl\" 92 (C-14).",
+            "Party Achievement: \"Debt Collection.\""
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 68,
+    "type": "city",
+    "text": "You wake in the middle of the night to the sound of rushing water. In the corner of your room, you see a flood gushing out of the head of the Summoner's staff which you had previously picked up in your travels.\n\nYou jump out of bed and splash through a growing puddle of water to investigate the staff, but you can't make any sense of it. It seems to be materializing the water out of thin air, possibly channeling it from another plane of existence. You scratch your head, unsure of what to do next.",
+    "optionA": {
+      "choice": "Find some way to get the water to stop gushing.",
+      "outcomes": [
+        {
+          "requirement": "{Circles} {Eclipse}",
+          "text": "You take a moment to attune yourself to the staff, which you feel now has a direct link another plane. The water stops and you are left with an open gate.",
+          "effects": [
+            "Unlock \"Plane of Water\" 88 (D-16).",
+            "Party Achievement: \"Water Staff.\""
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You figure out how to work the staff but not before your entire room is flooded. The innkeeper will not be happy.",
+          "effects": [
+            "Lose 15 collective gold.",
+            "Unlock \"Plane of Water\" 88 (D-16).",
+            "Party Achievement: \"Water Staff.\""
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Get the staff out of your room and throw it into the bay.",
+      "outcomes": [
+        {
+          "text": "You race out of the inn, trying to minimize the damage caused by the never-ending stream of water. Not knowing what else to do, you head toward the river. Standing on the banks, you shrug and toss the staff into the current. You guess you'll never know how the staff ended up where it did or why it suddenly turned into a faucet.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 69,
+    "type": "city",
+    "text": "You are rather surprised to walk into the Brown Door one night to see your old friend the Soothsinger playing a song on the corner stage. You are even more surprised when you get closer and discover the song is about you.\n\nIt is a raucous talc about the time she met you in a forest and you gave her terrible directions — just the worst, most backward directions possible.\n\nEveryone in the crowd is tearing up with laughter as she eloquently describes your bumbling and ineptitude.",
+    "optionA": {
+      "choice": "Embrace the joke and go with it.",
+      "outcomes": [
+        {
+          "text": "You make your way to the front of the crowd and join in the fun. When the Soothsinger notices you in the crowd, she brings you up on stage for the chorus. It's a little embarrassing, but people are enjoying your positive attitude about it.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Leave the bar before someone recognizes you.",
+      "outcomes": [
+        {
+          "text": "You flee the bar to escape the tune, but it doesn't prove to be that simple. The next day, everyone on the street is humming the tune. They all seems to be looking at you and laughing. It's a nightmare.",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 70,
+    "type": "city",
+    "text": "You are wandering the Sinking Market looking for possible work when you are approached by a dirty-looking boy with a scar on his cheek.\n\nYou greet him warmly. He has given you leads on a number of mercenary jobs and you recently helped him avoid a jail cell.\n\n\"I need some help, and I really don't know who else to turn to,\" he begins. \"All of us here in the Sinking Market are in a bad way. Our houses are collapsing, our water is foul, and we don't even have enough money for food.\n\n\"We are dying here, and the city is doing nothing to help us. You have friends in high places, right? Please, there's gotta be someone you can talk to.",
+    "optionA": {
+      "choice": "Talk to some merchants about revitalizing the area.",
+      "outcomes": [
+        {
+          "requirement": "REPUTATION > 9",
+          "text": "You head to the Coin District and meet with a member of the merchant s guild you've had dealings with before. He looks at you skeptically, but says he will see what he can do about making the area more livable.",
+          "effects": [
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "Every merchant you try to talk to about the issue laughs you out of the room. Why help others when there is no profit in it for them?",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Regretfully explain that you don't have the power to effect change like this.",
+      "outcomes": [
+        {
+          "text": "You explain that while you do have some power in the town, the Sinking Market may be a lost cause. More and more of the district is sinking into the sea every day; as it has been doing for as long as the town has existed. You can't convince merchants to spend money on something that will one day be underwater.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 71,
+    "type": "city",
+    "text": "You are walking along the river's edge in the Mixed District late at night when something in your pack begins to vibrate. The sensation is odd and you quickly fish out the small metal sphere you found out on the road. It shakes uncontrollably and then begins pulling your arm toward the river.\n\nYou walk to the bank, but still the sphere pulls. It is drawn to something in the water.",
+    "optionA": {
+      "choice": "Let the sphere go.",
+      "outcomes": [
+        {
+          "text": "The sphere leaps from your hand, hovers over the water, and then emits an intense beam of light straight down into the river, illuminating something below.\n\nYou shrug and jump into the river, following the beam of light down to the bottom. There you find a wooden chest half buried under the rocks. You bring it back to shore and open it to find a small metal rod covered in strange carvings. When you pick it up, the sphere immediately flies back over to you and attaches itself to the rod's end.",
+          "effects": [
+            "Add City Event 72 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Jump into the river and continue the sphere's pull.",
+      "outcomes": [
+        {
+          "text": "As soon as you jump into the cold, brackish waters, the sphere stops vibrating or pulling. You swim for a while in the direction it was pulling, but eventually you realize you are on a fool's errand. You emerge from the river wet and miserable with absolutely nothing to show for it.",
+          "effects": [
+            "Lose 1 {Check}."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 72,
+    "type": "city",
+    "text": "The metal sphere and rod — you've had them in your possession for a while now and occasionally pull them out to mull over the carvings. You've brought it to the University, but they can't make any sense of it either.\n\nYou are fiddling with the device in the Sleeping Lion when you are tapped on the shoulder. You turn to see a wicked grin on the dirty face of an old bandit. \"They call me Fish, and that there is a key, friend — a key of the ancient sort.\"\n\nBefore you can ask, Fish pulls out a similar black sphere atop a metal rod. \"They're twins, ain't they, and Fish knows just what they open. A tomb of treasure, friend. Come, come, Fish will show you the way.\"",
+    "optionA": {
+      "choice": "Follow the smelly old bandit.",
+      "outcomes": [
+        {
+          "text": "Your curiosity gets the better of your judgment. You need to know the purpose of the device you found, so you follow Fish into a derelict shack where he pulls out a map of the area and lays it on a table. Fish directs you to pull out your rod and both you and he hold your respective rods over the table.\n\nA specific location on the map glows brightly and Fish laughs. \"See? I told ya, didn't I? Meet me there with your rod and we'll get rich!\"",
+          "effects": [
+            "Unlock \"Lost Temple\" {Scenario79} (K-12).",
+            "Party Achievement: \"Fish's Aid.\""
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Refuse to go with the man. This whole situation seems...fishy.",
+      "outcomes": [
+        {
+          "text": "This suspicious old man must have seen you in here before with the rod and fashioned some elaborate con to swindle you out of something. You won't be so easily fooled. There's no way he knows what the rod does when no one else in town does. You push him away and go back to your drink.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "type": "city",
+    "text": "You awake in your bed to sensation of someone shaking you, but when you look around, you see no one else in your room. Instead, you see that it's the entire room that's shaking.\n\nYour thoughts immediately go to the crystal you found inside the mountain along the road. You quickly search through your belongings and grab the crystal in your hand. The earthquake immediately stops.\n\nClearly this thing has some power and you need to deal with it before more damage is done.",
+    "optionA": {
+      "choice": "Seek help from the University.",
+      "outcomes": [
+        {
+          "text": "\"Yes, very interesting,\" a bookish Quatryl says as he rolls the crystal over in his hand. \"It seems as if this crystal is attuned to a specific location, and once removed, it begins vibrating until mountains and houses start falling down. I'd say you need to return it to its proper home. With the proper tools — which I'll need help paying for — I should be able to triangulate that location for you.",
+          "effects": [
+            "Lose 5 collective gold.",
+            "Unlock \"Crystalline Cave\" {Scenario84} (D-12).",
+            "Party Achievement: \"Tremors.\""
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Throw the crystal into the bay.",
+      "outcomes": [
+        {
+          "text": "Not wanting to waste your time with the problem, you walk to the docks and throw the crystal into the bay. When you hear reports of harsher weather and larger waves hitting the docks, you try not to pay them any mind.",
+          "effects": [
+            "Lose 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 74,
+    "type": "city",
+    "text": "\"Welcome to the Marvelous and Magic Techno-Circus!\" The Quatryl with a top hat you met on the road greets you as you enter the circus tent. \"We always welcome our friends to come and see the wondrous sights!\"\n\nYou wander around the pavilion for a while, looking at all signs for manner of improbable creatures. Ultimately you will have to decide on what to see first.",
+    "optionA": {
+      "choice": "Go watch the dancing bear.",
+      "outcomes": [
+        {
+          "text": "You enter a smaller tent off the main one and come face-to-face with what is indeed a dancing bear. Its handler stands to the side, prodding it on occasion, while the bear stands on its hind two legs and shuffles back and forth. It is amusing until the handler prods the bear one too many times and the bear becomes enraged and attacks. You quickly jump into action and subdue the bear, saving the handler from getting mauled to death.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Visit the famed fortune-teller.",
+      "outcomes": [
+        {
+          "text": "You enter the fortune-teller's tent and the old Orchid woman's expression immediately goes dark. She gestures you to sit at her table, and when you do, she grabs your arm and looks deep into your eyes.\n\n\"Your path is dark and cursed. There is a shadow around you — a Gloom. You must leave this place. Be rid of it before it consumes you.\"",
+          "effects": [
+            "All start scenario with CURSE {Curse}.",
+            "Gain 2 experience each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 75,
+    "type": "city",
+    "text": "Returning to Gloomhaven after your latest outing, you are approached by the Captain of the Guard at the city gates.\n\n\"Ah, I was hoping I might catch you here sooner or later,\" he says. \"I have still been receiving reports about large, flying lizards from the scouts. Tell me, have you gotten to the bottom of that situation yet?\"",
+    "optionA": {
+      "choice": "Lie and say that you are still working on it.",
+      "outcomes": [
+        {
+          "text": "\"Oh, hmm...well, that's disappointing.\" The Captain looks at you with dejected frustration. \"If you could, please look into the sightings as soon as you can. I'd hate to think of some giant living creature attacking the city.\"",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Tell the Captain you decided not to kill the Elder Drake.",
+      "outcomes": [
+        {
+          "text": "\"Oh, my...well, okay.\" The Captain looks at you with stunned curiosity. \"So there is a massive, fire-breathing drake up in the mountains, and you decided there was no reason to kill it? Interesting.\"\n\nThe Captain wanders off, mumbling about needing to find better help.",
+          "effects": [
+            "Lose 2 reputation."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 76,
+    "type": "city",
+    "text": "You are walking through the new docks when a well-dressed merchant flags you down.\n\n\"Oh, my, what a fortuitous encounter,\" he whispers as you approach. \"May I buy you a drink? I have a very sensitive job for you, and I 'd like to avoid the prying eyes around us.\"\n\nThe merchant, an iron dealer named Gavin, makes a gesture toward a large group of dock workers. \"I can't trust anyone. Well, anyone except you of course.\"",
+    "optionA": {
+      "choice": "Accept the drink.",
+      "outcomes": [
+        {
+          "requirement": "REPUTATION > 14",
+          "text": "\"Excellent! Someone has been attacking my ships at sea and I need to get to the bottom of it. Come, I’ll tell you the details.\"",
+          "effects": [
+            "Unlock \"Merchant Ship\" {Scenario74} (I-14).",
+            "Party Achievement: \"High Sea Escort.\""
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "\"Oh. whoops.\" Gavin stammers. \"From far away, you looked like someone else. Just ignore what I said.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Decline the suspicious offer and continue your business.",
+      "outcomes": [
+        {
+          "text": "Gavin looks flabbergasted as you walk away. \"Who will protect my ships when there is no one to trust? I guess I'll just have to keep looking.\"",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 77,
+    "type": "city",
+    "text": "\"Well, well, well. If it isn't the most notorious band of mercenaries in all of Gloomhaven. The guards looking to throw you in the Ghost Fortress yet, or are they on the payroll?\"\n\nYou turn around to see Red Nick, a well-known fence, leaning up against the wall. You've had certain dealings with him in the past.\n\n\"Fancy seeing you, actually,\" he says. \"I've got a big job, and I figure if anyone wouldn't mind digging up graves, it would be you miscreants.\"",
+    "optionA": {
+      "choice": "Do the job.",
+      "outcomes": [
+        {
+          "requirement": "REPUTATION < -14 \"That's the money-loving criminals I know and love! Come take a walk with me, and I'll explain how we can all get rich.\"",
+          "text": "",
+          "effects": [
+            "Unlock \"Overgrown Graveyard\" {Scenario75} (G-12).",
+            "Party Achievement: \"Grave Job.\""
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "\"Oh, whoops,\" Nick stammers. \"From the back you looked like...uh, never mind. Forget I said anything.\"",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Claim you've changed your ways and graverobbing is a step too far.",
+      "outcomes": [
+        {
+          "text": "\"A downright shame, I say,\" Nick shakes his head. \"I guess I'll just have to find a group of mercenaries who actually are interested in making a mountain of money.\"",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 78,
+    "type": "city",
+    "text": "The scene is typical. A nervous looking man stands in front of your table at the Sleeping lion. You eye him lazily until he speaks.\n\n\"I was, um, told you might be able to help me,\" he starts. \"I was in the Corpsewood conducting some, uh, business, when my partners and I were attacked by Vermlings. I barely escaped with my life, but my partners weren't so lucky.\n\n\"One of them was carrying something valuable — an artifact we managed to find in our, uh, business. It s very important I get it back. I followed the Vermlings back to their nest, and I can assure you they have many valuables. I'll show you where it is, and you can take whatever you want. Just bring me back the artifact.\"",
+    "optionA": {
+      "choice": "Accept the man's deal.",
+      "outcomes": [
+        {
+          "text": "The sweaty man is all too eager to give you the details of where to find this nest.\n\n\"Once you clear the Vermlings and find the artifact, you should be able to locate a large stash of valuables in a pit back behind the main camp. Take whatever you want, just return the artifact to me.\"\n\nYou smile and nod. After taking the valuables, you should be able to squeeze quite a bit extra out of this fellow as well when you return.",
+          "effects": [
+            "Unlock \"Vermling Nest\" {Scenario94} (F-12)"
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Demand payment for the job up-front.",
+      "outcomes": [
+        {
+          "text": "\"Look...!, ah, don't have a whole lot of capital right now, but I will give you everything I have once you get back with that artifact.\"\n\nYou narrow your eyes at him. He coughs nervously and produces a small handful of coins.\n\n\"All right, fine. Look, here. This is all I can offer you. Now can we get to the part where you go do your job?\"",
+          "effects": [
+            "Gain 5 collective gold.",
+            "Read outcome A."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 79,
+    "type": "city",
+    "text": "The sun is out and you are enjoying a pleasant stroll across the Silent Bridge until you see two demons attacking a man ahead of you.\n\nYou get closer and can hear the demons berating the man as they swipe at him with their claws.\n\n\"You dare spit on us as we walk past?\" One of them yells. \"We will show you the consequences of defying authority!\"",
+    "optionA": {
+      "choice": "Intervene on the man's behalf.",
+      "outcomes": [
+        {
+          "text": "There is only one method these demons respect: violence. You run forward and hack at one of the demons' arms as it comes down to strike at the man. The arm falls limp to the ground and the rest of the demon soon follows.\n\nThe other demon looks at you with seething rage as you face it with raised weapons. \"This grave insult will not go unpunished! This city will feel our wrath!\"",
+          "effects": [
+            "Lose 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Keep walking.",
+      "outcomes": [
+        {
+          "text": "You continue your stroll, trying to block the unpleasantness from your mind. Unfortunately, others around you cannot, and they are reminded of the actions you took that caused this horrible and all-too-frequent occurrence.",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 80,
+    "type": "city",
+    "text": "As you prepare to leave the city on another journey, you are suddenly surrounded by a large group of guards near the west gate.\n\n\"We hear you've been spreading rumors,\" one of them says. \"Claiming that the guards are causing the Vermling attacks on the city. That's some high-grade garbage you're spewing.\"\n\n\"My best friend died in the last Vermling raid!\" another one yells. \"You got something smart to say about that?\"",
+    "optionA": {
+      "choice": "Attempt to calm down the guards and explain the situation.",
+      "outcomes": [
+        {
+          "requirement": "{Scoundrel} {Saw} {MusicNote}",
+          "text": "You adopt a serious tone and do your best to communicate that you had nothing to do with what was written in the Town Records. You express remorse for their hardships, and, miraculously, the mob grows calmer and disperses.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You laugh and claim that this is all some big misunderstanding. The guards don't see it that way, but your lack of aggression at least stops them from attacking you. They leave, grumbling threats.",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "The guards are not interested in a friendly discourse. Prepare to defend yourself.",
+      "outcomes": [
+        {
+          "text": "Seeing the situation turning south, you waste no time pulling your weapons and prepare for an attack. The guards are more than happy to oblige.\n\nLuckily your foes sustain only some minor injuries in the time it takes for another squad of guards to arrive and break up the scuffle. They let you go on your way, but you can see the disdain in all of their eyes.",
+          "effects": [
+            "Lose 2 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "type": "city",
+    "text": "\"Hey aren't you the mercenaries who stopped that weird tornado from destroying the city?\"\n\nYou turn to see a dirty dock worker pointing at you with wonder in his eyes. What was that all about anyway?\"\n\nMore people stop and stare at you. This has become and unfortunately common occurrence since the Gloom was destroyed. You have become something of a minor celebrity in Gloomhaven.",
+    "optionA": {
+      "choice": "Take the time to relate the story of what happened.",
+      "outcomes": [
+        {
+          "text": "You smile and nod explaining how an ancient force attempted to destroy the city, but it was banished to another plane. Everyone around you stands enraptured by your story and cheers and claps at its conclusion. After a few additional questions, you are finally able extricate yourself from the crowd and continue your business.",
+          "effects": [
+            "Gain 2 reputation."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Claim it wasn't you and leave quickly.",
+      "outcomes": [
+        {
+          "text": "You brusquely shake your head and wave your hand away saying the man has the wrong person. His excited face immediately turns to one of disappointment. And audible sigh of dejection emerges from the crowd as you rush away.\n\n\"There's no need to be rude about it!\" the dockworker yells at your back.",
+          "effects": [
+            "Lose 2 reputation."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]
