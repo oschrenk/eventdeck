@@ -32,7 +32,7 @@
   {
     "id": 2,
     "type": "city",
-    "text": "As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n\"Hey! Over here!\" You turn in the direction of the voice to see a filthy Vermling gesturing from a dark alley. \"Yeah, you grim-looking chaps. I have something you might he interested in.\"\n\nThe Vermling holds out a piece of metal covered in sludge. \"Found this in the sewer. Writing on it I don't understand, but I know it's valuable. You can have it for ten gold!\"",
+    "text": "As the daylight fades, you find yourselves wandering through a half-crowded market street, browsing wares.\n\n\"Hey! Over here!\" You turn in the direction of the voice to see a filthy Vermling gesturing from a dark alley. \"Yeah, you grim-looking chaps. I have something you might be interested in.\"\n\nThe Vermling holds out a piece of metal covered in sludge. \"Found this in the sewer. Writing on it I don't understand, but I know it's valuable. You can have it for ten gold!\"",
     "optionA": {
       "choice": "Pay for the thing. You never know.",
       "outcomes": [
@@ -75,7 +75,7 @@
       "choice": "Pay for the thing. You never know.",
       "outcomes": [
         {
-          "requirement": "PAY 10 COLLECTIVE COLD",
+          "requirement": "PAY 10 COLLECTIVE GOLD",
           "text": "You hand over the gold and take hold of the metal. You wipe off the grime and slop to discover a foreign contraption made of large gears and many moving parts. If you can figure out what it is, this device might actually be of some worth.",
           "effects": [
             "Gain 1 collective \"Curious Gear\" (Item 125).",
@@ -236,10 +236,10 @@
       "choice": "The map docs look valuable. Decide to bargain for it.",
       "outcomes": [
         {
-          "requirement": "PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE COLD",
+          "requirement": "PAY 20 (reputation < 10) or 15 (reputation > 9) COLLECTIVE GOLD",
           "text": "After some amount of haggling back and forth, you settle on a price and pay for the map. You recognize some of the landmarks and should be able to find this place of \"untold treasure \"by hiring a ship.",
           "effects": [
-            "Unlock \"Sunken Vessel\" {Scenario93} (N-17)",
+            "Unlock \"Sunken Vessel\" {Scenario93} (N-17).",
             "Party Achievement: \"A Map to Treasure.\""
           ],
           "resolve": "{Remove}"
@@ -522,7 +522,7 @@
       "choice": "Intervene on the boy's behalf.",
       "outcomes": [
         {
-          "requirement": "PAY 10 COLLECTIVE COLD",
+          "requirement": "PAY 10 COLLECTIVE GOLD",
           "text": "You entreat the guards to let the boy go, but they are unmoved. With further pressing, they agree to do so only if you pay his criminal fine. The guards cuff the boy's ear and set him free.",
           "effects": [
             "Add City Event 70 to the deck."
@@ -601,7 +601,7 @@
       "choice": "Agree to help with the rat infestation.",
       "outcomes": [
         {
-          "text": "You smile broadly and ask the woman to lead you to her house. It is a ramshackle dwelling half sunk into the muddy foundation. And inside there are certainly a lot of rats. You kill as many as you can, but in her cellar you find a large hole leading to a section of sewer that recently collapsed, leaving the pests with nowhere else to go. The woman thanks you for at least helping her to he able to sleep tonight and hands you a few coins.",
+          "text": "You smile broadly and ask the woman to lead you to her house. It is a ramshackle dwelling half sunk into the muddy foundation. And inside there are certainly a lot of rats. You kill as many as you can, but in her cellar you find a large hole leading to a section of sewer that recently collapsed, leaving the pests with nowhere else to go. The woman thanks you for at least helping her to be able to sleep tonight and hands you a few coins.",
           "effects": [
             "Gain 2 gold each."
           ],
@@ -618,7 +618,7 @@
       "choice": "Attend the wedding with an expensive gift.",
       "outcomes": [
         {
-          "requirement": "REPUTATION > 9. PAY 20 COLLECTIVE COLD",
+          "requirement": "REPUTATION > 9. PAY 20 COLLECTIVE GOLD",
           "text": "You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk of the town.",
           "effects": [
             "Gain 2 reputation."
@@ -626,7 +626,7 @@
           "resolve": "{Remove}"
         },
         {
-          "requirement": "REPUTATION < 10, PAY 20 COLLECTIVE COLD",
+          "requirement": "REPUTATION < 10, PAY 20 COLLECTIVE GOLD",
           "text": "You bring a very expensive vase as a gift, but you can't seem to catch the father of the bride's eve to present it at the right time.",
           "effects": [
             "No effect."
@@ -749,7 +749,7 @@
       "choice": "Further investigate the exchange between the men.",
       "outcomes": [
         {
-          "text": "You subtly move in the direction of the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may he a while before you are allowed back in the Brown Door. The concert was ruined.",
+          "text": "You subtly move in the direction of the men, monitoring their actions with your peripheral vision. You recognize the dark robes from the run-ins you have had with cultists in the area, and as you get closer, you become convinced that the vials being traded contain blood. You grab the men and cause a huge amount of commotion as you fight to drag them outside and foil their dealings. You are able to hand them off to the proper authorities, but it may be a while before you are allowed back in the Brown Door. The concert was ruined.",
           "effects": [
             "Gain 2 reputation."
           ],
@@ -992,7 +992,7 @@
   {
     "id": 29,
     "type": "city",
-    "text": "You get word from a contact that there is trouble brewing down at the East Walls and decide to investigate.\n\nWhat you find is a large contingency of the city's Savvas workforce — the best builders you'll find anywhere — in open rebellion against the construction managers, demanding better pay for the specialized work they perform. \"This city would he a lifeless pile of rocks without us!\" one of the Savvas yells. \"It's time we see some of its prosperity!\"\n\nThe manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.",
+    "text": "You get word from a contact that there is trouble brewing down at the East Walls and decide to investigate.\n\nWhat you find is a large contingency of the city's Savvas workforce — the best builders you'll find anywhere — in open rebellion against the construction managers, demanding better pay for the specialized work they perform. \"This city would be a lifeless pile of rocks without us!\" one of the Savvas yells. \"It's time we see some of its prosperity!\"\n\nThe manager on the other side of the argument looks like a captured mouse, not sure at all how to get out of the situation.",
     "optionA": {
       "choice": "Talk to the Savvas, appealing to their sense of duty and community.",
       "outcomes": [
@@ -1086,7 +1086,7 @@
           "text": "Once outside, the woman hands you a large pouch of gold. \"My father saw the whole thing, but then he went mad and ran toward the Silent Bridge. Please find him and he'll help you find my daughter!\"",
           "effects": [
             "Gain 20 collective gold.",
-            "Unlock \"Shadows Within\" {Scenario83} (C-15)",
+            "Unlock \"Shadows Within\" {Scenario83} (C-15).",
             "Party Achievement: \"Bad Business.\""
           ],
           "resolve": "{Remove}"
@@ -1496,7 +1496,7 @@
       "choice": "Barter with the Vermling for the potion.",
       "outcomes": [
         {
-          "requirement": "{TwoMinis}, PAY 10 COLLECTIVE COLD",
+          "requirement": "{TwoMinis}, PAY 10 COLLECTIVE GOLD",
           "text": "The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.",
           "effects": [
             "Gain 1 collective “Major Stamina Potion\" (Item 034)"
@@ -1661,6 +1661,645 @@
           "text": "The guard scratches his head and looks down at his notes.\n\n\"Well, that wasn't very helpful.\" he sighs. But thanks lor your time, I guess. Let me know if you remember anything or get any new information.\"",
           "effects": [
             "Add City Event 62 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 46,
+    "type": "city",
+    "text": "Anticipating an enjoyable night of drinks at the Sleeping Lion, you enter the tavern to see a familiar Savvas sitting at your usual table. The Cragheart stands and extends both its arms.\n\n\"Ah, friends! So good to see you,\" it says. \"Sit! Have a drink with me!\"",
+    "optionA": {
+      "choice": "Have a drink with the Cragheart.",
+      "outcomes": [
+        {
+          "text": "One drink turns into five, and five turns into even more. It is a great night of revelry at the Sleeping Lion. You see sadness in the Cragheart's eyes when you finally stand up to leave. It tells you it's been hard to find people to relate to since leaving the party and it thanks you for your continued friendship.",
+          "effects": [
+            "Gain 1 reputation.",
+            "Lose 5 gold each."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Encourage the Cragheart to move on with its life.",
+      "outcomes": [
+        {
+          "text": "Not fitting in with its own kind or with a city of mostly humans, the Cragheart thought it could depend on a misfit group of mercenaries for friendship. It understands that its adventuring life is now in the past, though, and that it should go find a new place to belong. It sadly admits that it has no idea where that would be, but the Cragheart gets up and leaves the tavern nonetheless.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "type": "city",
+    "text": "Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a Vermling in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthief.\n\n\"Hssss,\" she spits. \"Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?\"\n\n\"Well see what the Captain of the Guard has to say about this,\" one of her captors says. “Keep moving!\"",
+    "optionA": {
+      "choice": "Intervene with the guards and find out what is going on.",
+      "outcomes": [
+        {
+          "text": "The guards look incredibly perturbed when you step in front of them and ask that they leave the Mindthief to you. After some effort, they begrudgingly hand her over. The Mindthief thanks you, explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast.",
+          "effects": [
+            "Lose 1 reputation.",
+            "Unlock \"Corrupted Cove\" {Scenario87} (I-9).",
+            "Party Achievement: \"The Poison's Source.\""
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Let the guards continue their business and just continue with yours.",
+      "outcomes": [
+        {
+          "text": "The Mindthief flicks her tail and throws insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn’t too serious.",
+          "effects": [
+            "Add City Event 63 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "type": "city",
+    "text": "You are haggling over the price of road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note.\n\n\"Sir, I have a pressing letter from an important Valrath Sunkeeper,\" the messenger says. \"I was told to deliver it to you.\"\n\nYou reach for it, but the messenger moves back a little. \"Sir, this note has traveled a long distance to get to you. If you could, please pay a small fee to take possession of it.\"",
+    "optionA": {
+      "choice": "Begrudgingly pay for the note.",
+      "outcomes": [
+        {
+          "requirement": "PAY 5 COLLECTIVE GOLD",
+          "text": "You throw the kid a few coins and grab the note. Enclosed with the note is a small medallion engraved with the image of the sun. Apparently the Sunkeeper thinks the object may help you at some point in the future. The note doesn't say exactly how and the thing has no apparent use. You stow it away in your pack.",
+          "effects": [
+            "Party Achievement: \"Sun-Blessed.\"."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Refuse to pay for the note.",
+      "outcomes": [
+        {
+          "text": "You laugh in indignation and push the messenger away. He opens his mouth to object, then thinks better of it and runs off. You turn back to bartering, now leveraging the proof of your extreme thriftiness against the merchant.",
+          "effects": [
+            "Gain 3 collective gold."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "type": "city",
+    "text": "\"Your Quartermaster friend sent me.\" You look quizzically at the Valrath standing at your door.\n\n\"I'm from the Capital and I deal in arms and armor,\" he says. \"I'm looking to set up a contract with the Gloomhaven military and our friend says that you may have some contacts with them. He suggested I meet up with you once I got here\"\n\nThe Valrath shifts his feet nervously. \"So, can you help me?\"",
+    "optionA": {
+      "choice": "Agree to help him make contact with the military.",
+      "outcomes": [
+        {
+          "text": "You take the Valrath over to the Ghost Fortress, where you make introductions to the Captain of the Guard. The Captain seems skeptical at first, but admits that they could use an additional supply of weapons. Terms are made, and a contract is signed.",
+          "effects": [
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Demand a finder's fee for setting him up with buyers.",
+      "outcomes": [
+        {
+          "requirement": "{Scoundrel} {Saw} {MusicNote}",
+          "text": "The Valrath looks at you with trepidation, but after some persuasion you get him to agree.",
+          "effects": [
+            "Gain 15 collective gold.",
+            "Read outcome A."
+          ]
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "The Valrath recoils, insulted by the notion. He storms off, grumbling about the lost value of friendship.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "type": "city",
+    "text": "\"A monstrous creature approaches the walls!\" A guard with a truly terrified look runs toward you, waving his arms with manic energy. \"Please! You must help!\" Before you can even agree, he grabs you by the wrist and pulls you toward the East Gate.\n\nYou hear the beast before you see it, bellowing with rage and pounding at the gates. Each time it hits, the entire city shakes. You climb the ramparts and look down at the massive creature with six legs as thick as trees, two spiraling horns, and a spiked tail.\n\nThis is truly a demon from the abyss,\" the guard laments. It must be from another plane, so he's not too far off.",
+    "optionA": {
+      "choice": "Attack the beast from the wall, shooting arrows at it until it stops moving.",
+      "outcomes": [
+        {
+          "text": "You grab a bow and start sending arrows down into the things thick hide. Each individual arrow doesn't do much, but over time the creature slows. By the time it manages to break through the gates it has been considerably hobbled as black blood pours from its countless wounds. It charges forward, laying waste to a small shop, but as more arrows continue to rain down upon it, it soon stops and falls over lifeless.",
+          "effects": [
+            "Gain 5 experience each.",
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Work on reinforcing the walls. Hold it off for as long as possible.",
+      "outcomes": [
+        {
+          "text": "You set to work reinforcing the gate with anything you can find — planks of wood, carts full of stones, your own bodies. Due to your tremendous effort, the guards on the walls manage to bring down the beast before it breaks through. The various merchants of the Boilers District thank you for your valiant service.",
+          "effects": [
+            "Gain 10 gold each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "type": "city",
+    "text": "You are wandering through the city streets late at night when you hear a terrifying scream high above you. You look up just in time to see a body falling toward you and jump out of the way.\n\nIt lands with a wet thud on the ground. You were not the only ones to hear the scream, and quickly a small crowd forms around the corpse, including a couple of city guards.\n\nThe body is clad in black leather armor, and a long, thin blade conspicuously protrudes from its back. You remark that the sword somehow looks familiar.\n\n\"What?\" asks a guard. \"This is the third murder like this in a week. Tell me everything you know!\"",
+    "optionA": {
+      "choice": "Tell the guard that the sword belongs to the Nightshroud, your former party member.",
+      "outcomes": [
+        {
+          "text": "You explain that you recognize the sword from the time you spent traveling with the Nightshroud. As a capable assassin, he is likely to be the one behind the murders. You explain, however, that since he left the group, you have no knowledge of his whereabouts or dealings. The guard thanks you for the information.",
+          "effects": [
+            "Gain 1 reputation.",
+            "Add City Event 64 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Lie and claim you know nothing.",
+      "outcomes": [
+        {
+          "requirement": "{Scoundrel} {Saw} {MusicNote}",
+          "text": "You shake your head at the guard, saying you must have been mistaken. You thought the sword looked similar to one carried by a friend, but, looking closer, there are distinct differences. The guard shrugs and goes back to examining the scene.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You laugh and make up some poor explanation about seeing a similar sword on a bandit in a crypt. The guard eyes you suspiciously.",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "type": "city",
+    "text": "You have been hearing rumors in the bars: a pox is spreading through Gloomhaven, affecting lower class citizens — street urchins and back-alley thugs.\n\nAnd then one night you see it: a Harrower dressed in a ragged green cloak holding a man down in an alley as its swarm spreads out and consumes him. The man's screams are muffled as the insects skitter down his throats.\n\nKilling monsters and demons is one thing, but the Plagueherald shouldn't be preying on people in the city. You approach it, intent on stopping its attack.",
+    "optionA": {
+      "choice": "Calmly explain the situation to the Plagueherald, imploring it to move on.",
+      "outcomes": [
+        {
+          "text": "With the man dead at its feet, the Plagueherald makes a chittering sound that sounds almost like laughing.\n\n\"You cannot see it, but this city needs to be cleansed. You will see, and you will thank me.\"\n\nAt this, the Plagueherald bursts out into a massive swarm of insects and flies up into the sky.\n\nThe deaths continue, and new rumors start about how you are associated with the killer.",
+          "effects": [
+            "Lose 2 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Threaten the Plagueherald with retribution if it doesn’t stop attacking residents.",
+      "outcomes": [
+        {
+          "text": "The Plagueherald recoils at your threat, genuinely concerned that you would attack it.\n\n\"But, the cleansing...the city isn't ready.\"\n\nYou shake your head, and the Harrower chitters in disappointment.\n\n\"Very well, but you will be responsible when the Harbinger comes.\" It turns and floats off into the darkness.",
+          "effects": [
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "type": "city",
+    "text": "Walking near the northern gates, you see some commotion as a group of wounded guards is ushered into town.\n\nThey look pretty bad off, suffering from many severe wounds. Some even have lost limbs.\n\nBringing up the rear, one guard is carried in by a couple of others. He's missing a leg and has a vicious looking axe embedded in his side. You realize that the axe looks kind of familiar.",
+    "optionA": {
+      "choice": "Let the guards know you recognize the Berserker's axe.",
+      "outcomes": [
+        {
+          "text": "You approach the wounded detail, explaining how that axe belonged to a former member of your party.\n\n\"Yeah, we know,\" one of them says with an icy stare. \"Said we were desecrating her land or some such nonsense and just went crazy. But we weren't doing anything, but patrolling! Quite a piece of work your friend, just take the axe if you want and get out of here.\"",
+          "effects": [
+            "Lose 1 reputation.",
+            "Gain 1 collective Bloody Axe (Item 117)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Stay silent and keep out of it.",
+      "outcomes": [
+        {
+          "text": "You casually move on, wondering how the guards found themselves on the wrong side of the Berserkers rage. It probably wasn't very difficult.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "type": "city",
+    "text": "Posters spring up in town announcing the performance of a master Quatryl musician and her merry band of performers. Looking closely at the image, you're pretty sure you recognize that foppish feathered hat.\n\nThe poster says the next show is tonight. You decide to attend for one purpose or another.",
+    "optionA": {
+      "choice": "Go to the show and cheer on the Soothsinger.",
+      "outcomes": [
+        {
+          "text": "You go and enjoy the Soothsinger's concert. There is even a song or two party and its adventures arount Gloomhaven.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Seems like a good opportunity to pick some pockets while people are distracted.",
+      "outcomes": [
+        {
+          "requirement": "{Scoundrel} {Mindthief} {Eclipse}",
+          "text": "The rubes are much too distracted to mind their coin purses. You make off with a good amount of cash and get to listen to some nice music as well.",
+          "effects": [
+            "Gain 20 collective gold."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You put forth a valiant effort, but, due to a lack of skill, you don't make much headway parting people from their money. At least the music is good.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "type": "city",
+    "text": "\"Ah, they said I might find you here.\" A portly Valrath woman looks down at you as you are enjoying a cold beverage at the Sleeping Lion.\n\n\"A group of wild-looking Orchids came to the Temple of Coin today hoping to engage in trade with the merchants of the city. One particularly dour-looking one with a bow said you lot would vouch for them.\n\n\"Were always wary of traps and betrayal out here on the edge of the wilderness, but if you think these Orchids can be trusted, then the Merchant's Guild may consider opening trade with them.\"",
+    "optionA": {
+      "choice": "Vouch for the Orchids.",
+      "outcomes": [
+        {
+          "text": "\"Well, we'll take it under advisement. Personally, I don't even know why your opinion matters, but some people in the Merchant's Guild seem to like you.\n\n\"Anyway, feel free to get back to your life of consumption and murder.\"",
+          "effects": [
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Advise against trading with the Orchids.",
+      "outcomes": [
+        {
+          "text": "The Valrath woman nods. \"I agree. Orchids are not to be trusted. Personally, I thought you lacked the brains to make a proper decision, but I'm happy to be proven wrong.\"",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "type": "city",
+    "text": "Looking for a little bit of variety, you head down to the Brown Door as night falls. After some wait, you pass through the doors and are surprised to see the Sawbones sitting near the back of the room by himself. Considering this bar is about as seedy and corrupt as they come, it is just about the last place you would expect to find him.\n\n\"I just...I don't know what to do now,\" the Sawbones confesses after you sit down. \"I'd like to join the sanctuary and lead a nice, quiet life, but after adventuring with all of you, that just doesn't seem fulfilling anymore.\"\n\nHe shakes his head. \"I don't know. This life seems so boring now. What do you think?\"",
+    "optionA": {
+      "choice": "Tell him that joining the sanctuary is the right thing to do.",
+      "outcomes": [
+        {
+          "text": "\"I guess you re right,\" he shrugs. \"Here's to one last night of freedom.\" He lifts his gfass and gulps down the contents. You follow his lead and the rest is a blur.",
+          "effects": [
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Tell him to follow his dreams.",
+      "outcomes": [
+        {
+          "text": "\"You're right! I'm in command of my own life, and I'm going to do what I want with it. Maybe I'll go to the Capital and start my own business or something. Who knows?\"\n\nHe lifts his glass and looks at you. \"To endless possibilities! The next round's on me.",
+          "effects": [
+            "Add City Event 66 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "type": "city",
+    "text": "You are haggling over the price of road rations with an irritating Valrath merchant when a messenger boy approaches you holding a note.\n\n\"Sir, I have a pressing letter written by a powerful Savvas that has come to you from all the way across the Misty Sea,\" the messenger says. \"I was told to deliver it directly.\"\n\nYou reach for it, but the messenger moves back a little. \"Sir, this note has traveled a very long distance to get to you. If you could, please pay a small fee to take possession of it.\"",
+    "optionA": {
+      "choice": "Pay tor the note.",
+      "outcomes": [
+        {
+          "requirement": "PAY 10 COLLECTIVE GOLD",
+          "text": "You open the note to discover it is from the Elementalist, who has sailed to the eastern continent to gain a deeper understanding of the elements. During this time, the Elementalist also spent some effort on the construction of a powerful staff and wanted to share the design.",
+          "effects": [
+            "Gain \"Staff of Elements\" design (Item 118)."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Refuse to pay for the note.",
+      "outcomes": [
+        {
+          "text": "You laugh in indignation and push the messenger away. He opens his mouth to object, then thinks better of it and runs off. You turn back to bartering, now leveraging the proof of your extreme thriftiness against the merchant.",
+          "effects": [
+            "Gain 3 collective gold."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "type": "city",
+    "text": "\"There were fifty of them, I swear. Tearing my mates apart!\"\n\nYou look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story.\n\n\"And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!\"\n\nAt this the crowd erupts into more laughter, drowning out the rest of the man's story.\n\n\"This man's had too much to drink, I'd say,\" ridicules one of the crowd. \"Vermlings riding bears! I thought I’d heard of everything!\"",
+    "optionA": {
+      "choice": "Join the crowd in laughing at the man.",
+      "outcomes": [
+        {
+          "text": "You move closer and join in on the fun. After a while, the man gives up and resigns himself to his glass. But his story provides entertainment for weeks.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Calm down the crowd and get more details from the man about the attack.",
+      "outcomes": [
+        {
+          "text": "It's not easy, but you quiet down the crowd and take the staggering man over to a secluded corner of the tavern to get the full story out of him. Apparently he was part of a group of ruffians working to harvest the Dagger Forest for wood. In the middle of their logging expedition, however, they were attacked by the Beast Tyrant and an army of forest animals. Though he ran off in the middle of the fight, the man swears he also heard the howl of angry spirits in the chaos.",
+          "effects": [
+            "Unlock \"Wild Melee\" {Scenario91} (E-2)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "type": "city",
+    "text": "You head to the Sinking Market, hoping to find some cheap supplies, when you are surprised to see a crowd gathering in the distance. You push your way through and see a host of dead bodies in the street, covered in insects and strange pustules in their skin.\n\nNearby, a woman screams in terror and runs away. Other more curious onlookers inch closer, trying to get a better view of the grotesque scene.",
+    "optionA": {
+      "choice": "Help to dispose of the corpses as quickly as possible.",
+      "outcomes": [
+        {
+          "text": "Finding it probable that these corpses harbor some sort of disease, you ward everyone away while you carefully load the bodies onto a cart, take them outside the city, and burn them.\n\nThe crowd is a little disappointed that you took away the morning entertainment. Especially annoyed are the guards, who don't appreciate you disposing of dead bodies before they can investigate them.",
+          "effects": [
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Investigate the corpses.",
+      "outcomes": [
+        {
+          "text": "Curiosity gets the better of you, as well and you approach the corpses with morbid fascination, hoping to find some clue about what happened. The number of insects is alarming, as is the diseased nature of the skin. If you had to guess, a Harrower could be responsible, or perhaps Xorn, who you so helpfully revived. Over the next few days, the disease spreads throughout the Sinking Market, killing many more people.",
+          "effects": [
+            "Lose 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "type": "city",
+    "text": "You are wandering the Ward of Scales in the evening when a crowd of people begins to form outside one of the shops, growing louder and more dense by the second.\n\nAs you approach, you see a terrified family of Quatryls through a familiar angry mob. The father pleads with a group of disheveled men with torches.\n\n\"Cheats!\" A woman next to you screams. \"Burn the store down!\"\n\nOne of the men — clearly not a guard — backhands the father away from the door and pushes his way inside the shop.",
+    "optionA": {
+      "choice": "Attempt to stop the men from burning down the shop.",
+      "outcomes": [
+        {
+          "requirement": "{Spellweaver} {PointyHead} {MusicNote}",
+          "text": "You push your way to the front of the mob and stop the men as they enter the store. Clearly emotions have gotten the better of these people. Through a calm demeanor, you are able to talk the mob down. A sense of relief washes over the crowd.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You kindly entreat the crowd to back down. It gets a little rough, but it becomes clear the crowd isn't fully into it. After knocking a few heads, the mob disperses.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Take part in the looting and burning of the store.",
+      "outcomes": [
+        {
+          "text": "You watch as one of the men picks up a wooden crate and throws it through the shop window. In a frenzy, the crowd rushes into the store, breaking and looting with mad glee. It's easy enough to move in with the crowd and pick up a few valuable items in the chaos. After you get clear of the crowd, you look back to see billows of smoke rising up from the door and broken window. Not a good day to be a Quatryl.",
+          "effects": [
+            "Gain 5 gold each.",
+            "Lose 1 prosperity."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "type": "city",
+    "text": "The day proves uneventful until you head back to your room in the evening to find a small package waiting at your doorstep. Resting on it is another note from the Tinkerer.\n\nHe thanks you profusely for sending along the mechanical spider, saying it was a great help in his work. He doesn't need it any longer, however and decided to send it back.\n\nHe explains that he made a few improvements to it as well while it was in his possession, and that it should help you significantly in your adventures.",
+    "optionA": {
+      "choice": "Gratefully keep the spider.",
+      "outcomes": [
+        {
+          "text": "You open the package to find a much larger, but equally intricate robotic spider staring back at you. This one appears to specialize in scurrying around its user, picking up and returning anything that might have been dropped. Should prove useful.",
+          "effects": [
+            "Gain 1 collective \"Giant Remote Spider\" (Item 127)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "You can't decide who should keep it, so sell the spider and split the money.",
+      "outcomes": [
+        {
+          "text": "You head down to the Mixed District with the newly improved spider and barter with some Quatryls who seem incredibly impressed with the craftsmanship. After some back-and-forth, you walk away with a nice sum of gold coins.",
+          "effects": [
+            "Gain 30 collective gold."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "type": "city",
+    "text": "\"So, I hear you stood up for me with the city guards the other day. Such annoying pests, aren't they?\"\n\nYou turn around in the street to see the Scoundrel emerge from a dark alley with a smile on her face.\n\n\"I just wanted to thank you in person,\" she says. \"I've known quite a few persons who would have ratted me out for their chance at a piece of gold. It's good to know some friendships last.\"\n\nShe looks over her shoulder. \"Listen, I'm leaving town for a good long while. You wanna grab a drink before I take off?\"",
+    "optionA": {
+      "choice": "Have a drink and reminisce about old times.",
+      "outcomes": [
+        {
+          "text": "You laugh for a while and trade tales. As the sun drops below the tavern windows, the Scoundrel gets up to leave.\n\n\"Listen, I really did enjoy our time together, and, well, I just wanted to leave you with something to remember me by.\"\n\nA piece of black cloth flutters down onto the table. When you look back up, the Scoundrel is gone.",
+          "effects": [
+            "Gain 1 collective \"Thief's Hood\" (Item 109)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Overpower the Scoundrel and deliver her to the city guards.",
+      "outcomes": [
+        {
+          "text": "A look of horrid surprise flashes in the Scoundrel's eyes as you leap forward and throw her to the ground. She doesn’t even speak as you bind her arms and take her to the city guard. They thank you for your service, but their words aren’t much counter to the cold angry stare of the Scoundrel as she's taken away.",
+          "effects": [
+            "Gain 3 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "type": "city",
+    "text": "\"I assume you are aware of an increased amount of sickness in the city.\"\n\nYou were summoned to the Ghost Fortress and now stand before the Captain of the Guard.\n\n\"We believe it could have something to do with a poisoning threat brought to our attention by your Mindthief friend a while ago. We ignored it, but now she is nowhere to be found, the Hook Coast is a bed of disease, and Gloomhaven proper is on its way there, too.\"\n\nHe looks at you firmly. \"I need you to head down to the Hook Coast and figure out what is going on. Then eliminate the source of the poison.\"",
+    "optionA": {
+      "choice": "Agree to help.",
+      "outcomes": [
+        {
+          "text": "The Hook Coast is outside the walls of Gloomhaven and can be a dangerous place. And since this spread of poison, the city has become even more defenseless than normal. You hope you'll be able to find a solution to the problem quickly.",
+          "effects": [
+            "Unlock \"Harried Village\" {Scenario86} (D-15)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Tell the captain to fix his own problem.",
+      "outcomes": [
+        {
+          "text": "The Captain of the Guard sighs.\n\n\"I really thought you were the ones for the job. What business could you possibly have that is more important than making sure this city is safe?\"\n\nHe holds up his hand. \"No matter. Fine, just get out of here! We will deal with this ourselves.\"",
+          "effects": [
+            "Lose 1 prosperity.",
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "type": "city",
+    "text": "Late in the evening, you are returning to your rooms when you hear a cry for help coming from a nearby alleyway. Racing into the shadows, you expect to find someone in distress, but instead find a group of men clad in black leather armor eying you maliciously.\n\n\"We have a message for your Nightshroud friend,\" one of them says, drawing a wicked looking curved blade. Suddenly, the Nightshroud appears among them in a flash of fatal sword strikes. Before the men even have a chance to react, half of them lie dead on the ground. The other half quickly flee.\n\n\"Well, it looks like you're into it now, too. Which is good, because I need help taking them down.\"",
+    "optionA": {
+      "choice": "Stay and listen to what the Nightshroud has to say.",
+      "outcomes": [
+        {
+          "text": "The Nightshroud kicks one of the corpses. \" This is the Sin-Ra Syndicate, a group of assassins trying to gain a foothold in the region. I'm trying to stop them, and somehow they found out you and I were friends. They decided to go after you as retribution. Lucky for you. I've located their hideout, so were going to sneak in there and end this whole business once and for all.",
+          "effects": [
+            "Unlock \"Syndicate Hideout\" {Scenario89} (C-17).",
+            "Party Achievement: \"Sin-Ra.\""
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Claim you want nothing to do with this and walk away.",
+      "outcomes": [
+        {
+          "text": "The Sin-Ra Syndicate seems to think you have something to do with this,\" the Nightshroud yells at you as you leave. \"That's all that matters! They'll strike again, and I won't be there to protect you!\" You keep walking.\n\naAdd Road Event 64 to the deck.",
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 65,
+    "type": "city",
+    "text": "In the middle of the night, you are awakened by a hard knocking at your door. You answer and it takes you a second to recognize the man standing on the other side.\n\n\"Those Oak relics you was lookin' for,\" the man says as he scratches a blister on the side of his face. \"Some cut purses tried to sell them to me. I can take you to their place, but we gotta move fast, and I want a cut of the loot.\"\n\nYou hurriedly agree and make your way to a ramshackle warehouse next to the old docks.\n\n\"This is it,\" the man says. \"Looks like no one's home, though.\"",
+    "optionA": {
+      "choice": "Raid the warehouse and recover the stolen goods.",
+      "outcomes": [
+        {
+          "text": "You head into the warehouse and search, eventually finding a hidden cache of stolen goods. The thieves, however, are nowhere to be found. You think about waiting for them to return, but it s possible they have already been alerted to your presence. You return to the sanctuary, where the priest is pleased to have the artifacts returned, but troubled that the thieves are still out there.",
+          "effects": [
+            "Gain 2 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Wait until the thieves return so you can apprehend them.",
+      "outcomes": [
+        {
+          "text": "You hide behind some barrels and wait for the thieves to return. It takes the rest of the night, but just as you are about to give up, two men approach the door. It's easy enough to get the drop on them, overpower them, and deliver them to the authorities. When you return the stolen artifacts to the sanctuary, the priest is incredibly pleased with your work.",
+          "effects": [
+            "Gain 1 prosperity.",
+            "Gain 2 reputation.",
+            "{Saw}: Gain 1 additional reputation."
           ],
           "resolve": "{Remove}"
         }
