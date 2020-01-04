@@ -102,9 +102,16 @@ const transformOutcome = (arr) => {
 // OUTCOMES
     } else if (o.startsWith("OTHERWISE:")) {
       const text = o.split(':').slice(1).join(':').trim()
-      t = {
-        requirement: "OTHERWISE",
-        text
+      // deal with empty text, with read outcome
+      if (text.length === 0) {
+        t = {
+          requirement: "OTHERWISE",
+        }
+      } else {
+        t = {
+          requirement: "OTHERWISE",
+          text
+        }
       }
     } else if (o.startsWith("PAY")) {
       const requirement = o.split(':')[0]
@@ -122,7 +129,7 @@ const transformOutcome = (arr) => {
       }
     // maps against class requirements
     } else if (o.startsWith("{") && !o.startsWith("{Rune")) {
-      // deal with road event 28
+      // deal with road event 28 and it's weird effects
       if (o.includes("additional")) {
         t = {effect: o}
       } else {
@@ -196,7 +203,7 @@ try {
         // city 19, option a has read outcome we need to skip
       } else if ((eventType === "city") && ((e.id === 43) && (index === 1))) {
         // city 43, option a has read outcome we need to skip
-      } else if ((eventType === "road") && (e.id === 28) && (index === 2)) {
+      } else if ((eventType === "road") && (e.id === 28) && (index === 1)) {
 
         // deal with road event 28 and don't add resolve
       } else {
@@ -226,7 +233,9 @@ try {
 
       const res = resolvedEvents[eventType]
       if (res[e.id]) {
-        if ((eventType === "road") && (e.id === 35) && correctedIndex === 2) {
+        if ((eventType === "road") && (e.id === 28) && correctedIndex === 1) {
+          // deal with road 28 read outcome
+        } else if ((eventType === "road") && (e.id === 35) && correctedIndex === 2) {
           // deal with road 35 read outcome
         } else {
           o.resolve = res[e.id][correctedIndex]
