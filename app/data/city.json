@@ -618,7 +618,7 @@
       "choice": "Attend the wedding with an expensive gift.",
       "outcomes": [
         {
-          "requirement": "REPUTATION > 9. PAY 20 COLLECTIVE GOLD",
+          "requirement": "REPUTATION > 9, PAY 20 COLLECTIVE GOLD",
           "text": "You head to the New Market and find a magnificent vase to bring as a gift. When the father of the bride sees it, he declares it the most wonderful piece he's ever encountered. You are the talk of the town.",
           "effects": [
             "Gain 2 reputation."
@@ -1745,7 +1745,10 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.\n\nNo eflect.",
+          "text": "You reach into your pocket to pay the kid, but come up empty-handed. He slinks off in indignation.",
+          "effects": [
+            "No effect."
+          ],
           "resolve": "{Remove}"
         }
       ]
@@ -2269,7 +2272,10 @@
       "choice": "Claim you want nothing to do with this and walk away.",
       "outcomes": [
         {
-          "text": "The Sin-Ra Syndicate seems to think you have something to do with this,\" the Nightshroud yells at you as you leave. \"That's all that matters! They'll strike again, and I won't be there to protect you!\" You keep walking.\n\naAdd Road Event 64 to the deck.",
+          "text": "The Sin-Ra Syndicate seems to think you have something to do with this,\" the Nightshroud yells at you as you leave. \"That's all that matters! They'll strike again, and I won't be there to protect you!\" You keep walking.",
+          "effects": [
+            "Add Road Event 64 to the deck."
+          ],
           "resolve": "{Remove}"
         }
       ]
