@@ -635,8 +635,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "Read outcome B.",
-          "resolve": "{Remove}"
+          "text": "Read outcome B."
         }
       ]
     },
