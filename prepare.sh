@@ -21,6 +21,7 @@ echo -e "\n]" >> $STUB
 node transform.js "city" $STUB $TARGET
 
 # prepare road events
+STUB=$(mktemp)
 echo ""
 echo "Preparing ROAD events"
 TYPE="road"
