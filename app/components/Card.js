@@ -116,10 +116,12 @@ const Blocks = ({requirement, texts, color }) => {
   const start = requirement ? 1 : 0
   const end = texts.length
 
+  const firstText = texts[0] ? texts[0] : ""
+
   return (
     <View style={{width: 290}}>
       { requirement &&
-        <RequirementBlock requirement={requirement} text={texts[0]} color={color}/>
+        <RequirementBlock requirement={requirement} text={firstText} color={color}/>
       }
       {
         texts.slice(start,end).map((t,i) => <Block text={t} color={color} key={i} />)
@@ -174,7 +176,7 @@ const Effect = ({text, color}) => {
 const Outcome = ({outcome, type}) => {
   const requirement = outcome.requirement
   const effects = outcome.effects
-  const texts = outcome.text.split("\n\n")
+  const texts = outcome.text ? outcome.text.split("\n\n") : []
   const color = colors[type]
 
   return (
