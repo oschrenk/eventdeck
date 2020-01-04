@@ -6,7 +6,8 @@ import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationNativeContainer } from '@react-navigation/native';
 
-import EditScreen from './app/screens/EditScreen'
+import CityScreen from './app/screens/CityScreen'
+import RoadScreen from './app/screens/RoadScreen'
 import HomeScreen from './app/screens/HomeScreen'
 import PartyScreen from './app/screens/PartyScreen'
 import SettingsScreen from './app/screens/SettingsScreen'
@@ -21,7 +22,8 @@ const App = () => {
       <NavigationNativeContainer>
         <Drawer.Navigator initialRouteName="Home">
           <Drawer.Screen name="Home" component={HomeScreen} />
-          <Drawer.Screen name="Edit" component={EditScreen} />
+          <Drawer.Screen name="City" component={CityScreen} />
+          <Drawer.Screen name="Road" component={RoadScreen} />
           <Drawer.Screen name="Party" component={PartyScreen} />
           <Drawer.Screen name="Settings" component={SettingsScreen} />
         </Drawer.Navigator>
