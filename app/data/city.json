@@ -1580,8 +1580,7 @@
           "text": "You don't have the money to send him the contraption, so you decide just to keep it for yourself.",
           "effects": [
             "Read outcome B."
-          ],
-          "resolve": "{Remove}"
+          ]
         }
       ]
     },

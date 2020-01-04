@@ -194,7 +194,10 @@ try {
 
       if ((eventType === "city") && ((e.id === 19) && (index === 2))) {
         // city 19, option a has read outcome we need to skip
+      } else if ((eventType === "city") && ((e.id === 43) && (index === 1))) {
+        // city 43, option a has read outcome we need to skip
       } else if ((eventType === "road") && (e.id === 28) && (index === 2)) {
+
         // deal with road event 28 and don't add resolve
       } else {
         if (res[e.id]) {
