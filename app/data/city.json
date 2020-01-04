@@ -635,7 +635,9 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "Read outcome B."
+          "effects": [
+            "Read outcome B."
+          ]
         }
       ]
     },
