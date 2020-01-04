@@ -15,7 +15,7 @@ TARGET="app/data/city.json"
 echo "Writing to stub $STUB"
 echo "" > $STUB
 echo -e "[\n" >> $STUB
-tail -n +5 $SOURCE | head -947 | grep -v EventType >> $STUB
+tail -n +5 $SOURCE | head -1367 | grep -v EventType >> $STUB
 echo -e "\n]" >> $STUB
 
 node transform.js "city" $STUB $TARGET

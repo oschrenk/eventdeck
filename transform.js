@@ -68,6 +68,8 @@ const transformOutcome = (arr) => {
       t = {effect: o}
     } else if (o.startsWith("Global Achievement")) {
       t = {effect: o}
+    } else if (o.startsWith("{Rune")) {
+      t = {effect: o}
     } else if (o.startsWith("Unlock ")) {
       o = o
         .replace("\"Burning Mountain\" 82", "\"Burning Mountain\" {Scenario82}")
@@ -76,7 +78,10 @@ const transformOutcome = (arr) => {
         .replace("\"Shadows Within\" 83", "\"Shadows Within\" {Scenario83}")
         .replace("\"Sacrifice Pit\" 78", "\"Sacrifice Pit\" {Scenario78}")
         .replace("\"Demonic Rift\" 90", "\"Demonic Rift\" {Scenario90}")
-
+        .replace("\"Corrupted Cove\" 87", "\"Corrupted Cove\" {Scenario87}")
+        .replace("\"Wild Melee\" 91", "\"Wild Melee\" {Scenario91}")
+        .replace("\"Harried Village\" 86", "\"Harried Village\" {Scenario86}")
+        .replace("\"Syndicate Hideout\" 89", "\"Syndicate Hideout\" {Scenario89}")
       t = {effect: o}
     } else if (o.startsWith("All start ")) {
       t = {effect: o}
@@ -116,7 +121,7 @@ const transformOutcome = (arr) => {
         text
       }
     // maps against class requirements
-    } else if (o.startsWith("{")) {
+    } else if (o.startsWith("{") && !o.startsWith("{Rune")) {
       // deal with road event 28
       if (o.includes("additional")) {
         t = {effect: o}
@@ -205,7 +210,8 @@ try {
 
       // city 15 has a preamble text, we need to skip
       // city 31, option b has read outcome we need to skip
-      if ((eventType === "city") && ((e.id === 15) || (e.id === 31))) {
+      // city 49, option b has read outcome we need to skip
+      if ((eventType === "city") && ((e.id === 15) || (e.id === 31) || (e.id === 49))) {
         if (index === 0) {
           return o
         } else {
