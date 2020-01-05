@@ -1528,5 +1528,730 @@
         }
       ]
     }
+  },
+  {
+    "id": 46,
+    "type": "road",
+    "text": "Walking among the foothills, you see a steep ridge in front of you and on top of it, a very odd rock formation.\n\n The formation calls to you somehow, but the way up is not readily apparent. In fact, climbing the ridge looks pretty dangerous, but you just feel like you need to get up there and look at the rocks.",
+    "optionA": {
+      "choice": "Take the risk to climb tbe ridge and investigate the rocks.",
+      "outcomes": [
+        {
+          "text": "Fearing the possibility of falling from a great height, you choose your steps carefully. Still, the climb to the top takes a long time and is exhausting. Reaching the top, you approach the unnatural rock formation, a giant mound of stones stacked one on top of another. At the base of the bottom stone, you see the following etched with charcoal:",
+          "effects": [
+            "{RuneT}{RuneH}{RuneE} {RuneR}{RuneU}{RuneI}{RuneN}{RuneS} {RuneO}{RuneF} {RuneT}{RuneH}{RuneE} {RuneD}{RuneE}{RuneE}{RuneP} {RuneT}{RuneA}{RuneK}{RuneE} {RuneS}{RuneH}{RuneA}{RuneP}{RuneE}"
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Forget about the rocks and continue on your journey.",
+      "outcomes": [
+        {
+          "text": "You shake your head and move past the ridge. You have more important things to do than climb rocks. Still, you fed the pull of the site, even after it fades from view. You get the feeling that this won't be the last time you see it.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 47,
+    "type": "road",
+    "text": "A single Vermling jumps out of the brush at you, surprising you briefly. Within moments, though, you have your weapons out and pressed against his throat.\n\n\"EEEEEEEeeeahh!\" The Vermling drops his weapon and cowers. \"No attack! My brothers in the bushes say you had stink of city-dwelling outcast on you. I wanted to be sure.\"\n\nThe Vermling waves his hands. \"It' s not bad! Just curious. Being stinky city-dwelling outcast is fine. Please, don't hurt me!\"",
+    "optionA": {
+      "choice": "Move on, leaving the strange Vermling in peace.",
+      "outcomes": [
+        {
+          "text": "\"Stink very faint,\" the Vermling continues as you walk on. \"Outcast no longer with you, but I still smell it!\"\n\nHe then jumps back into the brush. Vermlings are very odd creatures.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Kill the savage little beast.",
+      "outcomes": [
+        {
+          "text": "You attack the Vermling anyway; despite his protests. It turns out he wasn't lying about his \"brothers\" nearby, though. As you wipe the blood from your blade, ten more of the little furry creatures jump out at you, brandishing small knives. They are not nearly as easy to dispatch.",
+          "effects": [
+            "All start scenario with POISON {Poison}.",
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 48,
+    "type": "road",
+    "text": "You see them long before they get close to you — radiant balls of light blazing against the horizon.\n\nSun Demons.\n\nAs they approach, you prepare for an attack, but the demons have other plans. They menace you with their glowing claws, but they would rather have information than kill you.\n\n\"Where is the one you call a Sunkeeper?\" one of them hisses. \"The Valrath neglects her duties, and now we must resolve matters personally.\"\n\nYou press for further information, but the demons get angry. \"These are not your concerns! Tell us where she is or die at our hands!\"",
+    "optionA": {
+      "choice": "Give them whatever information you can on the Sunkeeper's whereabouts.",
+      "outcomes": [
+        {
+          "text": "You're not sure exactly what happened to the Sunkeeper after she left the party, but you tell the demons everything you know. They seem satisfied with your response and even offer a bitter thanks as they fly off to the west.",
+          "effects": [
+            "Add Road Event 61 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Attack the demons. There are a lot of them, but you do not take kindly to threats.",
+      "outcomes": [
+        {
+          "text": "Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity. It is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.",
+          "effects": [
+            "All start scenario with MUDDLE {Muddle}.",
+            "All start scenario with WOUND {Wound}.",
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "type": "road",
+    "text": "You are approached on the road by a group of men on horseback. They don't immediately seem menacing, but they are formidable and well organized.\n\nOne of the men, who wears plate armor and has a sword at his side, addresses you coldly. \"You hail from Gloomhaven, correct? What say you about the politics of the place? Are you for or against military rule in the region? Do you think those fool merchants could do a better job, like they're doing with the rest of this doomed land?\"\n\nLooking closer, you see all the men wear the signet of a tower with an eye at its center",
+    "optionA": {
+      "choice": "Claim allegiance to the military.",
+      "outcomes": [
+        {
+          "text": "The armored men seem satisfied with your response and take their hands off their weapons.\n\n\"Good to find some fellow patriots,” the one in front says with a disturbing smile. \"You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties.",
+          "effects": [
+            "Unlock \"Vigil Keep\" {Scenario80} (K-1)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Claim allegiance to the merchant guilds.",
+      "outcomes": [
+        {
+          "text": "Well then, today's your unlucky day, the man in front says. \"Because we of the Vigil make it a point to execute any and all commerce sympathizers we can find in this land.\"\n\nThe men grimly draw swords and advance. After a hard battle, the survivors retreat, leaving you to pick through the corpses. Among the loot you find a map.",
+          "effects": [
+            "Unlock \"Vigil Keep\" {Scenario80} (K-1).",
+            "All start scenario with 4 damage.",
+            "Gain 5 gold each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 50,
+    "type": "road",
+    "text": "Up ahead of you, you see a staff stuck in the very center of the road pointing straight up out of the ground. You get closer, and an odd sense of foreboding comes over you.\n\nYou recognize the staff as the one wielded by the Summoner. The fact that it is now in front of you with such a strange and ominous placement makes you very wary.\n\nYou quickly look around, but nothing else of note is in sight.",
+    "optionA": {
+      "choice": "Take the staff and move on.",
+      "outcomes": [
+        {
+          "text": "You shrug and grab the staff, half expecting something exciting to happen when you do. Instead, nothing happens at all. In fact, the staff seems rather mundane. You feel no power running through it at all. Still, no sense in leaving it behind. It could be important.",
+          "effects": [
+            "Add City Event 68 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Investigate the area and get to the bottom of this.",
+      "outcomes": [
+        {
+          "text": "You spend a good hour looking over the area, scouring every bush and divot you can find. Unfortunately, you find no other clues about what happened here and end up just tiring yourself out.",
+          "effects": [
+            "Discard 2 cards each.",
+            "Read outcome A."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "type": "road",
+    "text": "You reach a crossroad and decide to rest for a bit. As you eat some of your rations, something sticking up out of the ground in the distance catches your attention.\n\nYou move closer, and what you thought was a signpost turns out to be a human skull impaled on a spike.\n\nThere is something sticking out of the skulls mouth.",
+    "optionA": {
+      "choice": "Investigate further.",
+      "outcomes": [
+        {
+          "text": "You get closer to the pike. The skull looks pretty fresh. There are still bits of decayed flesh attached to the bone, and flies buzz around it. You can see there is a small paper card stuck in its mouth so you carefully reach in and pull it out. The card is black and depicts a skull with blades running through it. Come to think of it you remember rumors of an assassins' guild that has been known to use the same imagery You get out of the area as quickly as you can.",
+          "effects": [
+            "Gain 1 collective “Black Card” (Item 129)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Arm yourself and make a defensive retreat from the area.",
+      "outcomes": [
+        {
+          "text": "You remember rumors of an assassins' guild that places a skull on a pike outside the houses of their victims before they strike. Fearing the worst, you pull out your weapons and survey the scene as you back away from the pike. Everything looks clear, so you quickly get as far away from the area as possible. Perhaps the skull was not meant for you.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 52,
+    "type": "road",
+    "text": "You smell the corpses before you see them. A group of five or so, spread across the road, flies buzzing around in a frenzy.\n\nAs you get closer, you see the wretched, deformed looks on their faces and the boils covering their skin. You also see their crude armor and weapons — likely a group of cutthroats.\n\nWhat is truly odd though, is that their weapons are out of their sheaths in the first place. It appears they were engaged in battle when they suddenly succumbed to some horrible disease.\n\nYou can think of at least one way that could have happened. Fine handiwork from the Plagueherald.",
+    "optionA": {
+      "choice": "Leave the corpses alone.",
+      "outcomes": [
+        {
+          "text": "Knowing better than to get too close to the machinations of the Plaguehcrald, you keep a wide berth between you and the corpses and continue down the road.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Inspect the corpses for valuables.",
+      "outcomes": [
+        {
+          "text": "You rifle through the corpses, grabbing stray coins and valuables as you go. You make off with a good haul, but you start feeling sick as soon as you re done.",
+          "effects": [
+            "All start scenario with POISON {Poison}.",
+            "All start scenario with CURSE {Curse}.",
+            "Gain 10 collective gold."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 53,
+    "type": "road",
+    "text": "You hear the distinctive sound of metal on metal in the distance and race up a hill in the road to investigate.\n\nIn front of you, you see a familiar female Inox in heated battle with a group of Gloomhaven guards. Though outnumbered and bloodied, you've never seen that stop the Berserker before. With every wound they inflict, she becomes more and more enraged, cleaving off limbs with the ease of cutting grass.",
+    "optionA": {
+      "choice": "Help the Berserker fight off the guards.",
+      "outcomes": [
+        {
+          "text": "You enter the battle to aid the Berserker, but in her blood rage, she can't distinguish friend from foe. She begins hacking away at you with her axe as much as she swings at the guards. You concentrate on taking out the remaining guards, but when you turn back to the Berserker, she seems to have vanished into the nearby forest.",
+          "effects": [
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Wait and see what happens. It looks like she's handling herself well enough.",
+      "outcomes": [
+        {
+          "text": "After a brutal and bloody fight, only the Berserker remains standing. After her blood rage subsides, she collapses from exhaustion. You race to her side and attempt to revive her using a number of powerful potions. She finally awakes and expresses her begrudging gratitude. You ask about the fight, but she just shakes her head. She offers her axe as thanks and then dashes off into the forest. Consume {SmallItem} item each.",
+          "effects": [
+            "Gain 1 collective \"Bloody Axe\" (Item 117)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 54,
+    "type": "road",
+    "text": "Deep inside a dense forest, you begin to hear the jangling of bells and see a small troupe of performers approaching you through the trees.\n\n\"Well, look who it is!\" The small voice belongs to a garishly dressed female Quatryl with a lute and a feathered hat. \"Fancy running into you out here.\"\n\n\"This actually may be a stroke of luck,\" the Soothsingcr says. \"You see, my compatriots and I seem to be a bit lost. We were headed toward the Capital when my drummer said he knew a shortcut. Now here we are in the middle of a forest without an inkling of a clue. I don't suppose you could find it in your heart to escort us back to the main road, could you?\"",
+    "optionA": {
+      "choice": "Take the time to escort the troupe back out of the forest.",
+      "outcomes": [
+        {
+          "text": "While escorting the Soothsinger and her troupe out of the forest, you are able to catch up a bit. She is very happy now as a traveling performer, playing to sold out concerts across the land. When you reach the main road, you say your good-byes and then make the long trek back to where you were going.",
+          "effects": [
+            "Gain 1 reputation.",
+            "Discard 2 cards each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Give detailed directions about the way out and hope that is sufficient.",
+      "outcomes": [
+        {
+          "requirement": "{LightningBolts} {TwoMinis} {PointyHead}",
+          "text": "You gauge your bearings and then give precise directions on the easiest way out of the forest and back to the main road. The Soothsinger seems impressed and waves good-bye as she heads off.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "requirement": "OTHERWISE",
+          "text": "You hem and haw and then give some vague directions back to the road. The Soothsinger looks at you skeptically and heads off.",
+          "effects": [
+            "Add City Event 69 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 55,
+    "type": "road",
+    "text": "You come to a fork in the road. One path looks clear and easy, but the other path is overgrown with thorns and nettles. Either one will likely get you to where you are going.\n\nThe whole situation feels off, though — as if someone or something is watching you.\n\nStill a decision must be made.",
+    "optionA": {
+      "choice": "Take the clear path.",
+      "outcomes": [
+        {
+          "text": "You walk down the clear path for a few minutes, and, just when you think the whole weird feeling was your imagination, a group of human bandits jumps out at you from the nearby brush. Before they can engage, however, an arrow suddenly spears the chest of the closest bandit, followed very quickly by a second. The bandits have paused to look around in panic when a third arrow flies into another bandit's skull. The bandits scatter and run off. You look around for the shooter, but no trace is found.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Take the overgrown path.",
+      "outcomes": [
+        {
+          "text": "The trek through the overgrown path is unpleasant. You are constantly getting pricked by sharp thorns covered in a strange sap. You think you recognize them from a previous foray into harsh, unforgiving foliage. Sure enough, you start feeling sick pretty soon after you emerge from the bushes.",
+          "effects": [
+            "All start scenario with POISON {Poison}."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "type": "road",
+    "text": "At first the man looks dead, with numerous open wounds and lying in a pool of blood in the dirt/\n\nBut then he coughs and whispers something unintelligible. The man looks pretty bad off, likely attacked by some wild animal, but it's possible he could be saved.",
+    "optionA": {
+      "choice": "Help the wounded man as best you can.",
+      "outcomes": [
+        {
+          "text": "The man's wounds actually look worse than they really are, and your time with the Sawbones has given you some experience in what to do. You bind the wounds to stop the bleeding and then give him something to eat. He lost a lot of blood, but after some nursing, he's able to stand and make his way back to Gloomhaven, thanking you profusely in the process.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Let the man die and take his belongings.",
+      "outcomes": [
+        {
+          "text": "You riffle through the man's pockets as he speaks his last words. They're too soft to make out, but the tone is one of anger and disappointment. You make off with a decent amount of money and leave the corpse to rot.",
+          "effects": [
+            "Gain 3 gold each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 57,
+    "type": "road",
+    "text": "You are wandering through an abysmal fog, cursing the very fact you woke up this morning. You can't see two feet in front of your face and everything is just so cold and damp.\n\nWalking down what you think is the road, you nearly bump into an elderly Savvas.\n\n\"Ah, how fortuitous is such a meeting,\" the Savvas says. \"You look like the ones whom my protégé worked with for some time. Normally I would not give the lesser races a second glance, but the master of elements must have seen something in you.\"\n\nIt stretches its joints and looks around. \"Hmm, you must be having a rough time with this weather I could offer you something that may help.\"",
+    "optionA": {
+      "choice": "Accept the gift of the Savvas.",
+      "outcomes": [
+        {
+          "text": "The Savvas concentrates and lays its hand on you. You suddenly feel very warm and all the fog within ten feet of you dissipates.\n\n\"There you go. That should make things easier. The effect should last for at least as long as the fog does. Have a pleasant day!\"",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Downplay your struggle and politely decline the Savvas's offer.",
+      "outcomes": [
+        {
+          "text": "Ah, 1 see,\" the Savvas says. \"You'd rather grow from an experience than take the easy way out. A noble path.\"\n\nThe Savvas slaps you on the back. \"Well, get to it, then! It's just fog after all. You'll survive.\"",
+          "effects": [
+            "Discard 2 cards each.",
+            "Add Road Event 63 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 58,
+    "type": "road",
+    "text": "Despite your best efforts, you find yourself lost in a forest. You thought you were taking a shortcut, but then you got turned around and lost your bearings.\n\nAnd just when you think things couldn't get worse, a wolf suddenly jumps out of the brush in front of you. Oddly; though, it doesn't appear aggressive.\n\nIt howls once and then slowly and deliberately begins to walk through the trees in front of you, as if expecting you to follow it.",
+    "optionA": {
+      "choice": "Follow the wolf.",
+      "outcomes": [
+        {
+          "text": "Miraculously, following the wolf leads you right to the edge of the forest and back on track to your destination. The wolf howls once more and then bounds off back into the brush. You can't help, but wonder who might have sent that wolf to assist you.",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Find your own way through the forest.",
+      "outcomes": [
+        {
+          "text": "Not willing to trust a wild animal, you refuse to go in the same direction as the wolf and continue down an ill-fated path of your own choosing. It doesn't go well, and by the time you emerge from the dense forest and find your bearings, you are exhausted.",
+          "effects": [
+            "Discard 3 cards each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 59,
+    "type": "road",
+    "text": "The air is especially humid and muggy as you walk towards your destination, but even that couldn't explain the sight that greets you on the road.\n\nDirectly in front of you, completely blocking the only available path, is a massive swarm of insects. There must be millions of them.\n\nYou take a hesitant step forward and the bugs do not react. They are not concerned by your presence at all.",
+    "optionA": {
+      "choice": "Cover yourself as best you can and try to walk through the swarm.",
+      "outcomes": [
+        {
+          "text": "If you were to list the top ten worst moments of your fife, this would probably be up there. You walk into the swarm and the insects are everywhere, biting and clawing at your flesh. You move as quickly as you can, emerging from the other side with your life intact but your sanity in shambles. Oddly, though, you also feel as though you were just in the presence of a powerful, divine force.",
+          "effects": [
+            "All start scenario with 2 damage.",
+            "All start scenario with POISON {Poison}, MUDDLE {Muddle}, and BLESS {Bless}."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Use whatever you can to burn a path through the swarm.",
+      "outcomes": [
+        {
+          "text": "It takes a monumental effort, but you are eventually able to disperse the cloud of insects enough to run through to the other side. As you do so, however. you hear an odd voice among the buzzing, cursing you for your violent actions.",
+          "effects": [
+            "Discard 2 cards each.",
+            "All start scenario with CURSE {Curse}."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 60,
+    "type": "road",
+    "text": "You see smoke on the horizon expecting the worst and sigh, expecting the worst. Sure enough, you approach the scene to find a ransacked caravan — burned, pillaged, and destroyed by what appears to be Vermlings.\n\nYou find one survivor among the victims who laments that when the Vermlings came upon them, one of the guards, a large Inox, seemed to throw aside his weapon and simply accept his fate.\n\nThat's when you find the body of the Brute, torn and bloody among the wreckage. Seeing him this way, the fire gone from his eyes, he appears unnaturally small.",
+    "optionA": {
+      "choice": "Respectfully bury the dead and mourn their loss.",
+      "outcomes": [
+        {
+          "text": "Though you didn't take the time to talk with the Brute earlier, now you take the time to bury his corpse and say a few words about his strength of body and character. The survivor thanks you for your help, and you continue on your way once more.",
+          "effects": [
+            "Gain 1 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Take what you can find and move on.",
+      "outcomes": [
+        {
+          "text": "Near the corpse of the Brute, you find an axe, presumably the weapon he threw away. There's really nothing else among the debris, so you wordlessly pick it up and move on.",
+          "effects": [
+            "Gain 1 collective \"Battle-Axe\" (Item 018)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "type": "road",
+    "text": "You are heading through a small forest when you hear the sound of a woman screaming off to the west. You silently move closer, catching a glimpse of multiple radiant figures through the tress.\n\nThey are Sun Demons, perhaps the same ones who accosted you earlier. That suspicion is confirmed when you get closer and see they are hovering around an armored Valrath woman bound to a tree, torturing her for information.\n\n\"Don't you see how important this is!\" one of the demons says. \"Give us the location of the temple!\"\n\n\"Lies and tricks of a demon,\" the Sunkeeper responds. \"The temple is in no danger except from you.\"",
+    "optionA": {
+      "choice": "Leave the scene quietly and return to your own business.",
+      "outcomes": [
+        {
+          "text": "Not wanting to get involved, you simply move on. Eventually the screams of the Sunkeeper fade away.",
+          "effects": [
+            "Add Road Event 62 to the deck."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Attack the demons and free the Sunkeeper.",
+      "outcomes": [
+        {
+          "text": "You charge out of the trees and attack the Sun Demons. Fueled by righteous indignation and a bit of guilt, you slay them all. The battle leaves you wounded, but the Sunkeeper happily mends your wounds once you free her.\n\n\"They seemed to think the Sun Temple is under attack by Night Demons,\" she says. \"I have no reason to believe them, but still, would you mind helping me look into it?\"",
+          "effects": [
+            "Unlock \"Sun Temple\" {Scenario85} (M-3)"
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 62,
+    "type": "road",
+    "text": "By now, the Sun Demons cut a very recognizable portrait against the horizon as they move toward you. You sincerely had hoped you were done with these creatures.\n\n\"We have urgent need of your assistance,\" one of them starts. \"Night Demons have infested the Sun Temple, attempting to desecrate it and send the world into eternal darkness.\n\n\"We have tried to stop them, but they are too fortified inside the temple. We regrettably need more strength.\n\n\"Please, you cannot want an absence of a sun on this plane any less than we do. It would be disastrous.\"",
+    "optionA": {
+      "choice": "Agree to help the Sun Demons.",
+      "outcomes": [
+        {
+          "text": "You sigh and agree, warning them that this had better be the last time they ask you for a favor. They give you the location of the Sun Temple and implore you to hurry.",
+          "effects": [
+            "Unlock \"Sun Temple\" {Scenario85} (M-3)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Attack the Sun Demons. It may be the only way to stop them from bothering you.",
+      "outcomes": [
+        {
+          "text": "Without even speaking, you draw your weapons and attack. The demons are caught off guard, but they bounce back with great ferocity. It is a long, brutal battle, and you continue on in your adventure greatly wounded and bloody.",
+          "effects": [
+            "All start scenario with MUDDLE {Muddle}.",
+            "All start scenario with WOUND {Wound}.",
+            "All start scenario with 3 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 63,
+    "type": "road",
+    "text": "As you walk through some foothills, the ground suddenly shakes violently beneath you. Two massive demons built of earth and stone rise up in front of you.\n\n\"Today we shall feast on your flesh, foolish travelers!\"\n\nJust as the demons take a step toward you, a massive ball of fire streaks through the air from behind and connects squarely with one of the demons, which erupts into a pillar of flame. Then lightning streaks toward the other, destroying one of its arms.\n\nLooking around, you see the old Savvas you met earlier, who continues to throw out powerful attacks until the demons are forced to retreat.\n\n\"Well, fancy meeting you again!\"",
+    "optionA": {
+      "choice": "Thank the Savvas for his timely assistance.",
+      "outcomes": [
+        {
+          "text": "\"More and more demons around these parts these days. Stopping them from attacking travelers is becoming a time-intensive job, but at least it's fun.\"\n\nThe Savvas smiles at you and then turns to leave. \"Have a pleasant day!\"",
+          "effects": [
+            "No effect."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Admonish the Savvas, claiming you could have handled the demons without his help.",
+      "outcomes": [
+        {
+          "text": "The Savvas adopts a look of serious contemplation. \"You are right, of course. I presumed to think that a lesser race would need my help, but I forgot your dedication to growth and learning. I have made a grave mistake and must now beg your forgiveness.\"\n\nIt holds out a small trinket toward you. \"Please, accept this with my apologies.\"",
+          "effects": [
+            "Gain 1 collective \"Sun Earring\" (Item 049)."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "type": "road",
+    "text": "You reach a crossroads and deecide to rest for a bit. As you eat some of your rations, something sticking up out of the ground in the distance catches your attention.\n\nYou move closer, and what you thought was a signpost turns out to be a human skull impaled on a spike.\n\nThere is something sticking out of the skulls mouth.",
+    "optionA": {
+      "choice": "Investigate further.",
+      "outcomes": [
+        {
+          "text": "Against your better judgment, you approach the skull, which looks suspiciously like the Sin-Ras calling card. Sure enough, a group of dark-clad warriors appears before you from out of thin air. Wordlessly they draw their long, curved blades and attack. Caught by surprise, you don't fare well in the battle. You do fight them off, but in the end, you are severely wounded, exhausted, and demoralized.",
+          "effects": [
+            "Lose 1 {Check} each.",
+            "Discard 4 cards each.",
+            "All start scenario with 4 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Arm yourself and make a defensive retreat from the area.",
+      "outcomes": [
+        {
+          "text": "Recognizing the pike as a symbol of the Sin-Ra Syndicate, you arm yourself and run from the area. Unfortunately you don't make it far before you see a number of black-clad assassins bearing down on you. You move into a defensive position and prepare for battle. The fight is arduous, but in the end, the assassins are dead, and you hope they don t come back.",
+          "effects": [
+            "Lose 1 {Check} each.",
+            "Discard 2 cards each.",
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 65,
+    "type": "road",
+    "text": "As you crest a hill, you see a flock of carrion birds scatter to the east. They must have been feasting on something, so you decide to investigate.\n\nAfter a short walk, you come upon a man's corpse, badly decayed and mangled, lying in the dirt. His face is a bloody mess, but you do see a distinctive chain around his neck and recall the description the man from the Sleeping Lion gave you of his brother. This is very likely him.",
+    "optionA": {
+      "choice": "Bury the man and bring the chain back to his brother.",
+      "outcomes": [
+        {
+          "text": "Not wanting to tell the brother that you left the corpse out in the sun to rot, you take the time to dig a hole and give it a proper burial.\n\nWhen you bring the chain back, the brother is understandably distraught, but he thanks you forgiving him closure about what happened.",
+          "effects": [
+            "Gain 2 reputation."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Take the chain for yourself and don't tell the brother.",
+      "outcomes": [
+        {
+          "text": "The birds get the corpse. You get the chain. Everyone wins, except the man from the Sleeping Lion. But he should know better than to trust mercenaries.",
+          "effects": [
+            "Gain 3 gold each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "type": "road",
+    "text": "The first sign of the Inox raiding party was a cloud of dust on the horizon. It was so large, however, there was nowhere to run.\n\n\"City-dwelling scum!\" one of the Inox in front calls out to you as you approach. \"We march now to attack your city and wipe it from the face of this land. What do you say to that?\"\n\nYour first thought, as you prepare for a fight, is that they will need a larger army. Before you can strike, though, the sky grows dark. You assume it is a cloud, but then look up to see a giant drake descending on you from above.",
+    "optionA": {
+      "choice": "Take cover.",
+      "outcomes": [
+        {
+          "text": "You jump into a ditch and cover your head just as the Elder Drake glides over the raiding party, breathing a heavy gout of flame into their midst. Those not incinerated scream and flee for their lives. The drake lands in front of you.\n\n\"Intrepid adventurers! I hope I was able to offer you some aid against your aggressors. It really was my pleasure after all you have done for me. I hope you find some things of value among the corpses. It is my gift to you.\"",
+          "effects": [
+            "Gain 25 gold each."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Attack the Inox.",
+      "outcomes": [
+        {
+          "text": "You attack the large group of Inox while they are distracted by the giant creature above you. Things suddenly get very hot, however, when the drake begins spitting fire into the melee. The Inox scatter and you are suffering from severe burns when the Elder Drake lands in front of you.\n\n\"My apologies, I was only trying to help.\"",
+          "effects": [
+            "Gain 25 gold each.",
+            "All start scenario with WOUND {Wound}.",
+            "All start scenario with 2 damage."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "type": "road",
+    "text": "Not too far down the main road outside of Gloomhaven, you run across a merchant wagon headed into town.\n\n\"Ah, I was afraid for a second you might be bandits!\" The merchant says. \"But now I see you are mercenaries from the town, correct? Most excellent! I have heard good things about the mercenaries of Gloomhaven. Hard to believe, coming from such a backwater place, but they are true, correct?\"",
+    "optionA": {
+      "choice": "Demonstrate your virtue by offering to escort the merchant back to Gloomhaven.",
+      "outcomes": [
+        {
+          "text": "\"Ah, well...no, I don't want to be a bother. But, I mean, yes, I can't pay you, though I'd love the company. It is rather terrifying traveling the East Road by yourself.\"\n\nIt is a relatively short journey back to town, but the merchant is very grateful. \"I am quite impressed, sirs. I'II be sure to tell everyone back in the capital that Gloomhaven is a safe place to do business.\"",
+          "effects": [
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Demonstrate your lack of virtue by robbing the merchant.",
+      "outcomes": [
+        {
+          "text": "\"Well I just — I mean, I'd never...\" the merchant trails of incredulously. \"To think there are places in the world where such barbarism still exists. It boggles the mind.\n\n I'm going to tell everyone back in the Capital what a horrible, backward shrrggggllg...\" Blood bubbles up into his mouth as you slit his throat, making it very difficult for him to continue complaining.",
+          "effects": [
+            "Gain 20 gold each."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 68,
+    "type": "road",
+    "text": "Not too far down the main road outside of Gloomhaven, you run across a merchant wagon headed into town.\n\n\"Oh no...ah, mercenaries, I see,\" the merchant stammers as you approach, \"Look, ah, I know the reputation of your like around Gloomhaven. Please, just take what you want and move on. I-I don t want any trouble.\"",
+    "optionA": {
+      "choice": "Take what you want and move on.",
+      "outcomes": [
+        {
+          "text": "The merchant remains dead silent as you sift through his cart and pull out any valuables. There's not a whole lot in his wares, but the ease in which you are able to take what he has makes it all the sweeter.\n\nOnce you are finished, you continue on your way and he continues on his.",
+          "effects": [
+            "Gain 10 gold each."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Calm the merchant and explain that not all mercenaries are bloodthirsty thieves.",
+      "outcomes": [
+        {
+          "text": "\"Oh, ah, really?\" The merchant looks at you incredulously. \"Well then, color me embarrassed. I sincerely apologize for my uneducated assumptions. Sometimes you just expect the worst traveling to such backwater locales.\n\n\"I'll be sure to tell everyone I see that not everyone in Gloomhaven is a criminal,\" he says as he rides off, tipping his hat to you.",
+          "effects": [
+            "Gain 2 reputation."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
+  },
+  {
+    "id": 69,
+    "type": "road",
+    "text": "Walking along the trail, you are surprised by a group of demons who appear to your left, charging over a hill toward you. Something is off, however. Their pace is slow, and they are significantly smaller than the demons you normally deal with.\n\nHalfway down the hill, the demons pause and take stock of you. Seeing you are far from easy prey, they turn around and begin to retreat.",
+    "optionA": {
+      "choice": "Chase them down quickly and kill them.",
+      "outcomes": [
+        {
+          "text": "You roar and charge up the hill. The demons are no match for you, either in speed or in strength. You kill them quickly, but painfully.",
+          "effects": [
+            "Gain 5 experience each."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Follow them more slowly, attempting to discover where they came from.",
+      "outcomes": [
+        {
+          "text": "You creep slowly to the crest of the hill, watching as the demons retreat to the south. You follow them, eventually arriving at a weak, fluctuating rift in a small, earthen cave. Having experienced enough planar manipulation in your travels, you are able to mutter a few incantations and close the rift. It takes a lot out of you, but now there is one less way for demons to invade this plane.",
+          "effects": [
+            "Lose 1 {Check} each.",
+            "Gain 1 prosperity."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]

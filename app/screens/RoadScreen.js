@@ -44,11 +44,11 @@ const RoadScreen = ({navigation}) => {
 
         <Text style={header}>Road, Expanded</Text>
         <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
-            <Column ids={allRoadCardNumbers.slice(30,36)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
-            <Column ids={allRoadCardNumbers.slice(36,42)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
-            <Column ids={allRoadCardNumbers.slice(42,45)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
-            <Column ids={allRoadCardNumbers.slice(30,30)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
-            <Column ids={allRoadCardNumbers.slice(30,30)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(30,38)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(38,46)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(46,54)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(54,62)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+            <Column ids={allRoadCardNumbers.slice(62,69)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
         </View>
       </SafeAreaView>
     </ImageBackground>

@@ -28,7 +28,6 @@ TYPE="road"
 TARGET="app/data/road.json"
 echo "" > $STUB
 echo -e "[\n" >> $STUB
-tail -n +1709 $SOURCE | head -938 | grep -v EventType >> $STUB
-echo -e "\n]" >> $STUB
+tail -n +1709 $SOURCE | grep -v EventType >> $STUB
 
 node transform.js "road" $STUB $TARGET

@@ -87,6 +87,10 @@ const transformOutcome = (arr) => {
         .replace("\"Merchant Ship\" 74", "\"Merchant Ship\" {Scenario74}")
         .replace("\"Overgrown Graveyard\" 75", "\"Overgrown Graveyard\" {Scenario75}")
         .replace("\"Vermling Nest\" 94", "\"Vermling Nest\" {Scenario94}")
+        .replace("\"Vigil Keep\" 80", "\"Vigil Keep\" {Scenario80}")
+        .replace("\"Sun Temple\" 85", "\"Sun Temple\" {Scenario85}")
+
+
 
       t = {effect: o}
     } else if (o.startsWith("All start ")) {
@@ -194,7 +198,7 @@ try {
       const shouldHave = e.optionA.outcomes.length + e.optionB.outcomes.length
       const resolves = resolvedEvents[eventType][e.id]
       if (shouldHave !== resolves.length) {
-        if ((eventType === "road") && ((e.id === 28) || (e.id === 35))) {
+        if ((eventType === "road") && ((e.id === 28) || (e.id === 35) || (e.id === 50))) {
           // deal with road event 28 and don't warn
         } else {
           console.error("DATA ERROR for %s:%i Should have %i but has %i", eventType, e.id, shouldHave, resolves.length)
@@ -245,6 +249,8 @@ try {
           // deal with road 28 read outcome
         } else if ((eventType === "road") && (e.id === 35) && correctedIndex === 2) {
           // deal with road 35 read outcome
+        } else if ((eventType === "road") && (e.id === 50) && correctedIndex === 0) {
+          // deal with road 50 read outcome
         } else {
           o.resolve = res[e.id][correctedIndex]
           if (!o.resolve) {
