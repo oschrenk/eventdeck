@@ -1,14 +1,31 @@
-import React from 'react';
-import {ImageBackground, SafeAreaView, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {ImageBackground, SafeAreaView, Text, View,StyleSheet,
+  TouchableOpacity,
+} from 'react-native';
+import CardFlip from 'react-native-card-flip'
 
-import Card from '../components/Card';
-import { useCardDeck } from "../contexts/CardDeckContext";
-import IconButton from '../components/IconButton'
+import Card from '../components/Card'
+import { useCardDeck } from "../contexts/CardDeckContext"
 import ImageButton from '../components/ImageButton'
 import { partyName } from '../styles/typography'
+import SwipeGesture from '../components/SwipeGesture'
+
+const swipe = (card) => (action) => {
+  switch(action){
+    case 'left':{
+      card.flip()
+      break;
+    }
+    case 'right':{
+      card.flip()
+      break;
+    }
+  }
+}
 
 const HomeScreen = () => {
-  const { currentCard, currentParty, side, drawCard, flipCard, putBack, destroy } = useCardDeck()
+  const { currentCard, currentParty, drawCard, flipCard, putBack, destroy } = useCardDeck()
+  const [cardRef, setCardRef] = useState(null)
 
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
@@ -20,20 +37,16 @@ const HomeScreen = () => {
         </View>
         { currentCard &&
           <>
-            <View style={{flex: 1, alignItems: 'center'}}>
-              <View style={{ flexDirection: 'column', height: '100%'}}>
-                <Card card={currentCard} side={side} />
-                <View style={{ height: 48, alignItems: 'center'}}>
-                </View>
-                <View>
-                   <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', height: 48}}>
-                     { side === 'back' &&
-                       <IconButton name="remove-from-game" onPress={() => destroy(currentCard)} style={{fontSize: 48}}/>}
-                     <IconButton name="flip" onPress={flipCard} style={{fontSize: 48}}/>
-                     { side === 'back' &&
-                       <IconButton name="return-to-deck" onPress={putBack} style={{fontSize: 48}}/>}
-                   </View>
-                </View>
+            <View style={{flex: 1, alignItems: 'center' }} >
+              <View style={{width: 378, height: 530, }} >
+                <CardFlip style={styles.cardContainer} ref={card => (setCardRef(card))} >
+                  <SwipeGesture gestureStyle={styles.card} onSwipePerformed={swipe(cardRef)}>
+                    <Card card={currentCard} side={'front'} />
+                  </SwipeGesture>
+                  <SwipeGesture gestureStyle={styles.card} onSwipePerformed={swipe(cardRef)}>
+                    <Card card={currentCard} side={'back'} />
+                  </SwipeGesture>
+                </CardFlip>
               </View>
             </View>
           </>
@@ -42,5 +55,18 @@ const HomeScreen = () => {
     </ImageBackground>
   );
 };
+
+const styles = StyleSheet.create({
+  card:{
+    width: 378,
+    height: 530,
+    shadowColor: 'rgba(0,0,0,0.8)',
+    shadowOffset: {
+      width: 1,
+      height: 3
+    },
+    shadowOpacity:0.5,
+  },
+});
 
 export default HomeScreen;
