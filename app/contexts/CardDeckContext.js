@@ -164,8 +164,8 @@ const useCardDeck = () => {
     setSide(defaultSide)
   }
 
-  const destroy = (card) => {
-    toggleAvailable({label: card.id.toString(), checked: false}, card['type'])
+  const destroy = () => {
+    toggleAvailable({label: state.ui.currentCard.id.toString(), checked: false}, state.ui.currentCard['type'])
     setCurrentCard(null)
     setSide(defaultSide)
   }

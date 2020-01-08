@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, View, ImageBackground } from 'react-native';
+import { Text, View, ImageBackground, TouchableOpacity } from 'react-native';
 
 import { backText, backTextEffect, frontText, bold } from '../styles/typography'
 import Icon, { CardIcon } from './Icon'
+import { useCardDeck } from "../contexts/CardDeckContext"
 
 const Lookup = {
   //classes
@@ -63,7 +64,8 @@ const Bold = ({text}) => {
 const Front = (props) => {
   const color = colors[props.card['type']]
   return (
-    <View style={{width: 378, height: 530}}>
+
+    <View style={{width: 378, height: 530  }}>
       <ImageBackground source={backgrounds[props.card['type']]['front']} style={{width: '100%', height: '100%'}}>
         <View style={{left: 40, top: 80, width: 305, height: "80%"}}>
           <Text style={{...frontText, color: color}}>{props.card.text}</Text>
@@ -131,6 +133,7 @@ const Blocks = ({requirement, texts, color }) => {
 }
 
 const TextParser = ({text, style}) => {
+  const { putBack, destroy } = useCardDeck()
   if (!text) {
     return null
   }
@@ -155,6 +158,16 @@ const TextParser = ({text, style}) => {
         } else if (!lookup) {
           console.warn("MISSING", name)
           return null
+        } else if (name.startsWith("Remove")) {
+            return (
+              <TouchableOpacity onPress={destroy}>
+                <CardIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>
+              </TouchableOpacity>)
+        } else if (name.startsWith("Return")) {
+            return (
+              <TouchableOpacity onPress={putBack}>
+                <CardIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>
+              </TouchableOpacity>)
         } else {
           return lookup
         }
