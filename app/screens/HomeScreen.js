@@ -1,7 +1,11 @@
 import React, {useState} from 'react';
-import {ImageBackground, SafeAreaView, Text, View,StyleSheet,
-  TouchableOpacity,
-} from 'react-native';
+import {
+  ImageBackground,
+  SafeAreaView,
+  StyleSheet,
+  Text,
+  View}
+from 'react-native';
 import CardFlip from 'react-native-card-flip'
 
 import Card from '../components/Card'
