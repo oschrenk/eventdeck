@@ -106,7 +106,7 @@
   {
     "id": 4,
     "type": "city",
-    "text": "Having recently returned from your latest adventure, you are approached by a ratty-looking boy in tears.\n\n\"Please, sirs, could you please help me with my cat? He went over there, and I’m afraid.\" The boy points a dirty finger at a decrepit, abandoned building. \"I don't know what else to do.\"",
+    "text": "Having recently returned from your latest adventure, you are approached by a ratty-looking boy in tears.\n\n\"Please, sirs, could you please help me with my cat? He went over there, and I'm afraid.\" The boy points a dirty finger at a decrepit, abandoned building. \"I don't know what else to do.\"",
     "optionA": {
       "choice": "Find a cat? You have more important things to do.",
       "outcomes": [
@@ -1283,7 +1283,7 @@
         },
         {
           "requirement": "OTHERWISE",
-          "text": "You jump into the melee, breaking heads and chairs in equal measure. You’ve seen worse brawls, but the proprietor still isn’t very happy when it’s over.",
+          "text": "You jump into the melee, breaking heads and chairs in equal measure. You've seen worse brawls, but the proprietor still isn't very happy when it's over.",
           "effects": [
             "Lose 1 reputation."
           ],
@@ -1296,7 +1296,7 @@
       "outcomes": [
         {
           "requirement": "{LightningBolts}",
-          "text": "You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a furious rage, and there’s really not much to be done about it except pay what you can for the damages afterward.",
+          "text": "You get up to calm down the room, but the Berserker has other ideas, laying into the man before you can get a word out. She goes into a furious rage, and there's really not much to be done about it except pay what you can for the damages afterward.",
           "effects": [
             "Lose 10 collective gold."
           ],
@@ -1322,7 +1322,7 @@
       "outcomes": [
         {
           "requirement": "{MusicNote}",
-          "text": "The citizens are downtrodden, but the uncanny power of the Soothsinger’s music seems to lift their spirits considerably. Still far from cheerful, the people find new resolve in repairing the damage and rebuilding.",
+          "text": "The citizens are downtrodden, but the uncanny power of the Soothsinger's music seems to lift their spirits considerably. Still far from cheerful, the people find new resolve in repairing the damage and rebuilding.",
           "effects": [
             "Gain 1 prosperity."
           ],
@@ -1339,7 +1339,7 @@
       ]
     },
     "optionB": {
-      "choice": "Help repair the gate. You wouldn’t want another attack to further cripple the town.",
+      "choice": "Help repair the gate. You wouldn't want another attack to further cripple the town.",
       "outcomes": [
         {
           "requirement": "{ThreeSpears} {Spellweaver} {Tinkerer} {Triangles} {Circles}",
@@ -1492,7 +1492,7 @@
   {
     "id": 41,
     "type": "city",
-    "text": "The Sinking Market is a varied area or decrepit huts and merchants unable to sell their wares anywhere else. It doesn't surprise you as you walk through to see a scraggly Vermling approach with a small sack.\n\n\"A potion for the big, strong adventurers!\" she says as she waves you down. “Help you in battle, it will!\"\n\nYou are about to push her aside and keep walking when she pulls the potion out of the sack. It glows green in the daylight — an impressive, large flask of master craftsmanship.\n\n\"Aha, I knew it catch your eye! How much you pay?\"",
+    "text": "The Sinking Market is a varied area or decrepit huts and merchants unable to sell their wares anywhere else. It doesn't surprise you as you walk through to see a scraggly Vermling approach with a small sack.\n\n\"A potion for the big, strong adventurers!\" she says as she waves you down. \"Help you in battle, it will!\"\n\nYou are about to push her aside and keep walking when she pulls the potion out of the sack. It glows green in the daylight — an impressive, large flask of master craftsmanship.\n\n\"Aha, I knew it catch your eye! How much you pay?\"",
     "optionA": {
       "choice": "Barter with the Vermling for the potion.",
       "outcomes": [
@@ -1500,7 +1500,7 @@
           "requirement": "{TwoMinis}, PAY 10 COLLECTIVE GOLD",
           "text": "The Vermling knows it is valuable, but she is more interested in flirting with the Beast Tyrant. She is happy to sell the potion at a discount.",
           "effects": [
-            "Gain 1 collective “Major Stamina Potion\" (Item 034)"
+            "Gain 1 collective \"Major Stamina Potion\" (Item 034)"
           ],
           "resolve": "{Remove}"
         },
@@ -1535,12 +1535,12 @@
   {
     "id": 42,
     "type": "city",
-    "text": "Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is clearly too big for his small frame.\n\n\"Hey, you all are famous!\" he says with a big smile. \"I worked as a caravan guard before I got this job. Met with a big Inox guy who always talked about you. He made you seem like the nicest, most amazing people.\"\n\nHis smile and excitement doesn’t waver. \"Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It'll be fun!\"",
+    "text": "Walking near the West Gate, you are approached by a scrawny kid in a guard uniform, which is clearly too big for his small frame.\n\n\"Hey, you all are famous!\" he says with a big smile. \"I worked as a caravan guard before I got this job. Met with a big Inox guy who always talked about you. He made you seem like the nicest, most amazing people.\"\n\nHis smile and excitement doesn't waver. \"Say, my detail is doing some work to repair the wall damage from the last Vermling attack. Would you mind helping us! It'll be fun!\"",
     "optionA": {
       "choice": "Agree to help the presumptuous kid.",
       "outcomes": [
         {
-          "text": "It's hard work, but the kid's enthusiasm is infectious. He wants to know all about your exploits and adventures, and he and his detail prove to be a great audience. By the end of the day, it hardly feels like you’ve worked at all.",
+          "text": "It's hard work, but the kid's enthusiasm is infectious. He wants to know all about your exploits and adventures, and he and his detail prove to be a great audience. By the end of the day, it hardly feels like you've worked at all.",
           "effects": [
             "Gain 1 prosperity.",
             "Gain 1 reputation."
@@ -1565,7 +1565,7 @@
   {
     "id": 43,
     "type": "city",
-    "text": "You return to your rooms for the evening to find a small note resting on the ground in front of your door.\n\nIt is from the Tinkerer, explaining that he has been pursuing further studies in flammable liquid delivery methods. He asks for your help in delivering to him a small robotic contraption that he absentmindedlv left behind in a secret stash under the floorboards of his old room.\n\nHe details the device’s location and gives an address to deliver it to some small village far to the northwest.",
+    "text": "You return to your rooms for the evening to find a small note resting on the ground in front of your door.\n\nIt is from the Tinkerer, explaining that he has been pursuing further studies in flammable liquid delivery methods. He asks for your help in delivering to him a small robotic contraption that he absentmindedlv left behind in a secret stash under the floorboards of his old room.\n\nHe details the device's location and gives an address to deliver it to some small village far to the northwest.",
     "optionA": {
       "choice": "Oblige the Tinkerer and send along the contraption.",
       "outcomes": [
@@ -1700,12 +1700,12 @@
   {
     "id": 47,
     "type": "city",
-    "text": "Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a Vermling in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthief.\n\n\"Hssss,\" she spits. \"Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?\"\n\n\"Well see what the Captain of the Guard has to say about this,\" one of her captors says. “Keep moving!\"",
+    "text": "Walking near Gloomhaven Square, you see a peculiar scene. A group of guards is dragging along a Vermling in tattered robes toward the Ghost Fortress. Getting a little closer, you recognise the Mindthief.\n\n\"Hssss,\" she spits. \"Why do you do this? I came to you! I tell you that this town is being poisoned, and you respond by imprisoning me?\"\n\n\"Well see what the Captain of the Guard has to say about this,\" one of her captors says. \"Keep moving!\"",
     "optionA": {
       "choice": "Intervene with the guards and find out what is going on.",
       "outcomes": [
         {
-          "text": "The guards look incredibly perturbed when you step in front of them and ask that they leave the Mindthief to you. After some effort, they begrudgingly hand her over. The Mindthief thanks you, explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she’s tracked the source to a small cove along the Hook Coast.",
+          "text": "The guards look incredibly perturbed when you step in front of them and ask that they leave the Mindthief to you. After some effort, they begrudgingly hand her over. The Mindthief thanks you, explaining that her colony in the sewers is being poisoned, and the poison is quickly migrating to the city's water supply. She says she's tracked the source to a small cove along the Hook Coast.",
           "effects": [
             "Lose 1 reputation.",
             "Unlock \"Corrupted Cove\" {Scenario87} (I-9).",
@@ -1719,7 +1719,7 @@
       "choice": "Let the guards continue their business and just continue with yours.",
       "outcomes": [
         {
-          "text": "The Mindthief flicks her tail and throws insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn’t too serious.",
+          "text": "The Mindthief flicks her tail and throws insults around, but it doesn't seem to have any positive effect. She is led away and out of view. You get about your business, hoping that bit about the town being poisoned wasn't too serious.",
           "effects": [
             "Add City Event 63 to the deck."
           ],
@@ -1890,7 +1890,7 @@
       ]
     },
     "optionB": {
-      "choice": "Threaten the Plagueherald with retribution if it doesn’t stop attacking residents.",
+      "choice": "Threaten the Plagueherald with retribution if it doesn't stop attacking residents.",
       "outcomes": [
         {
           "text": "The Plagueherald recoils at your threat, genuinely concerned that you would attack it.\n\n\"But, the cleansing...the city isn't ready.\"\n\nYou shake your head, and the Harrower chitters in disappointment.\n\n\"Very well, but you will be responsible when the Harbinger comes.\" It turns and floats off into the darkness.",
@@ -2069,7 +2069,7 @@
   {
     "id": 58,
     "type": "city",
-    "text": "\"There were fifty of them, I swear. Tearing my mates apart!\"\n\nYou look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story.\n\n\"And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!\"\n\nAt this the crowd erupts into more laughter, drowning out the rest of the man's story.\n\n\"This man's had too much to drink, I'd say,\" ridicules one of the crowd. \"Vermlings riding bears! I thought I’d heard of everything!\"",
+    "text": "\"There were fifty of them, I swear. Tearing my mates apart!\"\n\nYou look over to the bar where a group of drunkards are all laughing at a disheveled man in the middle of a story.\n\n\"And commanding them all riding atop a giant armored bear, there was a Vermling with a staff that shot lightning!\"\n\nAt this the crowd erupts into more laughter, drowning out the rest of the man's story.\n\n\"This man's had too much to drink, I'd say,\" ridicules one of the crowd. \"Vermlings riding bears! I thought I'd heard of everything!\"",
     "optionA": {
       "choice": "Join the crowd in laughing at the man.",
       "outcomes": [
@@ -2212,7 +2212,7 @@
       "choice": "Overpower the Scoundrel and deliver her to the city guards.",
       "outcomes": [
         {
-          "text": "A look of horrid surprise flashes in the Scoundrel's eyes as you leap forward and throw her to the ground. She doesn’t even speak as you bind her arms and take her to the city guard. They thank you for your service, but their words aren’t much counter to the cold angry stare of the Scoundrel as she's taken away.",
+          "text": "A look of horrid surprise flashes in the Scoundrel's eyes as you leap forward and throw her to the ground. She doesn't even speak as you bind her arms and take her to the city guard. They thank you for your service, but their words aren't much counter to the cold angry stare of the Scoundrel as she's taken away.",
           "effects": [
             "Gain 3 reputation."
           ],
@@ -2652,7 +2652,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION > 14",
-          "text": "\"Excellent! Someone has been attacking my ships at sea and I need to get to the bottom of it. Come, I’ll tell you the details.\"",
+          "text": "\"Excellent! Someone has been attacking my ships at sea and I need to get to the bottom of it. Come, I'll tell you the details.\"",
           "effects": [
             "Unlock \"Merchant Ship\" {Scenario74} (I-14).",
             "Party Achievement: \"High Sea Escort.\""

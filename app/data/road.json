@@ -515,7 +515,7 @@
       "outcomes": [
         {
           "requirement": "REPUTATION < -4",
-          "text": "You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. \"Go in peace, then,\" the leader says. “And stay off my land.\"",
+          "text": "You begin to agree with the Inox that Gloomhaven is a blight on the land in need of cleansing, and the Inox seems to believe you. \"Go in peace, then,\" the leader says. \"And stay off my land.\"",
           "effects": [
             "No effect."
           ],
@@ -1478,7 +1478,7 @@
       "choice": "Renew your efforts to slay the demons.",
       "outcomes": [
         {
-          "text": "With the help of the mysterious firecaster, the battle turns and the demons are slain without much pain. Out of the darkness steps the familiar face of a female Orchid.\n\n\"Sorry about that. I think they were looking for this.\" The Spell weaver holds up a black censer. \"It's a good thing I ran into you, though. I could use your help.\"\n\nShe draws out a crude map. \"Meet me here as soon as you can, and I’ll explain more.\"",
+          "text": "With the help of the mysterious firecaster, the battle turns and the demons are slain without much pain. Out of the darkness steps the familiar face of a female Orchid.\n\n\"Sorry about that. I think they were looking for this.\" The Spell weaver holds up a black censer. \"It's a good thing I ran into you, though. I could use your help.\"\n\nShe draws out a crude map. \"Meet me here as soon as you can, and I'll explain more.\"",
           "effects": [
             "Unlock \"Demonic Rift\" {Scenario90} (J-7)."
           ],
@@ -1502,7 +1502,7 @@
   {
     "id": 45,
     "type": "road",
-    "text": "Riding up on horses, a band of dirty, rough men quickly overtake and surround your group. They look hard and dangerous, and you immediately pull out your weapons as they approach.\n\nThen you hear a familiar laugh.\n\n\"Well, if it isn't my old crew.\" A woman in dark leather armor leaps off her horse to comes greet you. \"You know whatt boys? This lot gets a pass.\"\n\nShe winks at you and turns around. \"Plus, they’d probably kill you all if things turned ugly.\"\n\nJumping back onto her horse, the Scoundrel looks back at you. \"Well, it was nice seeing you. Just remember — you never saw me.\"",
+    "text": "Riding up on horses, a band of dirty, rough men quickly overtake and surround your group. They look hard and dangerous, and you immediately pull out your weapons as they approach.\n\nThen you hear a familiar laugh.\n\n\"Well, if it isn't my old crew.\" A woman in dark leather armor leaps off her horse to comes greet you. \"You know whatt boys? This lot gets a pass.\"\n\nShe winks at you and turns around. \"Plus, they'd probably kill you all if things turned ugly.\"\n\nJumping back onto her horse, the Scoundrel looks back at you. \"Well, it was nice seeing you. Just remember — you never saw me.\"",
     "optionA": {
       "choice": "Attack. Friend or not, those who prey on the weak should be brought to justice.",
       "outcomes": [
@@ -1627,7 +1627,7 @@
       "choice": "Claim allegiance to the military.",
       "outcomes": [
         {
-          "text": "The armored men seem satisfied with your response and take their hands off their weapons.\n\n\"Good to find some fellow patriots,” the one in front says with a disturbing smile. \"You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties.",
+          "text": "The armored men seem satisfied with your response and take their hands off their weapons.\n\n\"Good to find some fellow patriots,\" the one in front says with a disturbing smile. \"You know, we have a stronghold not far from here up in the mountains. Feel free to visit there if you ever get serious about your loyalties.",
           "effects": [
             "Unlock \"Vigil Keep\" {Scenario80} (K-1)."
           ],
@@ -1689,7 +1689,7 @@
         {
           "text": "You get closer to the pike. The skull looks pretty fresh. There are still bits of decayed flesh attached to the bone, and flies buzz around it. You can see there is a small paper card stuck in its mouth so you carefully reach in and pull it out. The card is black and depicts a skull with blades running through it. Come to think of it you remember rumors of an assassins' guild that has been known to use the same imagery You get out of the area as quickly as you can.",
           "effects": [
-            "Gain 1 collective “Black Card” (Item 129)."
+            "Gain 1 collective \"Black Card\" (Item 129)."
           ],
           "resolve": "{Remove}"
         }
