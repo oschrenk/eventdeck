@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, View, ImageBackground, TouchableOpacity } from 'react-native';
 
-import { backText, backTextEffect, frontText, bold } from '../styles/typography'
-import Icon, { CardIcon } from './Icon'
+import { backText, backTextEffect,backTextInstruction, frontText, bold } from '../styles/typography'
+import Icon, { CardIcon, StyledIcon } from './Icon'
 import { useCardDeck } from "../contexts/CardDeckContext"
 
 const Lookup = {
@@ -37,9 +37,11 @@ const Lookup = {
 
   // Other
   'MinusOneAttackModifier': <Icon name={'1-attack-modifier'} key={'1-attack-modifier'}/>,
+  'PlusOneEnhancement': <Icon name={'plus-one-enhancement'} key={'plus-one-enhancement'}/>,
   'SmallItem': <Icon name={'small-item'} key={'small-item'}/>,
 
   // Resolves
+  'Remove2': <StyledIcon name={'remove-from-game'} style={{fontSize: 18, color: 'white' }} key={'remove-from-game2'}/>,
   'Remove': <CardIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>,
   'Return': <CardIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>,
 }
@@ -106,6 +108,15 @@ const RequirementBlock = ({requirement, text, color}) => {
   )
 }
 
+const InstructionBlock = ({text, color}) => {
+  // same text parsing logic and caveats as requirements applies
+  return (
+    <Text>
+      <TextParser text={text} style={{...backTextInstruction, color:color, lineHeight: 15}} />
+    </Text>
+  )
+}
+
 const Block = ({text, color}) => {
   return (
     <View>
@@ -114,7 +125,7 @@ const Block = ({text, color}) => {
   )
 }
 
-const Blocks = ({requirement, texts, color }) => {
+const Blocks = ({instruction, requirement, texts, color }) => {
   const start = requirement ? 1 : 0
   const end = texts.length
 
@@ -122,6 +133,9 @@ const Blocks = ({requirement, texts, color }) => {
 
   return (
     <View style={{width: 290}}>
+      { instruction &&
+        <InstructionBlock text={instruction} color={color}/>
+      }
       { requirement &&
         <RequirementBlock requirement={requirement} text={firstText} color={color}/>
       }
@@ -158,6 +172,8 @@ const TextParser = ({text, style}) => {
         } else if (!lookup) {
           console.warn("MISSING", name)
           return null
+        } else if (name.startsWith("Remove2")) {
+          return lookup
         } else if (name.startsWith("Remove")) {
             return (
               <TouchableOpacity onPress={destroy}>
@@ -188,13 +204,14 @@ const Effect = ({text, color}) => {
 
 const Outcome = ({outcome, type}) => {
   const requirement = outcome.requirement
+  const instruction = outcome.instruction
   const effects = outcome.effects
   const texts = outcome.text ? outcome.text.split("\n\n") : []
   const color = colors[type]
 
   return (
     <View>
-      <Blocks requirement={requirement} texts={texts} color={color} />
+      <Blocks instruction={instruction} requirement={requirement} texts={texts} color={color} />
       { (effects || outcome.resolve) &&
         <View style={{width: 315, flexDirection:'row', flexWrap:'wrap'}}>
           <View style={{width: 270, flexDirection:'column', justifyContent: 'flex-end'}}>

@@ -21,6 +21,11 @@ export const backText = {
   fontSize: 15,
 };
 
+export const backTextInstruction = {
+  fontFamily: 'HighTowerText-Reg',
+  fontSize: 15,
+};
+
 export const backTextEffect = {
   fontFamily: 'HighTowerText-Bold',
   fontSize: 16,

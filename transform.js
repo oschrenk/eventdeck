@@ -270,8 +270,10 @@ try {
     return e
   })
 
+  const fcEvents = JSON.parse(fs.readFileSync("fc.json", 'utf8')).filter (e => e['type'] === eventType)
+
   try {
-    const string = JSON.stringify(events, ['id', 'type', 'requirement', 'text', 'optionA', 'optionB', 'choice', 'outcomes', 'effects', 'resolve'], 2).replace(/\\n/g, "\\n")
+    const string = JSON.stringify(events.concat(fcEvents), ['id', 'type', 'instruction', 'requirement', 'text', 'optionA', 'optionB', 'choice', 'outcomes', 'effects', 'resolve'], 2).replace(/\\n/g, "\\n")
     fs.writeFileSync(targetFile, string);
   } catch(err) {
     console.error(err);

@@ -80,6 +80,12 @@ const map= {
     {'glyph': '\ue918', 'color': '#000'},
     {'glyph': '\ue91a', 'color': '#fff'},
   ],
+  'plus-one-enhancement': [
+    {'glyph': '\ue94f', 'color': '#1a1817'},
+    {'glyph': '\ue950', 'color': '#fff'},
+    {'glyph': '\ue951', 'color': '#fff'},
+    {'glyph': '\ue952', 'color': '#fff'},
+  ],
 
   // resolve
   'return-to-deck': '\ue900',
