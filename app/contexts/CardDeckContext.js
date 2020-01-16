@@ -101,8 +101,7 @@ const useCardDeck = () => {
     const partyId = state.ui.currentParty
     const party = state.parties.filter(p => p.id === partyId)[0]
     const available = party.events[type]
-
-    const index = Math.floor((Math.random() * available.size))
+    const index = Math.floor((Math.random() * available.length))
     return available[index]
   }
 
@@ -152,7 +151,7 @@ const useCardDeck = () => {
   }
 
   const drawCard = (type) => {
-    const newCardId = nextId(type)
+    const newCardId = randomId(type)
     const newCard = cards.find(c => (c.id === newCardId) && c['type'] === type)
     setCurrentCard(newCard)
     addHistory(newCard)
