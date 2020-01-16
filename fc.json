@@ -1,0 +1,33 @@
+[
+  {
+    "id": 82,
+    "type": "city",
+    "text": "Heading through the Boiler District, you approach the rundown tavern of the Crooked Bone, hoping Hail may be able to answer a question regarding your current quest. You take all the necessary precautions to avoid disrupting her and patiently wait outside.\n\nAfter a ferw minutes, she appears beside you. \"Well, look at that! Bright-eyed adventurers showing up on my doorstep, dearching for fame and fortune. It just so happens that I am running out of materials for my experiments.\"\n\nShe hands you a crumpled list while continuing to talk. \"If you eould be so kind as to grab some of this while you're out, it may bring you fame or possible fortune. Who's to say, really?\" She then disappears before you can even speak.",
+    "optionA": {
+      "choice": "Retrieve some herbs and mushrooms on a quick trip outside the city.",
+      "outcomes": [
+        {
+          "text": "In short order, you forage enough to meet Hail's needs and return. She excitedly gathers it from you and then disappears. You wait for some time... She reappears with a look of bewilderment. \"You are still here? Very well, maybe this will qualify as a fortune.\" A bag of gold appears at your feet, and she shoos you away as you pick it up. You leave the tavern, your original question now out of mind.",
+          "effects": [
+            "Gain 10 collective gold.",
+            "{TwoMinis} {PointyHead} {Circles} {Tinkerer}: Gain 15 collective gold instead."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Collect some monster entrails during your next quest.",
+      "outcomes": [
+        {
+          "instruction": "Place this card in any one character's play area: During scenario, if you kill 5 or more monsters, read below. Otherwise: {Remove2}.",
+          "text": "It takes some effort to gather all the entrails Hail needs. She gratefully collects them but stops in her tracks. \"I'm forgetting something. What was it? Oh yes, here.\" She waves a hand and disappears. You feel strange but good. So much for your question though.",
+          "effects": [
+            "You gain one {PlusOneEnhancement} to any level 1 or X card."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
+  }
+]
