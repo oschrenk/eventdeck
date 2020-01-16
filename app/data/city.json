@@ -207,7 +207,7 @@
           "text": "What was advertised as a few minutes turns out to be an hour or two as you lug large crates full of some foul-smelling liquid from a nearby warehouse into the hold of the ship, At least the captain is relieved that he'll be able to set sail on time, though. He gratefully pays you, but you can't help, but think that such menial labor might be beneath you.",
           "effects": [
             "Gain 5 gold each.",
-            "Reputation > 9: lose 1 reputation.",
+            "Reputation > 9: Lose 1 reputation.",
             "Reputation < -4: Gain 1 reputation."
           ],
           "resolve": "{Remove}"
@@ -2259,7 +2259,7 @@
       "choice": "Stay and listen to what the Nightshroud has to say.",
       "outcomes": [
         {
-          "text": "The Nightshroud kicks one of the corpses. \" This is the Sin-Ra Syndicate, a group of assassins trying to gain a foothold in the region. I'm trying to stop them, and somehow they found out you and I were friends. They decided to go after you as retribution. Lucky for you. I've located their hideout, so were going to sneak in there and end this whole business once and for all.",
+          "text": "The Nightshroud kicks one of the corpses. \"This is the Sin-Ra Syndicate, a group of assassins trying to gain a foothold in the region. I'm trying to stop them, and somehow they found out you and I were friends. They decided to go after you as retribution. Lucky for you. I've located their hideout, so were going to sneak in there and end this whole business once and for all.\"",
           "effects": [
             "Unlock \"Syndicate Hideout\" {Scenario89} (C-17).",
             "Party Achievement: \"Sin-Ra.\""
@@ -2690,8 +2690,8 @@
       "choice": "Do the job.",
       "outcomes": [
         {
-          "requirement": "REPUTATION < -14 \"That's the money-loving criminals I know and love! Come take a walk with me, and I'll explain how we can all get rich.\"",
-          "text": "",
+          "requirement": "REPUTATION < -14",
+          "text": "\"That's the money-loving criminals I know and love! Come take a walk with me, and I'll explain how we can all get rich.\"",
           "effects": [
             "Unlock \"Overgrown Graveyard\" {Scenario75} (G-12).",
             "Party Achievement: \"Grave Job.\""
