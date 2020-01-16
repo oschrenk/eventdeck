@@ -36,8 +36,8 @@ const HomeScreen = () => {
       <SafeAreaView>
         <Text style={{...partyName, textAlign: 'center'}}>{currentParty().name}</Text>
         <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', height: 48}}>
-          <ImageButton source={require('../../assets/images/city_button.png')} onPress={() => drawCard('city')} style={{ height: 40, resizeMode: 'center'}}/>
-          <ImageButton source={require('../../assets/images/road_button.png')} onPress={() => drawCard('road')} style={{ height: 40, resizeMode: 'center'}}/>
+          <ImageButton source={require('../../assets/images/city_button.png')} onPress={() => drawCard('city')} style={{ height: 40, width: 132}}/>
+          <ImageButton source={require('../../assets/images/road_button.png')} onPress={() => drawCard('road')} style={{ height: 40, width: 132 }}/>
         </View>
         { currentCard &&
           <>
