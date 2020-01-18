@@ -69,10 +69,10 @@ const Front = (props) => {
 
     <View style={{width: 378, height: 530  }}>
       <ImageBackground source={backgrounds[props.card['type']]['front']} style={{width: '100%', height: '100%'}}>
-        <View style={{left: 40, top: 80, width: 305, height: "80%"}}>
+        <View style={{left: 40, top: 80, width: 305, height: "78%"}}>
           <Text style={{...frontText, color: color}}>{props.card.text}</Text>
         </View>
-        <View style={{left: 40, width: 305, height: "16%"}}>
+        <View style={{left: 40, width: 305, height: "18%"}}>
           <Text style={{...frontText, color: color}}>
             <Bold text={'Option A'} /> {props.card.optionA.choice}
           </Text>
