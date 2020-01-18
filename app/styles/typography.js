@@ -33,7 +33,7 @@ export const backTextEffect = {
 
 export const frontText = {
   fontFamily: 'HighTowerText-Italic',
-  fontSize: 14,
+  fontSize: 15,
 };
 
 export const bold = {
