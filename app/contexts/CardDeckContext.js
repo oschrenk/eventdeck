@@ -90,13 +90,6 @@ const useCardDeck = () => {
     setState(state => ({ ...state, ui}));
   }
 
-  const flipCard = () => {
-    if(state.ui.side === 'front')
-      setSide('back')
-    else
-      setSide('front')
-  }
-
   const randomId = (type) => {
     const partyId = state.ui.currentParty
     const party = state.parties.filter(p => p.id === partyId)[0]
@@ -265,7 +258,6 @@ const useCardDeck = () => {
     side: state.ui.side,
 
     drawCard,
-    flipCard,
     putBack,
     destroy,
     reset,
