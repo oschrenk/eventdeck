@@ -29,5 +29,35 @@
         }
       ]
     }
+  },
+  {
+    "id": 83,
+    "type": "city",
+    "text": "The countless tales told of the Diviner Cassandra weigh heavily on your mind. All the strange, new places she's visited seem to taunt you. Being stuck carrying out plain old mercenary work is somehow lacking. A wanderlust is calling you. Traveling to far away locales is always more exciting and daring.\n\nMaybe it's time to leave Gloomhaven, to sate your thirst for exploration away from the mundane goings-on of the city. Or maybe it's only a temporary melancholy, one you can wash away with a long night of revelry and celebration of good times past.",
+    "optionA": {
+      "choice": "Prepare to leave Gloomhaven.",
+      "outcomes": [
+        {
+          "text": "You decide your time in Gloomhavem must soon come to an end. There have been many fine adventures, and the city has grown more than you expected, but your work is just about finished. There are other places to see in the world. You've hear rumors of a town to the north in need of mercenaries, so that will be your destination of travel.",
+          "effects": [
+            "Party Achievement: \"Northern Expedition.\""
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Indulge yourself with gambling and drinks at the first available bar.",
+      "outcomes": [
+        {
+          "text": "The trip to the bar was a wonderful idea. One drink led to another, and all in all, it was a great time. Although your intoxication conflicted with your gambling, you are left with only fond memories of the night.\n\nStill, there is some melancholy in your mind the next morning. Maybe there was a bit of truth to your musings. Only time will tell.",
+          "effects": [
+            "Lose 10 collective gold.",
+            "Start scenario with BLESS {Bless}."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]
