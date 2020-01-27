@@ -61,7 +61,7 @@ const CityScreen = ({navigation}) => {
 
           <Text style={header}>City, Forgotten Circles</Text>
           <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
-              <Column ids={allCityCardNumbers.slice(81,82)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
+              <Column ids={allCityCardNumbers.slice(81,83)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
           </View>
         </ScrollView>
       </SafeAreaView>
