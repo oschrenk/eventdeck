@@ -28,7 +28,7 @@ const swipe = (card) => (action) => {
 }
 
 const HomeScreen = () => {
-  const { currentCard, currentParty, drawCard, flipCard, putBack, destroy } = useCardDeck()
+  const { currentCard, currentParty, drawCard } = useCardDeck()
   const [cardRef, setCardRef] = useState(null)
 
   return (
