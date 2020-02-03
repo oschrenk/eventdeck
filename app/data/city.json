@@ -2998,5 +2998,34 @@
         }
       ]
     }
+  },
+  {
+    "id": 87,
+    "type": "city",
+    "text": "Your thoughts turn to the mysterious Orchid girl and the caravan you protected in your trip to the past. She said events could not be changed and it was dangerous to try, but were your attempts to save them really for naught? These thoughts race through your head as you return to your room for the evening and find a not affixed to your door:\n\n\"I have waited a long time to say thank you, but I hope this finds you well. The caravan was destined to be lost, but because of you, Moonshard was not, and her company out here in the wilderness all these years has been a true blessing. Perhaps one day we will meet again, but for your own sake, I hope not.\n\n— Terra\"",
+    "optionA": {
+      "choice": "Ask arround and try to track down whoever put the note on your door.",
+      "outcomes": [
+        {
+          "text": "You frantically look around for someone who may have seen who placed the note. Surely, someone saw something important, but in all your efforts, no one you find remembers anyhting. Desperate, you pull out the note to hopefully jog someone's memory, but as you do, it begins to crumble into dust, leaving behind no trace of the words written upon it. Dejected, you finally give up.",
+          "effects": [
+            "No effects."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Accept the note for what it is, and be satisfied you made a positive difference.",
+      "outcomes": [
+        {
+          "text": "There is no reason to investigate. You have all the information you need. The caravan was still destroyed, and Terra has been living in the wilderness ever since, unknown to anyone and workung toward some mysterious goal. It is crazy just thinking about it, so you decide not to. You trustshe is in the right place and are happy to have helped.",
+          "effects": [
+            "Start scenario with BLESS {Bless}."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
   }
 ]
