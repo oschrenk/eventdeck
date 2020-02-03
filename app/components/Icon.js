@@ -63,6 +63,11 @@ const map= {
     {'glyph': '\ue946', 'color': 'white'},
     {'glyph': '\ue947', 'color': 'white'},
   ],
+  'strengthen': [
+    {'glyph': '\ue954', 'color': '#4b97d2'},
+    {'glyph': '\ue955', 'color': 'white'},
+    {'glyph': '\ue956', 'color': 'white'}
+  ],
   'wound': [
     {'glyph': '\ue95a', 'color': '#e46225'},
     {'glyph': '\ue95b', 'color': 'white'},
