@@ -316,5 +316,34 @@
         }
       ]
     }
+  },
+  {
+    "id": 82,
+    "type": "road",
+    "text": "The road stretches out before you, endless and unremarkable. You spirits flag anf your steps drag, having traveled it so many times — from gloomhaven, back to Gloomhaven — you've commited all its twists and turns to memory.\n\nBut something is strange today. No birds chirp. No animals cross your path. There is a hot, dry wind in the air and no clouds overhead. A sense of foreboding creeps over you.\n\nAnd then, before you appears a colorful, circular fissure hanging in front of you, beckoning you to step into the unknown. Beyond that whirling maelstrom is an unfamiliar world with possiblities and risks —  possibly even a short cut to where you are going. You hesitate with indecisions...",
+    "optionA": {
+      "choice": "Step through the portal.",
+      "outcomes": [
+        {
+          "text": "Sure, there are definite risks involved with jumping into a portal to an unknown and possibly hostile place, but they must be worth it. You just can't bear to be on the current road anymore. The unknown is far preferable to the unending drudgery before you, so you step through the portal with resolve.",
+          "effects": [
+            "Draw a Rift Event."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Trust that the road will provide you with enough excitement.",
+      "outcomes": [
+        {
+          "text": "There may be good reasons to leave your current path, but you are concerned with the dangers beyond that portal. You decide it is better to get yo your destination on one piece, rather than not get there at all. There is enough excitement around Gloomhaven to not want to take a chance with whatever else is out there.",
+          "effects": [
+            "Draw another Road Event."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]
