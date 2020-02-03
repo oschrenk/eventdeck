@@ -91,6 +91,7 @@ const map= {
     {'glyph': '\ue951', 'color': '#fff'},
     {'glyph': '\ue952', 'color': '#fff'},
   ],
+  'checkbox': '\ue953',
 
   // resolve
   'return-to-deck': '\ue900',
