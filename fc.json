@@ -91,5 +91,36 @@
         }
       ]
     }
+  },
+  {
+    "id": 85,
+    "type": "city",
+    "text": "I has been some time since your encounter with the vile cultists in the Dekhem Gardens, so you decide to visit the area to see how things are recovering.\n\nWhen you arrive, you are surprised to find members of the Great Oak asking passersby for donation, so you walk up to a Keeper of the Oak and ask him what's happened.\n\n\"One of our number was carrying as stringbox the recent attach occured and we cannot locate it. I hope whoever found it put it to good use, but we are certainly missing the funds now. Would you be willing to lend a hand?\" Remembering what happened to the cache, your guilty conscience doesn't allow you to say no.",
+    "optionA": {
+      "choice": "Offer a donation to the sanctuary (requires 15 collective gold).",
+      "outcomes": [
+        {
+          "text": "You nod to the keeper, and feeling badly for his loss, you hand him whatever you can spare. While the gold isn't quote the amount you had taken, you are able to leave feeling better about yourself. But just a bit.\n\nHe is grateful and offers a small prayer to you.\"May kindness guide your ways.\"",
+          "effects": [
+            "Lose 15 collective gold.",
+            "Start scenario with BLESS {Bless}."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Offer to help raise funds.",
+      "outcomes": [
+        {
+          "text": "You pause, not having much in the way of money right now, but decide to help with the collection effort. You spend hours asking the citizens of Gloomhaven to contribute. In the end, you are able to give a hefty sum to the keeper. He blesses you and thanks you for your support. You of course, were the reason for the problem, but this hopefully made up for it.",
+          "effects": [
+            "Lose 1 {Check} each.",
+            "Start scenario with BLESS {Bless}x2."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
   }
 ]
