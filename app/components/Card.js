@@ -33,6 +33,7 @@ const Lookup = {
   'Immobilize': <Icon name={'immobilize'} key={'immobilize'}/>,
   'Muddle': <Icon name={'muddle'} key={'muddle'}/>,
   'Poison': <Icon name={'poison'} key={'poison'}/>,
+  'Strengthen': <Icon name={'strengthen'} key={'strengthen'}/>,
   'Wound': <Icon name={'wound'} key={'wound'}/>,
 
   // Other

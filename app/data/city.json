@@ -2969,5 +2969,34 @@
         }
       ]
     }
+  },
+  {
+    "id": 86,
+    "type": "city",
+    "text": "Ever since the battle on the docks, you have been carrying the Orchid scrolls arround with you, unsure what to do with them. While the Orchid you met told you to rescue these items, she did not come to retrieve them after the fight, nor have you been able to locate her since.\n\nThen one night wile out drinking, you are approached by a different orchid woman, this one immaculately dressed. \"Do you have the records?\" Hesitating, you hand the scrolls to her. \"I am very grateful to get these back and for you bravery in having recovered them so valiantly. The High Council would like to show its gratitude. Would you welcome a feast in your honor or prefer the anonimity of a gift?\"",
+    "optionA": {
+      "choice": "Accept the feast.",
+      "outcomes": [
+        {
+          "text": "In the evening, you are escorted to an opulent manor in the upper Coin District. Pretty sure that you will never be in a place like this again, you try to soak up as much as you can. You meet a constant stream of Orchid dignitaries who blur together until you cannot hope to remember their names. When the food comes, it is exotic and delicious. Spices that you didn't know existed delight your palate and heighten your senses. The next morning, you feel invigorated for the journey.",
+          "effects": [
+            "Start scenario with BLESS {Bless} and STRENGTHEN {Strengthen}."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Accept the gift.",
+      "outcomes": [
+        {
+          "text": "You are pretty sure that being a guest of honor at a feast will bring unwanted attention, so you opt for the gift instead. The orchid women hands you a wrapped bundle. Inside, you find a double-edged dagger unlike anything you have ever seen before — subtle curves and an expert balance. In awe, you thank her profusely. She responds, \"In earlier times, it was the weapon of choice for a notorious thief. Put it to better use.",
+          "effects": [
+            "Gain \"Cutpurse Dagger\" (Item 160)."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]
