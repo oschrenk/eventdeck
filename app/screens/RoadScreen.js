@@ -63,6 +63,7 @@ const RoadScreen = ({navigation}) => {
             <Text style={header}>Road, Forgotten Circles</Text>
             <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
                 <Column ids={allRoadCardNumbers.slice(69,70)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
+                <Column ids={allRoadCardNumbers.slice(70,71)} checked={(item) => isAvailable(item, 'road')} toggle={(item) => toggleAvailable(item, 'road')}/>
             </View>
         </ScrollView>
       </SafeAreaView>

@@ -345,5 +345,35 @@
         }
       ]
     }
+  },
+  {
+    "id": 83,
+    "type": "road",
+    "text": "The road stretches out before you, endless and unremarkable. Your spirits flag and your steps drag, having traveled it so many times — from Gloomhaven, back to Gloomhaven — you've commited all it's twists and turns to memory. In fact, even those thoughts feel familiar.\n\nto get your mind of the drudgery, you begin to reflect on Cassandra, the Diviner who tore up the Sleeping Lion and went on to destry great evil.\n\nWithou warning, a colorful, circular fissure opens before you as you walk. It beckons you step into the unknown.",
+    "optionA": {
+      "choice": "Step through the portal.",
+      "outcomes": [
+        {
+          "text": "You find yourself in a lush meadow illuminated by soft light. Flowers and trees in full bloom surround you. This place emits an aura of safety and peace. In the midst of it, Cassandra sits atop a grey stone, gesturing you to come closer. She is almost completely transparent. \"My dear friends, a fledgling town in the north could use your help. Are you ready for a new adventure?\"",
+          "effects": [
+            "Party Achievement: \"Northern Expedition.\""
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Trust that the road will provide you with enough excitement.",
+      "outcomes": [
+        {
+          "text": "There must be good reasons to leave your current path, but you are certain it is time to finalkly out this whole portal business to rest and move on with your life. You have made enough sacrifices.",
+          "effects": [
+            "Draw another Road Event.",
+            "Remove Road Event 82 from the game."
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    }
   }
 ]
