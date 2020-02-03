@@ -271,5 +271,50 @@
         }
       ]
     }
+  },
+  {
+    "id": 90,
+    "type": "city",
+    "text": "This strange cipher full of odd Aesther characters has been bothering you yo no end. What does it mean? Surely, you could sopend some time asking around town to see if anyone had any clues or advice.\n\nOne possibility would be to seek the help from the Sanctuary of the Great Oak. their meticulous records of the past may provide some answers to this engima.\n\nAnother possbility might be to visit the recently renovated library in the University. It holds quite a lof of different volumes from all over the world.",
+    "optionA": {
+      "choice": "Seek the help of the Oak.",
+      "outcomes": [
+        {
+          "text": "After all your donations to the sanctuary, you are welcomes with open arms and guided to the Head Keeper of the Oak.",
+          "effects": [
+            "If the checkbox in outcome A is already marked read outcome B.",
+            "Read section 107 on page 59, and mark this checkbox {Checkbox}.",
+            "If both checkboxes on this card are marked:"
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "effects": [
+            "Otherwise:"
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Visit the library.",
+      "outcomes": [
+        {
+          "text": "You enter the library and find a knowledgable researcher to help you look for clues.",
+          "effects": [
+            "If the checkbox in outcome B is already marked read outcome A.",
+            "Read section 122 on page 62, and mark this checkbox {Checkbox}.",
+            "If both checkboxes on this card are marked:"
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "effects": [
+            "Otherwise:"
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]
