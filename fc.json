@@ -2,7 +2,7 @@
   {
     "id": 82,
     "type": "city",
-    "text": "Heading through the Boiler District, you approach the rundown tavern of the Crooked Bone, hoping Hail may be able to answer a question regarding your current quest. You take all the necessary precautions to avoid disrupting her and patiently wait outside.\n\nAfter a ferw minutes, she appears beside you. \"Well, look at that! Bright-eyed adventurers showing up on my doorstep, dearching for fame and fortune. It just so happens that I am running out of materials for my experiments.\"\n\nShe hands you a crumpled list while continuing to talk. \"If you eould be so kind as to grab some of this while you're out, it may bring you fame or possible fortune. Who's to say, really?\" She then disappears before you can even speak.",
+    "text": "Heading through the Boiler District, you approach the rundown tavern of the Crooked Bone, hoping Hail may be able to answer a question regarding your current quest. You take all the necessary precautions to avoid disrupting her and patiently wait outside.\n\nAfter a ferw minutes, she appears beside you. \"Well, look at that! Bright-eyed adventurers showing up on my doorstep, searching for fame and fortune. It just so happens that I am running out of materials for my experiments.\"\n\nShe hands you a crumpled list while continuing to talk. \"If you eould be so kind as to grab some of this while you're out, it may bring you fame or possible fortune. Who's to say, really?\" She then disappears before you can even speak.",
     "optionA": {
       "choice": "Retrieve some herbs and mushrooms on a quick trip outside the city.",
       "outcomes": [
