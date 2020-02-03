@@ -2906,5 +2906,37 @@
         }
       ]
     }
+  },
+  {
+    "id": 84,
+    "type": "city",
+    "requirement": "Opportunists (Party) COMPLETE",
+    "text": "The hum of activity feels both familiar and welcome as you step inside the Sleeping Lion. It has been a while since you last came here, and the signs of your battle with the demons have been mostly cleaned up.\n\nYou take your seat and start to raise your hand to order a rounf of drinks, but then you see a wanted pister for unknown thieves of the bar owner's stringbox, calling for any information regarding the culprits. A sinking feeling settles in your stomach as you realize that the small chest you had found during the battle may not have been ownerless after all.",
+    "optionA": {
+      "choice": "Return the gold you had taken for \"safekeeping\" (requires 30 collective gold)",
+      "outcomes": [
+        {
+          "text": "You approach the proprietor of the inn and explain that in the fight, you had been concerned about thieves taking advantage of the chaos to rob him, and you are here to give back his money.\n\nHe sighs in relief.\"Thank you for returning my belongings! I'm glad you weren't stealing it for your own purposes. Have a free meal!\"",
+          "effects": [
+            "Lose 30 collective gold.",
+            "Gain 1 reputation"
+          ],
+          "resolve": "{Remove}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Shrug it off. Surely, no one can connect you to the crime.",
+      "outcomes": [
+        {
+          "text": "After ordering drinks and food and settling in for the evening, you see the proprietor of the inn approach you. He goes on and on about his missing strongbox and implores you over and over that if you know anyhting, please tell him. It's quite exhausting. At the end of the night, you tip him exorbitantly, hoping it will make hime feel better, but perhaps it does lay bare your own guilt.",
+          "effects": [
+            "Lose 4 collective gold.",
+            "Lose 1 reputation."
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]
