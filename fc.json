@@ -225,5 +225,51 @@
         }
       ]
     }
+  },
+  {
+    "id": 89,
+    "type": "city",
+    "text": "This strange cipher full of Aesther characters has been bothering you to no end. What does it mean? Surely, you could spend some time asking around town to see if anyone, had any clues or advice.\n\nOne possibility might be to visit the Sinking Market. There must be some illicit source that could give you information in exchange for coin.\n\nAnother possibility might be to ask the wealthy merchants in the Coin District for a favor in return for all the work you've done for the city. They maybe have some connections they can tap into to find you clues to the language.",
+    "optionA": {
+      "choice": "Visit the Sinking Market (requires 10 collective gold).",
+      "outcomes": [
+        {
+          "text": "You travel to the Sinking Market with some coins. Maybe you can find a decent informant.",
+          "effects": [
+            "If the checkbox in outcome A is already marked read outcome B.",
+            "Lose 10 collective gold.",
+            "Read section 78 on page 50, and mark this checkbox {Checkbox}.",
+            "If both checkboxes on this card are marked:"
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "effects": [
+            "Otherwise:"
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Ask the wealthy merchants of the Coin District.",
+      "outcomes": [
+        {
+          "text": "Given your exploits, you figure the Merchant's Guild owes you a favor, so you head there.",
+          "effects": [
+            "If the checkbox in outcome B is already marked read outcome A.",
+            "Read section 97 on page 56, and mark this checkbox {Checkbox}.",
+            "If both checkboxes on this card are marked:"
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "effects": [
+            "Otherwise:"
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]
