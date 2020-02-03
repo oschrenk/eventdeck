@@ -3027,5 +3027,50 @@
         }
       ]
     }
+  },
+  {
+    "id": 88,
+    "type": "city",
+    "text": "This strange cipher full of odd Aesther characters has been bothering you to no end. What does it mean? Surely, you could spend some time asking around town to see if anyone had any clues or advice.\n\nOne possibility would be to ask Dominic Scrim for his expertise. In his exhaustive research of the past, he might have stumbled upon notes or books concerning this strange language.\n\nAnother possiblity might be to go to the Void and inquire with the Vigil at the excavation site. It would be a harder conversation, but they must have uncovered something useful in their work.",
+    "optionA": {
+      "choice": "Ask Dominic Scrim.",
+      "outcomes": [
+        {
+          "text": "You set out to the Town Records building with the hopes that Dominic is available today.",
+          "effects": [
+            "If the checkbox in outcome A is already marked read outcome B.",
+            "Read section 45 on page 40, and mark this checkbox {Checkbox}.",
+            "If both checkboxes on this card are marked:"
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "effects": [
+            "Otherwise:"
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    },
+    "optionB": {
+      "choice": "Inquire with the Vigil.",
+      "outcomes": [
+        {
+          "text": "You set out to the excavation site at the Void. You see many vigil guards and researchers.",
+          "effects": [
+            "If the checkbox in outcome B is already marked read outcome A.",
+            "Read section 61 on page 45, and mark this checkbox {Checkbox}.",
+            "If both checkboxes on this card are marked:"
+          ],
+          "resolve": "{Remove}"
+        },
+        {
+          "effects": [
+            "Otherwise:"
+          ],
+          "resolve": "{Return}"
+        }
+      ]
+    }
   }
 ]

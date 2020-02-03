@@ -40,6 +40,7 @@ const Lookup = {
   'MinusOneAttackModifier': <Icon name={'1-attack-modifier'} key={'1-attack-modifier'}/>,
   'PlusOneEnhancement': <Icon name={'plus-one-enhancement'} key={'plus-one-enhancement'}/>,
   'SmallItem': <Icon name={'small-item'} key={'small-item'}/>,
+  'Checkbox': <Icon name={'checkbox'} key={'checkbox'}/>,
 
   // Resolves
   'Remove2': <StyledIcon name={'remove-from-game'} style={{fontSize: 18, color: 'white' }} key={'remove-from-game2'}/>,
