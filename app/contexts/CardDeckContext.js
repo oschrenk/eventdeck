@@ -191,14 +191,6 @@ const useCardDeck = () => {
     setState(state => ({ ...state, parties: newParties }));
   }
 
-  const reset = () => {
-    const partyId = state.ui.currentParty
-    const party = state.parties.filter(p => p.id === partyId)[0]
-    party.events = AllEventsAvailable
-    const newParties = state.parties.filter(p => p.id !== id).concat(party)
-    setState(state => ({ ...state, parties: newParties }));
-  }
-
   const uuidv4 = () => {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
       var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
@@ -259,7 +251,6 @@ const useCardDeck = () => {
     drawCard,
     putBack,
     destroy,
-    reset,
 
     isAvailable,
     toggleAvailable,
