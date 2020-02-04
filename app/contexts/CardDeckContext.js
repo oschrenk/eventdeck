@@ -192,7 +192,6 @@ const useCardDeck = () => {
   }
 
   const reset = () => {
-
     const partyId = state.ui.currentParty
     const party = state.parties.filter(p => p.id === partyId)[0]
     party.events = AllEventsAvailable

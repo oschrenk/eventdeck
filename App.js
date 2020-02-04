@@ -10,7 +10,7 @@ import CityScreen from './app/screens/CityScreen'
 import RoadScreen from './app/screens/RoadScreen'
 import HomeScreen from './app/screens/HomeScreen'
 import PartyScreen from './app/screens/PartyScreen'
-import SettingsScreen from './app/screens/SettingsScreen'
+import AboutScreen from './app/screens/AboutScreen'
 
 import { CardDeckProvider } from './app/contexts/CardDeckContext'
 
@@ -25,7 +25,7 @@ const App = () => {
           <Drawer.Screen name="City" component={CityScreen} />
           <Drawer.Screen name="Road" component={RoadScreen} />
           <Drawer.Screen name="Party" component={PartyScreen} />
-          <Drawer.Screen name="Settings" component={SettingsScreen} />
+          <Drawer.Screen name="About" component={AboutScreen} />
         </Drawer.Navigator>
       </NavigationNativeContainer>
     </CardDeckProvider>
