@@ -71,19 +71,31 @@ const Front = (props) => {
 
     <View style={{width: 378, height: 530  }}>
       <ImageBackground source={backgrounds[props.card['type']]['front']} style={{width: '100%', height: '100%'}}>
-        <View style={{left: 40, top: 80, width: 305, height: "78%"}}>
-          <Text style={{...frontText, color: color}}>{props.card.text}</Text>
-        </View>
-        <View style={{left: 40, width: 305, height: "18%"}}>
-          <Text style={{...frontText, color: color}}>
-            <Bold text={'Option A'} /> {props.card.optionA.choice}
-          </Text>
-          <Text style={{...frontText, color: color, top: 12}}>
-            <Bold text={'Option B'} /> {props.card.optionB.choice}
-          </Text>
-        </View>
-        <View style={{height: "4%", width: "100%"}}>
-          <Text style={{...frontText, color: color, textAlign: 'center'}}>{props.card.id}</Text>
+        <View style={{flexDirection:'row', flexWrap:'wrap', height: 530}}>
+          <View style={{width: 35, height: "100%"}}>
+            {/* left column */}
+          </View>
+
+          <View style={{width: 308, height: "100%"}}>
+            <View style={{top: 80, height: "78%"}}>
+              <Text style={{...frontText, color: color}}>{props.card.text}</Text>
+            </View>
+            <View style={{height: "18%"}}>
+              <Text style={{...frontText, color: color}}>
+                <Bold text={'Option A'} /> {props.card.optionA.choice}
+              </Text>
+              <Text style={{...frontText, color: color, top: 12}}>
+                <Bold text={'Option B'} /> {props.card.optionB.choice}
+              </Text>
+            </View>
+            <View style={{height: "4%"}}>
+              <Text style={{...frontText, color: color, textAlign: 'center'}}>{props.card.id}</Text>
+            </View>
+          </View>
+
+          <View style={{width: 35, height: "100%"}}>
+              {/* right column */}
+          </View>
         </View>
       </ImageBackground>
     </View>
