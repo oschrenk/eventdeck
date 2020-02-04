@@ -70,6 +70,30 @@ const colors = {
   road: 'black'
 }
 
+const Vertical = ({text, style}) => {
+  const TEXT_HEIGHT = 20
+  const TEXT_LENGTH = 300
+
+  const X_OFFSET = -TEXT_LENGTH / 2.37
+  const Y_OFFSET = -134
+  return (
+    <View style={{ width: 35, height: 300}}>
+      <Text style={{
+        ...style,
+        transform: [
+          { rotate: "270deg" },
+          { translateX: Y_OFFSET },
+          { translateY: X_OFFSET }
+        ],
+        width: TEXT_LENGTH,
+        height: TEXT_HEIGHT
+      }}>
+        {"Requirements: " + text}
+      </Text>
+    </View>
+  )
+}
+
 const FrontContent = ({card}) => {
  const color = colors[card['type']]
  return (
@@ -95,8 +119,10 @@ const FrontContent = ({card}) => {
        </View>
      </View>
 
-     <View style={{width: 35, height: "100%"}}>
-         {/* right column */}
+     <View style={{width: 35, height: "100%", flex: 1, flexDirection: "column-reverse"}}>
+       { card.requirement &&
+         <Vertical style={{...frontText, color: color}} text={card.requirement} />
+       }
      </View>
    </View>
   )
