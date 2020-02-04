@@ -65,46 +65,85 @@ const Bold = ({text}) => {
   )
 }
 
-const Front = (props) => {
-  const color = colors[props.card['type']]
-  return (
-
-    <View style={{width: 378, height: 530  }}>
-      <ImageBackground source={backgrounds[props.card['type']]['front']} style={{width: '100%', height: '100%'}}>
-        <View style={{flexDirection:'row', flexWrap:'wrap', height: 530}}>
-          <View style={{width: 35, height: "100%"}}>
-            {/* left column */}
-          </View>
-
-          <View style={{width: 308, height: "100%"}}>
-            <View style={{top: 80, height: "78%"}}>
-              <Text style={{...frontText, color: color}}>{props.card.text}</Text>
-            </View>
-            <View style={{height: "18%"}}>
-              <Text style={{...frontText, color: color}}>
-                <Bold text={'Option A'} /> {props.card.optionA.choice}
-              </Text>
-              <Text style={{...frontText, color: color, top: 12}}>
-                <Bold text={'Option B'} /> {props.card.optionB.choice}
-              </Text>
-            </View>
-            <View style={{height: "4%"}}>
-              <Text style={{...frontText, color: color, textAlign: 'center'}}>{props.card.id}</Text>
-            </View>
-          </View>
-
-          <View style={{width: 35, height: "100%"}}>
-              {/* right column */}
-          </View>
-        </View>
-      </ImageBackground>
-    </View>
-  );
-}
-
 const colors = {
   city: 'white',
   road: 'black'
+}
+
+const Vertical = ({text, style}) => {
+  const TEXT_HEIGHT = 20
+  const TEXT_LENGTH = 300
+
+  const X_OFFSET = -TEXT_LENGTH / 2.37
+  const Y_OFFSET = -134
+  return (
+    <View style={{ width: 35, height: 300}}>
+      <Text style={{
+        ...style,
+        transform: [
+          { rotate: "270deg" },
+          { translateX: Y_OFFSET },
+          { translateY: X_OFFSET }
+        ],
+        width: TEXT_LENGTH,
+        height: TEXT_HEIGHT
+      }}>
+        {"Requirements: " + text}
+      </Text>
+    </View>
+  )
+}
+
+const FrontContent = ({card}) => {
+ const color = colors[card['type']]
+ return (
+   <View style={{flexDirection:'row', flexWrap:'wrap', height: 530}}>
+     <View style={{width: 35, height: "100%"}}>
+       {/* left column */}
+     </View>
+
+     <View style={{width: 308, height: "100%"}}>
+       <View style={{top: 80, height: "78%"}}>
+         <Text style={{...frontText, color: color}}>{card.text}</Text>
+       </View>
+       <View style={{height: "18%"}}>
+         <Text style={{...frontText, color: color}}>
+           <Bold text={'Option A'} /> {card.optionA.choice}
+         </Text>
+         <Text style={{...frontText, color: color, top: 12}}>
+           <Bold text={'Option B'} /> {card.optionB.choice}
+         </Text>
+       </View>
+       <View style={{height: "4%"}}>
+         <Text style={{...frontText, color: color, textAlign: 'center'}}>{card.id}</Text>
+       </View>
+     </View>
+
+     <View style={{width: 35, height: "100%", flex: 1, flexDirection: "column-reverse"}}>
+       { card.requirement &&
+         <Vertical style={{...frontText, color: color}} text={card.requirement} />
+       }
+     </View>
+   </View>
+  )
+}
+
+
+
+const Front = ({card}) => {
+  return (
+    <View style={{width: 378, height: 530  }}>
+      <ImageBackground source={backgrounds[card['type']]['front']} style={{width: '100%', height: '100%'}}>
+      { (card['type'] === 'city' && card.requirement) ? (
+          <ImageBackground source={require('../../assets/images/city_front_overlay.png')} style={{width: '100%', height: '100%'}}>
+            <FrontContent card={card} />
+          </ImageBackground>
+        ) : (
+          <FrontContent card={card} />
+      )}
+      </ImageBackground>
+    </View>
+  );
 }
 
 const RequirementBlock = ({requirement, text, color}) => {
