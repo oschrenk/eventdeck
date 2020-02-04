@@ -103,11 +103,18 @@ const FrontContent = ({card}) => {
 }
 
 
+
 const Front = ({card}) => {
   return (
     <View style={{width: 378, height: 530  }}>
       <ImageBackground source={backgrounds[card['type']]['front']} style={{width: '100%', height: '100%'}}>
-        <FrontContent card={card} />
+      { (card['type'] === 'city' && card.requirement) ? (
+          <ImageBackground source={require('../../assets/images/city_front_overlay.png')} style={{width: '100%', height: '100%'}}>
+            <FrontContent card={card} />
+          </ImageBackground>
+        ) : (
+          <FrontContent card={card} />
+      )}
       </ImageBackground>
     </View>
   );
