@@ -96,6 +96,7 @@
     "id": 85,
     "type": "city",
     "text": "I has been some time since your encounter with the vile cultists in the Dekhem Gardens, so you decide to visit the area to see how things are recovering.\n\nWhen you arrive, you are surprised to find members of the Great Oak asking passersby for donation, so you walk up to a Keeper of the Oak and ask him what's happened.\n\n\"One of our number was carrying as stringbox the recent attach occured and we cannot locate it. I hope whoever found it put it to good use, but we are certainly missing the funds now. Would you be willing to lend a hand?\" Remembering what happened to the cache, your guilty conscience doesn't allow you to say no.",
+    "requirement": "A Strongbox (Party) COMPLETE",
     "optionA": {
       "choice": "Offer a donation to the sanctuary (requires 15 collective gold).",
       "outcomes": [
@@ -127,6 +128,7 @@
     "id": 86,
     "type": "city",
     "text": "Ever since the battle on the docks, you have been carrying the Orchid scrolls arround with you, unsure what to do with them. While the Orchid you met told you to rescue these items, she did not come to retrieve them after the fight, nor have you been able to locate her since.\n\nThen one night wile out drinking, you are approached by a different orchid woman, this one immaculately dressed. \"Do you have the records?\" Hesitating, you hand the scrolls to her. \"I am very grateful to get these back and for you bravery in having recovered them so valiantly. The High Council would like to show its gratitude. Would you welcome a feast in your honor or prefer the anonimity of a gift?\"",
+    "requirement": "Custodians (Party) COMPLETE",
     "optionA": {
       "choice": "Accept the feast.",
       "outcomes": [
@@ -156,6 +158,7 @@
     "id": 87,
     "type": "city",
     "text": "Your thoughts turn to the mysterious Orchid girl and the caravan you protected in your trip to the past. She said events could not be changed and it was dangerous to try, but were your attempts to save them really for naught? These thoughts race through your head as you return to your room for the evening and find a not affixed to your door:\n\n\"I have waited a long time to say thank you, but I hope this finds you well. The caravan was destined to be lost, but because of you, Moonshard was not, and her company out here in the wilderness all these years has been a true blessing. Perhaps one day we will meet again, but for your own sake, I hope not.\n\n— Terra\"",
+    "requirement": "Guard Detail (Party) COMPLETE",
     "optionA": {
       "choice": "Ask arround and try to track down whoever put the note on your door.",
       "outcomes": [
