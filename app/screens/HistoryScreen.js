@@ -6,9 +6,14 @@ import { header } from '../styles/typography'
 import { useCardDeck } from "../contexts/CardDeckContext";
 
 const Item = (item) => {
-  const {name, timestamp, card} = item.item
+  const {name, timestamp, data} = item.item
   return (
-    <Text>{`${name} ${card.type}: ${card.id} at ${timestamp}`}</Text>
+    <>
+      <Text>{`${name} ${data.type}: ${data.id} at ${timestamp}`}</Text>
+      { data.effects &&
+        (<Text>{data.effects[0]}</Text>)
+      }
+    </>
   )
 }
 

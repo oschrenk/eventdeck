@@ -247,21 +247,25 @@ const Effect = ({text, color}) => {
 
 
 const Resolve = ({option, resolve, effects}) => {
+  if (!resolve) {
+    return null;
+  }
+
   const { putBack, destroy } = useCardDeck()
   if (resolve.startsWith("{Remove")) {
     return (
-      <TouchableOpacity onPress={destroy}>
+      <TouchableOpacity onPress={() => destroy(option, effects)}>
         <CardIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>
       </TouchableOpacity>)
   } else if (resolve.startsWith("{Return")) {
     return (
-      <TouchableOpacity onPress={putBack}>
+      <TouchableOpacity onPress={() => putBack(option, effects)}>
         <CardIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>
       </TouchableOpacity>)
   } else return null
 }
 
-const Outcome = ({outcome, type}) => {
+const Outcome = ({outcome, type, option}) => {
   const requirement = outcome.requirement
   const instruction = outcome.instruction
   const effects = outcome.effects
@@ -279,7 +283,7 @@ const Outcome = ({outcome, type}) => {
           }
           </View>
           <View style={{height: 35,width: 40, position: 'absolute', left: 270, bottom: 0}}>
-            <Resolve resolve={outcome.resolve} />
+            <Resolve resolve={outcome.resolve} option={option} effects={effects} />
           </View>
         </View>
       }
@@ -287,8 +291,8 @@ const Outcome = ({outcome, type}) => {
   )
 }
 
-const Outcomes = ({outcomes, type}) => {
-  return outcomes.map((outcome, index) => <Outcome outcome={outcome} type={type} key={index} />)
+const Outcomes = ({outcomes, type, option}) => {
+  return outcomes.map((outcome, index) => <Outcome outcome={outcome} type={type} option={option} key={index} />)
 }
 
 const Back = ({card}) => {
@@ -296,10 +300,10 @@ const Back = ({card}) => {
     <View style={{width: 378, height: 530}}>
       <ImageBackground source={backgrounds[card['type']]['back']} style={{width: '100%', height: '100%'}}>
         <View style={{left: 55, top: 20, width: 315, height: "50%"}}>
-          <Outcomes outcomes={card.optionA.outcomes} type={card['type']} />
+          <Outcomes outcomes={card.optionA.outcomes} type={card['type']} option={"optionA"}/>
         </View>
         <View style={{left: 55, top: 30, width: 315, height: "50%"}}>
-          <Outcomes outcomes={card.optionB.outcomes} type={card['type']} />
+          <Outcomes outcomes={card.optionB.outcomes} type={card['type']} option={"optionB"} />
         </View>
       </ImageBackground>
     </View>

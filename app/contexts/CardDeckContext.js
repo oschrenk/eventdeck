@@ -99,20 +99,18 @@ const useCardDeck = () => {
   }
 
   const nextId = (type) => {
-    const last = getLast(type)
-
+    const lastId = getLastId(type)
     const partyId = state.ui.currentParty
     const party = state.parties.filter(p => p.id === partyId)[0]
     const available = party.events[type]
 
-    if (last) {
-      const lastId = last.id
+    if (lastId) {
       const lastAvailableId = available[available.length -1]
       if (lastAvailableId === lastId) {
         // wraparound
         return available[0]
       } else {
-        return available.find(e => e > last.id)
+        return available.find(e => e > lastId)
       }
     } else {
       // very first card default to first available card
@@ -121,44 +119,49 @@ const useCardDeck = () => {
     }
   }
 
-  const addEvent = (name, card) => {
+  const addEvent = (name, data) => {
     const party = currentParty()
     const history = party.history
     const timestamp = new Date().getTime()
-    const minEvent = {name, timestamp, card}
-    history.push(minEvent)
+    const event = {name, timestamp, data}
+    history.push(event)
     party.history = history
-
     const newParties = state.parties.filter(p => p.id !== party.id).concat(party)
-
     setState(state => ({ ...state, parties: newParties }));
   }
 
-  const getLast = (type) => {
+  const getLastId = (type) => {
     const party = currentParty()
-    const history = party.history
-    if (type) {
-      return history.reverse().find(c => c['type'] === type)
+    const drawnCards = party.history.filter(e => e.name === "CardDrawn" && e.data.type === type).reverse()
+    if (drawnCards.length) {
+      const lastCard = drawnCards[0].data
+      return lastCard.id
     } else {
-      return history[state.history.length -1]
+      return null
     }
   }
 
   const drawCard = (type) => {
-    const newCardId = randomId(type)
+    const newCardId = nextId(type)
     const newCard = cards.find(c => (c.id === newCardId) && c['type'] === type)
     setCurrentCard(newCard)
-    addEvent("CardDrawn", newCard)
+    addEvent("CardDrawn", {id: newCard.id, type: newCard['type']})
     setSide(defaultSide)
   }
 
-  const putBack = () => {
+  const putBack = (option, effects) => {
+    const id = state.ui.currentCard.id
+    const type = state.ui.currentCard['type']
+    addEvent("CardReturned", {id, type, option, effects})
     setCurrentCard(null)
     setSide(defaultSide)
   }
 
-  const destroy = () => {
-    toggleAvailable({label: state.ui.currentCard.id.toString(), checked: false}, state.ui.currentCard['type'])
+  const destroy = (option, effects) => {
+    const id = state.ui.currentCard.id
+    const type = state.ui.currentCard['type']
+    addEvent("CardRemoved", {id, type, option, effects})
+    toggleAvailable({label: id.toString(), checked: false}, type)
     setCurrentCard(null)
     setSide(defaultSide)
   }
