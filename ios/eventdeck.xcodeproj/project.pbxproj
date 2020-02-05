@@ -5,9 +5,9 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* eventdeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* eventdeckTests.m */; };
-		05AC743FC7BE45DDB9EEA5FC /* HighTowerText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -19,12 +19,13 @@
 		2DCD954D1E0B4F2C00145EB5 /* eventdeckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* eventdeckTests.m */; };
 		37E9F8DD2399A8DD00F82F3E /* Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E9F8DC2399A8DD00F82F3E /* Swift.swift */; };
 		3CD50D1A5AF5C65983F3646F /* libPods-eventdeck.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A1C16E86BA0AC72F9AA9A7 /* libPods-eventdeck.a */; };
+		6DF70CC331264D51B21F2C22 /* Crimson-Roman.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F09CC119AAA4917B1499DAE /* Crimson-Roman.ttf */; };
 		7C782071F7E1E7805B9064CC /* libPods-eventdeck-eventdeckTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37BE07BEEBCBDD684FE3F4BF /* libPods-eventdeck-eventdeckTests.a */; };
-		87E983D9865D4F4AAB1C6AEC /* HighTowerText-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B4BEDF4DE4449428D47B0E5 /* HighTowerText-Italic.ttf */; };
+		93ED080A907F49E79B0C1AC7 /* Crimson-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12594D311367447199868436 /* Crimson-Bold.ttf */; };
+		98C6436EB2FB456995338371 /* Crimson-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FE838281679A45818EDC3164 /* Crimson-Italic.ttf */; };
 		C347ADFC3A39061443BB3EFA /* libPods-eventdeck-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963CDE128E6CA3152E53DA55 /* libPods-eventdeck-tvOSTests.a */; };
 		F1778CE64EDC45809AE23717 /* Pirata One.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71C5D232AA144C0C98BC7A39 /* Pirata One.ttf */; };
 		FCA71F9CEC82453A96772B05 /* icomoon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */; };
-		53988DFF00E648158886EE98 /* HighTowerText-Reg.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8335F8D8CACD47F5B9F1AB35 /* HighTowerText-Reg.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* eventdeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eventdeckTests.m; sourceTree = "<group>"; };
 		02505FA88DCB49F5BD21FE89 /* HighTowerText-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HighTowerText-Bold.ttf"; path = "../assets/fonts/HighTowerText-Bold.ttf"; sourceTree = "<group>"; };
+		12594D311367447199868436 /* Crimson-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Crimson-Bold.ttf"; path = "../assets/fonts/Crimson-Bold.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* eventdeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventdeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = eventdeck/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = eventdeck/AppDelegate.m; sourceTree = "<group>"; };
@@ -64,10 +66,12 @@
 		3E1374B4D1A1C3615E690447 /* libPods-eventdeck-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eventdeck-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FD8BA449A55349DB8A6E9C8 /* Pods-eventdeck-eventdeckTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-eventdeckTests.release.xcconfig"; path = "Target Support Files/Pods-eventdeck-eventdeckTests/Pods-eventdeck-eventdeckTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = icomoon.ttf; path = ../assets/fonts/icomoon.ttf; sourceTree = "<group>"; };
+		6F09CC119AAA4917B1499DAE /* Crimson-Roman.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Crimson-Roman.ttf"; path = "../assets/fonts/Crimson-Roman.ttf"; sourceTree = "<group>"; };
 		705D945DC0ADEF1101081D01 /* Pods-eventdeck-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck-tvOS/Pods-eventdeck-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		71C5D232AA144C0C98BC7A39 /* Pirata One.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Pirata One.ttf"; path = "../assets/fonts/Pirata One.ttf"; sourceTree = "<group>"; };
 		77BB6B72276C028F4E559BC6 /* Pods-eventdeck-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck-tvOSTests/Pods-eventdeck-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7A75BEDA31DFE345D43D7EFF /* Pods-eventdeck-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-tvOS.release.xcconfig"; path = "Target Support Files/Pods-eventdeck-tvOS/Pods-eventdeck-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		8335F8D8CACD47F5B9F1AB35 /* HighTowerText-Reg.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HighTowerText-Reg.ttf"; path = "../assets/fonts/HighTowerText-Reg.ttf"; sourceTree = "<group>"; };
 		839F18B36ADA1100976298C0 /* Pods-eventdeck-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-eventdeck-tvOSTests/Pods-eventdeck-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		87A1C16E86BA0AC72F9AA9A7 /* libPods-eventdeck.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-eventdeck.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B492149D7C62E6D150047CF /* Pods-eventdeck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck/Pods-eventdeck.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,7 +81,7 @@
 		E5DB067F78F53D18AEDE31AC /* Pods-eventdeck-eventdeckTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eventdeck-eventdeckTests.debug.xcconfig"; path = "Target Support Files/Pods-eventdeck-eventdeckTests/Pods-eventdeck-eventdeckTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		8335F8D8CACD47F5B9F1AB35 /* HighTowerText-Reg.ttf */ = {isa = PBXFileReference; name = "HighTowerText-Reg.ttf"; path = "../assets/fonts/HighTowerText-Reg.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FE838281679A45818EDC3164 /* Crimson-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Crimson-Italic.ttf"; path = "../assets/fonts/Crimson-Italic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +207,9 @@
 				5A58981AF1D44CFBA05E9BE4 /* icomoon.ttf */,
 				71C5D232AA144C0C98BC7A39 /* Pirata One.ttf */,
 				8335F8D8CACD47F5B9F1AB35 /* HighTowerText-Reg.ttf */,
+				12594D311367447199868436 /* Crimson-Bold.ttf */,
+				FE838281679A45818EDC3164 /* Crimson-Italic.ttf */,
+				6F09CC119AAA4917B1499DAE /* Crimson-Roman.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -367,11 +374,11 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				05AC743FC7BE45DDB9EEA5FC /* HighTowerText-Bold.ttf in Resources */,
-				87E983D9865D4F4AAB1C6AEC /* HighTowerText-Italic.ttf in Resources */,
 				FCA71F9CEC82453A96772B05 /* icomoon.ttf in Resources */,
 				F1778CE64EDC45809AE23717 /* Pirata One.ttf in Resources */,
-				53988DFF00E648158886EE98 /* HighTowerText-Reg.ttf in Resources */,
+				93ED080A907F49E79B0C1AC7 /* Crimson-Bold.ttf in Resources */,
+				98C6436EB2FB456995338371 /* Crimson-Italic.ttf in Resources */,
+				6DF70CC331264D51B21F2C22 /* Crimson-Roman.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

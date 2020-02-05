@@ -17,27 +17,27 @@ export const input = {
 }
 
 export const backText = {
-  fontFamily: 'HighTowerText-Italic',
+  fontFamily: 'Crimson-Italic',
   fontSize: 14,
 };
 
 export const backTextInstruction = {
-  fontFamily: 'HighTowerText-Reg',
+  fontFamily: 'Crimson-Roman',
   fontSize: 14,
 };
 
 export const backTextEffect = {
-  fontFamily: 'HighTowerText-Bold',
+  fontFamily: 'Crimson-Bold',
   fontSize: 15,
 };
 
 export const frontText = {
-  fontFamily: 'HighTowerText-Italic',
+  fontFamily: 'Crimson-Italic',
   fontSize: 15,
 };
 
 export const bold = {
-  fontFamily: 'HighTowerText-Bold',
+  fontFamily: 'Crimson-Bold',
   fontWeight: 'bold',
   fontSize: 14,
 };
