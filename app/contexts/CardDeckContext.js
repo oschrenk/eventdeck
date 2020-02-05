@@ -124,7 +124,8 @@ const useCardDeck = () => {
   const addHistory = (card) => {
     const party = currentParty()
     const history = party.history
-    const minEvent = {id: card.id, type: card['type'], time: new Date().getTime()}
+    const timestamp = new Date().getTime()
+    const minEvent = {name: "CardDrawn", timestamp, card}
     history.push(minEvent)
     party.history = history
 

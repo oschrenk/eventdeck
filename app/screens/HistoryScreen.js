@@ -5,9 +5,10 @@ import { header } from '../styles/typography'
 
 import { useCardDeck } from "../contexts/CardDeckContext";
 
-const Item = ({item}) => {
+const Item = (item) => {
+  const {name, timestamp, card} = item.item
   return (
-    <Text>{`Drew ${item.type}: ${item.id} at ${item.time}`}</Text>
+    <Text>{`${name} ${card.type}: ${card.id} at ${timestamp}`}</Text>
   )
 }
 
