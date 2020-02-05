@@ -160,7 +160,7 @@ const ScenarioGlyph = ({number, glyphs, style}) => {
     { glyphs.map((g,i) =>
        <Text style={{fontFamily: 'icomoon', fontSize:20, color: g.color, position: 'absolute', left: 3, top: 0}} key={i}>{g.glyph}</Text>)
     }
-    <Text style={{fontFamily: 'HighTowerText-Bold', fontSize:14, color: 'black', position: 'absolute', left: 7, top: 1}}>{number}</Text>
+    <Text style={{fontFamily: 'Crimson-Bold', fontSize:14, color: 'black', position: 'absolute', left: 7}}>{number}</Text>
    </View>
   )
 }
