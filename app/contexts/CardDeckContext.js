@@ -121,11 +121,11 @@ const useCardDeck = () => {
     }
   }
 
-  const addHistory = (card) => {
+  const addEvent = (name, card) => {
     const party = currentParty()
     const history = party.history
     const timestamp = new Date().getTime()
-    const minEvent = {name: "CardDrawn", timestamp, card}
+    const minEvent = {name, timestamp, card}
     history.push(minEvent)
     party.history = history
 
@@ -148,7 +148,7 @@ const useCardDeck = () => {
     const newCardId = randomId(type)
     const newCard = cards.find(c => (c.id === newCardId) && c['type'] === type)
     setCurrentCard(newCard)
-    addHistory(newCard)
+    addEvent("CardDrawn", newCard)
     setSide(defaultSide)
   }
 
