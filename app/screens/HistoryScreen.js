@@ -26,7 +26,7 @@ const HistoryScreen = () => {
         <FlatList
          data={currentParty().history}
          renderItem={({item}) => <Item item={item}></Item>}
-         keyExtractor={item => item.timestamp }
+         keyExtractor={item => item.timestamp.toString() }
         />
       </SafeAreaView>
     </ImageBackground>
