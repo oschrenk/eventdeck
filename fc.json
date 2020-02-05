@@ -95,7 +95,7 @@
   {
     "id": 85,
     "type": "city",
-    "text": "I has been some time since your encounter with the vile cultists in the Dekhem Gardens, so you decide to visit the area to see how things are recovering.\n\nWhen you arrive, you are surprised to find members of the Great Oak asking passersby for donation, so you walk up to a Keeper of the Oak and ask him what's happened.\n\n\"One of our number was carrying as stringbox the recent attach occured and we cannot locate it. I hope whoever found it put it to good use, but we are certainly missing the funds now. Would you be willing to lend a hand?\" Remembering what happened to the cache, your guilty conscience doesn't allow you to say no.",
+    "text": "It has been some time since your encounter with the vile cultists in the Dekhem Gardens, so you decide to visit the area to see how things are recovering.\n\nWhen you arrive, you are surprised to find members of the Great Oak asking passersby for donation, so you walk up to a Keeper of the Oak and ask him what's happened.\n\n\"One of our number was carrying as stringbox the recent attach occured and we cannot locate it. I hope whoever found it put it to good use, but we are certainly missing the funds now. Would you be willing to lend a hand?\" Remembering what happened to the cache, your guilty conscience doesn't allow you to say no.",
     "requirement": "A Strongbox (Party) COMPLETE",
     "optionA": {
       "choice": "Offer a donation to the sanctuary (requires 15 collective gold).",
