@@ -20,7 +20,7 @@
       "choice": "Collect some monster entrails during your next quest.",
       "outcomes": [
         {
-          "instruction": "Place this card in any one character's play area: During scenario, if you kill 5 or more monsters, read below. Otherwise: {Remove2}.",
+          "instruction": "Place this card in any one character's play area: During scenario, if you kill 5 or more monsters, read below. Otherwise: {Remove}.",
           "text": "It takes some effort to gather all the entrails Hail needs. She gratefully collects them but stops in her tracks. \"I'm forgetting something. What was it? Oh yes, here.\" She waves a hand and disappears. You feel strange but good. So much for your question though.",
           "effects": [
             "You gain one {PlusOneEnhancement} to any level 1 or X card."

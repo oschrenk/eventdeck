@@ -43,9 +43,7 @@ const Lookup = {
   'Checkbox': <Icon name={'checkbox'} key={'checkbox'}/>,
 
   // Resolves
-  'Remove2': <StyledIcon name={'remove-from-game'} style={{fontSize: 18, color: 'white' }} key={'remove-from-game2'}/>,
-  'Remove': <CardIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>,
-  'Return': <CardIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>,
+  'Remove': <StyledIcon name={'remove-from-game'} style={{fontSize: 18, color: 'white' }} key={'remove-from-game2'}/>,
 }
 
 const backgrounds = {
@@ -199,14 +197,16 @@ const Blocks = ({instruction, requirement, texts, color }) => {
   )
 }
 
+const KeywordRegex = /\s*(\{\w+\})\s*/g;
+const splitKeywords = (text) => {
+  return text.split(KeywordRegex).filter(s => s !== "")
+}
+
 const TextParser = ({text, style}) => {
-  const { putBack, destroy } = useCardDeck()
   if (!text) {
     return null
   }
-  const re = /\s*(\{\w+\})\s*/g;
-  const split = text.split(re).filter(s => s !== "")
-
+  const split = splitKeywords(text)
   return (
     split.map((s,i) => {
       if (s.startsWith("{")) {
@@ -225,18 +225,8 @@ const TextParser = ({text, style}) => {
         } else if (!lookup) {
           console.warn("MISSING", name)
           return null
-        } else if (name.startsWith("Remove2")) {
-          return lookup
         } else if (name.startsWith("Remove")) {
-            return (
-              <TouchableOpacity onPress={destroy}>
-                <CardIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>
-              </TouchableOpacity>)
-        } else if (name.startsWith("Return")) {
-            return (
-              <TouchableOpacity onPress={putBack}>
-                <CardIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>
-              </TouchableOpacity>)
+          return lookup
         } else {
           return lookup
         }
@@ -253,6 +243,22 @@ const Effect = ({text, color}) => {
       <TextParser text={text} style={{...backTextEffect, color:color}}/>
     </View>
   )
+}
+
+
+const Resolve = ({option, resolve, effects}) => {
+  const { putBack, destroy } = useCardDeck()
+  if (resolve.startsWith("{Remove")) {
+    return (
+      <TouchableOpacity onPress={destroy}>
+        <CardIcon name={'remove-from-game'} style={{fontSize: 32, textAlign: 'right' }} key={'remove-from-game'}/>
+      </TouchableOpacity>)
+  } else if (resolve.startsWith("{Return")) {
+    return (
+      <TouchableOpacity onPress={putBack}>
+        <CardIcon name={'return-to-deck'} style={{fontSize: 32, textAlign: 'right' }} key={'return-to-deck'}/>
+      </TouchableOpacity>)
+  } else return null
 }
 
 const Outcome = ({outcome, type}) => {
@@ -273,7 +279,7 @@ const Outcome = ({outcome, type}) => {
           }
           </View>
           <View style={{height: 35,width: 40, position: 'absolute', left: 270, bottom: 0}}>
-            <TextParser text={outcome.resolve} />
+            <Resolve resolve={outcome.resolve} />
           </View>
         </View>
       }
@@ -285,15 +291,15 @@ const Outcomes = ({outcomes, type}) => {
   return outcomes.map((outcome, index) => <Outcome outcome={outcome} type={type} key={index} />)
 }
 
-const Back = (props) => {
+const Back = ({card}) => {
   return (
     <View style={{width: 378, height: 530}}>
-      <ImageBackground source={backgrounds[props.card['type']]['back']} style={{width: '100%', height: '100%'}}>
+      <ImageBackground source={backgrounds[card['type']]['back']} style={{width: '100%', height: '100%'}}>
         <View style={{left: 55, top: 20, width: 315, height: "50%"}}>
-          <Outcomes outcomes={props.card.optionA.outcomes} type={props.card['type']} />
+          <Outcomes outcomes={card.optionA.outcomes} type={card['type']} />
         </View>
         <View style={{left: 55, top: 30, width: 315, height: "50%"}}>
-          <Outcomes outcomes={props.card.optionB.outcomes} type={props.card['type']} />
+          <Outcomes outcomes={card.optionB.outcomes} type={card['type']} />
         </View>
       </ImageBackground>
     </View>
