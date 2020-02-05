@@ -7,7 +7,7 @@ import { useCardDeck } from "../contexts/CardDeckContext";
 
 const Item = ({item}) => {
   return (
-    <Text>{`Drew ${item.type}: ${item.id}`}</Text>
+    <Text>{`Drew ${item.type}: ${item.id} at ${item.time}`}</Text>
   )
 }
 
@@ -20,7 +20,7 @@ const HistoryScreen = () => {
         <FlatList
          data={currentParty().history}
          renderItem={({item}) => <Item item={item}></Item>}
-         keyExtractor={item => item.id}
+         keyExtractor={item => item.timestamp }
         />
       </SafeAreaView>
     </ImageBackground>

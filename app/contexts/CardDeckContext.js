@@ -124,8 +124,8 @@ const useCardDeck = () => {
   const addHistory = (card) => {
     const party = currentParty()
     const history = party.history
-    const minCard = {id: card.id, type: card['type']}
-    history.push(minCard)
+    const minEvent = {id: card.id, type: card['type'], time: new Date().getTime()}
+    history.push(minEvent)
     party.history = history
 
     const newParties = state.parties.filter(p => p.id !== party.id).concat(party)
