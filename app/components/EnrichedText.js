@@ -44,7 +44,7 @@ const Lookup = {
   'Checkbox': <Icon name={'checkbox'} key={'checkbox'}/>,
 
   // Resolves
-  'Remove': <StyledIcon name={'remove-from-game'} style={{fontSize: 18, color: 'white' }} key={'remove-from-game2'}/>,
+  'Remove': <StyledIcon name={'remove-from-game'} style={{fontSize: 18, color: 'white' }} key={'remove-from-game'}/>,
 }
 
 const KeywordRegex = /\s*(\{\w+\})\s*/g;
