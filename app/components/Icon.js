@@ -97,9 +97,8 @@ const map= {
   'return-to-deck': '\ue900',
   'remove-from-game': '\ue901',
 
-  // app
-  'flip': '\ue913',
-  'draw': '\ue914',
+  // history
+  'draw': '\ue957',
 
   // rune
   'rune-A': '\ue91b',

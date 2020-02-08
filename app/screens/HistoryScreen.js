@@ -1,20 +1,83 @@
 import React from "react";
-import { FlatList, ImageBackground, SafeAreaView, Text, } from 'react-native';
+import { FlatList, ImageBackground, SafeAreaView, Text, View } from 'react-native';
 
 import { header } from '../styles/typography'
 
 import { useCardDeck } from "../contexts/CardDeckContext";
+import { CardIcon } from '../components/Icon'
+
+const capitalize = (s) => {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+const formatDate = (t) => {
+  return t
+}
+
+const CardDrawn = ({event}) => {
+  const {timestamp, data} = event
+  const {id, type} = data
+  return (
+    <View style={{flexDirection: "row"}}>
+      <View style={{width: 32, height: 32}}>
+        <CardIcon name={'draw'} style={{fontSize: 32, color: "black" }} key={'draw'}/>
+      </View>
+      <View>
+        <Text>{`${capitalize(type)} ${id}`}</Text>
+        <Text>{`${formatDate(timestamp)}`}</Text>
+      </View>
+    </View>
+  )
+}
+const CardRemoved = ({event}) => {
+  const {timestamp, data} = event
+  const {id, type} = data
+  return (
+    <View style={{flexDirection: "row"}}>
+      <View style={{width: 32, height: 32, alignItems: "center" }}>
+        <CardIcon name={'remove-from-game'} style={{fontSize: 26, color: "black" }} />
+      </View>
+      <View>
+        <Text>{`${capitalize(type)} ${id}`}</Text>
+        <Text>{`${formatDate(timestamp)}`}</Text>
+        { data.effects &&
+          data.effects.map((e,i) => <Text key={i}>{e}</Text>)
+        }
+      </View>
+    </View>
+  )
+}
+
+const CardReturned = ({event}) => {
+  const {timestamp, data} = event
+  const {id, type} = data
+  return (
+    <View style={{flexDirection: "row"}}>
+      <View style={{width: 32, height: 32, alignItems: "center" }}>
+        <CardIcon name={'return-to-deck'} style={{fontSize: 26, color: "black" }} />
+      </View>
+      <View>
+        <Text>{`${capitalize(type)} ${id}`}</Text>
+        <Text>{`${formatDate(timestamp)}`}</Text>
+        { data.effects &&
+          (<Text>{data.effects[0]}</Text>)
+        }
+      </View>
+    </View>
+  )
+}
 
 const Item = (item) => {
   const {name, timestamp, data} = item.item
-  return (
-    <>
-      <Text>{`${name} ${data.type}: ${data.id} at ${timestamp}`}</Text>
-      { data.effects &&
-        (<Text>{data.effects[0]}</Text>)
-      }
-    </>
-  )
+  switch (name) {
+    case 'CardDrawn':
+      return (<CardDrawn event={item.item}/>)
+    case 'CardRemoved':
+      return (<CardRemoved event={item.item}/>)
+    case 'CardReturned':
+      return (<CardReturned event={item.item}/>)
+  }
+
 }
 
 const HistoryScreen = () => {
