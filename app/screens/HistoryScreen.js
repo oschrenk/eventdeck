@@ -5,6 +5,8 @@ import { header } from '../styles/typography'
 
 import { useCardDeck } from "../contexts/CardDeckContext"
 import { CardIcon } from '../components/Icon'
+import EnrichedText from '../components/EnrichedText'
+
 import * as RNLocalize from "react-native-localize"
 
 const capitalize = (s) => {
@@ -36,6 +38,15 @@ const CardDrawn = ({event}) => {
     </View>
   )
 }
+
+const Effect = ({text}) => {
+  return (
+    <View style={{flexDirection:'row', flexWrap:'wrap'}}>
+      <EnrichedText text={text}/>
+    </View>
+  )
+}
+
 const CardRemoved = ({event}) => {
   const {timestamp, data} = event
   const {id, type} = data
@@ -48,7 +59,9 @@ const CardRemoved = ({event}) => {
         <Text>{`${capitalize(type)} ${id}`}</Text>
         <Text>{`${formatDate(timestamp)}`}</Text>
         { data.effects &&
-          data.effects.map((e,i) => <Text key={i}>{e}</Text>)
+          data.effects.map((e,i) =>
+            <Effect text={e} key={i}/>
+          )
         }
       </View>
     </View>
@@ -67,7 +80,9 @@ const CardReturned = ({event}) => {
         <Text>{`${capitalize(type)} ${id}`}</Text>
         <Text>{`${formatDate(timestamp)}`}</Text>
         { data.effects &&
-          (<Text>{data.effects[0]}</Text>)
+          data.effects.map((e,i) =>
+            <Effect text={e} key={i}/>
+          )
         }
       </View>
     </View>
