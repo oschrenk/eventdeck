@@ -167,8 +167,8 @@ const ScenarioGlyph = ({number, glyphs, style}) => {
 
 export const CardIcon = ({name, style}) => {
   const { currentCard } = useCardDeck()
-  const extraStyle = (currentCard && currentCard.type == 'city') ? { color: 'white'} : {}
-  return <SingleGlyph glyph={map[name]} style={{...style, ...extraStyle}} />
+  const extraStyle = (currentCard && currentCard.type === 'city') ? { color: 'white'} : {}
+  return <SingleGlyph glyph={map[name]} style={{ ...extraStyle, ...style }} />
 }
 
 export const StyledIcon = ({name, style}) => {
