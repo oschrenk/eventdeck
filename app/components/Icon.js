@@ -140,7 +140,7 @@ const map= {
 }
 
 const SingleGlyph = ({glyph, style}) => {
-  return <Text style={{...icon, ...style}}>{glyph}</Text>
+  return <Text style={{...icon, ...style, letterSpacing: 3}}>{glyph}</Text>
 }
 
 const MultiGlyph = ({glyphs, style}) => {
