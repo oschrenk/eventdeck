@@ -108,7 +108,7 @@ const HistoryScreen = () => {
       <SafeAreaView>
         <Text style={header}>History</Text>
         <FlatList
-         data={currentParty().history}
+         data={currentParty().history.filter(e => (e.name === 'CardRemoved') || (e.name === 'CardReturned'))}
          renderItem={({item}) => <Item item={item}></Item>}
          keyExtractor={item => item.timestamp.toString() }
         />
