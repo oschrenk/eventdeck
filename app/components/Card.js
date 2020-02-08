@@ -32,8 +32,8 @@ const Vertical = ({text, style}) => {
   const TEXT_HEIGHT = 20
   const TEXT_LENGTH = 300
 
-  const X_OFFSET = -TEXT_LENGTH / 2.37
-  const Y_OFFSET = -134
+  const X_OFFSET = -TEXT_LENGTH / 2.33
+  const Y_OFFSET = -130
   return (
     <View style={{ width: 35, height: 300}}>
       <Text style={{
