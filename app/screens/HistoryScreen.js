@@ -3,15 +3,22 @@ import { FlatList, ImageBackground, SafeAreaView, Text, View } from 'react-nativ
 
 import { header } from '../styles/typography'
 
-import { useCardDeck } from "../contexts/CardDeckContext";
+import { useCardDeck } from "../contexts/CardDeckContext"
 import { CardIcon } from '../components/Icon'
+import * as RNLocalize from "react-native-localize"
 
 const capitalize = (s) => {
   return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
 const formatDate = (t) => {
-  return t
+  const date = new Date(t)
+  const options = {
+    dateStyle: 'short',
+    timeStyle: 'short',
+    timeZone: RNLocalize.getTimeZone(),
+  }
+  return new Intl.DateTimeFormat('de-DE', options).format(date)
 }
 
 const CardDrawn = ({event}) => {
@@ -68,7 +75,9 @@ const CardReturned = ({event}) => {
 }
 
 const Item = (item) => {
-  const {name, timestamp, data} = item.item
+
+  const {name, timestamp} = item.item
+
   switch (name) {
     case 'CardDrawn':
       return (<CardDrawn event={item.item}/>)
