@@ -32,8 +32,7 @@ const CardDrawn = ({event}) => {
         <CardIcon name={'draw'} style={{fontSize: 32, color: "black" }} key={'draw'}/>
       </View>
       <View>
-        <Text>{`${capitalize(type)} ${id}`}</Text>
-        <Text>{`${formatDate(timestamp)}`}</Text>
+        <Text>{`${capitalize(type)} ${id} at ${formatDate(timestamp)}`}</Text>
       </View>
     </View>
   )
@@ -56,8 +55,7 @@ const CardRemoved = ({event}) => {
         <CardIcon name={'remove-from-game'} style={{fontSize: 26, color: "black" }} />
       </View>
       <View>
-        <Text>{`${capitalize(type)} ${id}`}</Text>
-        <Text>{`${formatDate(timestamp)}`}</Text>
+        <Text>{`${capitalize(type)} ${id} at ${formatDate(timestamp)}`}</Text>
         { data.effects &&
           data.effects.map((e,i) =>
             <Effect text={e} key={i}/>
@@ -77,8 +75,7 @@ const CardReturned = ({event}) => {
         <CardIcon name={'return-to-deck'} style={{fontSize: 26, color: "black" }} />
       </View>
       <View>
-        <Text>{`${capitalize(type)} ${id}`}</Text>
-        <Text>{`${formatDate(timestamp)}`}</Text>
+        <Text>{`${capitalize(type)} ${id} at ${formatDate(timestamp)}`}</Text>
         { data.effects &&
           data.effects.map((e,i) =>
             <Effect text={e} key={i}/>
