@@ -75,10 +75,8 @@ export default EnrichedText = ({text, style}) => {
         } else if (!lookup) {
           console.warn("MISSING", name)
           return null
-        } else if (name.startsWith("Remove")) {
-          return lookup
         } else {
-          return lookup
+          return Lookup[name]
         }
       } else {
         return <Text style={{...backText, ...style}} key={i}>{s}</Text>
