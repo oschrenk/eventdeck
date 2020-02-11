@@ -3,10 +3,15 @@
  * @flow strict-local
  */
 import React from 'react';
+import {
+  ImageBackground,
+} from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import {
   createDrawerNavigator,
+  DrawerItemList,
+  DrawerContentScrollView,
  } from '@react-navigation/drawer';
 
 
@@ -21,11 +26,21 @@ import { CardDeckProvider } from './app/contexts/CardDeckContext'
 
 const Drawer = createDrawerNavigator();
 
+const DrawerContent = (props) => {
+  return (
+    <ImageBackground source={require('./assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
+      <DrawerContentScrollView {...props}>
+        <DrawerItemList {...props} />
+      </DrawerContentScrollView>
+    </ImageBackground>
+  )
+}
+
 const App = () => {
   return (
     <CardDeckProvider>
       <NavigationContainer>
-        <Drawer.Navigator initialRouteName="Home">
+        <Drawer.Navigator initialRouteName="Home" drawerContent={props => <DrawerContent {...props}/>}>
           <Drawer.Screen name="Home" component={HomeScreen} />
           <Drawer.Screen name="City" component={CityScreen} />
           <Drawer.Screen name="Road" component={RoadScreen} />
