@@ -44,22 +44,22 @@ const DrawerContent = (props) => {
   console.log(props.navigation)
   return (
     <ImageBackground source={require('./assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
-      <DrawerContentScrollView {...props}>
-        <View style={{flex: 1, justifyContent: 'space-between'}}>
-          <View>
-            <RichDrawerItem label={"Home"} target={"Home"} navigation={props.navigation} />
-            <RichDrawerItem label={"City events"} target={"City"} navigation={props.navigation}/>
-            <RichDrawerItem label={"Road events"} target={"Road"} navigation={props.navigation}/>
-            <RichDrawerItem label={"History"} target={"History"} navigation={props.navigation}/>
-          </View>
-          <View>
-            <DrawerItem
-              label={"About"}
-              labelStyle={{fontFamily: 'Pirata One', fontSize: 24, color: 'black'}}
-              onPress={() => props.navigation.jumpTo("About")}
-            />
-            <Text style={{color: 'grey', margin: 18}}>All Gloomhaven images and content are trademarks and copyrights of Cephalofair Games®</Text>
-          </View>
+      <DrawerContentScrollView {...props} contentContainerStyle={{flex: 1, justifyContent: 'space-between'}}>
+        <View>
+          <RichDrawerItem label={"Home"} target={"Home"} navigation={props.navigation} />
+          <RichDrawerItem label={"City events"} target={"City"} navigation={props.navigation}/>
+          <RichDrawerItem label={"Road events"} target={"Road"} navigation={props.navigation}/>
+          <RichDrawerItem label={"History"} target={"History"} navigation={props.navigation}/>
+        </View>
+        <View>
+        </View>
+        <View>
+          <DrawerItem
+            label={"About"}
+            labelStyle={{fontFamily: 'Pirata One', fontSize: 24, color: 'black'}}
+            onPress={() => props.navigation.jumpTo("About")}
+          />
+          <Text style={{color: 'grey', margin: 18}}>All Gloomhaven images and content are trademarks and copyrights of Cephalofair Games®</Text>
         </View>
       </DrawerContentScrollView>
     </ImageBackground>
