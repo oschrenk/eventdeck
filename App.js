@@ -16,7 +16,6 @@ import {
   DrawerContentScrollView,
  } from '@react-navigation/drawer';
 
-
 import AboutScreen from './app/screens/AboutScreen'
 import CityScreen from './app/screens/CityScreen'
 import HistoryScreen from './app/screens/HistoryScreen'
@@ -41,7 +40,6 @@ const RichDrawerItem = ({label, target, navigation}) => {
 }
 
 const DrawerContent = (props) => {
-  console.log(props.navigation)
   return (
     <ImageBackground source={require('./assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <DrawerContentScrollView {...props} contentContainerStyle={{flex: 1, justifyContent: 'space-between'}}>

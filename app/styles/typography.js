@@ -6,7 +6,7 @@ export const header = {
 
 export const partyName = {
   fontFamily: 'Pirata One',
-  fontSize: 20,
+  fontSize: 40,
   color: 'black'
 }
 

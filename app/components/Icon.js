@@ -97,6 +97,9 @@ const map= {
   'return-to-deck': '\ue900',
   'remove-from-game': '\ue901',
 
+  // other
+  'burger': '\ue958',
+
   // history
   'draw': '\ue957',
 
