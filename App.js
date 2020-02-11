@@ -3,8 +3,12 @@
  * @flow strict-local
  */
 import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
-import { NavigationNativeContainer } from '@react-navigation/native';
+
+import { NavigationContainer } from '@react-navigation/native';
+import {
+  createDrawerNavigator,
+ } from '@react-navigation/drawer';
+
 
 import AboutScreen from './app/screens/AboutScreen'
 import CityScreen from './app/screens/CityScreen'
@@ -20,7 +24,7 @@ const Drawer = createDrawerNavigator();
 const App = () => {
   return (
     <CardDeckProvider>
-      <NavigationNativeContainer>
+      <NavigationContainer>
         <Drawer.Navigator initialRouteName="Home">
           <Drawer.Screen name="Home" component={HomeScreen} />
           <Drawer.Screen name="City" component={CityScreen} />
@@ -29,7 +33,7 @@ const App = () => {
           <Drawer.Screen name="History" component={HistoryScreen} />
           <Drawer.Screen name="About" component={AboutScreen} />
         </Drawer.Navigator>
-      </NavigationNativeContainer>
+      </NavigationContainer>
     </CardDeckProvider>
   );
 };

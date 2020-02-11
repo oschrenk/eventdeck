@@ -11,9 +11,9 @@
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.7.1",
-    "@react-navigation/core": "^5.0.0-alpha.26",
-    "@react-navigation/drawer": "^5.0.0-alpha.25",
-    "@react-navigation/native": "^5.0.0-alpha.16",
+    "@react-navigation/core": "^5.1.0",
+    "@react-navigation/drawer": "^5.0.1",
+    "@react-navigation/native": "^5.0.1",
     "add": "^2.0.6",
     "react": "16.11.0",
     "react-native": "0.62.0-rc.0",
