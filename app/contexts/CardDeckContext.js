@@ -27,7 +27,7 @@ const InitialState = {
   parties: [
     {
       id: "default",
-      name: "The Boyz",
+      name: "Home",
       events: AllEventsAvailable,
       history:[]
     }
