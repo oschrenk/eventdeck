@@ -1,28 +1,17 @@
 import React from "react";
 import {
-  FlatList,
   ImageBackground,
   SafeAreaView,
   ScrollView,
-  Text,
   View
 } from 'react-native';
 
 import Checkbox from 'react-native-modest-checkbox'
-import { header } from '../styles/typography'
 import Header from '../components/Header'
-
+import H1 from '../components/H1'
 
 import { useCardDeck, allCityCardNumbers } from "../contexts/CardDeckContext";
 import { frontText } from '../styles/typography'
-
-const H1 = ({title}) => {
-  return (
-    <ImageBackground source={require('../../assets/images/h1.png')} style={{width: 188, height: 52}}>
-      <Text style={{...header, marginTop: 6, marginLeft: 15}}>{title}</Text>
-    </ImageBackground>
-  )
-}
 
 const CityScreen = () => {
   const { isAvailable, toggleAvailable } = useCardDeck()
