@@ -1,6 +1,6 @@
 export const header = {
   fontFamily: 'Pirata One',
-  fontSize: 30,
+  fontSize: 22,
   color: 'black'
 };
 

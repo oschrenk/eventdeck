@@ -10,6 +10,7 @@ import {
 
 import Checkbox from 'react-native-modest-checkbox'
 import { header } from '../styles/typography'
+import Header from '../components/Header'
 
 
 import { useCardDeck, allCityCardNumbers } from "../contexts/CardDeckContext";
@@ -34,6 +35,14 @@ const Column = ({ids, checked, toggle}) => {
   )
 }
 
+const H1 = ({title}) => {
+  return (
+    <ImageBackground source={require('../../assets/images/h1.png')} style={{width: 188, height: 52}}>
+      <Text style={{...header, marginTop: 6, marginLeft: 15}}>{title}</Text>
+    </ImageBackground>
+  )
+}
+
 const CityScreen = ({navigation}) => {
   const { isAvailable, toggleAvailable } = useCardDeck()
 
@@ -41,7 +50,8 @@ const CityScreen = ({navigation}) => {
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
         <ScrollView>
-          <Text style={header}>City, Base</Text>
+          <Header title={"City Events"} />
+          <H1 title={"Base"} />
           <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
               <Column ids={allCityCardNumbers.slice(0,6)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
               <Column ids={allCityCardNumbers.slice(6,12)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
@@ -49,8 +59,7 @@ const CityScreen = ({navigation}) => {
               <Column ids={allCityCardNumbers.slice(18,24)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
               <Column ids={allCityCardNumbers.slice(24,30)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
           </View>
-
-          <Text style={header}>City, Expanded</Text>
+          <H1 title={"Unlocks"} />
           <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
               <Column ids={allCityCardNumbers.slice(30,40)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
               <Column ids={allCityCardNumbers.slice(40,50)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
@@ -59,7 +68,7 @@ const CityScreen = ({navigation}) => {
               <Column ids={allCityCardNumbers.slice(70,81)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
           </View>
 
-          <Text style={header}>City, Forgotten Circles</Text>
+          <H1 title={"Forgotten Circles"} />
           <View style={{flexDirection: 'row',justifyContent: 'space-between'}}>
               <Column ids={allCityCardNumbers.slice(81,82)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
               <Column ids={allCityCardNumbers.slice(82,84)} checked={(item) => isAvailable(item, 'city')} toggle={(item) =>toggleAvailable(item, 'city')}/>
