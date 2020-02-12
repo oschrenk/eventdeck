@@ -16,7 +16,7 @@ export default Header = ({title}) => {
     <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: "center"}}>
       <View style={{width: 32, marginLeft: 15, flexDirection: 'column', alignItems: "center"}}>
         <TouchableOpacity onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}>
-          <CardIcon name={'burger'} style={{fontSize: 26}}/>
+          <CardIcon name={'burger'} style={{fontSize: 26, color: "black" }}/>
         </TouchableOpacity>
       </View>
       <Text style={{...partyName, textAlign: 'center'}}>{title}</Text>
