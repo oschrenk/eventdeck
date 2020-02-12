@@ -229,7 +229,7 @@ const Back = ({card}) => {
   );
 }
 
-export default function Card(props) {
+export default Card = (props) => {
   if (props.side === 'front')
     return Front(props)
   else
