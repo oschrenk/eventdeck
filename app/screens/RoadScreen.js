@@ -25,12 +25,13 @@ const RoadScreen = () => {
           <H1 title={"Base"} />
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
-            allRoadCardNumbers.slice(0,30).map(e =>
+            allRoadCardNumbers.slice(0,30).map((e, i) =>
               <Checkbox
                 label={e.toString()}
                 checked={isAvailable(e, 'city')}
                 labelStyle={{...frontText, width: 14}}
                 onChange={(item) => toggleAvailable(item, 'city')}
+                key={i}
               />
           )}
           </View>
@@ -38,12 +39,13 @@ const RoadScreen = () => {
           <H1 title={"Unlocks"} />
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
-            allRoadCardNumbers.slice(30,69).map(e =>
+            allRoadCardNumbers.slice(30,69).map((e, i) =>
               <Checkbox
                 label={e.toString()}
                 checked={isAvailable(e, 'city')}
                 labelStyle={{...frontText, width: 14}}
                 onChange={(item) => toggleAvailable(item, 'city')}
+                key={i}
               />
           )}
           </View>
@@ -51,12 +53,13 @@ const RoadScreen = () => {
           <H1 title={"Forgotten Circles"} />
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
-            allRoadCardNumbers.slice(69,71).map(e =>
+            allRoadCardNumbers.slice(69,71).map((e, i) =>
               <Checkbox
                 label={e.toString()}
                 checked={isAvailable(e, 'city')}
                 labelStyle={{...frontText, width: 14}}
                 onChange={(item) => toggleAvailable(item, 'city')}
+                key={i}
               />
           )}
           </View>

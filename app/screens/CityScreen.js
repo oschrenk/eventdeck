@@ -24,24 +24,26 @@ const CityScreen = () => {
           <H1 title={"Base"} />
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
-            allCityCardNumbers.slice(0,30).map(e =>
+            allCityCardNumbers.slice(0,30).map((e, i) =>
               <Checkbox
                 label={e.toString()}
                 checked={isAvailable(e, 'city')}
                 labelStyle={{...frontText, width: 14}}
                 onChange={(item) => toggleAvailable(item, 'city')}
+                key={i}
               />
           )}
           </View>
           <H1 title={"Unlocks"} />
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
-            allCityCardNumbers.slice(30,81).map(e =>
+            allCityCardNumbers.slice(30,81).map((e, i) =>
               <Checkbox
                 label={e.toString()}
                 checked={isAvailable(e, 'city')}
                 labelStyle={{...frontText, width: 14}}
                 onChange={(item) => toggleAvailable(item, 'city')}
+                key={i}
               />
           )}
           </View>
@@ -49,12 +51,13 @@ const CityScreen = () => {
           <H1 title={"Forgotten Circles"} />
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
-            allCityCardNumbers.slice(81,90).map(e =>
+            allCityCardNumbers.slice(81,90).map((e, i) =>
               <Checkbox
                 label={e.toString()}
                 checked={isAvailable(e, 'city')}
                 labelStyle={{...frontText, width: 14}}
                 onChange={(item) => toggleAvailable(item, 'city')}
+                key={i}
               />
           )}
           </View>
