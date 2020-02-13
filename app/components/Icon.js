@@ -1,5 +1,7 @@
 import React from 'react';
+
 import { Text, View } from 'react-native';
+import { useRoute } from '@react-navigation/native';
 import { icon } from '../styles/typography'
 
 import { useCardDeck } from "../contexts/CardDeckContext";
@@ -179,7 +181,8 @@ export const StyledIcon = ({name, style}) => {
 
 export default Icon = ({name}) => {
   const { currentCard } = useCardDeck()
-  const extraStyle = (currentCard && currentCard.type == 'city') ? { color: 'white'} : {}
+  const route = useRoute();
+  const extraStyle = (currentCard && currentCard.type == 'city' && route.name !== 'History') ? { color: 'white'} : {}
 
   if (typeof map[name] === 'string') {
     return <SingleGlyph glyph={map[name]} style={extraStyle}/>
