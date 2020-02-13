@@ -32,29 +32,31 @@ const HomeScreen = () => {
   const [cardRef, setCardRef] = useState(null)
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
-      <SafeAreaView>
-        <Header title={currentParty().name} />
-        <View style={{ flexDirection: 'row', justifyContent: 'space-evenly', height: 48}}>
-          <ImageButton source={require('../../assets/images/city_button.png')} onPress={() => drawCard('city')} style={{ height: 40, width: 132}}/>
-          <ImageButton source={require('../../assets/images/road_button.png')} onPress={() => drawCard('road')} style={{ height: 40, width: 132 }}/>
-        </View>
-        { currentCard &&
-          <>
-            <View style={{flex: 1, alignItems: 'center' }} >
-              <View style={{width: 378, height: 530, }} >
-                <CardFlip style={styles.cardContainer} ref={card => (setCardRef(card))} >
-                  <SwipeGesture gestureStyle={styles.card} onSwipePerformed={swipe(cardRef)}>
-                    <Card card={currentCard} side={'front'} />
-                  </SwipeGesture>
-                  <SwipeGesture gestureStyle={styles.card} onSwipePerformed={swipe(cardRef)}>
-                    <Card card={currentCard} side={'back'} />
-                  </SwipeGesture>
-                </CardFlip>
-              </View>
+        <View style={{height: '100%' }}>
+          <View style={{height: 35 }}>
+          </View>
+          <Header title={currentParty().name} />
+          <View style={{flex: 1, alignItems: 'center' }} >
+          { currentCard &&
+            <View style={{width: 378, height: 530, }} >
+              <CardFlip style={styles.cardContainer} ref={card => (setCardRef(card))} >
+                <SwipeGesture gestureStyle={styles.card} onSwipePerformed={swipe(cardRef)}>
+                  <Card card={currentCard} side={'front'} />
+                </SwipeGesture>
+                <SwipeGesture gestureStyle={styles.card} onSwipePerformed={swipe(cardRef)}>
+                  <Card card={currentCard} side={'back'} />
+                </SwipeGesture>
+              </CardFlip>
             </View>
-          </>
-        }
-      </SafeAreaView>
+          }
+          </View>
+          <View style={{justifyContent: 'flex-end'}}>
+            <View style={{flexDirection: 'row', justifyContent: 'space-evenly'}}>
+              <ImageButton source={require('../../assets/images/city-button.png')} onPress={() => drawCard('city')} style={{ height: 33, width: 139}}/>
+              <ImageButton source={require('../../assets/images/road-button.png')} onPress={() => drawCard('road')} style={{ height: 33, width: 139 }}/>
+            </View>
+          </View>
+        </View>
     </ImageBackground>
   );
 };
