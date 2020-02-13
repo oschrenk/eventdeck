@@ -1,9 +1,9 @@
 import React from 'react';
-
-import { Text } from 'react-native';
+import {
+  Text
+} from 'react-native';
 
 import Icon, { StyledIcon } from './Icon'
-
 import { backText } from '../styles/typography'
 
 const Lookup = {
