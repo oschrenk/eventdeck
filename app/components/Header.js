@@ -5,7 +5,10 @@ import {
   View}
 from 'react-native';
 
-import { useNavigation } from '@react-navigation/native'
+import {
+  DrawerActions,
+  useNavigation
+} from '@react-navigation/native'
 
 import { CardIcon } from '../components/Icon'
 import { partyName } from '../styles/typography'
