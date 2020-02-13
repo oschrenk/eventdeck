@@ -45,22 +45,20 @@ const Event = ({value}) => {
   const color = (type === 'city') ? 'white' : 'black'
   return (
     <View style={{flexDirection: "row", marginLeft: 15, marginRight: 15, marginBottom: 10}}>
-      <View>
+      <View style={{flex: 1}}>
         <ImageBackground source={cardIcon} style={{width: 34, height: 48, alignItems: 'center', justifyContent: 'center'}}>
           <Text style={{textAlign: 'center', fontFamily: 'Pirata One', fontSize: 18,lineHeight: 20, color: color, marginTop: 8}}>{`${id}\n\n${option.slice(-1)}`}</Text>
         </ImageBackground>
       </View>
-      <View style={{marginLeft: 5}}>
+      <View style={{flex: 8, marginLeft: 5}}>
       { effects &&
         effects.map((e,i) =>
           <Effect text={e} key={i}/>
         )
       }
       </View>
-      <View>
-      {
-        resolveIcon(name)
-      }
+      <View style={{flex: 1, justifyContent: 'flex-end'}}>
+      { resolveIcon(name) }
       </View>
     </View>
 
