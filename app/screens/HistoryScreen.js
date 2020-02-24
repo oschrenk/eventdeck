@@ -79,7 +79,9 @@ const groupBy = (list, keyGetter) => {
     return map;
 }
 const groupedEvents = (history) => {
-  const data = history.filter(e => (e.name === 'CardRemoved') || (e.name === 'CardReturned'))
+  const data = history
+    .filter(e => (e.name === 'CardRemoved') || (e.name === 'CardReturned'))
+    .slice().sort((a,b) => (b.timestamp - a.timestamp))
   const grouped = groupBy(data, event => formatDate(event.timestamp))
   const iter = grouped.entries()
   var entries = []
