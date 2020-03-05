@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {
   ImageBackground,
-  SafeAreaView,
   StyleSheet,
   View}
 from 'react-native';
