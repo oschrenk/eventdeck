@@ -7,16 +7,12 @@ import {
   View
 } from 'react-native';
 
-import Checkbox from 'react-native-modest-checkbox'
-import Header from '../components/Header'
+import EventCheckbox from '../components/EventCheckbox'
 import H1 from '../components/H1'
+import Header from '../components/Header'
 
-import { useCardDeck, allRoadCardNumbers } from "../contexts/CardDeckContext";
-import { frontText } from '../styles/typography'
-
+import { allRoadCardNumbers } from "../contexts/CardDeckContext";
 const RoadScreen = () => {
-  const { isAvailable, toggleAvailable } = useCardDeck()
-
   return (
     <ImageBackground source={require('../../assets/images/background.jpg')} style={{width: '100%', height: '100%'}}>
       <SafeAreaView>
@@ -26,13 +22,7 @@ const RoadScreen = () => {
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
             allRoadCardNumbers.slice(0,30).map((e, i) =>
-              <Checkbox
-                label={e.toString()}
-                checked={isAvailable(e, 'city')}
-                labelStyle={{...frontText, width: 14}}
-                onChange={(item) => toggleAvailable(item, 'city')}
-                key={i}
-              />
+              <EventCheckbox el={e} type={'road'} key={i} />
           )}
           </View>
 
@@ -40,13 +30,7 @@ const RoadScreen = () => {
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
             allRoadCardNumbers.slice(30,69).map((e, i) =>
-              <Checkbox
-                label={e.toString()}
-                checked={isAvailable(e, 'city')}
-                labelStyle={{...frontText, width: 14}}
-                onChange={(item) => toggleAvailable(item, 'city')}
-                key={i}
-              />
+              <EventCheckbox el={e} type={'road'} key={i} />
           )}
           </View>
 
@@ -54,13 +38,7 @@ const RoadScreen = () => {
           <View style={{marginLeft: 15, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start'}}>
           {
             allRoadCardNumbers.slice(69,71).map((e, i) =>
-              <Checkbox
-                label={e.toString()}
-                checked={isAvailable(e, 'city')}
-                labelStyle={{...frontText, width: 14}}
-                onChange={(item) => toggleAvailable(item, 'city')}
-                key={i}
-              />
+              <EventCheckbox el={e} type={'road'} key={i} />
           )}
           </View>
         </ScrollView>
