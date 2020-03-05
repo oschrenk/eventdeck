@@ -65,6 +65,9 @@ const DrawerContent = (props) => {
 }
 
 const App = () => {
+  Text.defaultProps = Text.defaultProps || {};
+    // Ignore dynamic type scaling on iOS
+  Text.defaultProps.allowFontScaling = false;
   return (
     <CardDeckProvider>
       <NavigationContainer>
