@@ -54,6 +54,7 @@ const Vertical = ({text, style}) => {
 
 const FrontContent = ({card}) => {
  const color = colors[card['type']]
+ const texts = card.text.split("\n\n")
  return (
    <View style={{flexDirection:'row', flexWrap:'wrap', height: 530}}>
      <View style={{width: 35, height: "100%"}}>
@@ -62,7 +63,9 @@ const FrontContent = ({card}) => {
 
      <View style={{width: 308, height: "100%"}}>
        <View style={{top: 80, height: "78%"}}>
-         <Text style={{...frontText, color: color}}>{card.text}</Text>
+         { texts.map((e,i) =>
+             <Text style={{...frontText, color: color, marginTop: 10}} key={i}>{e}</Text>)
+         }
        </View>
        <View style={{height: "18%"}}>
          <Text style={{...frontText, color: color}}>
